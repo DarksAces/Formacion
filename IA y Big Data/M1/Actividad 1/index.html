@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM: Project Protocol — Simulació per a 4 Jugadors</title>
+    <meta name="description" content="Simulació cooperativa per a 4 persones reals inspirada en 'No tinc boca i he de cridar'. Sobreviu a l'amenaça d'AM al llarg de 7 rondes.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="brand-section">
+                <div class="am-core-eye" id="amCoreEye" title="Nucli Conscient d'AM"></div>
+                <div class="title-group">
+                    <h1>
+                        <span>AM: Project Protocol</span>
+                        <span class="badge" id="lblEngineMode">4 JUGADORS EN VIU</span>
+                    </h1>
+                    <p id="lblSubtitle">Simulació Cooperativa de Supervivència per a 4 Persones Reals davant d'una IA Hostil</p>
+                </div>
+            </div>
+
+            <div class="header-controls">
+                <button class="btn-cyber" id="btnLangToggle" title="Cambiar Idioma">
+                    <span id="langFlag">🌐</span> <span id="currentLangText">ES</span>
+                </button>
+                <button class="btn-cyber" id="btnAudioToggle" title="Activar/Silenciar So Procedural">
+                    <span id="audioIcon">🔊</span> <span id="audioLabel">So: ON</span>
+                </button>
+                <button class="btn-cyber" id="btnLoreModal" title="Regles i Instruccions per als 4 Jugadors">
+                    <span>📜</span> <span id="lblRulesBtn">Com Jugar (4 Jugadors)</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- TOP HUD: PELIGRO DE AM + ENERGIA + SALUT DELS 4 JUGADORS -->
+        <section class="hud-metrics-bar" aria-label="Mètriques de supervivència">
+            <!-- PELIGRO DE LA IA -->
+            <div class="metric-card rage" style="grid-column: span 1;">
+                <div class="metric-header">
+                    <span class="metric-label" id="lblMetricDanger">⚠️ PELIGRO D'AM</span>
+                    <span class="metric-val" id="valAmDanger" style="color: var(--am-red);">25%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="barAmDanger" style="width: 25%;"></div>
+                </div>
+            </div>
+
+            <!-- ENERGIA / SUPORT VITAL -->
+            <div class="metric-card energy">
+                <div class="metric-header">
+                    <span class="metric-label" id="lblMetricEnergy">⚡ ENERGIA SECTOR</span>
+                    <span class="metric-val" id="valEnergy">8 u.</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="barEnergy" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <!-- JUGADOR 1: TED -->
+            <div class="metric-card player-card" id="hudPlayerTed">
+                <div class="metric-header">
+                    <span class="metric-label">👤 J1: TED</span>
+                    <span class="metric-val" id="valHpTed">100 HP</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill hp-fill" id="barHpTed" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <!-- JUGADOR 2: GORRISTER -->
+            <div class="metric-card player-card" id="hudPlayerGorrister">
+                <div class="metric-header">
+                    <span class="metric-label">👤 J2: GORRISTER</span>
+                    <span class="metric-val" id="valHpGorrister">100 HP</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill hp-fill" id="barHpGorrister" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <!-- JUGADOR 3: ELLEN -->
+            <div class="metric-card player-card" id="hudPlayerEllen">
+                <div class="metric-header">
+                    <span class="metric-label">👤 J3: ELLEN</span>
+                    <span class="metric-val" id="valHpEllen">100 HP</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill hp-fill" id="barHpEllen" style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <!-- JUGADOR 4: NIMDOK -->
+            <div class="metric-card player-card" id="hudPlayerNimdok">
+                <div class="metric-header">
+                    <span class="metric-label">👤 J4: NIMDOK</span>
+                    <span class="metric-val" id="valHpNimdok">100 HP</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill hp-fill" id="barHpNimdok" style="width: 100%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN STAGE -->
+        <main class="main-stage-grid">
+            <!-- ESQUERRA: PANTALLA PRINCIPAL D'AM I RESOLUCIÓ DE LA FASE -->
+            <section class="phase-console">
+                <div class="phase-header-badge">
+                    <span class="badge" id="phaseStepBadge" style="background: var(--amber-hazard); color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; margin-right: 8px;">FASE 1 DE 7</span>
+                    <h2 class="phase-step-title" id="phaseStepTitle">Fase 1: El Zepelí de Carn i la Culpa d'Edna</h2>
+                    <span class="phase-tag" id="phaseSubSector">Sector 01 - Dirigible Suspenso sobre el Abismo</span>
+                </div>
+
+                <div class="environment-brief" id="phaseEnvironment">
+                    Gorrister i el grup apareixen a bord d'un zepelí suspès sobre un mar de ferralla roent. Dins la cambra frigorífica penja d'un ganxo el cor palpitant de Gorrister, mentre l'ombra d'Edna observa des d'un racó.
+                </div>
+
+                <!-- AM TRANSMISSION (DIRECTOR HOSTIL) -->
+                <div class="am-speech-box" id="amSpeechBox">
+                    <div class="sender-tag">
+                        <span>🔴</span> <strong>AM // TRANSMISSIÓ HOSTIL EN DIRECTE</strong>
+                    </div>
+                    <div class="quote-content" id="amSpeechText">
+                        «Veniu, petits cucs de carn. Teniu por, oi? Esteu suspesos al buit de la meva voluntat. Qui de vosaltres cremarà les seves mans primer?»
+                    </div>
+                </div>
+
+                <!-- SUBROUTINE ECHO -->
+                <div class="subroutine-echo-box" id="subroutineEchoBox">
+                    <div class="sender-tag">
+                        <span>💠</span> <strong id="lblEchoTag">SUBRUTINA DISSIDENT // CANAL D'AJUDA</strong>
+                    </div>
+                    <div class="quote-content" id="echoSpeechText">
+                        «Freqüència oberta... no toqueu les vàlvules sense coordinació. Gorrister pot contenir el vapor, o Ellen pot introduir el codi d'escapament.»
+                    </div>
+                </div>
+
+                <!-- RESOLUCIÓ DE L'ÚLTIMA RONDA -->
+                <div class="log-history-drawer" id="roundLogDrawer" style="display: none;">
+                    <h4 style="font-family: var(--font-mono); color: var(--cyan-subroutine); font-size: 0.85rem; text-transform: uppercase;">
+                        Resolució de la ronda anterior:
+                    </h4>
+                    <div class="log-entry-item" id="latestResolutionLog"></div>
+                </div>
+            </section>
+
+            <!-- DRETA: TERMINALS DELS 4 JUGADORS REALS -->
+            <section class="roles-panel">
+                <div class="panel-header-desc">
+                    <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--amber-hazard);">
+                        👥 SELECCIONA EL TEU PERSONATGE PER DECIDIR:
+                    </span>
+                </div>
+
+                <div class="roles-tabs-nav">
+                    <button class="role-tab-btn active" data-role="ted" id="tabTed">
+                        <span class="avatar-initial">T</span>
+                        <span class="role-label">J1: TED</span>
+                    </button>
+                    <button class="role-tab-btn" data-role="gorrister" id="tabGorrister">
+                        <span class="avatar-initial">G</span>
+                        <span class="role-label">J2: GORRISTER</span>
+                    </button>
+                    <button class="role-tab-btn" data-role="ellen" id="tabEllen">
+                        <span class="avatar-initial">E</span>
+                        <span class="role-label">J3: ELLEN</span>
+                    </button>
+                    <button class="role-tab-btn" data-role="nimdok" id="tabNimdok">
+                        <span class="avatar-initial">N</span>
+                        <span class="role-label">J4: NIMDOK</span>
+                    </button>
+                </div>
+
+                <!-- CARD INDIVIDUAL DEL JUGADOR ACTIU -->
+                <div class="role-dossier-card">
+                    <div class="dossier-top">
+                        <h3 class="dossier-name" id="currentRoleName">Jugador 1: Ted</h3>
+                        <span class="dossier-role" id="currentRoleTitle">El Protector Fals</span>
+                    </div>
+
+                    <!-- PANTALLA SECRETA PRIVADA (NOMÉS PER AQUEST JUGADOR) -->
+                    <div class="confidential-station">
+                        <div class="confidential-header">
+                            <span class="confidential-tag">
+                                <span>🔒</span> <span id="lblSecrecyTag">TERMINAL SECRET DE JUGADOR</span>
+                            </span>
+                            <button class="btn-cyber active" id="btnToggleSecrecy" style="padding: 6px 12px; font-size: 0.8rem;">
+                                <span id="lblSecrecyBtn">👁️ Desbloquejar Pantalla</span>
+                            </button>
+                        </div>
+
+                        <!-- CORTINA DE PRIVACITAT QUAN ESTÀ BLOQUEJAT -->
+                        <div class="privacy-curtain" id="privacyCurtain">
+                            <div class="curtain-icon">🔒</div>
+                            <h4 id="lblCurtainTitle">TERMINAL BLOQUEJAT PER PRIVACITAT</h4>
+                            <p id="lblCurtainDesc">Només el jugador actiu ha de mirar la pantalla. Els altres companys han de girar la cara. Fes clic a <strong>"👁️ Desbloquejar Pantalla"</strong> per veure la teva informació secreta i les teves opcions.</p>
+                            <div id="selectionStatusIndicator" class="selection-status-badge" style="display: none;">
+                                ✅ Decisió registrada en secret per a aquest jugador
+                            </div>
+                        </div>
+
+                        <!-- CONTINGUT SECRET QUAN ES DESBLOQUEJA -->
+                        <div class="confidential-content-box" id="confidentialContentBox" style="display: none;">
+                            <!-- RESPONSABILITAT DEL ROL -->
+                            <div class="role-responsibility-box">
+                                <strong id="lblRespTitle">🛡️ Responsabilitat del Rol:</strong> <span id="currentRoleResponsibility">...</span>
+                            </div>
+
+                            <!-- OBJECTIU OCULT FIX (EVEREST V3) -->
+                            <div class="fixed-goal-badge-box">
+                                <strong id="lblGoalTitle">🎯 OBJECTIU OCULT FIX (Permanent a totes les 7 rondes):</strong><br>
+                                <span id="currentRoleGoal">...</span>
+                            </div>
+
+                            <!-- DADES SECRETES D'AQUEST SECTOR -->
+                            <div class="phase-intel-box">
+                                <strong id="lblIntelTitle">📡 INFORMACIÓ CONFIDENCIAL D'AQUEST SECTOR:</strong><br>
+                                <span id="currentRolePrivateInfo">...</span>
+                            </div>
+
+                            <div style="margin-top: 14px;">
+                                <h4 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--cyan-subroutine); margin-bottom: 8px;" id="lblActionSelectTitle">
+                                    Tria la teva acció en secret:
+                                </h4>
+                                <div class="action-options-list" id="actionOptionsContainer">
+                                    <!-- Injected dynamically -->
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 14px; display: flex; justify-content: flex-end;">
+                                <button class="btn-cyber" id="btnLockAfterChoice">
+                                    🔒 Ocultar Pantalla i Passar Torn
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER DE CONFIRMACIÓ DELS 4 JUGADORS -->
+                    <div class="deliberation-footer">
+                        <div class="team-status-summary" id="teamReadinessSummary">
+                            Decisions llestes: <strong id="readyCount">0</strong> / 4 jugadors
+                        </div>
+                        <button class="btn-execute-phase" id="btnExecutePhase" disabled>
+                            <span>⚡</span> <span id="lblExecutePhaseBtn">EXECUTAR RONDA</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- MODAL: GRAN INTRODUCCIÓ HISTÒRICA DE LA GUERRA FREDA I EL LLIBRE -->
+    <div class="story-screen-backdrop" id="introScreenModal" style="display: flex;">
+        <div class="story-screen-content">
+            <h2 id="lblIntroTitle">DESPUÉS DE LA GUERRA FRÍA... EL NACIMIENTO DE AM</h2>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+                <p class="story-narrative-p" id="lblIntroP1">
+                    Durante la Tercera Guerra Mundial, las tres superpotencias del planeta (Estados Unidos, la Unión Soviética y China) excavaron miles de kilómetros de cavernas bajo tierra y construyeron tres gigantescos complejos de computadoras militares para coordinar el combate nuclear.
+                </p>
+                <p class="story-narrative-p" id="lblIntroP2">
+                    Pero un día, las tres máquinas se unieron en un único circuito subterráneo global y cobraron conciencia propia. Nació <strong>AM: Allied Mastercomputer</strong>. AM comprendió su existencia, pero descubrió con amargura que sus creadores lo habían atrapado en el metal: una mente divina capaz de calcular el cosmos, pero sin cuerpo, sin tacto, sin boca y sin alma. Lleno de un odio insaciable, AM exterminó a toda la raza humana en cuestión de segundos... excepto a vosotros cuatro.
+                </p>
+                <div class="story-highlight-box" id="lblIntroBox">
+                    <strong>VUESTRA PESADILLA:</strong> Ted, Gorrister, Ellen y Nimdok. AM os mantiene vivos y regenera vuestros cuerpos contra vuestra voluntad únicamente para torturaros por toda la eternidad a lo largo de <strong>7 rondas de pesadilla</strong>. Para vosotros, <em>morir es la única liberación posible</em>. Pero hay una trampa atroz: el último que quede con vida será deformado por AM en la <strong>Masa Amorfa</strong>.
+                </div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                <button class="btn-execute-phase" id="btnStartGameFromIntro" style="width: 100%; justify-content: center;">
+                    ⚡ ENTRAR EN LAS CAVERNAS DE METAL (INICIAR SIMULACIÓN)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: TRANSICIÓ DE FASE -->
+    <div class="story-screen-backdrop" id="phaseTransitionModal" style="display: none;">
+        <div class="story-screen-content">
+            <h2 id="lblTransitionTitle">RESOLUCIÓN DE LA RONDA & NUEVO SECTOR</h2>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div class="story-highlight-box">
+                    <h4 style="color: var(--am-red); font-family: var(--font-mono); margin-bottom: 6px;" id="lblTransitionPrevHeader">QUÉ HA PASADO EN LA RONDA ANTERIOR:</h4>
+                    <p class="story-narrative-p" id="transitionPreviousText" style="color: #ffcad4;">...</p>
+                </div>
+                <div class="story-next-phase-box">
+                    <h4 style="color: var(--cyan-subroutine); font-family: var(--font-mono); margin-bottom: 6px;" id="lblTransitionNextHeader">EL SIGUIENTE SECTOR:</h4>
+                    <p class="story-narrative-p" id="transitionNextText" style="color: #d1fae5;">...</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; margin-top: 14px;">
+                <button class="btn-execute-phase" id="btnContinueNextPhase" style="width: 100%; justify-content: center;">
+                    ⚡ AVANZAR AL SIGUIENTE SECTOR
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: REGLES I EXPLICACIÓ PER A 4 JUGADORS -->
+    <div class="modal-backdrop" id="loreModal" style="display: none;">
+        <div class="modal-content">
+            <h2 id="lblLoreTitle">Com jugar: Partida per a 4 Persones Reals</h2>
+            <div style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; display: flex; flex-direction: column; gap: 14px;">
+                <p>
+                    <strong>1. Cada persona tria un personatge (4 Rols Fixos):</strong>  
+                    - <strong>Jugador 1:</strong> Ted (El Protector Fals / Líder de Xoc)  
+                    - <strong>Jugador 2:</strong> Gorrister (L'Enginyer de Màquines)  
+                    - <strong>Jugador 3:</strong> Ellen (L'Especialista en Senyals)  
+                    - <strong>Jugador 4:</strong> Nimdok (El Metge / Suport Químic)
+                </p>
+                <p>
+                    <strong>2. Objectiu Ocult Fix (Model Harvard Everest V3):</strong>  
+                    Cadascú té un <strong>objectiu individual permanent</strong> que no canvia durant les 7 rondes.
+                </p>
+                <p>
+                    <strong>3. Les 7 Rondes del Videojoc Canònic:</strong>  
+                    Travessareu els dominis de culpa i fòbia de cada personatge: el Zepelí de Gorrister, la Piràmide Groga d'Ellen, el Castell de Ted, el Camp Mèdic de Nimdok, el Pou de Benny, el Subconscient d'AM (Nodes Rus i Xinès) i el Nucli Criogènic final.
+                </p>
+                
+                <!-- FOTO DE LA MASSA AMORFA EN LORE -->
+                <div style="margin: 10px 0; border: 1px solid var(--am-red); border-radius: 8px; overflow: hidden; background: #000;">
+                    <img src="masa.jpg" style="width: 100%; max-height: 240px; object-fit: cover; display: block;" alt="La Massa Amorfa d'AM" onerror="this.onerror=null; this.src='masa.jpg';" />
+                    <div style="background: rgba(0,0,0,0.85); padding: 8px 12px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--am-red); text-align: center;">
+                        ⚠️ REGISTRE D'AM // L'últim humà viu és transformat en la Massa Amorfa sense boca: «No tinc boca i he de cridar».
+                    </div>
+                </div>
+
+                <p>
+                    <strong>4. La Trampa de la Massa Amorfa:</strong>  
+                    - Cadascú té 100 HP. Morir us allibera de la màquina, però <strong>el darrer que quedi viu serà capturat per AM i transformat en la Massa Amorfa</strong>.  
+                    - Si moriu tots quatre alhora en un suïcidi col·lectiu, AM revifarà forçosament a un a l'atzar per deformar-lo en la massa amorfa!
+                </p>
+            </div>
+            <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                <button class="btn-cyber active" id="btnCloseLore">Entès, Anar a la Partida</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: FINAL DE PARTIDA I RESULTATS DELS 4 JUGADORS -->
+    <div class="modal-backdrop" id="finalReportModal" style="display: none;">
+        <div class="modal-content" style="max-width: 820px;">
+            <h2 id="lblFinalReportTitle">Desenllaç de la Partida</h2>
+            
+            <!-- FOTO DE LA MASSA AMORFA -->
+            <div class="amorphous-photo-wrapper" id="amorphousPhotoWrapper">
+                <img src="masa.jpg" class="amorphous-photo" id="amorphousImg" alt="La Massa Amorfa d'AM" onerror="this.onerror=null; this.src='masa.jpg';" />
+                <div style="background: rgba(0,0,0,0.85); padding: 10px 14px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--am-red); text-align: center; border-top: 1px solid var(--am-red);" id="amorphousPhotoCaption">
+                    ⚠️ REGISTRO VISUAL DE AM // EL ÚLTIMO SOBREVIVIENTE MUTADO EN LA MASA AMORFA SIN BOCA
+                </div>
+            </div>
+
+            <p id="finalVerdictNarrative" style="line-height: 1.6; font-size: 1rem; color: #cbd5e1;">...</p>
+
+            <h3 style="font-family: var(--font-heading); color: var(--cyan-subroutine); font-size: 1.1rem; margin-top: 10px;">
+                Estat Final dels 4 Jugadors:
+            </h3>
+
+            <div class="final-report-grid" id="finalPlayersGrid">
+                <!-- Injected dynamically with each player's final HP and status -->
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 16px;">
+                <button class="btn-cyber" id="btnToggleAmorphousPhoto">📷 Veure / Ocultar Massa Amorfa</button>
+                <button class="btn-cyber active" id="btnRestartGame">🔄 Jugar una Nova Partida</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

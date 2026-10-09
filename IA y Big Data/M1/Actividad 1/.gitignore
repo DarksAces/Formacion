@@ -1,0 +1,14 @@
+# Credencials i claus privades
+.env
+*.env
+secrets.json
+
+# Cache de Python
+__pycache__/
+*.pyc
+
+# IDEs i sistemes operatius
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
