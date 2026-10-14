@@ -135,6 +135,112 @@ class SoundEngine {
         });
     }
 
+    playTick() {
+        if (!this.ctx || this.isMuted) return;
+        if (this.ctx.state === 'suspended') this.ctx.resume();
+
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(800, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(200, this.ctx.currentTime + 0.03);
+
+        gain.gain.setValueAtTime(0.04, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.03);
+
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.03);
+    }
+
+    playGlitch() {
+        if (!this.ctx || this.isMuted) return;
+        if (this.ctx.state === 'suspended') this.ctx.resume();
+
+        // Burst of white-ish noise using multiple rapid random square waves
+        for (let i = 0; i < 4; i++) {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(150 + Math.random() * 800, this.ctx.currentTime + i * 0.02);
+            gain.gain.setValueAtTime(0.06, this.ctx.currentTime + i * 0.02);
+            gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + (i + 1) * 0.025);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(this.ctx.currentTime + i * 0.02);
+            osc.stop(this.ctx.currentTime + (i + 1) * 0.025);
+        }
+    }
+
+    playHeartbeat(isCritical = false) {
+        if (!this.ctx || this.isMuted) return;
+        if (this.ctx.state === 'suspended') this.ctx.resume();
+
+        const pitch = isCritical ? 95 : 65;
+        // First lub
+        const osc1 = this.ctx.createOscillator();
+        const gain1 = this.ctx.createGain();
+        osc1.type = 'sine';
+        osc1.frequency.setValueAtTime(pitch, this.ctx.currentTime);
+        osc1.frequency.exponentialRampToValueAtTime(35, this.ctx.currentTime + 0.08);
+        gain1.gain.setValueAtTime(0.08, this.ctx.currentTime);
+        gain1.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.08);
+        osc1.connect(gain1);
+        gain1.connect(this.ctx.destination);
+        osc1.start();
+        osc1.stop(this.ctx.currentTime + 0.08);
+
+        // Second dub
+        const osc2 = this.ctx.createOscillator();
+        const gain2 = this.ctx.createGain();
+        osc2.type = 'sine';
+        osc2.frequency.setValueAtTime(pitch * 0.85, this.ctx.currentTime + 0.12);
+        osc2.frequency.exponentialRampToValueAtTime(30, this.ctx.currentTime + 0.2);
+        gain2.gain.setValueAtTime(0.06, this.ctx.currentTime + 0.12);
+        gain2.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.2);
+        osc2.connect(gain2);
+        gain2.connect(this.ctx.destination);
+        osc2.start(this.ctx.currentTime + 0.12);
+        osc2.stop(this.ctx.currentTime + 0.2);
+    }
+
+    playFlatline() {
+        if (!this.ctx || this.isMuted) return;
+        if (this.ctx.state === 'suspended') this.ctx.resume();
+
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(880, this.ctx.currentTime);
+        gain.gain.setValueAtTime(0.05, this.ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.001, this.ctx.currentTime + 1.2);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 1.2);
+    }
+
+    playProcessingScan() {
+        if (!this.ctx || this.isMuted) return;
+        if (this.ctx.state === 'suspended') this.ctx.resume();
+
+        // 6 rapid electronic data bursts
+        for (let i = 0; i < 6; i++) {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.type = 'square';
+            const f = 600 + (i * 240);
+            osc.frequency.setValueAtTime(f, this.ctx.currentTime + i * 0.07);
+            gain.gain.setValueAtTime(0.04, this.ctx.currentTime + i * 0.07);
+            gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + (i + 1) * 0.07);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(this.ctx.currentTime + i * 0.07);
+            osc.stop(this.ctx.currentTime + (i + 1) * 0.07);
+        }
+    }
+
     toggleMute() {
         this.isMuted = !this.isMuted;
         if (this.ambientGain) {

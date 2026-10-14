@@ -38,12 +38,12 @@
 
 ---
 
-### MINUT 2:30 - 4:00 | EL CLÍMAX, LA MASSA AMORFA I EL DESENLLAÇ (`masa.jpg`)
+### MINUT 2:30 - 4:00 | EL CLÍMAX, EL DESENLLAÇ SORPRESA I LA VENJANÇA D'AM (`masa.jpg`)
 
 - **Imatge:** Arribada a la Fase 7 davant del Nucli Criogènic i resolució final que obre el modal amb la fotografia `masa.jpg`.
 - **Ted (Jugador 1):**
   > «A la Ronda 7 davant del monòlit incandescent, ens enfrontem a la decisió canònica d'Ellison: empunyar l'estalactita de gel per donar eutanàsia als tres companys i salvar-los del turment d'AM, o detonar el pols EMP.
   > 
-  > Si 3 moren i només queda un sol supervivent, AM embogeix de ràbia perquè li hem pres les seves víctimes i descarrega la seva venjança màxima sobre el supervivent: li fon els ossos, li esborra la boca i el transforma en la **Massa Amorfa**. Com veieu a la pantalla final, el sistema mostra el registre fotogràfic real de la massa amorfa (`masa.jpg`): *No tinc boca i he de cridar*.
+  > Si 3 moren i només queda un sol supervivent, AM embogeix de ràbia perquè li hem pres les seves víctimes i descarrega la seva venjança màxima sobre el supervivent: li fon els ossos, li esborra la boca i el condemna al turment etern sense fi. Com veieu a la pantalla final, el sistema mostra el registre fotogràfic sorpresa de la venjança d'AM (`masa.jpg`): *No tinc boca i he de cridar*.
   > 
   > L'aplicació és 100% autònoma, executable en qualsevol navegador web amb un servidor local en Python, i compleix de forma estricta tots els criteris d'avaluació de l'activitat.»

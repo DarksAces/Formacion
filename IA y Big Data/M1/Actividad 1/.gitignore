@@ -12,3 +12,8 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Fitxers temporals de prova
+test*
+copy_portraits.ps1
+

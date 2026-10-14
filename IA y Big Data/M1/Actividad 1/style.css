@@ -932,3 +932,1479 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--am-red);
 }
+
+/* =========================================================================
+   NOVES CARACTERÍSTIQUES VISUALS I CONTROL DE TEMPS (10-15 MINUTS)
+   ========================================================================= */
+
+/* Reloj total de partida (Match Total Timer) */
+.match-time-badge {
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid var(--cyan-subroutine);
+    box-shadow: 0 0 14px var(--cyan-glow);
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    color: var(--cyan-subroutine);
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: matchClockPulse 4s infinite ease-in-out;
+}
+
+@keyframes matchClockPulse {
+    0%, 100% { border-color: rgba(0, 229, 255, 0.4); box-shadow: 0 0 8px rgba(0, 229, 255, 0.2); }
+    50% { border-color: var(--cyan-subroutine); box-shadow: 0 0 16px var(--cyan-glow); }
+}
+
+.match-time-badge .clock-icon {
+    font-size: 0.95rem;
+    animation: clockSpin 12s linear infinite;
+}
+
+.match-time-badge.min-reached {
+    border-color: var(--green-phosphor);
+    color: var(--green-phosphor);
+    background: rgba(0, 255, 136, 0.12);
+    box-shadow: 0 0 18px var(--green-glow);
+}
+
+/* Subtextos métricas */
+.metric-subtext {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-top: -2px;
+}
+
+/* Avatares e identidades en el HUD */
+.player-hud-identity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.player-hud-avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.player-hud-avatar::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.avatar-ted {
+    background: radial-gradient(circle, #2563eb, #1e3a8a);
+    border-color: #60a5fa;
+    box-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
+}
+.avatar-ted::before { content: '🛡️'; font-size: 0.85rem; }
+
+.avatar-gorrister {
+    background: radial-gradient(circle, #ea580c, #7c2d12);
+    border-color: #fb923c;
+    box-shadow: 0 0 8px rgba(251, 146, 60, 0.4);
+}
+.avatar-gorrister::before { content: '⚙️'; font-size: 0.85rem; }
+
+.avatar-ellen {
+    background: radial-gradient(circle, #ca8a04, #713f12);
+    border-color: #facc15;
+    box-shadow: 0 0 8px rgba(250, 204, 21, 0.4);
+}
+.avatar-ellen::before { content: '📡'; font-size: 0.85rem; }
+
+.avatar-nimdok {
+    background: radial-gradient(circle, #059669, #064e3b);
+    border-color: #34d399;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+}
+.avatar-nimdok::before { content: '💉'; font-size: 0.85rem; }
+
+/* Status vital badges */
+.player-vital-status {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+    letter-spacing: 0.5px;
+    background: rgba(0, 255, 136, 0.12);
+    color: var(--green-phosphor);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.player-vital-status.arrhythmia {
+    background: rgba(255, 170, 0, 0.15);
+    color: var(--amber-hazard);
+    border-color: rgba(255, 170, 0, 0.4);
+}
+
+.player-vital-status.critical {
+    background: rgba(255, 30, 66, 0.25);
+    color: var(--am-red);
+    border-color: var(--am-red);
+    animation: vitalCriticalFlash 0.8s infinite alternate;
+}
+
+.player-vital-status.dead {
+    background: rgba(100, 116, 139, 0.2);
+    color: #94a3b8;
+    border-color: #475569;
+}
+
+@keyframes vitalCriticalFlash {
+    from { opacity: 0.6; }
+    to { opacity: 1; box-shadow: 0 0 8px var(--am-red); }
+}
+
+/* ECG Monitor en el HUD */
+.ecg-monitor-wrapper {
+    width: 100%;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.ecg-monitor-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, transparent 96%, rgba(0, 255, 136, 0.08) 96%),
+                linear-gradient(transparent 80%, rgba(0, 255, 136, 0.08) 80%);
+    background-size: 8px 8px;
+    pointer-events: none;
+}
+
+.ecg-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* =========================================================================
+   BARRA DE CRONÒMETRE DE DELIBERACIÓ (EVEREST V3)
+   ========================================================================= */
+.deliberation-timer-bar {
+    background: linear-gradient(135deg, rgba(20, 24, 36, 0.95), rgba(10, 14, 22, 0.92));
+    border: 1px solid rgba(255, 170, 0, 0.35);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 170, 0, 0.05);
+    border-radius: 10px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.deliberation-timer-bar.warning {
+    border-color: var(--am-red);
+    box-shadow: 0 0 20px rgba(255, 30, 66, 0.3), inset 0 0 20px rgba(255, 30, 66, 0.1);
+    animation: timerWarningPulse 1s infinite alternate;
+}
+
+@keyframes timerWarningPulse {
+    from { border-color: rgba(255, 30, 66, 0.4); }
+    to { border-color: var(--am-red); box-shadow: 0 0 25px rgba(255, 30, 66, 0.5); }
+}
+
+.timer-display-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 160px;
+}
+
+.timer-icon-pulse {
+    font-size: 1.4rem;
+    animation: timerTickIcon 1s infinite ease-in-out;
+}
+
+@keyframes timerTickIcon {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+.timer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--amber-hazard);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.timer-clock {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.timer-clock.urgent {
+    color: var(--am-red);
+    text-shadow: 0 0 10px var(--am-red-glow);
+}
+
+.timer-progress-track {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timer-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ffaa00, #ffd166);
+    box-shadow: 0 0 10px var(--amber-glow);
+    transition: width 1s linear, background-color 0.5s ease;
+}
+
+.timer-progress-fill.urgent {
+    background: linear-gradient(90deg, #ff1e42, #ff8c00) !important;
+    box-shadow: 0 0 12px var(--am-red-glow) !important;
+}
+
+.timer-controls-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-timer-action {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-primary);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    white-space: nowrap;
+}
+
+.btn-timer-action:hover {
+    background: rgba(255, 170, 0, 0.15);
+    border-color: var(--amber-hazard);
+    color: #fff;
+}
+
+.btn-timer-action.confirm {
+    background: rgba(0, 229, 255, 0.12);
+    border-color: var(--cyan-subroutine);
+    color: var(--cyan-subroutine);
+}
+
+.btn-timer-action.confirm:hover {
+    background: var(--cyan-subroutine);
+    color: #000;
+    box-shadow: 0 0 12px var(--cyan-glow);
+}
+
+/* =========================================================================
+   TARGETA DE DILEMA GRUPAL & ALERTA D'EMERGÈNCIA
+   ========================================================================= */
+.team-dilemma-card {
+    background: rgba(255, 170, 0, 0.07);
+    border: 1px solid rgba(255, 170, 0, 0.35);
+    border-left: 4px solid var(--amber-hazard);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.team-dilemma-card .dilemma-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--amber-hazard);
+    letter-spacing: 1px;
+}
+
+.team-dilemma-card .dilemma-question-text {
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #ffedd5;
+    font-weight: 500;
+}
+
+/* Alerta de emergencia a mitad de deliberación */
+.am-mid-alert-banner {
+    background: linear-gradient(90deg, rgba(255, 30, 66, 0.25), rgba(255, 170, 0, 0.2));
+    border: 1px solid var(--am-red);
+    box-shadow: 0 0 20px rgba(255, 30, 66, 0.3);
+    border-radius: 8px;
+    padding: 10px 16px;
+    animation: midAlertPulse 1.2s infinite ease-in-out;
+}
+
+@keyframes midAlertPulse {
+    0%, 100% { transform: translateY(0); box-shadow: 0 0 12px rgba(255, 30, 66, 0.25); }
+    50% { transform: translateY(-2px); box-shadow: 0 0 24px rgba(255, 30, 66, 0.5); }
+}
+
+.mid-alert-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: #fecdd3;
+    font-weight: bold;
+}
+
+.alert-pulse-icon {
+    font-size: 1.2rem;
+    animation: iconShake 0.6s infinite ease-in-out;
+}
+
+@keyframes iconShake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+}
+
+/* =========================================================================
+   VIEWPORT HOLOGRÀFIC DEL SECTOR (CCTV / RADAR / TÈRMIC)
+   ========================================================================= */
+.sector-viewport-container {
+    background: #020408;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), inset 0 0 25px rgba(0, 0, 0, 0.9);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sector-viewport-container::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 2px, transparent 2px, transparent 4px);
+    z-index: 5;
+}
+
+/* Modo CCTV */
+.sector-viewport-container.mode-cctv {
+    border-color: rgba(0, 229, 255, 0.35);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+}
+
+/* Modo Radar */
+.sector-viewport-container.mode-radar {
+    border-color: rgba(0, 255, 136, 0.45);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    filter: hue-rotate(60deg);
+}
+
+/* Modo Térmico */
+.sector-viewport-container.mode-thermal {
+    border-color: rgba(255, 30, 66, 0.45);
+    box-shadow: 0 0 20px rgba(255, 30, 66, 0.2);
+    filter: contrast(1.2) hue-rotate(180deg) saturate(1.4);
+}
+
+.viewport-header {
+    background: rgba(10, 14, 22, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.cctv-rec-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--am-red);
+    letter-spacing: 1px;
+}
+
+.blinking-rec-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--am-red);
+    box-shadow: 0 0 8px var(--am-red);
+    animation: recBlink 1s infinite alternate;
+}
+
+@keyframes recBlink {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
+
+.viewport-mode-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.viewport-mode-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.viewport-mode-btn:hover {
+    color: #fff;
+    border-color: var(--cyan-subroutine);
+}
+
+.viewport-mode-btn.active {
+    background: rgba(0, 229, 255, 0.2);
+    border-color: var(--cyan-subroutine);
+    color: var(--cyan-subroutine);
+}
+
+.sector-time-code {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+/* Graphic Display Container */
+.sector-graphic-display {
+    width: 100%;
+    min-height: 220px;
+    max-height: 280px;
+    background: radial-gradient(circle at 50% 50%, #0a0e1a 0%, #020408 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sector-graphic-display svg {
+    width: 100%;
+    height: 100%;
+    max-height: 260px;
+    display: block;
+}
+
+.viewport-telemetry-hud {
+    background: rgba(8, 12, 18, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    z-index: 10;
+}
+
+.telemetry-badge {
+    color: var(--cyan-subroutine);
+    letter-spacing: 0.5px;
+}
+
+.telemetry-coordinates {
+    color: #64748b;
+}
+
+/* =========================================================================
+   OSCIL·LOSCOPI DE VEU D'AM
+   ========================================================================= */
+.am-voice-viz {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 30, 66, 0.3);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.am-waveform-canvas {
+    display: block;
+}
+
+/* =========================================================================
+   OVERLAY CINEMÀTIC DE RESOLUCIÓ DE RONDA D'AM
+   ========================================================================= */
+.cinematic-execution-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(3, 4, 8, 0.92);
+    backdrop-filter: blur(12px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: overlayFadeIn 0.3s ease-out;
+}
+
+@keyframes overlayFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cinematic-box {
+    background: #090c14;
+    border: 2px solid var(--am-red);
+    box-shadow: 0 0 50px rgba(255, 30, 66, 0.4), inset 0 0 30px rgba(255, 30, 66, 0.1);
+    border-radius: 12px;
+    padding: 32px 36px;
+    max-width: 680px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cinematic-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--am-red), transparent);
+    animation: scanSweep 2s infinite linear;
+}
+
+@keyframes scanSweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.cinematic-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.cinematic-scanner-icon {
+    font-size: 1.8rem;
+    color: var(--am-red);
+    animation: recBlink 0.6s infinite alternate;
+}
+
+.cinematic-glitch-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 16px var(--am-red-glow);
+}
+
+.cinematic-status-line {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: #fda4af;
+    letter-spacing: 1px;
+}
+
+.cinematic-scan-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 30, 66, 0.3);
+}
+
+.cinematic-scan-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff1e42, #ffaa00);
+    box-shadow: 0 0 15px var(--am-red);
+    transition: width 0.15s ease-out;
+}
+
+.cinematic-deltas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.cinematic-delta-pill {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    animation: deltaPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cinematic-delta-pill.damage {
+    border-color: var(--am-red);
+    color: #ff4d6d;
+    background: rgba(255, 30, 66, 0.15);
+}
+
+.cinematic-delta-pill.heal {
+    border-color: var(--green-phosphor);
+    color: var(--green-phosphor);
+    background: rgba(0, 255, 136, 0.15);
+}
+
+.cinematic-delta-pill.energy-loss {
+    border-color: #d175ff;
+    color: #d175ff;
+    background: rgba(209, 117, 255, 0.15);
+}
+
+.cinematic-delta-pill.am-danger-up {
+    border-color: #ffaa00;
+    color: #ffaa00;
+    background: rgba(255, 170, 0, 0.15);
+}
+
+.cinematic-delta-pill.am-danger-down {
+    border-color: var(--cyan-subroutine);
+    color: var(--cyan-subroutine);
+    background: rgba(0, 229, 255, 0.15);
+}
+
+@keyframes deltaPop {
+    0% { transform: scale(0.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ============================================================
+   PORTRAITS & CHARACTER VISUALS (RETRO-CYBERPUNK HARLAN ELLISON)
+   ============================================================ */
+
+/* Top HUD Character Portraits */
+.player-hud-identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-hud-avatar-frame {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1.5px solid rgba(0, 255, 136, 0.5);
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.25);
+    flex-shrink: 0;
+    background: #000;
+}
+
+.player-hud-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: contrast(1.1) brightness(0.95);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.player-card:hover .player-hud-photo {
+    transform: scale(1.08);
+}
+
+.player-card.player-dead .player-hud-avatar-frame {
+    border-color: rgba(255, 30, 66, 0.6);
+    box-shadow: 0 0 10px rgba(255, 30, 66, 0.3);
+}
+
+.player-card.player-dead .player-hud-photo {
+    filter: grayscale(1) contrast(1.3) brightness(0.55);
+}
+
+.avatar-status-pip {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green-phosphor);
+    box-shadow: 0 0 6px var(--green-phosphor);
+    border: 1.5px solid #000;
+    transition: background 0.3s ease;
+}
+
+.player-card.player-dead .avatar-status-pip {
+    background: #64748b;
+    box-shadow: none;
+}
+
+/* Character Selector Tabs with Mini Face Avatars */
+.tab-avatar-wrapper {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.25s ease;
+    background: #05050a;
+    margin-bottom: 4px;
+}
+
+.tab-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.role-tab-btn:hover .tab-avatar-wrapper {
+    border-color: var(--cyan-subroutine);
+    box-shadow: 0 0 14px var(--cyan-subroutine);
+    transform: scale(1.06);
+}
+
+.role-tab-btn:hover .tab-avatar-img {
+    transform: scale(1.1);
+}
+
+.role-tab-btn.active .tab-avatar-wrapper {
+    border-color: var(--am-red);
+    box-shadow: 0 0 18px var(--am-red-glow);
+    transform: scale(1.1);
+}
+
+.tab-vote-indicator {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--green-phosphor);
+    box-shadow: 0 0 8px var(--green-phosphor);
+    border: 2px solid #000;
+    display: none;
+}
+
+.role-tab-btn.has-voted .tab-vote-indicator {
+    display: block;
+    animation: pulseVote 1.5s infinite;
+}
+
+@keyframes pulseVote {
+    0% { transform: scale(0.9); opacity: 0.8; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+/* Dossier Identity Hero Card */
+.dossier-identity-hero {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 30, 66, 0.08) 0%, rgba(10, 15, 28, 0.7) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 4px solid var(--cyan-subroutine);
+    border-radius: 10px;
+    padding: 14px 16px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.dossier-photo-container {
+    position: relative;
+    width: 90px;
+    height: 108px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid var(--cyan-subroutine);
+    box-shadow: 0 0 18px rgba(0, 229, 255, 0.35);
+    flex-shrink: 0;
+    background: #000;
+}
+
+.dossier-portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.scanline-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+}
+
+.dossier-bio-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--cyan-subroutine);
+    text-align: center;
+    padding: 3px 0;
+    letter-spacing: 0.5px;
+    border-top: 1px solid var(--cyan-subroutine);
+    font-weight: bold;
+}
+
+.dossier-hero-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dossier-archetype-desc {
+    font-size: 0.82rem;
+    color: #cbd5e1;
+    line-height: 1.45;
+    margin-top: 2px;
+}
+
+/* AM Hostile Transmission Header & Eye Portrait */
+.am-speech-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.am-ai-identity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.am-avatar-frame {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid var(--am-red);
+    box-shadow: 0 0 16px var(--am-red-glow);
+    flex-shrink: 0;
+    background: #0a0103;
+}
+
+.am-avatar-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.am-eye-pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 30, 66, 0.45) 0%, transparent 70%);
+    animation: amEyePulsate 2s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes amEyePulsate {
+    0% { opacity: 0.25; transform: scale(0.9); }
+    100% { opacity: 0.95; transform: scale(1.15); }
+}
+
+.sender-tag-text {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.am-subtitle-voice {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--am-red);
+    letter-spacing: 0.5px;
+}
+
+/* Intro Roster Showcase */
+.intro-roster-section {
+    margin: 12px 0 6px 0;
+}
+
+.intro-roster-title {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--cyan-subroutine);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.intro-roster-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .intro-roster-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.intro-roster-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 6px;
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.intro-roster-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--cyan-subroutine);
+    box-shadow: 0 4px 14px rgba(0, 229, 255, 0.2);
+}
+
+.intro-roster-card.am-card {
+    border-color: rgba(255, 30, 66, 0.4);
+    background: rgba(255, 30, 66, 0.08);
+}
+
+.intro-roster-card.am-card:hover {
+    border-color: var(--am-red);
+    box-shadow: 0 4px 14px var(--am-red-glow);
+}
+
+.intro-roster-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+}
+
+.intro-roster-name {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.intro-roster-role {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    line-height: 1.2;
+}
+
+/* Final Report Cards with Character Faces */
+.report-player-card-hero {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.2s ease;
+}
+
+.report-player-thumb-frame {
+    width: 58px;
+    height: 58px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--accent-border, rgba(255, 255, 255, 0.2));
+    background: #000;
+}
+
+.report-player-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.report-player-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.report-player-role-badge {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+/* Cinematic mini thumbs in execution overlay */
+.cinematic-avatar-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    flex-shrink: 0;
+}
+
+/* =========================================================================
+   DILEMA DE EQUIPO Y VOTACIÓN POR MAYORÍA (TABLERO PÚBLICO)
+   ========================================================================= */
+.dilemma-options-title-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 170, 0, 0.2);
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--amber-hazard);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dilemma-public-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dilemma-public-option-card {
+    background: rgba(10, 14, 24, 0.85);
+    border: 1px solid rgba(255, 170, 0, 0.25);
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.dilemma-public-option-card:hover {
+    border-color: var(--amber-hazard);
+    background: rgba(15, 20, 32, 0.95);
+    box-shadow: 0 4px 14px rgba(255, 170, 0, 0.15);
+}
+
+.dilemma-card-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dilemma-opt-code-badge {
+    background: var(--amber-hazard);
+    color: #000;
+    font-family: var(--font-mono);
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 2px 7px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.dilemma-opt-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: #fff;
+    line-height: 1.25;
+}
+
+.dilemma-opt-desc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.dilemma-votes-status-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: rgba(0, 229, 255, 0.06);
+    border: 1px dashed rgba(0, 229, 255, 0.3);
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--cyan-subroutine);
+}
+
+/* =========================================================================
+   PÚBLICO EN MESA: RESPONSABILIDAD Y CATÁLOGO DE ACCIONES
+   ========================================================================= */
+.role-public-info-card {
+    background: rgba(13, 17, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.role-public-catalog-box {
+    margin-top: 4px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.role-public-catalog-box strong {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--cyan-subroutine);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.role-public-catalog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.role-public-catalog-item {
+    font-size: 0.78rem;
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 2px solid var(--cyan-subroutine);
+    padding: 4px 8px;
+    border-radius: 0 4px 4px 0;
+    line-height: 1.35;
+}
+
+/* =========================================================================
+   ESTACIÓN CONFIDENCIAL: VOTACIÓN SECRETA Y ACCIÓN INDIVIDUAL
+   ========================================================================= */
+.confidential-decision-section {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.confidential-section-title {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--amber-hazard);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.confidential-section-desc {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+
+.dilemma-vote-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dilemma-vote-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 170, 0, 0.25);
+    border-radius: 6px;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    width: 100%;
+    color: inherit;
+}
+
+.dilemma-vote-btn:hover {
+    background: rgba(30, 41, 59, 0.9);
+    border-color: var(--amber-hazard);
+    transform: translateY(-1px);
+}
+
+.dilemma-vote-btn.selected {
+    background: rgba(255, 170, 0, 0.15);
+    border-color: var(--amber-hazard);
+    box-shadow: 0 0 12px rgba(255, 170, 0, 0.25);
+}
+
+.dilemma-vote-btn-code {
+    background: rgba(255, 170, 0, 0.2);
+    color: var(--amber-hazard);
+    border: 1px solid var(--amber-hazard);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.dilemma-vote-btn.selected .dilemma-vote-btn-code {
+    background: var(--amber-hazard);
+    color: #000;
+}
+
+.dilemma-vote-btn-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.dilemma-vote-btn-title {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.dilemma-vote-btn-desc {
+    font-size: 0.76rem;
+    color: #94a3b8;
+    line-height: 1.35;
+}
+
+.dilemma-vote-btn-check {
+    font-size: 0.95rem;
+    color: var(--amber-hazard);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    align-self: center;
+}
+
+.dilemma-vote-btn.selected .dilemma-vote-btn-check {
+    opacity: 1;
+}
+
+/* =========================================================================
+   CINEMATIC VOTE TALLY CARD (OVERLAY DE RESOLUCIÓN)
+   ========================================================================= */
+.cinematic-vote-tally-card {
+    background: rgba(10, 15, 26, 0.95);
+    border: 1px solid var(--amber-hazard);
+    box-shadow: 0 0 25px rgba(255, 170, 0, 0.25), inset 0 0 15px rgba(255, 170, 0, 0.08);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    animation: fadeInTally 0.5s ease;
+}
+
+@keyframes fadeInTally {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cinematic-vote-tally-header {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--amber-hazard);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cinematic-vote-tally-counts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cinematic-vote-count-line {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: #e2e8f0;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cinematic-vote-count-badge {
+    background: rgba(0, 229, 255, 0.15);
+    border: 1px solid var(--cyan-subroutine);
+    color: var(--cyan-subroutine);
+    font-weight: 700;
+    font-size: 0.72rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+
+.cinematic-vote-winner-banner {
+    background: linear-gradient(90deg, rgba(255, 170, 0, 0.2), rgba(0, 229, 255, 0.15));
+    border-left: 3px solid var(--amber-hazard);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* =========================================================================
+   TRANSITION MODAL VOTE TALLY BOX
+   ========================================================================= */
+.transition-vote-tally-box {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid var(--amber-hazard);
+    border-radius: 8px;
+    padding: 14px 16px;
+    box-shadow: 0 0 15px rgba(255, 170, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transition-vote-tally-header {
+    color: var(--amber-hazard);
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.transition-vote-tally-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.transition-vote-line {
+    font-family: var(--font-mono);
+    font-size: 0.84rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transition-vote-line-badge {
+    background: rgba(0, 229, 255, 0.15);
+    border: 1px solid var(--cyan-subroutine);
+    color: var(--cyan-subroutine);
+    font-weight: 700;
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.transition-vote-tally-winner {
+    background: linear-gradient(90deg, rgba(255, 170, 0, 0.18), rgba(0, 229, 255, 0.12));
+    border-left: 3px solid var(--amber-hazard);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+

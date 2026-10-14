@@ -3,7 +3,7 @@
 Aquesta carpeta conté tots els documents acadèmics, d'arquitectura i comercials del projecte:
 
 1. **[PROMPT_ARQUITECTURA.md](file:///c:/Users/DanielGarciaBrun/Documents/GitHub/Formacion/IA%20y%20Big%20Data/M1/Actividad%201/docs/PROMPT_ARQUITECTURA.md)**  
-   Arquitectura de prompting estructurat, prompt mestre per a LLMs, especificació de les 7 rondes, objectius ocults fixes i condició canònica de la Massa Amorfa (`masa.jpg`).
+   Arquitectura de prompting estructurat, prompt mestre per a LLMs, especificació de les 7 rondes, objectius ocults fixes i condició canònica del desenllaç sorpresa («No tinc boca i he de cridar»).
 
 2. **[Dossier_Disseny_Simulacio_AM.md](file:///c:/Users/DanielGarciaBrun/Documents/GitHub/Formacion/IA%20y%20Big%20Data/M1/Actividad%201/docs/Dossier_Disseny_Simulacio_AM.md)**  
    Dossier oficial de disseny docent per a la defensa M1 Monlau: rols, bucle de joc, mecàniques de supervivència i flux multi-agent.
@@ -16,3 +16,7 @@ Aquesta carpeta conté tots els documents acadèmics, d'arquitectura i comercial
 
 5. **[enunciat/ENUNCIAT.md](file:///c:/Users/DanielGarciaBrun/Documents/GitHub/Formacion/IA%20y%20Big%20Data/M1/Actividad%201/docs/enunciat/ENUNCIAT.md)**  
    Transcripció íntegra de l'enunciat oficial de l'Activitat 1 de Monlau Formació.
+
+6. **[enunciat/Activitat_1_Simulacio_Gamificada_IA_Agentica_Monlau.docx](file:///c:/Users/DanielGarciaBrun/Documents/GitHub/Formacion/IA%20y%20Big%20Data/M1/Actividad%201/docs/enunciat/Activitat_1_Simulacio_Gamificada_IA_Agentica_Monlau.docx)**  
+   Document Word original de l'enunciat lliurat pel professorat del mòdul M1.
+

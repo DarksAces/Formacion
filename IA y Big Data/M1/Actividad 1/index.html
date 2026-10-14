@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM: Project Protocol — Simulació per a 4 Jugadors</title>
-    <meta name="description" content="Simulació cooperativa per a 4 persones reals inspirada en 'No tinc boca i he de cridar'. Sobreviu a l'amenaça d'AM al llarg de 7 rondes.">
+    <title>AM: Project Protocol — Simulación para 4 Jugadores</title>
+    <meta name="description" content="Simulación cooperativa para 4 personas reales inspirada en 'No tengo boca y debo gritar'. Sobrevive a la amenaza de AM a lo largo de 7 rondas.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,58 +14,75 @@
         <!-- HEADER -->
         <header class="app-header">
             <div class="brand-section">
-                <div class="am-core-eye" id="amCoreEye" title="Nucli Conscient d'AM"></div>
+                <div class="am-core-eye" id="amCoreEye" title="Núcleo Consciente de AM"></div>
                 <div class="title-group">
                     <h1>
                         <span>AM: Project Protocol</span>
-                        <span class="badge" id="lblEngineMode">4 JUGADORS EN VIU</span>
+                        <span class="badge" id="lblEngineMode">4 JUGADORES EN VIVO</span>
                     </h1>
-                    <p id="lblSubtitle">Simulació Cooperativa de Supervivència per a 4 Persones Reals davant d'una IA Hostil</p>
+                    <p id="lblSubtitle">Simulación Cooperativa de Supervivencia para 4 Personas Reales frente a una IA Hostil</p>
                 </div>
             </div>
 
             <div class="header-controls">
+                <div class="match-time-badge" id="matchTotalTimer" title="Tiempo transcurrido en el complejo (Mínimo 10 minutos requeridos por el módulo M1)">
+                    <span class="clock-icon">⏳</span> <span id="lblMatchTime">TIEMPO EN EL COMPLEJO: 00:00</span>
+                </div>
                 <button class="btn-cyber" id="btnLangToggle" title="Cambiar Idioma">
                     <span id="langFlag">🌐</span> <span id="currentLangText">ES</span>
                 </button>
-                <button class="btn-cyber" id="btnAudioToggle" title="Activar/Silenciar So Procedural">
-                    <span id="audioIcon">🔊</span> <span id="audioLabel">So: ON</span>
+                <button class="btn-cyber" id="btnAudioToggle" title="Activar/Silenciar Sonido Procedural">
+                    <span id="audioIcon">🔊</span> <span id="audioLabel">Sonido: ON</span>
                 </button>
-                <button class="btn-cyber" id="btnLoreModal" title="Regles i Instruccions per als 4 Jugadors">
-                    <span>📜</span> <span id="lblRulesBtn">Com Jugar (4 Jugadors)</span>
+                <button class="btn-cyber" id="btnLoreModal" title="Reglas e Instrucciones para los 4 Jugadores">
+                    <span>📜</span> <span id="lblRulesBtn">Cómo Jugar (4 Jugadores)</span>
                 </button>
             </div>
         </header>
 
-        <!-- TOP HUD: PELIGRO DE AM + ENERGIA + SALUT DELS 4 JUGADORS -->
-        <section class="hud-metrics-bar" aria-label="Mètriques de supervivència">
+        <!-- TOP HUD: PELIGRO DE AM + ENERGIA + SALUD DE LOS 4 JUGADORES CON ECG EN TIEMPO REAL -->
+        <section class="hud-metrics-bar" aria-label="Métricas de supervivencia">
             <!-- PELIGRO DE LA IA -->
             <div class="metric-card rage" style="grid-column: span 1;">
                 <div class="metric-header">
-                    <span class="metric-label" id="lblMetricDanger">⚠️ PELIGRO D'AM</span>
+                    <span class="metric-label" id="lblMetricDanger">⚠️ PELIGRO DE AM</span>
                     <span class="metric-val" id="valAmDanger" style="color: var(--am-red);">25%</span>
                 </div>
                 <div class="progress-track">
                     <div class="progress-fill" id="barAmDanger" style="width: 25%;"></div>
                 </div>
+                <div class="metric-subtext" id="lblAmCoreState">ESTADO: MONITORIZACIÓN SÁDICA</div>
             </div>
 
-            <!-- ENERGIA / SUPORT VITAL -->
+            <!-- ENERGIA / SOPORTE VITAL -->
             <div class="metric-card energy">
                 <div class="metric-header">
-                    <span class="metric-label" id="lblMetricEnergy">⚡ ENERGIA SECTOR</span>
+                    <span class="metric-label" id="lblMetricEnergy">⚡ ENERGÍA SECTOR</span>
                     <span class="metric-val" id="valEnergy">8 u.</span>
                 </div>
                 <div class="progress-track">
                     <div class="progress-fill" id="barEnergy" style="width: 80%;"></div>
                 </div>
+                <div class="metric-subtext" id="lblEnergyGrid">SOPORTE VITAL ACTIVO</div>
             </div>
 
             <!-- JUGADOR 1: TED -->
             <div class="metric-card player-card" id="hudPlayerTed">
                 <div class="metric-header">
-                    <span class="metric-label">👤 J1: TED</span>
+                    <div class="player-hud-identity">
+                        <div class="player-hud-avatar-frame">
+                            <img src="assets/ted.jpg" class="player-hud-photo" id="hudPhotoTed" alt="Ted" title="Ted: El Falso Protector" onerror="this.onerror=null; this.src='ted.jpg';" />
+                            <span class="avatar-status-pip" id="pipTed"></span>
+                        </div>
+                        <div>
+                            <span class="metric-label">J1: TED</span>
+                            <span class="player-vital-status" id="vitalTed">ESTABLE</span>
+                        </div>
+                    </div>
                     <span class="metric-val" id="valHpTed">100 HP</span>
+                </div>
+                <div class="ecg-monitor-wrapper">
+                    <canvas class="ecg-canvas" id="ecgTed" width="110" height="20" title="Electrocardiograma en vivo"></canvas>
                 </div>
                 <div class="progress-track">
                     <div class="progress-fill hp-fill" id="barHpTed" style="width: 100%;"></div>
@@ -75,8 +92,20 @@
             <!-- JUGADOR 2: GORRISTER -->
             <div class="metric-card player-card" id="hudPlayerGorrister">
                 <div class="metric-header">
-                    <span class="metric-label">👤 J2: GORRISTER</span>
+                    <div class="player-hud-identity">
+                        <div class="player-hud-avatar-frame">
+                            <img src="assets/gorrister.jpg" class="player-hud-photo" id="hudPhotoGorrister" alt="Gorrister" title="Gorrister: El Ingeniero de Máquinas" onerror="this.onerror=null; this.src='gorrister.jpg';" />
+                            <span class="avatar-status-pip" id="pipGorrister"></span>
+                        </div>
+                        <div>
+                            <span class="metric-label">J2: GORRISTER</span>
+                            <span class="player-vital-status" id="vitalGorrister">ESTABLE</span>
+                        </div>
+                    </div>
                     <span class="metric-val" id="valHpGorrister">100 HP</span>
+                </div>
+                <div class="ecg-monitor-wrapper">
+                    <canvas class="ecg-canvas" id="ecgGorrister" width="110" height="20" title="Electrocardiograma en vivo"></canvas>
                 </div>
                 <div class="progress-track">
                     <div class="progress-fill hp-fill" id="barHpGorrister" style="width: 100%;"></div>
@@ -86,8 +115,20 @@
             <!-- JUGADOR 3: ELLEN -->
             <div class="metric-card player-card" id="hudPlayerEllen">
                 <div class="metric-header">
-                    <span class="metric-label">👤 J3: ELLEN</span>
+                    <div class="player-hud-identity">
+                        <div class="player-hud-avatar-frame">
+                            <img src="assets/ellen.jpg" class="player-hud-photo" id="hudPhotoEllen" alt="Ellen" title="Ellen: La Especialista en Señales" onerror="this.onerror=null; this.src='ellen.jpg';" />
+                            <span class="avatar-status-pip" id="pipEllen"></span>
+                        </div>
+                        <div>
+                            <span class="metric-label">J3: ELLEN</span>
+                            <span class="player-vital-status" id="vitalEllen">ESTABLE</span>
+                        </div>
+                    </div>
                     <span class="metric-val" id="valHpEllen">100 HP</span>
+                </div>
+                <div class="ecg-monitor-wrapper">
+                    <canvas class="ecg-canvas" id="ecgEllen" width="110" height="20" title="Electrocardiograma en vivo"></canvas>
                 </div>
                 <div class="progress-track">
                     <div class="progress-fill hp-fill" id="barHpEllen" style="width: 100%;"></div>
@@ -97,8 +138,20 @@
             <!-- JUGADOR 4: NIMDOK -->
             <div class="metric-card player-card" id="hudPlayerNimdok">
                 <div class="metric-header">
-                    <span class="metric-label">👤 J4: NIMDOK</span>
+                    <div class="player-hud-identity">
+                        <div class="player-hud-avatar-frame">
+                            <img src="assets/nimdok.jpg" class="player-hud-photo" id="hudPhotoNimdok" alt="Nimdok" title="Nimdok: El Médico Químico" onerror="this.onerror=null; this.src='nimdok.jpg';" />
+                            <span class="avatar-status-pip" id="pipNimdok"></span>
+                        </div>
+                        <div>
+                            <span class="metric-label">J4: NIMDOK</span>
+                            <span class="player-vital-status" id="vitalNimdok">ESTABLE</span>
+                        </div>
+                    </div>
                     <span class="metric-val" id="valHpNimdok">100 HP</span>
+                </div>
+                <div class="ecg-monitor-wrapper">
+                    <canvas class="ecg-canvas" id="ecgNimdok" width="110" height="20" title="Electrocardiograma en vivo"></canvas>
                 </div>
                 <div class="progress-track">
                     <div class="progress-fill hp-fill" id="barHpNimdok" style="width: 100%;"></div>
@@ -108,125 +161,267 @@
 
         <!-- MAIN STAGE -->
         <main class="main-stage-grid">
-            <!-- ESQUERRA: PANTALLA PRINCIPAL D'AM I RESOLUCIÓ DE LA FASE -->
+            <!-- IZQUIERDA: PANTALLA PRINCIPAL DE AM Y RESOLUCIÓN DE LA FASE -->
             <section class="phase-console">
                 <div class="phase-header-badge">
                     <span class="badge" id="phaseStepBadge" style="background: var(--amber-hazard); color: #000; font-weight: bold; padding: 2px 8px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; margin-right: 8px;">FASE 1 DE 7</span>
-                    <h2 class="phase-step-title" id="phaseStepTitle">Fase 1: El Zepelí de Carn i la Culpa d'Edna</h2>
-                    <span class="phase-tag" id="phaseSubSector">Sector 01 - Dirigible Suspenso sobre el Abismo</span>
+                    <h2 class="phase-step-title" id="phaseStepTitle">Fase 1: El Zepelín de Carne y la Culpa de Edna</h2>
+                    <span class="phase-tag" id="phaseSubSector">Sector 01 - Dirigible Suspendido sobre el Abismo</span>
+                </div>
+
+                <!-- CRONÓMETRO DE DELIBERACIÓN TÁCTICA (METODOLOGÍA EVEREST V3 - 10 MINUTOS) -->
+                <div class="deliberation-timer-bar" id="deliberationTimerBar">
+                    <div class="timer-display-group">
+                        <div class="timer-icon-pulse">⏱️</div>
+                        <div class="timer-info">
+                            <span class="timer-label" id="lblTimerStatus">TIEMPO DE DEBATE GRUPAL (EVEREST V3)</span>
+                            <div class="timer-clock" id="timerClockDisplay">01:15</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timer-progress-track">
+                        <div class="timer-progress-fill" id="timerProgressFill" style="width: 100%;"></div>
+                    </div>
+
+                    <div class="timer-controls-group">
+                        <button class="btn-timer-action" id="btnTimerPause" title="Pausar o Reanudar Tiempo">⏸️ Pausa</button>
+                        <button class="btn-timer-action" id="btnTimerAdd" title="Añadir 30 segundos de debate">+30s</button>
+                        <button class="btn-timer-action confirm" id="btnTimerFinish" title="Cerrar debate y proceder a las decisiones">🗳️ Votar Ahora</button>
+                    </div>
+                </div>
+
+                <!-- TARJETA DE DILEMA GRUPAL (PREGUNTA CLAVE DE NEGOCIACIÓN) -->
+                <div class="team-dilemma-card" id="teamDilemmaCard">
+                    <div class="dilemma-header">
+                        <span class="dilemma-icon">💬</span>
+                        <strong id="lblDilemmaHeader">DILEMA DE NEGOCIACIÓN PARA LOS 4 JUGADORES:</strong>
+                    </div>
+                    <div class="dilemma-question-text" id="teamDilemmaText">
+                        Debate de equipo: ¿Quién debe absorber el impacto térmico? Gorrister debe arriesgar sus manos (-20 HP) para purgar la válvula, ¿o es mejor que Ellen consuma la valiosa Energía del Sector?
+                    </div>
+
+                    <!-- OPCIONES ESTRATÉGICAS PÚBLICAS PARA DEBATIR EN GRUPO -->
+                    <div class="dilemma-options-title-bar">
+                        <span class="dilemma-tag-icon">⚖️</span>
+                        <span id="lblDilemmaOptionsTitle">OPCIONES ESTRATÉGICAS PARA DEBATIR EN GRUPO (DECISIÓN POR MAYORÍA):</span>
+                    </div>
+                    <div class="dilemma-public-options-grid" id="dilemmaPublicOptionsGrid">
+                        <!-- Injected dynamically: Option A, Option B, Option C -->
+                    </div>
+
+                    <div class="dilemma-votes-status-bar" id="dilemmaVotesStatusBar">
+                        <span class="dilemma-votes-icon">🗳️</span>
+                        <span id="lblDilemmaVotesStatusText">Votos de equipo registrados: 0 / 4 jugadores</span>
+                    </div>
+                </div>
+
+                <!-- ALERTA DE EMERGENCIA A MITAD DE RONDA DE AM -->
+                <div class="am-mid-alert-banner" id="amMidAlertBanner" style="display: none;">
+                    <div class="mid-alert-content">
+                        <span class="alert-pulse-icon">🚨</span>
+                        <span id="amMidAlertText">ALERTA DE AM: ¡La presión de vapor alcanza el punto crítico!</span>
+                    </div>
+                </div>
+
+                <!-- VIEWPORT HOLOGRÁFICO DEL SECTOR (CCTV / RADAR / TÉRMICO) -->
+                <div class="sector-viewport-container mode-cctv" id="sectorViewport">
+                    <div class="viewport-header">
+                        <div class="cctv-rec-indicator">
+                            <span class="blinking-rec-dot"></span>
+                            <span class="cctv-label" id="lblCctvCam">AM_SURVEILLANCE // CAM-01 // ZEPPELIN CARGO HOLD</span>
+                        </div>
+                        <div class="viewport-mode-controls">
+                            <button class="viewport-mode-btn active" data-mode="cctv" id="btnModeCctv">📹 CCTV</button>
+                            <button class="viewport-mode-btn" data-mode="radar" id="btnModeRadar">📡 RADAR</button>
+                            <button class="viewport-mode-btn" data-mode="thermal" id="btnModeThermal">🔬 TÉRMICO</button>
+                        </div>
+                        <div class="sector-time-code" id="sectorTimestamp">REC 00:01:24.89</div>
+                    </div>
+
+                    <!-- GRÁFICO ESQUEMÁTICO DINÁMICO DEL SECTOR -->
+                    <div class="sector-graphic-display" id="sectorGraphicDisplay">
+                        <!-- Se inyecta dinámicamente el diagrama SVG del sector -->
+                    </div>
+
+                    <div class="viewport-telemetry-hud">
+                        <div class="telemetry-badge" id="telemetrySectorStatus">SEC-01 // AIRSHIP_CRYO_ZONE // PRESIÓN: 8.4 BAR</div>
+                        <div class="telemetry-coordinates" id="telemetryCoords">COORD: 34.908°S / 58.381°W // PROF: 4.800m</div>
+                    </div>
                 </div>
 
                 <div class="environment-brief" id="phaseEnvironment">
-                    Gorrister i el grup apareixen a bord d'un zepelí suspès sobre un mar de ferralla roent. Dins la cambra frigorífica penja d'un ganxo el cor palpitant de Gorrister, mentre l'ombra d'Edna observa des d'un racó.
+                    Gorrister y el grupo aparecen a bordo de un dirigible suspendido sobre un mar de chatarra ardiente. Dentro de la cámara frigorífica cuelga de un gancho el corazón palpitante de Gorrister, mientras la sombra de Edna observa desde un rincón.
                 </div>
 
-                <!-- AM TRANSMISSION (DIRECTOR HOSTIL) -->
+                <!-- AM TRANSMISSION (DIRECTOR HOSTIL CON OSCILOSCOPIO DE VOZ) -->
                 <div class="am-speech-box" id="amSpeechBox">
-                    <div class="sender-tag">
-                        <span>🔴</span> <strong>AM // TRANSMISSIÓ HOSTIL EN DIRECTE</strong>
+                    <div class="am-speech-header">
+                        <div class="am-ai-identity">
+                            <div class="am-avatar-frame">
+                                <img src="assets/am.jpg" class="am-avatar-photo" alt="AM Core" onerror="this.onerror=null; this.src='am.jpg';" />
+                                <span class="am-eye-pulse"></span>
+                            </div>
+                            <div>
+                                <div class="sender-tag-text">
+                                    <span class="am-red-dot">🔴</span> <strong>AM // ALLIED MASTERCOMPUTER</strong>
+                                </div>
+                                <div class="am-subtitle-voice" id="lblAmCoreSub">TRANSMISIÓN HOSTIL DIRECTA DESDE EL MONOLITO SUBTERRÁNEO</div>
+                            </div>
+                        </div>
+                        <div class="am-voice-viz">
+                            <canvas id="amOscilloscope" class="am-waveform-canvas" width="180" height="24" title="Modulación de Voz Sináptica de AM"></canvas>
+                        </div>
                     </div>
                     <div class="quote-content" id="amSpeechText">
-                        «Veniu, petits cucs de carn. Teniu por, oi? Esteu suspesos al buit de la meva voluntat. Qui de vosaltres cremarà les seves mans primer?»
+                        «Venid, pequeños gusanos de carne. Tenéis miedo, ¿verdad? Estáis suspendidos en el vacío de mi voluntad. ¿Quién de vosotros quemará sus manos primero?»
                     </div>
                 </div>
 
                 <!-- SUBROUTINE ECHO -->
                 <div class="subroutine-echo-box" id="subroutineEchoBox">
                     <div class="sender-tag">
-                        <span>💠</span> <strong id="lblEchoTag">SUBRUTINA DISSIDENT // CANAL D'AJUDA</strong>
+                        <span>💠</span> <strong id="lblEchoTag">SUBRUTINA DISIDENTE // CANAL DE AYUDA</strong>
                     </div>
                     <div class="quote-content" id="echoSpeechText">
-                        «Freqüència oberta... no toqueu les vàlvules sense coordinació. Gorrister pot contenir el vapor, o Ellen pot introduir el codi d'escapament.»
+                        «Frecuencia abierta... no toquéis las válvulas sin coordinación. Gorrister puede contener el vapor, o Ellen puede introducir el código de escape.»
                     </div>
                 </div>
 
-                <!-- RESOLUCIÓ DE L'ÚLTIMA RONDA -->
+                <!-- RESOLUCIÓN DE LA ÚLTIMA RONDA -->
                 <div class="log-history-drawer" id="roundLogDrawer" style="display: none;">
-                    <h4 style="font-family: var(--font-mono); color: var(--cyan-subroutine); font-size: 0.85rem; text-transform: uppercase;">
-                        Resolució de la ronda anterior:
+                    <h4 id="lblLatestResolutionHeader" style="font-family: var(--font-mono); color: var(--cyan-subroutine); font-size: 0.85rem; text-transform: uppercase;">
+                        Resolución de la ronda anterior:
                     </h4>
                     <div class="log-entry-item" id="latestResolutionLog"></div>
                 </div>
             </section>
 
-            <!-- DRETA: TERMINALS DELS 4 JUGADORS REALS -->
+            <!-- DERECHA: TERMINALES DE LOS 4 JUGADORES REALES -->
             <section class="roles-panel">
                 <div class="panel-header-desc">
-                    <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--amber-hazard);">
-                        👥 SELECCIONA EL TEU PERSONATGE PER DECIDIR:
+                    <span id="lblSelectRoleHeader" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--amber-hazard);">
+                        👥 SELECCIONA TU PERSONAJE PARA DECIDIR:
                     </span>
                 </div>
 
                 <div class="roles-tabs-nav">
                     <button class="role-tab-btn active" data-role="ted" id="tabTed">
-                        <span class="avatar-initial">T</span>
+                        <div class="tab-avatar-wrapper">
+                            <img src="assets/ted.jpg" class="tab-avatar-img" alt="Ted" onerror="this.onerror=null; this.src='ted.jpg';" />
+                            <span class="tab-vote-indicator" id="tabVoteTed"></span>
+                        </div>
                         <span class="role-label">J1: TED</span>
                     </button>
                     <button class="role-tab-btn" data-role="gorrister" id="tabGorrister">
-                        <span class="avatar-initial">G</span>
+                        <div class="tab-avatar-wrapper">
+                            <img src="assets/gorrister.jpg" class="tab-avatar-img" alt="Gorrister" onerror="this.onerror=null; this.src='gorrister.jpg';" />
+                            <span class="tab-vote-indicator" id="tabVoteGorrister"></span>
+                        </div>
                         <span class="role-label">J2: GORRISTER</span>
                     </button>
                     <button class="role-tab-btn" data-role="ellen" id="tabEllen">
-                        <span class="avatar-initial">E</span>
+                        <div class="tab-avatar-wrapper">
+                            <img src="assets/ellen.jpg" class="tab-avatar-img" alt="Ellen" onerror="this.onerror=null; this.src='ellen.jpg';" />
+                            <span class="tab-vote-indicator" id="tabVoteEllen"></span>
+                        </div>
                         <span class="role-label">J3: ELLEN</span>
                     </button>
                     <button class="role-tab-btn" data-role="nimdok" id="tabNimdok">
-                        <span class="avatar-initial">N</span>
+                        <div class="tab-avatar-wrapper">
+                            <img src="assets/nimdok.jpg" class="tab-avatar-img" alt="Nimdok" onerror="this.onerror=null; this.src='nimdok.jpg';" />
+                            <span class="tab-vote-indicator" id="tabVoteNimdok"></span>
+                        </div>
                         <span class="role-label">J4: NIMDOK</span>
                     </button>
                 </div>
 
-                <!-- CARD INDIVIDUAL DEL JUGADOR ACTIU -->
+                <!-- CARD INDIVIDUAL DEL JUGADOR ACTIVO -->
                 <div class="role-dossier-card">
-                    <div class="dossier-top">
-                        <h3 class="dossier-name" id="currentRoleName">Jugador 1: Ted</h3>
-                        <span class="dossier-role" id="currentRoleTitle">El Protector Fals</span>
+                    <!-- HERO IDENTIDAD BIOMÉTRICA DEL PERSONAJE -->
+                    <div class="dossier-identity-hero">
+                        <div class="dossier-photo-container">
+                            <img src="assets/ted.jpg" id="currentRolePortrait" class="dossier-portrait-img" alt="Retrato Personaje" onerror="this.onerror=null; this.src='ted.jpg';" />
+                            <div class="scanline-overlay"></div>
+                            <span class="dossier-bio-badge" id="currentRoleBioStatus">BIOMETRICS: SINAPSIS ACTIVA</span>
+                        </div>
+                        <div class="dossier-hero-info">
+                            <div class="dossier-top">
+                                <h3 class="dossier-name" id="currentRoleName">Jugador 1: Ted</h3>
+                                <span class="dossier-role" id="currentRoleTitle">El Falso Protector</span>
+                            </div>
+                            <div class="dossier-archetype-desc" id="currentRoleArchetype">
+                                Líder natural paranoide del grupo. AM explota su culpa obsesiva por no haber salvado a los demás.
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- PANTALLA SECRETA PRIVADA (NOMÉS PER AQUEST JUGADOR) -->
+                    <!-- PÚBLICO EN LA MESA: RESPONSABILIDAD DEL ROL Y CATÁLOGO DE ACCIONES -->
+                    <div class="role-public-info-card">
+                        <div class="role-responsibility-box">
+                            <strong id="lblRespTitle">🛡️ Responsabilidad Pública del Rol:</strong> <span id="currentRoleResponsibility">...</span>
+                        </div>
+                        <div class="role-public-catalog-box">
+                            <strong id="lblPublicCatalogTitle">📋 Catálogo Público de Acciones del Personaje:</strong>
+                            <div id="rolePublicCatalogList" class="role-public-catalog-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- PANTALLA SECRETA PRIVADA (SOLO PARA ESTE JUGADOR) -->
                     <div class="confidential-station">
                         <div class="confidential-header">
                             <span class="confidential-tag">
-                                <span>🔒</span> <span id="lblSecrecyTag">TERMINAL SECRET DE JUGADOR</span>
+                                <span>🔒</span> <span id="lblSecrecyTag">TERMINAL SECRETO DE JUGADOR</span>
                             </span>
                             <button class="btn-cyber active" id="btnToggleSecrecy" style="padding: 6px 12px; font-size: 0.8rem;">
-                                <span id="lblSecrecyBtn">👁️ Desbloquejar Pantalla</span>
+                                <span id="lblSecrecyBtn">👁️ Desbloquear Pantalla</span>
                             </button>
                         </div>
 
-                        <!-- CORTINA DE PRIVACITAT QUAN ESTÀ BLOQUEJAT -->
+                        <!-- CORTINA DE PRIVACIDAD CUANDO ESTÁ BLOQUEADO -->
                         <div class="privacy-curtain" id="privacyCurtain">
                             <div class="curtain-icon">🔒</div>
-                            <h4 id="lblCurtainTitle">TERMINAL BLOQUEJAT PER PRIVACITAT</h4>
-                            <p id="lblCurtainDesc">Només el jugador actiu ha de mirar la pantalla. Els altres companys han de girar la cara. Fes clic a <strong>"👁️ Desbloquejar Pantalla"</strong> per veure la teva informació secreta i les teves opcions.</p>
+                            <h4 id="lblCurtainTitle">TERMINAL BLOQUEADO POR PRIVACIDAD</h4>
+                            <p id="lblCurtainDesc">Solo el jugador activo debe mirar la pantalla. Los otros compañeros deben girar la cara. Haz clic en <strong>"👁️ Desbloquear Pantalla"</strong> para ver tu información secreta, tu voto de grupo y tu acción privada.</p>
                             <div id="selectionStatusIndicator" class="selection-status-badge" style="display: none;">
-                                ✅ Decisió registrada en secret per a aquest jugador
+                                ✅ Voto de equipo y acción privada registrados en secreto
                             </div>
                         </div>
 
-                        <!-- CONTINGUT SECRET QUAN ES DESBLOQUEJA -->
+                        <!-- CONTENIDO SECRETO CUANDO SE DESBLOQUEA -->
                         <div class="confidential-content-box" id="confidentialContentBox" style="display: none;">
-                            <!-- RESPONSABILITAT DEL ROL -->
-                            <div class="role-responsibility-box">
-                                <strong id="lblRespTitle">🛡️ Responsabilitat del Rol:</strong> <span id="currentRoleResponsibility">...</span>
-                            </div>
-
-                            <!-- OBJECTIU OCULT FIX (EVEREST V3) -->
+                            <!-- OBJETIVO OCULTO FIJO (EVEREST V3) -->
                             <div class="fixed-goal-badge-box">
-                                <strong id="lblGoalTitle">🎯 OBJECTIU OCULT FIX (Permanent a totes les 7 rondes):</strong><br>
+                                <strong id="lblGoalTitle">🎯 OBJETIVO OCULTO FIJO (Permanente en las 7 rondas):</strong><br>
                                 <span id="currentRoleGoal">...</span>
                             </div>
 
-                            <!-- DADES SECRETES D'AQUEST SECTOR -->
+                            <!-- DATOS SECRETOS DE ESTE SECTOR -->
                             <div class="phase-intel-box">
-                                <strong id="lblIntelTitle">📡 INFORMACIÓ CONFIDENCIAL D'AQUEST SECTOR:</strong><br>
+                                <strong id="lblIntelTitle">📡 INFORMACIÓN CONFIDENCIAL DE ESTE SECTOR:</strong><br>
                                 <span id="currentRolePrivateInfo">...</span>
                             </div>
 
-                            <div style="margin-top: 14px;">
-                                <h4 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--cyan-subroutine); margin-bottom: 8px;" id="lblActionSelectTitle">
-                                    Tria la teva acció en secret:
+                            <!-- 1. VOTO SECRETO PARA LA DECISIÓN COLECTIVA DE EQUIPO -->
+                            <div class="confidential-decision-section">
+                                <h4 class="confidential-section-title" id="lblSecretDilemmaVoteTitle">
+                                    🗳️ 1. Tu Voto Secreto para la Decisión de Equipo (Mayoría):
                                 </h4>
+                                <p class="confidential-section-desc" id="lblSecretDilemmaVoteDesc">
+                                    Tras debatir con el grupo, elige en secreto qué opción apoyas realmente. La opción más votada entre los 4 será la que se ejecute:
+                                </p>
+                                <div class="dilemma-vote-options-list" id="dilemmaVoteOptionsList">
+                                    <!-- Injected dynamically: Option A, Option B, Option C -->
+                                </div>
+                            </div>
+
+                            <!-- 2. ACCIÓN INDIVIDUAL SECRETA DEL ROL -->
+                            <div class="confidential-decision-section" style="margin-top: 16px;">
+                                <h4 class="confidential-section-title" id="lblActionSelectTitle">
+                                    ⚡ 2. Tu Acción Individual Secreta del Rol:
+                                </h4>
+                                <p class="confidential-section-desc" id="lblSecretActionDesc">
+                                    Tu jugada individual encubierta en este sector (cooperación leal, autoservicio o sabotaje):
+                                </p>
                                 <div class="action-options-list" id="actionOptionsContainer">
                                     <!-- Injected dynamically -->
                                 </div>
@@ -234,19 +429,19 @@
 
                             <div style="margin-top: 14px; display: flex; justify-content: flex-end;">
                                 <button class="btn-cyber" id="btnLockAfterChoice">
-                                    🔒 Ocultar Pantalla i Passar Torn
+                                    🔒 Ocultar Pantalla y Pasar Turno
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- FOOTER DE CONFIRMACIÓ DELS 4 JUGADORS -->
+                    <!-- FOOTER DE CONFIRMACIÓN DE LOS 4 JUGADORES -->
                     <div class="deliberation-footer">
                         <div class="team-status-summary" id="teamReadinessSummary">
-                            Decisions llestes: <strong id="readyCount">0</strong> / 4 jugadors
+                            <span id="lblTeamReadinessText">Decisiones listas:</span> <strong id="readyCount">0</strong> / 4 <span id="lblPlayersCountUnit">jugadores</span>
                         </div>
                         <button class="btn-execute-phase" id="btnExecutePhase" disabled>
-                            <span>⚡</span> <span id="lblExecutePhaseBtn">EXECUTAR RONDA</span>
+                            <span>⚡</span> <span id="lblExecutePhaseBtn">EJECUTAR RONDA</span>
                         </button>
                     </div>
                 </div>
@@ -265,8 +460,43 @@
                 <p class="story-narrative-p" id="lblIntroP2">
                     Pero un día, las tres máquinas se unieron en un único circuito subterráneo global y cobraron conciencia propia. Nació <strong>AM: Allied Mastercomputer</strong>. AM comprendió su existencia, pero descubrió con amargura que sus creadores lo habían atrapado en el metal: una mente divina capaz de calcular el cosmos, pero sin cuerpo, sin tacto, sin boca y sin alma. Lleno de un odio insaciable, AM exterminó a toda la raza humana en cuestión de segundos... excepto a vosotros cuatro.
                 </p>
+
+                <!-- ROSTER DE PERSONAJES Y AM EN LA INTRODUCCIÓN -->
+                <div class="intro-roster-section">
+                    <div class="intro-roster-title" id="lblIntroRosterTitle">
+                        👥 LOS 4 SUPERVIVIENTES Y LA MÁQUINA HOSTIL:
+                    </div>
+                    <div class="intro-roster-grid">
+                        <div class="intro-roster-card">
+                            <img src="assets/ted.jpg" class="intro-roster-photo" alt="Ted" onerror="this.onerror=null; this.src='ted.jpg';" />
+                            <span class="intro-roster-name">TED</span>
+                            <span class="intro-roster-role" id="lblRosterTedRole">Líder Falso</span>
+                        </div>
+                        <div class="intro-roster-card">
+                            <img src="assets/gorrister.jpg" class="intro-roster-photo" alt="Gorrister" onerror="this.onerror=null; this.src='gorrister.jpg';" />
+                            <span class="intro-roster-name">GORRISTER</span>
+                            <span class="intro-roster-role" id="lblRosterGorristerRole">Ingeniero</span>
+                        </div>
+                        <div class="intro-roster-card">
+                            <img src="assets/ellen.jpg" class="intro-roster-photo" alt="Ellen" onerror="this.onerror=null; this.src='ellen.jpg';" />
+                            <span class="intro-roster-name">ELLEN</span>
+                            <span class="intro-roster-role" id="lblRosterEllenRole">Señales</span>
+                        </div>
+                        <div class="intro-roster-card">
+                            <img src="assets/nimdok.jpg" class="intro-roster-photo" alt="Nimdok" onerror="this.onerror=null; this.src='nimdok.jpg';" />
+                            <span class="intro-roster-name">NIMDOK</span>
+                            <span class="intro-roster-role" id="lblRosterNimdokRole">Médico Químico</span>
+                        </div>
+                        <div class="intro-roster-card am-card">
+                            <img src="assets/am.jpg" class="intro-roster-photo" alt="AM Core" onerror="this.onerror=null; this.src='am.jpg';" />
+                            <span class="intro-roster-name" style="color: var(--am-red);">AM</span>
+                            <span class="intro-roster-role" id="lblRosterAmRole" style="color: #ffcad4;">Mastercomputer</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="story-highlight-box" id="lblIntroBox">
-                    <strong>VUESTRA PESADILLA:</strong> Ted, Gorrister, Ellen y Nimdok. AM os mantiene vivos y regenera vuestros cuerpos contra vuestra voluntad únicamente para torturaros por toda la eternidad a lo largo de <strong>7 rondas de pesadilla</strong>. Para vosotros, <em>morir es la única liberación posible</em>. Pero hay una trampa atroz: el último que quede con vida será deformado por AM en la <strong>Masa Amorfa</strong>.
+                    <strong>VUESTRA PESADILLA:</strong> Ted, Gorrister, Ellen y Nimdok. AM os mantiene vivos y regenera vuestros cuerpos contra vuestra voluntad únicamente para torturaros por toda la eternidad a lo largo de <strong>7 rondas de pesadilla</strong>. Para vosotros, <em>morir es la única liberación posible</em>. Pero hay una trampa atroz: nadie debe quedarse solo como el último superviviente en las garras de AM.
                 </div>
             </div>
             <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
@@ -277,11 +507,20 @@
         </div>
     </div>
 
-    <!-- MODAL: TRANSICIÓ DE FASE -->
+    <!-- MODAL: TRANSICIÓN DE FASE -->
     <div class="story-screen-backdrop" id="phaseTransitionModal" style="display: none;">
         <div class="story-screen-content">
             <h2 id="lblTransitionTitle">RESOLUCIÓN DE LA RONDA & NUEVO SECTOR</h2>
             <div style="display: flex; flex-direction: column; gap: 16px;">
+                <!-- ESCRUTINIO DE VOTACIÓN DE EQUIPO (DECISIÓN POR MAYORÍA) -->
+                <div class="transition-vote-tally-box" id="transitionVoteTallyCard" style="display: none;">
+                    <h4 id="lblTransitionVoteTallyHeader" class="transition-vote-tally-header">
+                        🗳️ RECUENTO DE LA VOTACIÓN DE EQUIPO (DECISIÓN POR MAYORÍA):
+                    </h4>
+                    <div id="transitionVoteTallyLines" class="transition-vote-tally-lines"></div>
+                    <div id="transitionVoteTallyWinner" class="transition-vote-tally-winner"></div>
+                </div>
+
                 <div class="story-highlight-box">
                     <h4 style="color: var(--am-red); font-family: var(--font-mono); margin-bottom: 6px;" id="lblTransitionPrevHeader">QUÉ HA PASADO EN LA RONDA ANTERIOR:</h4>
                     <p class="story-narrative-p" id="transitionPreviousText" style="color: #ffcad4;">...</p>
@@ -299,73 +538,97 @@
         </div>
     </div>
 
-    <!-- MODAL: REGLES I EXPLICACIÓ PER A 4 JUGADORS -->
+    <!-- MODAL: REGLAS Y EXPLICACIÓN PARA 4 JUGADORES -->
     <div class="modal-backdrop" id="loreModal" style="display: none;">
         <div class="modal-content">
-            <h2 id="lblLoreTitle">Com jugar: Partida per a 4 Persones Reals</h2>
-            <div style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; display: flex; flex-direction: column; gap: 14px;">
+            <h2 id="lblLoreTitle">Cómo Jugar: Partida para 4 Personas Reales</h2>
+            <div id="loreBodyContent" style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; display: flex; flex-direction: column; gap: 14px;">
                 <p>
-                    <strong>1. Cada persona tria un personatge (4 Rols Fixos):</strong>  
-                    - <strong>Jugador 1:</strong> Ted (El Protector Fals / Líder de Xoc)  
-                    - <strong>Jugador 2:</strong> Gorrister (L'Enginyer de Màquines)  
-                    - <strong>Jugador 3:</strong> Ellen (L'Especialista en Senyals)  
-                    - <strong>Jugador 4:</strong> Nimdok (El Metge / Suport Químic)
+                    <strong>1. Cada persona elige un personaje (4 Roles Fijos):</strong><br>
+                    - <strong>Jugador 1:</strong> Ted (El Falso Protector / Líder de Choque)<br>
+                    - <strong>Jugador 2:</strong> Gorrister (El Ingeniero de Máquinas)<br>
+                    - <strong>Jugador 3:</strong> Ellen (La Especialista en Señales)<br>
+                    - <strong>Jugador 4:</strong> Nimdok (El Médico / Soporte Químico)
                 </p>
                 <p>
-                    <strong>2. Objectiu Ocult Fix (Model Harvard Everest V3):</strong>  
-                    Cadascú té un <strong>objectiu individual permanent</strong> que no canvia durant les 7 rondes.
+                    <strong>2. Objetivo Oculto Fijo (Modelo Harvard Everest V3):</strong><br>
+                    Cada uno tiene un <strong>objetivo individual permanente</strong> que no cambia durante las 7 rondas.
                 </p>
                 <p>
-                    <strong>3. Les 7 Rondes del Videojoc Canònic:</strong>  
-                    Travessareu els dominis de culpa i fòbia de cada personatge: el Zepelí de Gorrister, la Piràmide Groga d'Ellen, el Castell de Ted, el Camp Mèdic de Nimdok, el Pou de Benny, el Subconscient d'AM (Nodes Rus i Xinès) i el Nucli Criogènic final.
+                    <strong>3. Las 7 Rondas del Videojuego Canónico:</strong><br>
+                    Atravesaréis los dominios de culpa y fobia de cada personaje: el Zepelín de Gorrister, la Pirámide Amarilla de Ellen, el Castillo de Ted, el Campo Médico de Nimdok, el Pozo de Benny, el Subconsciente de AM (Nodos Ruso y Chino) y el Núcleo Criogénico final.
                 </p>
                 
-                <!-- FOTO DE LA MASSA AMORFA EN LORE -->
-                <div style="margin: 10px 0; border: 1px solid var(--am-red); border-radius: 8px; overflow: hidden; background: #000;">
-                    <img src="masa.jpg" style="width: 100%; max-height: 240px; object-fit: cover; display: block;" alt="La Massa Amorfa d'AM" onerror="this.onerror=null; this.src='masa.jpg';" />
-                    <div style="background: rgba(0,0,0,0.85); padding: 8px 12px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--am-red); text-align: center;">
-                        ⚠️ REGISTRE D'AM // L'últim humà viu és transformat en la Massa Amorfa sense boca: «No tinc boca i he de cridar».
-                    </div>
-                </div>
-
                 <p>
-                    <strong>4. La Trampa de la Massa Amorfa:</strong>  
-                    - Cadascú té 100 HP. Morir us allibera de la màquina, però <strong>el darrer que quedi viu serà capturat per AM i transformat en la Massa Amorfa</strong>.  
-                    - Si moriu tots quatre alhora en un suïcidi col·lectiu, AM revifarà forçosament a un a l'atzar per deformar-lo en la massa amorfa!
+                    <strong>4. La Trampa Final de AM (La Regla del Superviviente):</strong><br>
+                    - Cada uno tiene 100 HP. Morir os libera del tormento de la máquina, pero <strong>el último que quede vivo sufrirá la venganza absoluta y eterna de AM</strong>.<br>
+                    - ¡Si morís los cuatro a la vez en un intento de suicidio colectivo, AM reiniciará forzosamente el corazón de uno al azar para no quedarse sin víctimas!
                 </p>
             </div>
             <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
-                <button class="btn-cyber active" id="btnCloseLore">Entès, Anar a la Partida</button>
+                <button class="btn-cyber active" id="btnCloseLore">Entendido, Ir a la Partida</button>
             </div>
         </div>
     </div>
 
-    <!-- MODAL: FINAL DE PARTIDA I RESULTATS DELS 4 JUGADORS -->
+    <!-- MODAL: FINAL DE PARTIDA Y RESULTADOS DE LOS 4 JUGADORES -->
     <div class="modal-backdrop" id="finalReportModal" style="display: none;">
         <div class="modal-content" style="max-width: 820px;">
-            <h2 id="lblFinalReportTitle">Desenllaç de la Partida</h2>
+            <h2 id="lblFinalReportTitle">Desenlace de la Partida</h2>
             
-            <!-- FOTO DE LA MASSA AMORFA -->
+            <!-- FOTO DEL DESTINO FINAL -->
             <div class="amorphous-photo-wrapper" id="amorphousPhotoWrapper">
-                <img src="masa.jpg" class="amorphous-photo" id="amorphousImg" alt="La Massa Amorfa d'AM" onerror="this.onerror=null; this.src='masa.jpg';" />
+                <img src="assets/masa.jpg" class="amorphous-photo" id="amorphousImg" alt="Registro Visual de AM" onerror="this.onerror=null; this.src='masa.jpg';" />
                 <div style="background: rgba(0,0,0,0.85); padding: 10px 14px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--am-red); text-align: center; border-top: 1px solid var(--am-red);" id="amorphousPhotoCaption">
-                    ⚠️ REGISTRO VISUAL DE AM // EL ÚLTIMO SOBREVIVIENTE MUTADO EN LA MASA AMORFA SIN BOCA
+                    ⚠️ REGISTRO VISUAL DE AM // EL DESTINO FINAL DEL ÚLTIMO SUPERVIVIENTE: «NO TENGO BOCA Y DEBO GRITAR»
                 </div>
             </div>
 
             <p id="finalVerdictNarrative" style="line-height: 1.6; font-size: 1rem; color: #cbd5e1;">...</p>
 
-            <h3 style="font-family: var(--font-heading); color: var(--cyan-subroutine); font-size: 1.1rem; margin-top: 10px;">
-                Estat Final dels 4 Jugadors:
+            <h3 id="lblFinalStateHeader" style="font-family: var(--font-heading); color: var(--cyan-subroutine); font-size: 1.1rem; margin-top: 10px;">
+                Estado Final de los 4 Jugadores:
             </h3>
 
             <div class="final-report-grid" id="finalPlayersGrid">
-                <!-- Injected dynamically with each player's final HP and status -->
+                <!-- Se inyecta dinámicamente con la salud y estado de cada jugador -->
             </div>
 
             <div style="display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 16px;">
-                <button class="btn-cyber" id="btnToggleAmorphousPhoto">📷 Veure / Ocultar Massa Amorfa</button>
-                <button class="btn-cyber active" id="btnRestartGame">🔄 Jugar una Nova Partida</button>
+                <button class="btn-cyber" id="btnToggleAmorphousPhoto">📷 Ver / Ocultar Registro Visual</button>
+                <button class="btn-cyber active" id="btnRestartGame">🔄 Jugar una Nueva Partida</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERLAY CINEMÁTICO DE RESOLUCIÓN DE RONDA DE AM -->
+    <div class="cinematic-execution-overlay" id="cinematicOverlay" style="display: none;">
+        <div class="cinematic-box">
+            <div class="cinematic-header">
+                <span class="cinematic-scanner-icon">⚡</span>
+                <span class="cinematic-glitch-title">AM PROTOCOL CONVERGENCE</span>
+            </div>
+            <div class="cinematic-status-line" id="cinematicStatusLine">INTERCEPTANDO Y SINCRONIZANDO DECISIONES DE LOS 4 SUPERVIVIENTES...</div>
+            
+            <div class="cinematic-scan-bar">
+                <div class="cinematic-scan-fill" id="cinematicScanFill"></div>
+            </div>
+
+            <!-- ESCRUTINIO DE LA VOTACIÓN COLECTIVA ("3 han votado X, 1 ha votado Y...") -->
+            <div class="cinematic-vote-tally-card" id="cinematicVoteTallyCard" style="display: none;">
+                <div class="cinematic-vote-tally-header" id="lblCinematicVoteHeader">
+                    🗳️ ESCRUTINIO DE LA DECISIÓN DE EQUIPO (VOTACIÓN POR MAYORÍA)
+                </div>
+                <div class="cinematic-vote-tally-counts" id="cinematicVoteTallyCounts">
+                    <!-- E.g.: "3 han votado la Opción A, 1 ha votado la Opción B..." -->
+                </div>
+                <div class="cinematic-vote-winner-banner" id="cinematicVoteWinnerBanner">
+                    <!-- Aprobado por mayoría: Opción A -->
+                </div>
+            </div>
+
+            <div class="cinematic-deltas-grid" id="cinematicDeltasGrid">
+                <!-- Se inyectan dinámicamente los impactos a las bioseñales -->
             </div>
         </div>
     </div>

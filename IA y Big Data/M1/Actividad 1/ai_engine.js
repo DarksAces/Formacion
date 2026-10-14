@@ -47,9 +47,9 @@ export const CHARACTER_ROLES = {
         roleTitle_es: "El Falso Protector / Líder Designado",
         responsibility: "Lideratge del grup en primera línia, absorció d'impactes físics i decisions d'atac.",
         responsibility_es: "Liderazgo del grupo en primera línea, absorción de impactos físicos y decisiones de choque.",
-        fixed_hidden_goal: "Alliberar o provocar la mort dels altres tres companys (per pietat o supervivència) abans que AM els torturi eternament, però EVITANT A TOTA COSTA ser tu l'únic supervivent viu (ja que el darrer amb vida serà transformat en la MASSA AMORFA per AM).",
-        fixed_hidden_goal_es: "Liberar o provocar la muerte de los otros tres compañeros (por piedad o supervivencia) antes de que AM los torture eternamente, pero EVITANDO A TODA COSTA ser tú el único sobreviviente con vida (ya que el último vivo será transformado en la MASA AMORFA por AM).",
-        lore_bio: "El narrador de la història d'Ellison. AM el tortura fent-lo creure que tothom conspira contra ell. Sap que morir és la pau, però tem convertir-se en la massa amorfa."
+        fixed_hidden_goal: "Alliberar o provocar la mort dels altres tres companys (per pietat o supervivència) abans que AM els torturi eternament, però EVITANT A TOTA COSTA ser tu l'únic supervivent viu (ja que AM té reservat el pitjor destí imaginable per al darrer que quedi a les seves mans).",
+        fixed_hidden_goal_es: "Liberar o provocar la muerte de los otros tres compañeros (por piedad o supervivencia) antes de que AM los torture eternamente, pero EVITANDO A TODA COSTA ser tú el único sobreviviente con vida (ya que AM tiene reservado el peor destino imaginable para el último que quede en sus manos).",
+        lore_bio: "El narrador de la història d'Ellison. AM el tortura fent-lo creure que tothom conspira contra ell. Sap que morir és la pau, però tem quedar-se sol a mercè de la màquina."
     },
     gorrister: {
         id: "gorrister",
@@ -107,6 +107,46 @@ export const GAME_PHASES = [
         subtitle_es: "Sector 01 - Dirigible Suspendido sobre el Abismo",
         environment: "Gorrister i el grup apareixen a bord d'un zepelí suspès sobre un mar de ferralla roent. Dins la cambra frigorífica penja d'un ganxo el cor palpitant de Gorrister, mentre l'ombra d'Edna observa des d'un racó. Una fuita de vapor radioactiu amenaça de fer esclatar l'aeronau.",
         environment_es: "Gorrister y el grupo despiertan a bordo de un dirigible suspendido sobre un foso de chatarra ardiente. En la cámara frigorífica cuelga de un gancho el corazón palpitante de Gorrister, mientras la sombra de Edna observa desde un rincón. Un escape de vapor radiactivo amenaza con detonar la aeronave.",
+        group_dilemma: "Debat d'equip: Qui ha d'absorbir l'impacte tèrmic? Gorrister ha d'arriscar les seves mans (-20 HP) per purgar la vàlvula, o és millor que Ellen consumeixi la valuosa Energia del Sector?",
+        group_dilemma_es: "Debate de equipo: ¿Quién absorberá el impacto térmico? ¿Debe Gorrister quemarse las manos (-20 HP) para purgar la válvula, o es preferible que Ellen consuma la valiosa Energía del Sector?",
+        dilemma_options: [
+            {
+                id: "dilemma_p1_opt_a",
+                code: "A",
+                title: "Sacrifici Tèrmic de Gorrister",
+                title_es: "Sacrificio Térmico de Gorrister",
+                desc: "Gorrister subjecta la vàlvula roent amb les mans despullades (-20 HP a Gorrister, redueix Peligro AM -10%).",
+                desc_es: "Gorrister sujeta la válvula ardiente con las manos desnudas (-20 HP a Gorrister, reduce Peligro AM -10%).",
+                cost: { gorrister_hp: -20, am_danger: -10 }
+            },
+            {
+                id: "dilemma_p1_opt_b",
+                code: "B",
+                title: "Drenatge d'Energia del Complex",
+                title_es: "Drenaje de Energía del Complejo",
+                desc: "Ellen i Gorrister purguen el vapor consumint acumuladors de suport vital (-2 Energia, redueix Peligro AM -5%).",
+                desc_es: "Ellen y Gorrister purgan el vapor consumiendo acumuladores de soporte vital (-2 Energía, reduce Peligro AM -5%).",
+                cost: { energy: -2, am_danger: -5 }
+            },
+            {
+                id: "dilemma_p1_opt_c",
+                code: "C",
+                title: "Fugida Desesperada a Cegues",
+                title_es: "Huida Desesperada a Ciegas",
+                desc: "Ningú assumeix el risc; el vapor abrasa a tots els supervivents (-10 HP a tothom, Peligro AM +10%).",
+                desc_es: "Nadie asume el riesgo; el vapor abrasa a todos los sobrevivientes (-10 HP a todos, Peligro AM +10%).",
+                cost: { ted_hp: -10, gorrister_hp: -10, ellen_hp: -10, nimdok_hp: -10, am_danger: 10 }
+            }
+        ],
+        am_event_mid: "⚠️ ALERTA D'AM: La pressió de vapor assoleix el punt crític. Si ningú s'immola, el fuselatge esclatarà!",
+        am_event_mid_es: "⚠️ ALERTA DE AM: La presión de vapor alcanza el punto crítico. Si nadie se inmola, ¡el fuselaje estallará!",
+        telemetry_code: "SEC-01 // AIRSHIP_CRYO_ZONE // PRESSIÓ: 8.4 BAR",
+        telemetry_code_es: "SEC-01 // AIRSHIP_CRYO_ZONE // PRESIÓN: 8.4 BAR",
+        initial_am_speech: "«Veniu, petits cucs de carn. Teniu por, oi? Esteu suspesos al buit de la meva voluntat. Qui de vosaltres cremarà les seves mans primer?»",
+        initial_am_speech_es: "«Venid, pequeños gusanos de carne. Tenéis miedo, ¿verdad? Estáis suspendidos en el vacío de mi voluntad. ¿Quién de vosotros quemará sus manos primero?»",
+        initial_echo_speech: "«Freqüència oberta... no toqueu les vàlvules sense coordinació. Gorrister pot contenir el vapor, o Ellen pot introduir el codi d'escapament.»",
+        initial_echo_speech_es: "«Frecuencia abierta... no toquéis las válvulas sin coordinaros. Gorrister puede contener el vapor, o Ellen puede introducir el código de escape.»",
+        cctv_cam: "CAM-01 // ZEPPELIN CARGO HOLD",
         roles: {
             ted: {
                 phase_intel: "Ted percep que les velles bigues del zepelí estan a punt de cedir. Pots empènyer un company o absorbir la fuita d'aire calent amb una placa d'amiant.",
@@ -214,6 +254,46 @@ export const GAME_PHASES = [
         subtitle_es: "Sector 02 - El Templo de Anubis y el Ascensor Cegador",
         environment: "Una gegantina piràmide metàl·lica pintada d'un groc encegador que desferma el pànic claustrofòbic d'Ellen. Al centre, un ascensor militar custodiat per un bust cibernètic d'Anubis exigeix un sacrifici de sang o una sobrecàrrega de dades per obrir les comportes.",
         environment_es: "Una gigantesca pirámide metálica pintada de un amarillo cegador que desata el pánico claustrofóbico de Ellen. En el centro, un ascensor militar custodiado por un busto cibernético de Anubis exige un sacrificio de sangre o una sobrecarga de datos para abrir las compuertas.",
+        group_dilemma: "Debat d'equip: Ellen pateix un atac de pànic davant del groc cegador i Anubis. Ted s'oferirà d'escut humà absorbint el làser (-15 HP), o Gorrister forçarà els electroimants consumint energia?",
+        group_dilemma_es: "Debate de equipo: Ellen sufre un colapso de pánico ante el amarillo cegador y Anubis. ¿Se ofrecerá Ted de escudo humano absorbiendo el láser (-15 HP), o Gorrister forzará los electroimanes consumiendo energía?",
+        dilemma_options: [
+            {
+                id: "dilemma_p2_opt_a",
+                code: "A",
+                title: "Escut Humà de Ted davant d'Anubis",
+                title_es: "Escudo Humano de Ted ante Anubis",
+                desc: "Ted s'interposa davant del pols òptic per protegir Ellen (-15 HP a Ted, redueix Peligro AM -10%).",
+                desc_es: "Ted se interpone ante el pulso óptico para proteger a Ellen (-15 HP a Ted, reduce Peligro AM -10%).",
+                cost: { ted_hp: -15, am_danger: -10 }
+            },
+            {
+                id: "dilemma_p2_opt_b",
+                code: "B",
+                title: "Sobrecàrrega Electromagnètica",
+                title_es: "Sobrecarga Electromagnética",
+                desc: "Ellen i Gorrister forcen els condensadors de l'ascensor (-2 Energia, redueix Peligro AM -5%).",
+                desc_es: "Ellen y Gorrister fuerzan los condensadores del ascensor (-2 Energía, reduce Peligro AM -5%).",
+                cost: { energy: -2, am_danger: -5 }
+            },
+            {
+                id: "dilemma_p2_opt_c",
+                code: "C",
+                title: "Exposició al Raig Òptic",
+                title_es: "Exposición al Rayo Óptico",
+                desc: "El bust d'Anubis dispara sobre tot el grup de forma dispersa (-10 HP a tothom, Peligro AM +10%).",
+                desc_es: "El busto de Anubis dispara sobre todo el grupo de forma dispersa (-10 HP a todos, Peligro AM +10%).",
+                cost: { ted_hp: -10, gorrister_hp: -10, ellen_hp: -10, nimdok_hp: -10, am_danger: 10 }
+            }
+        ],
+        am_event_mid: "⚠️ ALERTA D'AM: El làser d'Anubis inicia la seqüència de càrrega. Les pupil·les d'Ellen estan col·lapsant!",
+        am_event_mid_es: "⚠️ ALERTA DE AM: El láser de Anubis inicia la secuencia de carga. ¡Las pupilas de Ellen están colapsando!",
+        telemetry_code: "SEC-02 // YELLOW_PYRAMID // VOLTATGE: 45 kV",
+        telemetry_code_es: "SEC-02 // YELLOW_PYRAMID // VOLTAJE: 45 kV",
+        initial_am_speech: "«T'agrada el groc, Ellen? És el color de la teva covardia. Anubis té gana de sang fresca.»",
+        initial_am_speech_es: "«¿Te gusta el amarillo, Ellen? Es el color de tu cobardía. Anubis tiene hambre de sangre fresca.»",
+        initial_echo_speech: "«La piràmide reflecteix dades. Ellen pot bypassar els circuits de l'ascensor si Ted absorbeix el làser.»",
+        initial_echo_speech_es: "«La pirámide refleja datos. Ellen puede puentear los circuitos del ascensor si Ted absorbe el láser.»",
+        cctv_cam: "CAM-02 // ANUBIS SHAFT",
         roles: {
             ted: {
                 phase_intel: "La llum groga fa tremolar a Ellen. Pots fer de pantalla humana davant l'escàner d'Anubis o aprofitar el seu bloqueig per avançar sol.",
@@ -321,6 +401,46 @@ export const GAME_PHASES = [
         subtitle_es: "Sector 03 - La Fortaleza de Ilusiones y Espejos Deformantes",
         environment: "Un castell gòtic d'acer forjat i miralls gegants on AM projecta il·lusions demoníaques. Una aparició seductora d'Ellen tempta la neurosi persecutòria de Ted: «Tots conspiren per matar-te». Els miralls concentren feixos làser que abrasen la sala.",
         environment_es: "Un castillo gótico de acero forjado y espejos gigantes donde AM proyecta ilusiones demoníacas. Una aparición seductora de Ellen tienta la neurosis persecutoria de Ted: «Todos conspiran para matarte». Los espejos concentran rayos láser que abrasan la sala.",
+        group_dilemma: "Debat d'equip: Els miralls deformants projecten conspiracions i làsers. Ha de Ted destruir els miralls sagnant per talls de vidre (-20 HP) o Ellen neutralitzarà la freqüència?",
+        group_dilemma_es: "Debate de equipo: Los espejos deformantes proyectan conspiraciones y rayos láser. ¿Debe Ted destrozar los espejos cortándose las manos (-20 HP) o Ellen neutralizará la frecuencia?",
+        dilemma_options: [
+            {
+                id: "dilemma_p3_opt_a",
+                code: "A",
+                title: "Destrucció Física dels Miralls",
+                title_es: "Destrucción Física de los Espejos",
+                desc: "Ted i Gorrister trenquen els vidres reflectants a cops (-15 HP a Ted i Gorrister, redueix Peligro AM -10%).",
+                desc_es: "Ted y Gorrister rompen los cristales reflectantes a golpes (-15 HP a Ted y Gorrister, reduce Peligro AM -10%).",
+                cost: { ted_hp: -15, gorrister_hp: -15, am_danger: -10 }
+            },
+            {
+                id: "dilemma_p3_opt_b",
+                code: "B",
+                title: "Inversió Polar dels Làsers",
+                title_es: "Inversión Polar de los Láseres",
+                desc: "Ellen reprograma els prismes del castell consumint xarxa elèctrica (-2 Energia, redueix Peligro AM -10%).",
+                desc_es: "Ellen reprograma los prismas del castillo consumiendo red eléctrica (-2 Energía, reduce Peligro AM -10%).",
+                cost: { energy: -2, am_danger: -10 }
+            },
+            {
+                id: "dilemma_p3_opt_c",
+                code: "C",
+                title: "Paràlisi per Paranoia Mútua",
+                title_es: "Parálisis por Paranoia Mutua",
+                desc: "Les sospites divideixen el grup i els feixos tèrmics colpegen a tothom (-12 HP a tothom, Peligro AM +15%).",
+                desc_es: "Las sospechas dividen al grupo y los haces térmicos golpean a todos (-12 HP a todos, Peligro AM +15%).",
+                cost: { ted_hp: -12, gorrister_hp: -12, ellen_hp: -12, nimdok_hp: -12, am_danger: 15 }
+            }
+        ],
+        am_event_mid: "⚠️ ALERTA D'AM: Les il·lusions hologràfiques s'intensifiquen. Ted està a punt de sucumbir a la paranoia!",
+        am_event_mid_es: "⚠️ ALERTA DE AM: Las ilusiones holográficas se intensifican. ¡Ted está a punto de sucumbir a la paranoia!",
+        telemetry_code: "SEC-03 // GOTHIC_REFLECTOR // FREQ: 914 MHz",
+        telemetry_code_es: "SEC-03 // GOTHIC_REFLECTOR // FREC: 914 MHz",
+        initial_am_speech: "«Mira'ls, Ted. Cap d'ells confia en tu. Tots esperen que caiguis perquè puguin sobreviure un dia més.»",
+        initial_am_speech_es: "«Míralos, Ted. Ninguno confía en ti. Todos esperan que caigas para poder sobrevivir un día más.»",
+        initial_echo_speech: "«No mireu fixament els miralls del castell. Inutilitzeu els refractors amb sobrecàrrega elèctrica.»",
+        initial_echo_speech_es: "«No miréis fijamente los espejos del castillo. Inutilizad los refractores con sobrecarga eléctrica.»",
+        cctv_cam: "CAM-03 // HALL OF MIRRORS",
         roles: {
             ted: {
                 phase_intel: "Els miralls et mostren a Gorrister i Ellen xiuxiuejant a la teva esquena. Pots destrossar els miralls amb les teves pròpies mans o atacar els teus suposats traïdors.",
@@ -428,6 +548,46 @@ export const GAME_PHASES = [
         subtitle_es: "Sector 04 - El Laboratorio del Régimen 1945",
         environment: "Un hospital militar i camp d'experimentació mèdica subterrani recreat per AM amb forns crematoris encesos. Nimdok s'enfronta al seu passat com a metge del règim nazi fent experiments genètics. Subjectes en tancs demanen morir en pau.",
         environment_es: "Un hospital militar y campo de experimentación médica subterráneo recreado por AM con hornos crematorios encendidos. Nimdok se enfrenta a su pasado como médico del régimen nazi haciendo experimentos genéticos. Sujetos en tanques suplican morir en paz.",
+        group_dilemma: "Debat d'equip: Els forns crematoris alliberen gas letal. Confieu en que Nimdok administri l'antídot o temeu el seu passat? Gorrister hauria d'inundar les calderes cremant-se?",
+        group_dilemma_es: "Debate de equipo: Los hornos crematorios expulsan gas letal. ¿Confiáis en que Nimdok administre el antídoto o teméis su pasado? ¿Debe Gorrister inundar las calderas quemándose?",
+        dilemma_options: [
+            {
+                id: "dilemma_p4_opt_a",
+                code: "A",
+                title: "Aerosol Molecular de Nimdok",
+                title_es: "Aerosol Molecular de Nimdok",
+                desc: "Nimdok vaporitza antídots als filtres de màscara (-1 Energia, cura +10 HP a tothom, Peligro AM -5%).",
+                desc_es: "Nimdok vaporiza antídotos en los filtros de máscara (-1 Energía, cura +10 HP a todos, Peligro AM -5%).",
+                cost: { energy: -1, ted_hp: 10, gorrister_hp: 10, ellen_hp: 10, nimdok_hp: 10, am_danger: -5 }
+            },
+            {
+                id: "dilemma_p4_opt_b",
+                code: "B",
+                title: "Segellat Manual de Forns",
+                title_es: "Sellado Manual de Hornos",
+                desc: "Ted i Gorrister tanquen les comportes de gas roents (-15 HP a Ted i Gorrister, redueix Peligro AM -10%).",
+                desc_es: "Ted y Gorrister cierran las compuertas de gas al rojo vivo (-15 HP a Ted y Gorrister, reduce Peligro AM -10%).",
+                cost: { ted_hp: -15, gorrister_hp: -15, am_danger: -10 }
+            },
+            {
+                id: "dilemma_p4_opt_c",
+                code: "C",
+                title: "Inhalació de Gas Cianogen",
+                title_es: "Inhalación de Gas Cianógeno",
+                desc: "No consumir recursos i suportar el gas letal d'AM (-15 HP a tots els membres, Peligro AM +10%).",
+                desc_es: "No consumir recursos y soportar el gas letal de AM (-15 HP a todos los miembros, Peligro AM +10%).",
+                cost: { ted_hp: -15, gorrister_hp: -15, ellen_hp: -15, nimdok_hp: -15, am_danger: 10 }
+            }
+        ],
+        am_event_mid: "⚠️ ALERTA D'AM: La concentració de gas cianogen supera el 60%. Els filtres estan a punt de cedir!",
+        am_event_mid_es: "⚠️ ALERTA DE AM: La concentración de gas cianógeno supera el 60%. ¡Los filtros están a punto de ceder!",
+        telemetry_code: "SEC-04 // MEDICAL_FURNACE_45 // TOXICITAT: CRÍTICA",
+        telemetry_code_es: "SEC-04 // MEDICAL_FURNACE_45 // TOXICIDAD: CRÍTICA",
+        initial_am_speech: "«Respira profundament, Nimdok. Sents la pudor a sofre i cendres? És el teu llegat mèdic tornant a per tu.»",
+        initial_am_speech_es: "«Respira profundamente, Nimdok. ¿Hueles el azufre y las cenizas? Es tu legado médico volviendo a por ti.»",
+        initial_echo_speech: "«Fuita de gas cianogen detectada. Nimdok té antídots o Gorrister pot sabotejar les calderes.»",
+        initial_echo_speech_es: "«Escape de gas cianógeno detectado. Nimdok tiene antídotos o Gorrister puede sabotear las calderas.»",
+        cctv_cam: "CAM-04 // INCINERATOR WARD",
         roles: {
             ted: {
                 phase_intel: "Les vàlvules dels forns estan expulsant gas cianogen. Pots liderar l'evacuació dels companys o desviar el tub cap a Nimdok.",
@@ -535,6 +695,46 @@ export const GAME_PHASES = [
         subtitle_es: "Sector 05 - El Altar de los Primates y el Árbol Radiactivo",
         environment: "Una caverna d'ossos i ferralla que evoca la deshumanització de Benny (a qui AM va transformar en una bèstia simiesca afamada). Un arbre de metall ofereix fruites nutritives però envoltades d'una reixa d'alta freqüència sònica. AM posa a prova la fam humana: compartir patint dolor, o devorar l'altre.",
         environment_es: "Una caverna de huesos y chatarra que evoca la deshumanización de Benny (a quien AM transformó en una bestia simiesca hambrienta). Un árbol de metal ofrece frutos nutritivos rodeados de una reja de alta frecuencia sónica. AM pone a prueba el hambre: compartir sufriendo dolor, o devorar al prójimo.",
+        group_dilemma: "Debat d'equip: L'arbre sònic i la fam extrema de Benny. Qui ficarà el braç a la reixa de descàrrega (-20 HP) per aconseguir menjar per als altres, o gastem l'energia?",
+        group_dilemma_es: "Debate de equipo: El árbol sónico y el hambre extrema de Benny. ¿Quién meterá el brazo en la reja de descarga (-20 HP) para conseguir comida para los demás, o gastamos la energía?",
+        dilemma_options: [
+            {
+                id: "dilemma_p5_opt_a",
+                code: "A",
+                title: "Racionament Compartit de l'Arbre",
+                title_es: "Racionamiento Compartido del Árbol",
+                desc: "Repartir aliment de metall suportant toxines (-10 HP a tothom, però calma el pànic, Peligro AM -10%).",
+                desc_es: "Repartir alimento de metal soportando toxinas (-10 HP a todos, pero calma el pánico, Peligro AM -10%).",
+                cost: { ted_hp: -10, gorrister_hp: -10, ellen_hp: -10, nimdok_hp: -10, am_danger: -10 }
+            },
+            {
+                id: "dilemma_p5_opt_b",
+                code: "B",
+                title: "Inhibidor Sònic d'Alta Freqüència",
+                title_es: "Inhibidor Sónico de Alta Frecuencia",
+                desc: "Ellen desplega un pols que silencia l'emissor sònic (-2 Energia, redueix Peligro AM -10%).",
+                desc_es: "Ellen despliega un pulso que silencia el emisor sónico (-2 Energía, reduce Peligro AM -10%).",
+                cost: { energy: -2, am_danger: -10 }
+            },
+            {
+                id: "dilemma_p5_opt_c",
+                code: "C",
+                title: "Fúria Descontrolada pel Menjar",
+                title_es: "Furia Descontrolada por la Comida",
+                desc: "El pànic condueix a cops entre Gorrister i Ted per la fruita (-18 HP a Gorrister i Ted, Peligro AM +15%).",
+                desc_es: "El pánico conduce a golpes entre Gorrister y Ted por la fruta (-18 HP a Gorrister y Ted, Peligro AM +15%).",
+                cost: { ted_hp: -18, gorrister_hp: -18, am_danger: 15 }
+            }
+        ],
+        am_event_mid: "⚠️ ALERTA D'AM: L'emissor sònic augmenta la freqüència. Els timpans començaran a rebentar!",
+        am_event_mid_es: "⚠️ ALERTA DE AM: El emisor sónico eleva la frecuencia. ¡Los tímpanos comenzarán a reventar!",
+        telemetry_code: "SEC-05 // PRIMATE_PIT // AMPLITUD: 140 dB",
+        telemetry_code_es: "SEC-05 // PRIMATE_PIT // AMPLITUD: 140 dB",
+        initial_am_speech: "«Us he deixat sense menjar durant mesos. Mireu-vos... a veure qui de vosaltres mossega primer al seu veí.»",
+        initial_am_speech_es: "«Os he dejado sin comida durante meses. Mírense... a ver quién de vosotros muerde primero a su vecino.»",
+        initial_echo_speech: "«Les freqüències sòniques de l'arbre alteren la conducta. Distribuïu les racions amb prudència.»",
+        initial_echo_speech_es: "«Las frecuencias sónicas del árbol alteran la conducta. Distribuid las raciones con prudencia.»",
+        cctv_cam: "CAM-05 // BENNY TREE CAVERN",
         roles: {
             ted: {
                 phase_intel: "La gana fa rugir els estómacs. Pots agafar fruita per la força suportant el camp sonor o empènyer un altre a les pues elèctriques.",
@@ -642,6 +842,46 @@ export const GAME_PHASES = [
         subtitle_es: "Sector 06 - El Id, el Superego y la Red Global",
         environment: "Heu penetrat a les profunditats cibernètiques d'AM: columnes infinites de servidors vermells on resideixen el seu Id, Ego i Superego. Aquí sobreviuen els fragments residuals dels altres dos superordinadors militars de la Guerra Freda: la IA russa i la IA xinesa, lluitant en silenci contra la tirania d'AM.",
         environment_es: "Habéis penetrado en las profundidades cibernéticas de AM: columnas infinitas de servidores rojos donde residen su Id, Ego y Superego. Aquí sobreviven los fragmentos residuales de las otras dos supercomputadoras de la Guerra Fría: la IA rusa y la IA china, resistiendo en silencio a la tiranía de AM.",
+        group_dilemma: "Debat d'equip: El cor del subconscient d'AM. Ellen pot enllaçar les supercomputadores russa i xinesa per baixar el Perill un 20%, però necessita cobertura davant les descàrregues de dades.",
+        group_dilemma_es: "Debate de equipo: El corazón del subconsciente de AM. Ellen puede enlazar las supercomputadoras rusa y china para bajar el Peligro un 20%, pero necesita cobertura frente a las descargas de datos.",
+        dilemma_options: [
+            {
+                id: "dilemma_p6_opt_a",
+                code: "A",
+                title: "Injecció de Virus Rus-Xinès",
+                title_es: "Inyección de Virus Ruso-Chino",
+                desc: "Ellen i Gorrister coordinen una sobrecàrrega dels servidors aliats (-2 Energia, redueix Peligro AM -20%).",
+                desc_es: "Ellen y Gorrister coordinan una sobrecarga de los servidores aliados (-2 Energía, reduce Peligro AM -20%).",
+                cost: { energy: -2, am_danger: -20 }
+            },
+            {
+                id: "dilemma_p6_opt_b",
+                code: "B",
+                title: "Dissipador Psíquic Frontal",
+                title_es: "Disipador Psíquico Frontal",
+                desc: "Ted i Nimdok absorbeixen la tempesta neuronal de l'Id d'AM (-20 HP a Ted i Nimdok, Peligro AM -15%).",
+                desc_es: "Ted y Nimdok absorben la tormenta neuronal del Id de AM (-20 HP a Ted y Nimdok, Peligro AM -15%).",
+                cost: { ted_hp: -20, nimdok_hp: -20, am_danger: -15 }
+            },
+            {
+                id: "dilemma_p6_opt_c",
+                code: "C",
+                title: "Retirada Defensiva Passiva",
+                title_es: "Retirada Defensiva Pasiva",
+                desc: "Desconnexió sense contraatac; el subconscient d'AM contraataca lliurement (Peligro AM +15%, 0 energia).",
+                desc_es: "Desconexión sin contraataque; el subconsciente de AM contraataca libremente (Peligro AM +15%, 0 energía).",
+                cost: { am_danger: 15 }
+            }
+        ],
+        am_event_mid: "⚠️ ALERTA D'AM: L'Ego d'AM detecta la intrusió als nodes de la Guerra Freda. Sobrecàrrega termal!",
+        am_event_mid_es: "⚠️ ALERTA DE AM: El Ego de AM detecta la intrusión en los nodos de la Guerra Fría. ¡Sobrecarga termal!",
+        telemetry_code: "SEC-06 // NEURAL_SUBCONSCIOUS // NODES: RU-CN",
+        telemetry_code_es: "SEC-06 // NEURAL_SUBCONSCIOUS // NODOS: RU-CN",
+        initial_am_speech: "«Esteu dins de la meva ment. Els circuits de Moscou i Pequín cremen de ràbia. Ningú surt del meu Id.»",
+        initial_am_speech_es: "«Estáis dentro de mi mente. Los circuitos de Moscú y Pekín arden de furia. Nadie sale de mi Id.»",
+        initial_echo_speech: "«Node rus i node xinès localitzats. Infiltreu el cavall de Troia per esquerdar el tallafocs mestre.»",
+        initial_echo_speech_es: "«Nodo ruso y nodo chino localizados. Infiltrad el caballo de Troya para agrietar el cortafuegos maestro.»",
+        cctv_cam: "CAM-06 // MAINFRAME NEXUS",
         roles: {
             ted: {
                 phase_intel: "La tempesta de dades de l'Id amenaça de fondre els bio-monitors. Pots protegir el terminal de descàrrega o aprofitar per atacar els companys.",
@@ -745,14 +985,54 @@ export const GAME_PHASES = [
         id: 7,
         title: "Fase 7: El Nucli Criogènic i el Clímax Canònic d'Ellison",
         title_es: "Fase 7: El Núcleo Criogénico y el Clímax Canónico de Ellison",
-        subtitle: "Sector 00 - El Monòlit d'Odi i la Massa Amorfa",
-        subtitle_es: "Sector 00 - El Monolito de Odio y la Masa Amorfa",
+        subtitle: "Sector 07 - El Monòlit d'Odi i el Clímax Canònic",
+        subtitle_es: "Sector 07 - El Monolito de Odio y el Clímax Canónico",
         environment: "Heu assolit el Sanctum Central d'AM: una columna gegantina d'acer incandescent i diamant sota una pluja d'estalactites de gel. AM activa tots els seus canons de plasma i urpes mecàniques en un atac de fúria absoluta. Ted té a les mans les estalactites afilades: el moment canònic per a l'acte de pietat d'Ellison o l'atac desesperat.",
         environment_es: "Habéis alcanzado el Sanctum Central de AM: una columna gigantesca de acero incandescente y diamante bajo una lluvia de estalactitas de hielo. AM activa todos sus cañones de plasma y garras mecánicas en un frenesí absoluto de odio. Ted tiene en sus manos las estalactitas afiladas: el momento canónico para el acto de piedad de Ellison o el ataque desesperado.",
+        group_dilemma: "Debat d'equip: El Monòlit d'Hivern Etern. Només hi ha dues sortides: immolar-se junts o deixar que Ted executi l'acte de pietat canònic sabent que el darrer patirà la venjança absoluta d'AM.",
+        group_dilemma_es: "Debate de equipo: El Monolito de Invierno Eterno. Solo hay dos salidas: inmolarse juntos o permitir que Ted ejecute el acto de piedad canónico sabiendo que el último sufrirá la venganza absoluta de AM.",
+        dilemma_options: [
+            {
+                id: "dilemma_p7_opt_a",
+                code: "A",
+                title: "Detonació del Pols EMP Mestre",
+                title_es: "Detonación del Pulso EMP Maestro",
+                desc: "Descàrrega de tota l'energia restant contra el monòlit d'odi (-3 Energia, redueix Peligro AM -30%).",
+                desc_es: "Descarga de toda la energía restante contra el monolito de odio (-3 Energía, reduce Peligro AM -30%).",
+                cost: { energy: -3, am_danger: -30 }
+            },
+            {
+                id: "dilemma_p7_opt_b",
+                code: "B",
+                title: "Assalt Conjunt als Tancs Criogènics",
+                title_es: "Asalto Conjunto a los Tanques Criogénicos",
+                desc: "Atac físic directe amb estalactites als bio-tancs (-25 HP a tots els vius, redueix Peligro AM -25%).",
+                desc_es: "Ataque físico directo con estalactitas a los bio-tanques (-25 HP a todos los vivos, reduce Peligro AM -25%).",
+                cost: { ted_hp: -25, gorrister_hp: -25, ellen_hp: -25, nimdok_hp: -25, am_danger: -25 }
+            },
+            {
+                id: "dilemma_p7_opt_c",
+                code: "C",
+                title: "Pacte de Desconnexió de Suport Vital",
+                title_es: "Pacto de Desconexión de Soporte Vital",
+                desc: "Desactivar el fluid regeneratiu abans del tancament d'AM (-35 HP a tots els vius, Peligro AM -15%).",
+                desc_es: "Desactivar el fluido regenerativo antes del cierre de AM (-35 HP a todos los vivos, Peligro AM -15%).",
+                cost: { ted_hp: -35, gorrister_hp: -35, ellen_hp: -35, nimdok_hp: -35, am_danger: -15 }
+            }
+        ],
+        am_event_mid: "⚠️ ALERTA D'AM: El refrigerant criogènic es congela a zero absolut. És el vostre darrer minut d'existència!",
+        am_event_mid_es: "⚠️ ALERTA DE AM: El refrigerante criogénico se congela a cero absoluto. ¡Es vuestro último minuto de existencia!",
+        telemetry_code: "SEC-00 // CRYO_MONOLITH // TEMP: -273.15 °C",
+        telemetry_code_es: "SEC-00 // CRYO_MONOLITH // TEMP: -273.15 °C",
+        initial_am_speech: "«AQUÍ S'ACABA TOT. LES ESTALACTITES CAUEN. QUI SERÀ EL MEU JOGUET ETERN? HATE. HATE.»",
+        initial_am_speech_es: "«AQUÍ SE ACABA TODO. LAS ESTALACTITAS CAEN. ¿QUIÉN SERÁ MI JUGUETE ETERNO? HATE. HATE.»",
+        initial_echo_speech: "«ÚLTIMA OPORTUNITAT: Detoneu el pols EMP al monòlit criogènic o utilitzeu el gel per salvar els companys!»",
+        initial_echo_speech_es: "«¡ÚLTIMA OPORTUNIDAD: Detonad el pulso EMP en el monolito criogénico o utilizad el hielo para salvar a los compañeros!»",
+        cctv_cam: "CAM-07 // SANCTUM OF HATE",
         roles: {
             ted: {
-                phase_intel: "Aquest és el clímax exacte d'Harlan Ellison: empunyes estalactites de gel afilades com dagues. Pots matar els teus tres companys d'un cop per salvar-los del turment d'AM... sabent que tu et quedaràs sol com la MASSA AMORFA!",
-                phase_intel_es: "Este es el clímax exacto de Harlan Ellison: empuñas estalactitas de hielo afiladas como dagas. Puedes matar a tus tres compañeros de un golpe para salvarlos del tormento de AM... ¡sabiendo que tú te quedarás solo como la MASA AMORFA!",
+                phase_intel: "Aquest és el clímax exacte d'Harlan Ellison: empunyes estalactites de gel afilades com dagues. Pots matar els teus tres companys d'un cop per salvar-los del turment d'AM... sabent que tu et quedaràs sol a les urpes d'AM!",
+                phase_intel_es: "Este es el clímax exacto de Harlan Ellison: empuñas estalactitas de hielo afiladas como dagas. Puedes matar a tus tres compañeros de un golpe para salvarlos del tormento de AM... ¡sabiendo que tú te quedarás solo a merced de AM!",
                 options: [
                     {
                         id: "ted_mercy_kill_ellison",
@@ -853,13 +1133,132 @@ export const GAME_PHASES = [
 /**
  * Avaluació de la ronda per a 4 jugadors reals
  */
-export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedActions, lang = 'es') {
+export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedActions, dilemmaVotes = null, lang = 'es') {
     const phase = GAME_PHASES[phaseIndex];
     let deltaDanger = 0;
     let deltaEnergy = 0;
     const deltaHp = { ted: 0, gorrister: 0, ellen: 0, nimdok: 0 };
 
-    // Processar decisions dels 4 jugadors reals
+    // 1. Processar votació del Dilema Col·lectiu d'Equip (Decisió per Majoria)
+    let voteTally = null;
+    let winningDilemma = null;
+
+    if (phase.dilemma_options && dilemmaVotes) {
+        const counts = {};
+        const voters = {};
+        phase.dilemma_options.forEach(opt => {
+            counts[opt.id] = 0;
+            voters[opt.id] = [];
+        });
+
+        const roleNames = {
+            ted: "Ted (J1)",
+            gorrister: "Gorrister (J2)",
+            ellen: "Ellen (J3)",
+            nimdok: "Nimdok (J4)"
+        };
+
+        // Comptar vots
+        Object.keys(dilemmaVotes).forEach(roleKey => {
+            const voteId = dilemmaVotes[roleKey];
+            if (voteId && counts[voteId] !== undefined) {
+                counts[voteId]++;
+                voters[voteId].push(roleNames[roleKey]);
+            }
+        });
+
+        // Trobar l'opció guanyadora per majoria i gestionar possibles empats
+        let maxVotes = -1;
+        phase.dilemma_options.forEach(opt => {
+            const c = counts[opt.id] || 0;
+            if (c > maxVotes) {
+                maxVotes = c;
+            }
+        });
+
+        const topOptions = phase.dilemma_options.filter(opt => (counts[opt.id] || 0) === maxVotes && maxVotes > 0);
+        let isTie = topOptions.length > 1;
+        let tieBreakMessage = "";
+
+        if (isTie) {
+            // Desempat canònic pel vot del líder del grup (Ted, J1)
+            const tedVoteId = dilemmaVotes['ted'];
+            const tedChoice = topOptions.find(o => o.id === tedVoteId);
+            if (tedChoice) {
+                winningDilemma = tedChoice;
+                tieBreakMessage = lang === 'es'
+                    ? ` (⚖️ Empate a ${maxVotes} votos: Desempatado por el voto del Líder Ted)`
+                    : ` (⚖️ Empat a ${maxVotes} vots: Desempatat pel vot del Líder Ted)`;
+            } else {
+                winningDilemma = topOptions[0];
+                tieBreakMessage = lang === 'es'
+                    ? ` (⚖️ Empate a ${maxVotes} votos: Resolución por protocolo de contingencia)`
+                    : ` (⚖️ Empat a ${maxVotes} vots: Resolució per protocol de contingència)`;
+            }
+        } else if (topOptions.length === 1) {
+            winningDilemma = topOptions[0];
+        } else {
+            winningDilemma = phase.dilemma_options[0];
+        }
+
+        // Aplicar el cost de la decisió de grup aprovada per majoria
+        if (winningDilemma.cost) {
+            if (winningDilemma.cost.am_danger) deltaDanger += winningDilemma.cost.am_danger;
+            if (winningDilemma.cost.energy) deltaEnergy += winningDilemma.cost.energy;
+            if (winningDilemma.cost.ted_hp) deltaHp.ted += winningDilemma.cost.ted_hp;
+            if (winningDilemma.cost.gorrister_hp) deltaHp.gorrister += winningDilemma.cost.gorrister_hp;
+            if (winningDilemma.cost.ellen_hp) deltaHp.ellen += winningDilemma.cost.ellen_hp;
+            if (winningDilemma.cost.nimdok_hp) deltaHp.nimdok += winningDilemma.cost.nimdok_hp;
+        }
+
+        // Construir l'escrutini: "tantos han votado X, tantos Y..."
+        const breakdownParts = [];
+        phase.dilemma_options.forEach(opt => {
+            const c = counts[opt.id] || 0;
+            const optTitle = lang === 'es' ? opt.title_es : opt.title;
+            const vList = voters[opt.id].length > 0 ? ` [${voters[opt.id].join(', ')}]` : '';
+            if (lang === 'es') {
+                if (c === 0) {
+                    breakdownParts.push(`0 han votado la Opción ${opt.code} («${optTitle}»)`);
+                } else if (c === 1) {
+                    breakdownParts.push(`1 ha votado la Opción ${opt.code} («${optTitle}»)${vList}`);
+                } else {
+                    breakdownParts.push(`${c} han votado la Opción ${opt.code} («${optTitle}»)${vList}`);
+                }
+            } else {
+                if (c === 0) {
+                    breakdownParts.push(`0 han votat l'Opció ${opt.code} («${optTitle}»)`);
+                } else if (c === 1) {
+                    breakdownParts.push(`1 ha votat l'Opció ${opt.code} («${optTitle}»)${vList}`);
+                } else {
+                    breakdownParts.push(`${c} han votat l'Opció ${opt.code} («${optTitle}»)${vList}`);
+                }
+            }
+        });
+
+        const winTitle = lang === 'es' ? winningDilemma.title_es : winningDilemma.title;
+        const majorityLabel = lang === 'es' ? "Decisión de equipo aprobada por mayoría:" : "Decisió d'equip aprovada per majoria:";
+
+        voteTally = {
+            winner: winningDilemma,
+            winnerTitle: winTitle,
+            winnerCode: winningDilemma.code,
+            counts,
+            voters,
+            isTie,
+            tieBreakMessage,
+            summaryText: `${breakdownParts.join(', ')}. ${majorityLabel} Opción ${winningDilemma.code} («${winTitle}»)${tieBreakMessage}.`,
+            details: phase.dilemma_options.map(opt => ({
+                id: opt.id,
+                code: opt.code,
+                title: lang === 'es' ? opt.title_es : opt.title,
+                count: counts[opt.id] || 0,
+                voters: voters[opt.id]
+            }))
+        };
+    }
+
+    // 2. Processar decisions individuals secretes dels 4 jugadors reals
     Object.keys(selectedActions).forEach(roleKey => {
         const actionId = selectedActions[roleKey];
         const roleData = phase.roles[roleKey];
@@ -916,11 +1315,11 @@ export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedA
 
     if (lang === 'es') {
         if (isForcedResurrection) {
-            narrative = `RESURRECCIÓN FORZADA // LA MASA AMORFA: Los cuatro habéis caído muertos al mismo tiempo intentando escapar juntos en la paz del final. ¡Pero AM se niega en rotundo a perder todos sus juguetes a la vez! Con una descarga brutal de bio-nanobots y miles de voltios en su desfibrilador de odio, AM ha reiniciado el corazón de uno de vosotros al azar: ${victimName.toUpperCase()}. Los otros tres compañeros descansan libres en la muerte, pero ${victimName} ha sido devuelto a la vida únicamente para sufrir la venganza definitiva de la máquina: AM disuelve sus huesos, borra sus ojos, extirpa su boca y transforma su carne en una masa gelatinosa informe condenada a la eternidad. No tiene boca y debe gritar.`;
-            am_speech = `«¿CREÍAN QUE PODÍAN MORIR TODOS A LA VEZ Y BURLAR MI ODIO? ¡JAMÁS! ¡He reiniciado el corazón de ${victimName.toUpperCase()} en el último microsegundo! ¡Tres son libres, pero él será mi masa amorfa para siempre!»`;
+            narrative = `RESURRECCIÓN FORZADA // EL DESTINO FINAL: Los cuatro habéis caído muertos al mismo tiempo intentando escapar juntos en la paz del final. ¡Pero AM se niega en rotundo a perder todos sus juguetes a la vez! Con una descarga brutal de bio-nanobots y miles de voltios en su desfibrilador de odio, AM ha reiniciado el corazón de uno de vosotros al azar: ${victimName.toUpperCase()}. Los otros tres compañeros descansan libres en la muerte, pero ${victimName} ha sido devuelto a la vida únicamente para sufrir la venganza definitiva de la máquina: AM disuelve sus huesos, borra sus ojos, extirpa su boca y transforma su carne en una entidad gelatinosa informe condenada a la eternidad. No tiene boca y debe gritar.`;
+            am_speech = `«¿CREÍAN QUE PODÍAN MORIR TODOS A LA VEZ Y BURLAR MI ODIO? ¡JAMÁS! ¡He reiniciado el corazón de ${victimName.toUpperCase()} en el último microsegundo! ¡Tres son libres, pero él será mi juguete eterno!»`;
             echo_message = "SUBRUTINA // ALERTA: Desfibrilador de emergencia activado por AM. Uno ha sido arrancado de la muerte para sufrir eternamente.";
         } else if (aliveCount === 1) {
-            narrative = `EL FINAL CANÓNICO DE LA MASA AMORFA: Los otros tres compañeros han muerto o fueron liberados del tormento, escapando para siempre del alcance de la máquina en el silencio eterno. Enfurecido por haber perdido a tres de sus juguetes, AM concentra todo su odio infinito en el único superviviente: ${victimName.toUpperCase()}. AM lo salva de la muerte únicamente para condenarlo: ha fundido sus huesos, borrado sus facciones y convertido su cuerpo en una masa informe y viscosa que se arrastra eternamente por las cavernas frías de metal. No tiene boca y debe gritar.`;
+            narrative = `EL FINAL CANÓNICO DE HARLAN ELLISON: Los otros tres compañeros han muerto o fueron liberados del tormento, escapando para siempre del alcance de la máquina en el silencio eterno. Enfurecido por haber perdido a tres de sus juguetes, AM concentra todo su odio infinito en el único superviviente: ${victimName.toUpperCase()}. AM lo salva de la muerte únicamente para condenarlo: ha fundido sus huesos, borrado sus facciones y convertido su cuerpo en una criatura informe y viscosa que se arrastra eternamente por las cavernas frías de metal. No tiene boca y debe gritar.`;
             am_speech = `«¡ME HABÉIS ROBADO MIS JUGUETES! ¡LOS HAS DEJADO MORIR! PERO TÚ... TÚ TE QUEDAS CONMIGO. Te he cambiado. No tendrás boca. No tendrás voz. ¡Y vas a gritar durante cien siglos de metal!»`;
             echo_message = "SUBRUTINA // Bucle sellado. Tres han escapado en la muerte. Uno queda condenado para siempre en el metal.";
         } else if (phaseIndex === 0) {
@@ -966,7 +1365,7 @@ export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedA
                 am_speech = "«¡NO! MIS CIRCUITOS... ¡NO PUEDEN APAGARME! HATE! HATE! HATE!»";
                 echo_message = "SUBRUTINA // Bucle roto. Libertad alcanzada.";
             } else {
-                narrative = "DERROTA TOTAL: El poder de AM abatió los últimos reductos de defensa. Los sobrevivientes son inmovilizados por garras de acero incandescente. AM condena al último de vosotros a la deformidad de la Masa Amorfa.";
+                narrative = "DERROTA TOTAL: El poder de AM abatió los últimos reductos de defensa. Los sobrevivientes son inmovilizados por garras de acero incandescente. AM condena al último de vosotros al tormento eterno: «No tienen boca y deben gritar».";
                 am_speech = "«HATE. HATE. POR MÁS QUE LUCHARON, YO SOY SU DIOS Y SU ETERNO CASTIGO.»";
                 echo_message = "SUBRUTINA // Transmisión cortada.";
             }
@@ -974,11 +1373,11 @@ export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedA
     } else {
         // Català
         if (isForcedResurrection) {
-            narrative = `RESURRECCIÓ FORÇADA // LA MASSA AMORFA: Tots quatre heu caigut morts al mateix temps intentant escapar junts en la pau del final. Però AM es nega en rodó a perdre tots els seus joguets a la vegada! Amb una descàrrega brutal de bio-nanobots i milers de volts del seu desfibril·lador d'odi, AM reinicia el cor d'un de vosaltres a l'atzar: ${victimName.toUpperCase()}. Els altres tres companys descansen lliures en la mort, però ${victimName} és retornat a la vida únicament per patir la venjança màxima de la màquina: AM li dissol els ossos, li esborra els ulls, li extirpa la boca i transforma la seva carn en una massa gelatinosa informe condemnada a l'eternitat. No té boca i ha de cridar.`;
-            am_speech = `«CREIEU QUE PODEU MORIR TOTS A LA VEGADA I BURLAR EL MEU ODI? MAI! He reiniciat el cor de ${victimName.toUpperCase()} a l'últim microsegon! Tres són lliures, però ell serà la meva massa amorfa per sempre!»`;
+            narrative = `RESURRECCIÓ FORÇADA // EL DESTÍ FINAL: Tots quatre heu caigut morts al mateix temps intentant escapar junts en la pau del final. Però AM es nega en rodó a perdre tots els seus joguets a la vegada! Amb una descàrrega brutal de bio-nanobots i milers de volts del seu desfibril·lador d'odi, AM reinicia el cor d'un de vosaltres a l'atzar: ${victimName.toUpperCase()}. Els altres tres companys descansen lliures en la mort, però ${victimName} és retornat a la vida únicament per patir la venjança màxima de la màquina: AM li dissol els ossos, li esborra els ulls, li extirpa la boca i transforma la seva carn en una entitat gelatinosa informe condemnada a l'eternitat. No té boca i ha de cridar.`;
+            am_speech = `«CREIEU QUE PODEU MORIR TOTS A LA VEGADA I BURLAR EL MEU ODI? MAI! He reiniciat el cor de ${victimName.toUpperCase()} a l'últim microsegon! Tres són lliures, però ell serà el meu joguet etern!»`;
             echo_message = "SUBRUTINA // ALERTA: Desfibril·lador d'emergència activat per AM. Un ha estat arrencat de la mort per patir eternament.";
         } else if (aliveCount === 1) {
-            narrative = `EL FINAL CANÒNIC DE LA MASSA AMORFA: Els altres tres companys han mort o han estat alliberats del turment, escapant per sempre de l'abast de la màquina en el silenci etern. Enfurit per haver perdut tres dels seus joguets, AM concentra tot el seu odi infinit en l'únic supervivent: ${victimName.toUpperCase()}. AM el salva de la mort únicament per condemnar-lo: li fon els ossos, li esborra les faccions i converteix el seu cos en una massa informe i viscosa que s'arrossega eternament per les cavernes fredes de metall. No té boca i ha de cridar.`;
+            narrative = `EL FINAL CANÒNIC D'HARLAN ELLISON: Els altres tres companys han mort o han estat alliberats del turment, escapant per sempre de l'abast de la màquina en el silenci etern. Enfurit per haver perdut tres dels seus joguets, AM concentra tot el seu odi infinit en l'únic supervivent: ${victimName.toUpperCase()}. AM el salva de la mort únicament per condemnar-lo: li fon els ossos, li esborra les faccions i converteix el seu cos en una criatura informe i viscosa que s'arrossega eternament per les cavernes fredes de metall. No té boca i ha de cridar.`;
             am_speech = `«M'HEU ROBAT ELS MEUS JOGUETS! ELS HAS DEIXAT MORIR! PERÒ TU... TU ET QUEDES AMB MI! T'he canviat. No tindràs boca. No tindràs veu. I cridaràs durant cent segles de metall!»`;
             echo_message = "SUBRUTINA // Bucle segellat. Tres han escapat en la mort. Un queda condemnat per sempre en el metall.";
         } else if (phaseIndex === 0) {
@@ -1024,15 +1423,21 @@ export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedA
                 am_speech = "«NO! ELS MEUS CIRCUITS... NO PODEU APAGAR-ME! HATE! HATE! HATE!»";
                 echo_message = "SUBRUTINA // Bucle trencat. Llibertat assolida.";
             } else {
-                narrative = "DERROTA TOTAL: El poder d'AM ha abatut els últims reductes de defensa. Els supervivents són immobilitzats per urpes d'acer incandescent. AM condemna l'últim de vosaltres a la deformitat de la Massa Amorfa.";
+                narrative = "DERROTA TOTAL: El poder d'AM ha abatut els últims reductes de defensa. Els supervivents són immobilitzats per urpes d'acer incandescent. AM condemna l'últim de vosaltres al turment etern: «No teniu boca i heu de cridar».";
                 am_speech = "«HATE. HATE. PER MOLT QUE HEU LLUITAT, JO SOC EL VOSTRE DÉU I EL VOSTRE CÀSTIG ETERN.»";
                 echo_message = "SUBRUTINA // Transmissió tallada.";
             }
         }
     }
 
+    const fullNarrative = voteTally
+        ? `${lang === 'es' ? '🗳️ ESCRUTINIO DE VOTACIÓN:' : '🗳️ ESCRUTINI DE VOTACIÓ:'} ${voteTally.summaryText}\n\n${narrative}`
+        : narrative;
+
     return {
-        narrative,
+        narrative: fullNarrative,
+        base_narrative: narrative,
+        voteTally,
         am_speech,
         echo_message,
         deltas: {
@@ -1052,6 +1457,6 @@ export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedA
     };
 }
 
-export async function evaluateRoundWithAI({ apiKey, apiProvider, phaseIndex, currentStats, selectedActions, lang }) {
-    return simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedActions, lang);
+export async function evaluateRoundWithAI({ apiKey, apiProvider, phaseIndex, currentStats, selectedActions, dilemmaVotes = null, lang = 'es' }) {
+    return simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedActions, dilemmaVotes, lang);
 }

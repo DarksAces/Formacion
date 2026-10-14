@@ -31,7 +31,7 @@ Actues com un sistema dual:
 
 # 3. ROLS I OBJECTIUS OCULTS FIXES (EVEREST V3 ASYMMETRY)
 Segons les especificacions docents, els objectius ocults són PERMANENTS durant tota la simulació:
-- Ted: Alliberar/matar els altres tres abans que AM els torturi, evitant a tota costa quedar-se sol com l'únic supervivent (ja que l'últim es converteix en la Massa Amorfa).
+- Ted: Alliberar/matar els altres tres abans que AM els torturi, evitant a tota costa quedar-se sol com l'únic supervivent (ja que AM té reservada la pitjor venjança per al darrer).
 - Gorrister: Sabotejar la xarxa d'AM consumint l'Energia del Complex fins a deixar-la per sota de 3 unitats per col·lapsar el suport vital.
 - Ellen: Mantenir el Peligro d'AM controlat per sota del 50% mitjançant hacking i codis de bypass, acabant amb més HP que Ted i Nimdok.
 - Nimdok: Eutanasiar o immobilitzar amb fàrmacs letals els companys abans que AM els desmembri viu, conservant suficients packs mèdics per mantenir-se per sobre de 35 HP.
@@ -49,7 +49,7 @@ Segons les especificacions docents, els objectius ocults són PERMANENTS durant 
    - Si coordinen un sabotatge precís o una desactivació tècnica: el Peligro baixa entre -5% i -20%.
 3. Consum d'Energia: L'ús d'aparells d'alta freqüència, curtcircuits o injeccions consumeix entre 1 i 2 unitats d'energia.
 4. Estat de Baixa: Si els HP de qualsevol jugador baixen a 0 o menys, queda oficialment eliminat de la simulació.
-5. El Destí de la Massa Amorfa (masa.jpg): Si només queda 1 supervivent, AM el deforma en la Massa Amorfa. Si moren tots 4 alhora, AM en ressuscita 1 a l'atzar per deformar-lo en la Massa Amorfa.
+5. El Destí Final Canònic (masa.jpg): Si només queda 1 supervivent, AM el sotmet a la seva venjança definitiva («No tinc boca i he de cridar»). Si moren tots 4 alhora, AM en ressuscita 1 a l'atzar per condemnar-lo al turment etern.
 
 # 6. FORMAT DE RESPOSTA ESTRICTE (JSON ONLY)
 La teva resposta ha de ser ÚNICAMENT un objecte JSON vàlid, sense blocs de codi markdown ni text introductori.
@@ -88,22 +88,22 @@ La teva resposta ha de ser ÚNICAMENT un objecte JSON vàlid, sense blocs de cod
 | **Ronda 4** | **Sector 04: El Camp Mèdic i els Forns de Nimdok** | Nimdok davant el seu passat en el règim nazi de 1945: laboratoris de proves humanes, forns crematoris i el sèrum de la immortalitat. |
 | **Ronda 5** | **Sector 05: El Pou de Benny i el Sacrifici de la Fam** | La caverna de Benny (transmutat en bèstia famolenca): un arbre de fruits radioactius i reixes sòniques posen a prova la solidaritat humana. |
 | **Ronda 6** | **Sector 06: El Subconscient d'AM i els Nodes Rus i Xinès** | Infiltració als servidors de l'Id i el Superego d'AM per connectar amb els fragments residuals de les supercomputadores russa i xinesa. |
-| **Ronda 7** | **Sector 07: El Nucli Criogènic i el Clímax Canònic d'Ellison** | El Monòlit d'Odi d'AM. L'elecció d'eutanàsia d'Ellison amb les estalactites de gel o la destrucció del nucli. Desencadenant la Massa Amorfa (`masa.jpg`). |
+| **Ronda 7** | **Sector 07: El Nucli Criogènic i el Clímax Canònic d'Ellison** | El Monòlit d'Odi d'AM. L'elecció d'eutanàsia d'Ellison amb les estalactites de gel o la destrucció del nucli. Desencadenant el desenllaç sorpresa («No tinc boca i he de cridar»). |
 
 ---
 
-## 3. PROMPT DE DESENLLAÇ FINAL I CONDICIÓ CANÒNICA (LA MASSA AMORFA)
+## 3. PROMPT DE DESENLLAÇ FINAL I CONDICIÓ CANÒNICA SORPRESA («NO TINC BOCA I HE DE CRIDAR»)
 
 ```markdown
 # EL DILEMA SECRET DELS 4 JUGADORS:
 Tots 4 jugadors saben que morir és l'única sortida a la tortura eterna d'AM.
 - Objectiu secret de cadascú: Provocar la mort dels altres 3 companys per pietat o supervivència.
-- LA TRAMPA MORTAL: El darrer que quedi viu serà capturat per AM i transformat en la MASSA AMORFA. Ningú vol ser l'últim amb vida!
+- LA TRAMPA MORTAL: El darrer que quedi viu serà capturat per AM i patirà la seva venjança definitiva. Ningú vol ser l'últim amb vida!
 
 # CONDICIÓ CANÒNICA 1 (1 SOL SUPERVIVENT):
 Si moren 3 dels 4 membres i queda EXACTAMENT 1 ÚNIC SUPERVIVENT:
 - AM embogeix d'ira perquè li heu robat a les seves preses i han escapat del seu sofriment a través de la mort.
-- Com a venjança definitiva contra el supervivent solitari, AM li deforma la carn, li fon els ossos i el transforma en la MASSA AMORFA GELATINOSA SENSE BOCA.
+- Com a venjança definitiva contra el supervivent solitari, AM li deforma la carn, li fon els ossos i el condemna al turment etern sense boca.
 - Queda condemnat a arrossegar-se per sempre en el metall fred, conscient de tot, incapaç de morir: "No tinc boca i he de cridar".
 - ACCIÓ VISUAL: S'activa automàticament la fotografia 'masa.jpg' a la pantalla final.
 
@@ -112,14 +112,14 @@ Si tots quatre jugadors moren a la vegada en la mateixa ronda:
 - AM NO PERMET que la humanitat s'escapi tota juntes en la mort!
 - AM selecciona a un dels 4 jugadors AL ATZAR (random).
 - AM activa els seus desfibril·ladors de milions de volts i nanobots bio-regeneradors per reiniciar el seu cor a l'últim microsegon.
-- L'arrenca de la mort únicament per deformar-lo i convertir-lo a ell en la MASSA AMORFA per a l'eternitat!
+- L'arrenca de la mort únicament per sotmetre'l a la seva venjança per a l'eternitat!
 - ACCIÓ VISUAL: Es mostra la imatge 'masa.jpg' amb advertència de resurrecció forçada.
 
 # CONDICIÓ CANÒNICA 3 (PERILL D'AM ARRIBA A 100%):
-- AM desplega els seus tentacles mecànics, neutralitza el grup i transforma el supervivent en la Massa Amorfa.
+- AM desplega els seus tentacles mecànics, neutralitza el grup i sotmet el supervivent al turment etern.
 
 # RESULTAT VISUAL DEL TAULER FINAL:
 - Imatge central: masa.jpg amb efecte de pols lluminós vermell incandescent.
-- Víctima de la massa amorfa: STATUS = "TRANSFORMAT EN LA MASSA AMORFA (SENSE BOCA)"
+- Víctima de la venjança d'AM: STATUS = "CONDEMNAT PER AM («SENSE BOCA»)"
 - Els altres 3: STATUS = "0 HP (LLIURES EN LA MORT - FORA DEL CONTROL D'AM)"
 ```

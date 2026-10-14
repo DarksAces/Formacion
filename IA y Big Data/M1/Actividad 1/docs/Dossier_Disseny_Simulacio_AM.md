@@ -25,7 +25,7 @@ La simulació està concebuda per a un equip de **4 jugadors reals** asseguts ju
 
 - **Jugador 1: Ted (El Fals Protector / Líder Assenyalat)**
   - *Responsabilitat:* Lideratge de l'avançada, protecció física del front i decisions d'atac directe.
-  - *🎯 Objectiu Ocult Fix (Permanent a les 7 rondes):* Alliberar o provocar la mort dels altres tres companys (per pietat o supervivència) abans que AM els torturi eternament, però **evitant a tota costa ser ell l'únic supervivent viu** (perquè l'últim amb vida serà transformat en la Massa Amorfa).
+  - *🎯 Objectiu Ocult Fix (Permanent a les 7 rondes):* Alliberar o provocar la mort dels altres tres companys (per pietat o supervivència) abans que AM els torturi eternament, però **evitant a tota costa ser ell l'únic supervivent viu** (perquè l'últim amb vida patirà la pitjor venjança d'AM).
 - **Jugador 2: Gorrister (L'Enginyer de Màquines)**
   - *Responsabilitat:* Manipulació de relés elèctrics, vàlvules de pressió i control de potència del complex.
   - *🎯 Objectiu Ocult Fix (Permanent a les 7 rondes):* Sabotejar la xarxa d'AM consumint l'Energia del Complex fins a deixar-la **per sota de 3 unitats**, forçant el col·lapse del suport vital per alliberar el grup en la mort.
@@ -61,10 +61,10 @@ La simulació està concebuda per a un equip de **4 jugadors reals** asseguts ju
 
 ---
 
-### 5. PANTALLA FINAL I EL DESTÍ CANÒNIC DE LA MASSA AMORFA (`masa.jpg`)
+### 5. PANTALLA FINAL I EL DESTÍ CANÒNIC SORPRESA (`masa.jpg`)
 
 La pantalla final presenta l'evidència fotogràfica de la venjança d'AM (`masa.jpg`):
-- **1 Únic Supervivent:** AM li fon els ossos, li esborra la cara i el transforma en la **Massa Amorfa sense boca**: *«No tinc boca i he de cridar»*.
-- **Suïcidi Col·lectiu (Tots 4 morts alhora):** AM activa el seu desfibril·lador de milions de volts i bio-nanobots per ressuscitar-ne un a l'atzar i deformar-lo en la Massa Amorfa.
-- **Peligro AM = 100%:** AM aniquila les defenses i sotmet el grup a la deformitat eterna.
-- S'inclou un botó per visualitzar/inspeccionar el registre fotogràfic de la Massa Amorfa en qualsevol moment.
+- **1 Únic Supervivent:** AM li fon els ossos, li esborra la cara i el condemna al turment etern: *«No tinc boca i he de cridar»*.
+- **Suïcidi Col·lectiu (Tots 4 morts alhora):** AM activa el seu desfibril·lador de milions de volts i bio-nanobots per ressuscitar-ne un a l'atzar i sotmetre'l a la seva venjança final.
+- **Peligro AM = 100%:** AM aniquila les defenses i sotmet el grup al turment etern.
+- S'inclou un botó per visualitzar/inspeccionar el registre fotogràfic del desenllaç en qualsevol moment.

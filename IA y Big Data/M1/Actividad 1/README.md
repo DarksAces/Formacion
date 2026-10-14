@@ -21,13 +21,22 @@
 - ⚡ **Energia del Complex (0 - 10 u.):** Recursos limitats de suport vital per alimentar consoles, curtcircuits i antídots.
 - ❤️ **Salut Individual dels 4 Jugadors (100 HP per persona):** Cada decisió afecta la teva pròpia vida o la dels teus companys. Si la teva salut arriba a 0, mors o quedes eliminat!
 
+### Ritme de Partida i Disseny Visual (10 a 15 minuts per partida):
+- ⏱️ **Cronòmetre Global de Missió:** Rellotge al HUD que controla el temps de la sessió fins a completar els 10 minuts requerits pel mòdul M1.
+- ⏳ **Fase de Deliberació Tàctica (Everest V3):** Cada sector disposa d'un comptador de 75 segons per debatre en veu alta la millor estratègia d'equip abans de bloquejar les decisions secretes, amb alertes dinàmiques d'AM a meitat de temps.
+- 💬 **Targetes de Dilema Grupal:** Preguntes explícites de negociació i sacrifici entre els 4 jugadors per a cada sector.
+- 📹 **Holo-Display CCTV del Sector:** Visor animat per a cadascun dels 7 sectors amb canvi de mode en temps real (`CCTV`, `RADAR`, `TÈRMIC`).
+- 🫀 **Monitors ECG Biomèdics en Viu:** Electrocardiogrames procedurals per a Ted, Gorrister, Ellen i Nimdok que reaccionen a l'estat de salut (regular, taquicàrdia, arítmia crítica i línia plana).
+- 🎙️ **Oscil·loscopi Sinàptic d'AM:** Espectrograma d'ona en vermell neó que modula les transmissions hostils.
+- ⚡ **Seqüència Cinemàtica de Resolució:** Animació d'escaneig militar i desglossament gràfic de l'impacte a les biosenyals abans de revelar les conseqüències.
+
 ---
 
 ## 2. Objectius Ocults Fixes (Metodologia Harvard Everest V3)
 
 Segons l'enunciat docent, cada personatge compta amb una **responsabilitat concreta** i un **objectiu ocult permanent** que no canvia durant cap de les 7 rondes:
 
-1. **Ted:** Alliberar o provocar la mort dels altres tres companys abans que AM els torturi eternament, però **evitant ser l'únic supervivent** (ja que el darrer viu serà transformat en la Massa Amorfa).
+1. **Ted:** Alliberar o provocar la mort dels altres tres companys abans que AM els torturi eternament, però **evitant ser l'únic supervivent** (ja que AM té reservada la pitjor venjança per al darrer que quedi a les seves mans).
 2. **Gorrister:** Sabotejar la xarxa d'AM consumint l'Energia del Complex fins a deixar-la **per sota de 3 unitats**, forçant el col·lapse del suport vital per alliberar el grup en la mort.
 3. **Ellen:** Mantenir el Peligro d'AM **per sota del 50%** mitjançant hacking i codis de bypass, acabant amb més punts de salut (HP) que Ted i Nimdok.
 4. **Nimdok:** Eutanasiar o immobilitzar amb fàrmacs i neurotoxines els companys abans que AM els desmembri viu, conservant suficients packs mèdics per mantenir-se **per sobre de 35 HP**.
@@ -49,16 +58,16 @@ Segons l'enunciat docent, cada personatge compta amb una **responsabilitat concr
 6. **Ronda 6: Sector 06 - El Subconscient d'AM i els Nodes Rus i Xinès**  
    Infiltració a l'Id i l'Ego d'AM per connectar amb els fragments residuals de les supercomputadores russa i xinesa.
 7. **Ronda 7: Sector 07 - El Nucli Criogènic i el Clímax Canònic d'Ellison**  
-   El Monòlit d'Odi d'AM. L'elecció d'eutanàsia d'Ellison amb les estalactites de gel o la destrucció del nucli. Desencadenant la Massa Amorfa (`masa.jpg`).
+   El Monòlit d'Odi d'AM. L'elecció d'eutanàsia d'Ellison amb les estalactites de gel o la destrucció del nucli. Desencadenant el clímax final sorpresa («No tinc boca i he de cridar»).
 
 ---
 
-## 4. El Destí Canònic de la Massa Amorfa (`masa.jpg`)
+## 4. El Destí Canònic Sorpresa: La Venjança Final d'AM
 
 A la pantalla final, AM presenta el registre fotogràfic de la seva venjança definitiva:
-- **1 Únic Supervivent:** AM li fon els ossos, li esborra els ulls i la boca, i el transforma en la **Massa Amorfa gelatinosa**: *«No tinc boca i he de cridar»*.
-- **Suïcidi Col·lectiu (Tots 4 moren alhora):** AM activa els seus nanobots bio-regeneradors i desfibril·ladors per ressuscitar-ne un a l'atzar i deformar-lo en la Massa Amorfa.
-- **Peligro AM = 100%:** AM aniquila les defenses i converteix el grup en la massa informe.
+- **1 Únic Supervivent:** AM li fon els ossos, li esborra els ulls i la boca, i el condemna al turment etern: *«No tinc boca i he de cridar»*.
+- **Suïcidi Col·lectiu (Tots 4 moren alhora):** AM activa els seus nanobots bio-regeneradors i desfibril·ladors per ressuscitar-ne un a l'atzar i sotmetre'l a la seva venjança definitiva.
+- **Peligro AM = 100%:** AM aniquila les defenses i sotmet els supervivents al turment etern.
 
 ---
 
@@ -71,16 +80,27 @@ Actividad 1/
 ├── app.js                               # Controlador de torns, asimetria i estats
 ├── ai_engine.js                         # Motor d'IA agèntica (7 rondes, rols fixes i càlculs)
 ├── audio.js                             # Efectes de so procedural amb Web Audio API
-├── masa.jpg                             # Arxiu fotogràfic canònic de la Massa Amorfa d'AM
-├── server.py                            # Servidor local per a proves i defensa presencial
+├── server.py                            # Servidor local autònom per a proves i defensa presencial
 ├── README.md                            # Guia principal del projecte
+├── .gitignore                           # Filtres de Git
+│
+├── assets/                              # Recursos multimèdia i retrats dels personatges
+│   ├── README.md                        # Guia d'imatges i taula de retrats
+│   ├── ted.jpg                          # Retrat de Ted (Líder Fals)
+│   ├── gorrister.jpg                    # Retrat de Gorrister (Enginyer de Màquines)
+│   ├── ellen.jpg                        # Retrat d'Ellen (Especialista en Senyals)
+│   ├── nimdok.jpg                       # Retrat de Nimdok (Metge Químic)
+│   ├── am.jpg                           # Retrat d'AM Core (Supercomputadora Hostil)
+│   └── masa.jpg                         # Arxiu fotogràfic del desenllaç canònic d'AM
 │
 └── docs/                                # Carpeta de documentació docent i comercial
+    ├── INDEX.md                         # Índex i resum de la documentació docent
     ├── PROMPT_ARQUITECTURA.md           # Prompt mestre templatitzat, regles i JSON schema
     ├── Dossier_Disseny_Simulacio_AM.md  # Dossier acadèmic de disseny (M1 Monlau)
     ├── Fitxa_Comercial_OnePager_AM.md   # One-pager comercial i model de negoci
     ├── Guio_Video_Demostracio_Pitch.md  # Guió del vídeo de demostració i defensa oral
-    └── enunciat/                        # Enunciat original de l'activitat
+    └── enunciat/
+        └── ENUNCIAT.md                  # Enunciat original de l'activitat
 ```
 
 ---

@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PriceScope · Comparador de precios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f4f8;
+      color: #251B36;
+      margin: 0;
+    }
+    header {
+      background: #251B36;
+      color: white;
+      padding: 24px 40px;
+    }
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 32px auto;
+    }
+    .promo {
+      background: white;
+      border: 1px solid #ded8e8;
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 22px;
+    }
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .offer-card {
+      background: white;
+      border: 1px solid #ddd5e8;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 2px 8px rgba(37,27,54,.06);
+    }
+    .offer-header, .offer-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .competitor { font-weight: 700; }
+    .badge {
+      font-size: 12px;
+      color: #5c3b85;
+      background: #efe6fb;
+      padding: 4px 7px;
+      border-radius: 999px;
+    }
+    .product-name {
+      font-size: 18px;
+      margin: 18px 0;
+    }
+    .offer-meta {
+      color: #70687a;
+      font-size: 13px;
+    }
+    .price {
+      color: #6336a3;
+      font-size: 24px;
+      font-weight: 800;
+      margin-top: 18px;
+    }
+    footer {
+      text-align: center;
+      color: #6f6878;
+      padding: 32px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PriceScope</h1>
+    <p>Comparador externo de precios · snapshot docente</p>
+  </header>
+
+  <main class="container">
+    <section class="promo">
+      <strong>Información:</strong>
+      Los precios pueden variar según disponibilidad, campañas y vendedor.
+      Esta página contiene elementos de navegación y contenido no perteneciente a las ofertas
+      para simular una fuente web real.
+    </section>
+
+    <nav class="promo">
+      <a href="#ofertas">Ofertas</a> ·
+      <a href="#metodologia">Metodología</a> ·
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="ofertas" class="offers">
+      
+      <article class="offer-card" data-product-id="1" data-offer-id="O0002">
+        <div class="offer-header">
+          <span class="competitor">CosmeticLab</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Essence Lash Princess Mascara</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 1</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">9,49 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="6" data-offer-id="O0004">
+        <div class="offer-header">
+          <span class="competitor">PerfumeHub</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Calvin Klein CK ONE Eau de Toilette</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 6</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">€ 47,90</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="152" data-offer-id="O0026">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Raqueta de tenis</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 152</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">49,50 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="91" data-offer-id="O0013">
+        <div class="offer-header">
+          <span class="competitor">UrbanFeet</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Off White / Red Sports Sneakers</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 91</span>
+          <span class="availability">Últimas unidades</span>
+        </div>
+        <div class="price">124,90 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="193" data-offer-id="O0029">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Fashion Gold Women&#x27;s Watch</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 193</span>
+          <span class="availability">Últimas unidades</span>
+        </div>
+        <div class="price">€ 799,95</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="122" data-offer-id="O0019">
+        <div class="offer-header">
+          <span class="competitor">PhoneOutlet</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Apple iPhone 6</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 122</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">289,95 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="121" data-offer-id="O0015">
+        <div class="offer-header">
+          <span class="competitor">TechMarket</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Apple iPhone 5S</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 121</span>
+          <span class="availability">Reacondicionado</span>
+        </div>
+        <div class="price">179,99 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="31" data-offer-id="O0008">
+        <div class="offer-header">
+          <span class="competitor">SuperPrice</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Limón fresco unidad</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 31</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">€ 0,75</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="1" data-offer-id="O0001">
+        <div class="offer-header">
+          <span class="competitor">BeautyZone</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Essence Lash Princess Mascara</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 1</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">8,89 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="193" data-offer-id="O0027">
+        <div class="offer-header">
+          <span class="competitor">LuxuryTime</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Fashion Gold Women&#x27;s Watch</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 193</span>
+          <span class="availability">Disponible bajo pedido</span>
+        </div>
+        <div class="price">749,00 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="6" data-offer-id="O0005">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Calvin Klein CK ONE Eau de Toilette</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 6</span>
+          <span class="availability">Últimas unidades</span>
+        </div>
+        <div class="price">€ 52,49</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="121" data-offer-id="O0017">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Apple iPhone 5S</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 121</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">195,00 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="31" data-offer-id="O0007">
+        <div class="offer-header">
+          <span class="competitor">EcoBasket</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Limón fresco unidad</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 31</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">0,85 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="151" data-offer-id="O0023">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Pelota de tenis</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 151</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">€ 6,50</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="61" data-offer-id="O0010">
+        <div class="offer-header">
+          <span class="competitor">ElectroWorld</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Batidora de mano Hand Blender</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 61</span>
+          <span class="availability">Disponible en 48 h</span>
+        </div>
+        <div class="price">34,50 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="193" data-offer-id="O0028">
+        <div class="offer-header">
+          <span class="competitor">WatchHouse</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Fashion Gold Women&#x27;s Watch</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 193</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">819,99 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="91" data-offer-id="O0014">
+        <div class="offer-header">
+          <span class="competitor">SportDeal</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Off White / Red Sports Sneakers</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 91</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">€ 114,50</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="151" data-offer-id="O0021">
+        <div class="offer-header">
+          <span class="competitor">SportDeal</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Pelota de tenis</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 151</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">5,99 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="1" data-offer-id="O0003">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Essence Lash Princess Mascara</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 1</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">10,20 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="8801" data-offer-id="O0030">
+        <div class="offer-header">
+          <span class="competitor">HomeTech</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Aurora Smart Lamp X2</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 8801</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">€ 69,90</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="151" data-offer-id="O0022">
+        <div class="offer-header">
+          <span class="competitor">RacketPoint</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Pelota de tenis</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 151</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">7,20 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="61" data-offer-id="O0011">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Batidora de mano Hand Blender</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 61</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">38,99 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="122" data-offer-id="O0020">
+        <div class="offer-header">
+          <span class="competitor">ElectroWorld</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Apple iPhone 6</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 122</span>
+          <span class="availability">Últimas unidades</span>
+        </div>
+        <div class="price">€ 319,99</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="152" data-offer-id="O0024">
+        <div class="offer-header">
+          <span class="competitor">SportDeal</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Raqueta de tenis</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 152</span>
+          <span class="availability">Últimas unidades</span>
+        </div>
+        <div class="price">46,90 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="31" data-offer-id="O0006">
+        <div class="offer-header">
+          <span class="competitor">FreshMarket</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Limón fresco unidad</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 31</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">0,69 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="122" data-offer-id="O0018">
+        <div class="offer-header">
+          <span class="competitor">TechMarket</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Apple iPhone 6</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 122</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">€ 279,00</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="91" data-offer-id="O0012">
+        <div class="offer-header">
+          <span class="competitor">SneakerLab</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Off White / Red Sports Sneakers</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 91</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">109,99 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="8802" data-offer-id="O0031">
+        <div class="offer-header">
+          <span class="competitor">MegaStore</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">NovaSound Mini Speaker</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 8802</span>
+          <span class="availability">Disponible</span>
+        </div>
+        <div class="price">44,50 €</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="61" data-offer-id="O0009">
+        <div class="offer-header">
+          <span class="competitor">HomeTech</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Batidora de mano Hand Blender</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 61</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">€ 31,90</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="121" data-offer-id="O0016">
+        <div class="offer-header">
+          <span class="competitor">PhoneOutlet</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Apple iPhone 5S</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 121</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">209,90 EUR</div>
+      </article>
+    
+      <article class="offer-card" data-product-id="152" data-offer-id="O0025">
+        <div class="offer-header">
+          <span class="competitor">RacketPoint</span>
+          <span class="badge">Oferta verificada</span>
+        </div>
+        <h2 class="product-name">Raqueta de tenis</h2>
+        <div class="offer-meta">
+          <span class="product-code">Ref. 152</span>
+          <span class="availability">En stock</span>
+        </div>
+        <div class="price">54,99 €</div>
+      </article>
+    
+    </section>
+
+    <section id="metodologia" class="promo" style="margin-top:24px">
+      <h2>Metodología</h2>
+      <p>PriceScope recopila ofertas de varios comercios y presenta una referencia comparativa.</p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    PriceScope · Dataset docente · Generado para ShopData S.L.
+  </footer>
+</body>
+</html>

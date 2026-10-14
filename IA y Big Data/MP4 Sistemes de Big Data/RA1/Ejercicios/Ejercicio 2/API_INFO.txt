@@ -1,0 +1,28 @@
+P2 · SHOPDATA — INFORMACIÓN DE LA API
+================================================
+
+API pública utilizada:
+https://dummyjson.com/products
+
+Documentación oficial:
+https://dummyjson.com/docs/products
+
+Comportamiento verificado el 22/08/2026:
+- El recurso /products devuelve objetos de producto en JSON.
+- La respuesta incluye las claves: products, total, skip y limit.
+- Por defecto devuelve 30 productos.
+- La paginación oficial utiliza los parámetros limit y skip.
+- La documentación oficial también indica que limit=0 devuelve todos los elementos.
+- En la comprobación realizada el 22/08/2026, total = 194.
+
+IMPORTANTE
+----------
+NO debes programar suponiendo que siempre existirán exactamente 194 productos.
+Tu código debe leer el valor 'total' devuelto por la API y funcionar aunque cambie
+el número de productos.
+
+El fichero products_api_backup_subset.json NO es la API completa.
+Es únicamente una copia de seguridad de los productos utilizados por esta práctica,
+para poder continuar trabajando si el servicio público no está disponible.
+
+En condiciones normales debes utilizar la API real.
