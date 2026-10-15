@@ -1,0 +1,751 @@
+﻿producto_id,nombre,categoria,proveedor,precio_unitario,stock_actual,stock_minimo,almacen,fecha_ultima_entrada,estado
+MAD-00001,Soporte móvil Max-378,Telefonía,NextWare,224.42,70,30,Madrid,2026-09-14,activo
+MAD-00002,Soporte móvil Lite-296,Telefonía,DigitalCore,1311.27,16,27,Madrid,2025-07-27,activo
+MAD-00003,Protector pantalla Air-563,Accesorios,DigitalCore,-230.55,42,18,Madrid,2026-08-21,activo
+MAD-00004,Hub domótico Pro-272,Hogar inteligente,ElectroPlus,295.26,120,36,Madrid,2026-08-20,activo
+MAD-00005,Silla gaming Air-275,Gaming,ByteWorks Distribution,,1,3,Madrid,2026-09-29,activo
+MAD-00006,Cable USB-C Go-820,Telefonía,GigaSupply,1164.87,96,27,Madrid,2025-08-14,activo
+MAD-00007,Soporte móvil Go-273,Telefonía,SmartHub Europe,1110.33,38,14,Madrid,2026-02-19,activo
+MAD-00008,Lector tarjetas NX-571,Accesorios,ByteWorks Distribution,137.79,65,36,Madrid,2025-11-17,activo
+MAD-00009,Volante NX-639,Gaming,DigitalCore,964.13,40,14,Madrid,2026-07-17,activo
+MAD-00010,Cámara IP NX-656,Hogar inteligente,DigitalCore,688.5,29,34,Madrid,2025-12-28,activo
+MAD-00011,Powerbank Air-296,Telefonía,SmartHub Europe,99.12,48,28,Madrid,2026-06-25,activo
+MAD-00012,Ratón gaming Lite-664,Gaming,OmniTech,490.69,26,16,Madrid,2026-08-30,activo
+MAD-00013,Organizador cables Lite-267,Accesorios,ElectroPlus,1038.0,9,5,Madrid,2025-11-11,activo
+MAD-00014,Ratón Max-829,Informática,SmartHub Europe,1209.84,2,11,Madrid,2026-06-14,activo
+MAD-00015,Webcam NX-534,Informática,OmniTech,1372.21,37,33,Madrid,2026-01-15,activo
+MAD-00016,Cargador Max-364,Telefonía,GigaSupply,1161.0,28,20,Madrid,2026-09-28,activo
+MAD-00017,Altavoz Max-469,Audio,DigitalCore,846.71,15,18,Madrid,2025-07-24,activo
+MAD-00018,Auricular TWS Max-625,Telefonía,GigaSupply,1161.69,49,18,Madrid,2026-07-09,activo
+MAD-00019,Powerbank Go-807,Telefonía,SmartHub Europe,419.44,19,22,Madrid,2026-03-22,activo
+MAD-00020,Teclado gaming Pro-540,Gaming,DigitalCore,293.56,15,14,Madrid,2026-01-13,activo
+MAD-00021,Alfombrilla Core-660,Gaming,OmniTech,195.15,74,32,Madrid,2026-08-19,activo
+MAD-00022,Docking NX-413,Informática,DigitalCore,212.08,67,26,Madrid,2026-08-19,activo
+MAD-00023,Interfaz audio Lite-740,Audio,IberDevices,155.84,89,36,Madrid,2025-09-03,activo
+MAD-00024,Alfombrilla Neo-329,Gaming,OmniTech,989.13,56,35,Madrid,2025-12-26,activo
+MAD-00025,Micrófono Neo-481,Audio,IberDevices,1230.59,15,16,Madrid,2025-09-02,activo
+MAD-00026,DAC USB Air-511,Audio,TechNova Iberia,140.22,20,19,Madrid,2026-03-24,activo
+MAD-00027,Mochila Core-695,Accesorios,DigitalCore,344.74,80,24,Madrid,2025-09-07,activo
+MAD-00028,Interfaz audio Max-482,Audio,IberDevices,1176.92,10,5,Madrid,2025-07-23,activo
+MAD-00029,Cámara IP Lite-417,Hogar inteligente,ElectroPlus,229.71,57,21,Madrid,2026-04-03,activo
+MAD-00030,Interfaz audio Go-934,Audio,GigaSupply,1107.22,62,27,Madrid,2025-09-10,activo
+MAD-00031,DAC USB Max-129,Audio,DigitalCore,1080.05,14,7,Madrid,2025-09-05,activo
+MAD-00032,Lector tarjetas Core-450,Accesorios,SmartHub Europe,140.43,41,12,Madrid,2026-07-22,activo
+MAD-00033,Interfaz audio Go-428,Audio,DigitalCore,108.08,43,17,Madrid,2026-06-25,activo
+MAD-00034,Mochila NX-422,Accesorios,GigaSupply,1380.23,39,21,Madrid,2025-10-07,activo
+MAD-00035, Adaptador Max-381,Accesorios,ByteWorks Distribution,343.38,19,7,Madrid,2026-07-17,activo
+MAD-00036,Micrófono Air-143,Audio,NextWare,1259.61,19,20,Madrid,2025-08-27,activo
+MAD-00037,Altavoz NX-131,Audio,ByteWorks Distribution,113.39,20,25,Madrid,2025-12-28,activo
+MAD-00038,Barra de sonido Air-774,Audio,  GigaSupply  ,582.89,35,13,Madrid,2026-02-26,activo
+MAD-00039,Altavoz Air-397,Audio,NextWare,1406.2,37,33,Madrid,2025-09-29,activo
+MAD-00040,Cargador Core-946,Telefonía,DigitalCore,1094.62,39,27,Madrid,2026-06-23,activo
+MAD-00041,Webcam Core-852,Informática,NextWare,718.75,27,11,Madrid,2025-10-12,X
+MAD-00042,Cámara IP Air-812,Hogar inteligente,ElectroPlus,692.86,55,25,Madrid,2025-11-02,activo
+MAD-00043,Silla gaming Air-538,Gaming,DigitalCore,1266.32,2,22,Madrid,2026-03-27,activo
+MAD-00044,Organizador cables Air-594,Accesorios,DigitalCore,580.48,47,25,Madrid,2026-06-06,activo
+MAD-00045,Micrófono Lite-731,Audio,DigitalCore,747.14,31,15,Madrid,2025-07-12,activo
+MAD-00046,Ratón Go-770,Informática,ElectroPlus,1333.86,1,3,Madrid,2025-12-13,activo
+MAD-00047,Cable USB-C Air-910,Telefonía,GigaSupply,1307.56,17,26,Madrid,2026-08-14,activo
+MAD-00048,Hub domótico Max-995,Hogar inteligente,NextWare,894.84,1,13,Madrid,2026-05-04,activo
+MAD-00049,Ratón gaming NX-836,Gaming,IberDevices,649.88,48,18,Madrid,2026-04-24,activo
+MAD-00050,Lector tarjetas NX-945,Accesorios,ByteWorks Distribution,1241.22,veinte,36,Madrid,2025-09-04,activo
+MAD-00051,Enchufe smart Go-162,Hogar inteligente,TechNova Iberia,115.07,82,35,Madrid,2026-01-06,activo
+MAD-00052,Powerbank Lite-174,Telefonía,IberDevices,612.55,64,37,Madrid,2026-06-18,activo
+MAD-00053,Webcam Lite-161,Informática,ByteWorks Distribution,175.42,16,8,Madrid,2026-05-02,ACTIVO
+MAD-00054,Barra de sonido Max-586,Audio,OmniTech,158.73,35,12,Madrid,2026-07-10,activo
+MAD-00055,Barra de sonido Air-364,Audio,OmniTech,1188.43,47,35,Madrid,2025-12-18,activo
+MAD-00056,Headset Air-870,Gaming,ElectroPlus,1277.45,31,26,Madrid,2026-05-16,activo
+MAD-00174,Smartphone Max-338,Telefonía,IberDevices,1390.14,28,35,Madrid,2026-04-24,activo
+MAD-00058,Altavoz Pro-628,Audio,ElectroPlus,1202.37,24,20,Madrid,2026-08-13,activo
+MAD-00059,Alfombrilla Pro-960,Gaming,IberDevices,323.32,29,31,Madrid,2026-07-07,activo
+MAD-00060,Cargador Core-882,Telefonía,IberDevices,827.1,21,21,Madrid,2025-09-23,descatalogado
+MAD-00061,Ratón gaming NX-465,Gaming,TechNova Iberia,764.57,70,23,Madrid,2025-07-29,activo
+MAD-00062,Barra de sonido Pro-395,Audio,ElectroPlus,280.69,56,26,Madrid,2026-04-25,activo
+MAD-00063,Cable HDMI Air-548,Accesorios,GigaSupply,1254.25,41,14,Madrid,2025-09-10,activo
+MAD-00064,Docking Core-263,Informática,NextWare,566.51,2,8,Madrid,2026-04-17,activo
+MAD-00065,Organizador cables Pro-867,Accesorios,SmartHub Europe,64.81,23,32,Madrid,2025-12-23,activo
+MAD-00066,Headset Neo-190,Gaming,NextWare,868.73,75,35,Madrid,2025-07-24,activo
+MAD-00067,Hub USB Max-873,Informática,TechNova Iberia,801.08,108,33,Madrid,2026-03-07,activo
+MAD-00068,Adaptador Core-848,Accesorios,DigitalCore,412.04,6,3,Madrid,2025-12-14,activo
+MAD-00069,Monitor Go-183,Informática,IberDevices,581.41,25,14,Madrid,2026-08-03,activo
+MAD-00070,Soporte móvil Pro-355,Telefonía,TechNova Iberia,411.32,81,24,Madrid,2026-04-22,activo
+MAD-00071,Enchufe smart Go-748,Hogar inteligente,OmniTech,594.47,43,24,Madrid,2026-07-20,activo
+MAD-00072,Protector pantalla Core-737,Accesorios,IberDevices,205.64,11,5,Madrid,2025-08-08,activo
+MAD-00073,Powerbank Core-749,Telefonía,DigitalCore,373.73,30,17,Madrid,2026-08-17,descatalogado
+MAD-00074,Lector tarjetas Pro-735,Accesorios,NextWare,1457.26,45,15,Madrid,2026-03-09,activo
+MAD-00075,Ratón gaming Neo-409,Gaming,ElectroPlus,1346.98,25,22,Madrid,2026-04-08,activo
+MAD-00076,Ratón gaming Max-994,Gaming,TechNova Iberia,287.27,42,30,Madrid,2026-04-15,activo
+MAD-00077,Mando Go-901,Gaming,DigitalCore,28.43,95,34,Madrid,2025-10-07,activo
+MAD-00078,Mochila Neo-214,Accesorios,ByteWorks Distribution,815.08,41,31,Madrid,2026-08-26,activo
+MAD-00079,Volante NX-997,Gaming,IberDevices,513.79,84,32,Madrid,2025-08-09,activo
+MAD-00080, Auriculares Neo-408,Audio,DigitalCore,149.23,52,35,Madrid,2026-09-29,activo
+MAD-00081,Silla gaming Air-166,Gaming,ByteWorks Distribution,763.94,65,14,Madrid,2025-11-20,activo
+MAD-00082,Altavoz Air-164,Audio,TechNova Iberia,1450.81,49,17,Madrid,2026-09-23,activo
+MAD-00083,Hub domótico Lite-439,Hogar inteligente,NextWare,759.46,31,12,Madrid,2026-04-06,activo
+MAD-00084,Base portátil Lite-301,Accesorios,ElectroPlus,151.90 €,39,12,Madrid,2026-05-20,activo
+MAD-00085,Alfombrilla Go-644,Gaming,ByteWorks Distribution,932.74,31,34,Madrid,2026-03-15,activo
+MAD-00086,Termostato Max-448,Hogar inteligente,ElectroPlus,996.17,6,5,Madrid,2025-12-19,activo
+MAD-00087,Base portátil Go-201,Accesorios,SmartHub Europe,68.90 €,81,29,Madrid,2026-01-23,activo
+MAD-00088,Alfombrilla Go-147,Gaming,DigitalCore,1258.26,97,36,Madrid,2025-10-05,activo
+MAD-00089,Monitor Lite-556,Informática,SmartHub Europe,242.81,22,9,Madrid,2025-07-14,activo
+MAD-00090,Cargador Air-535,Telefonía,ByteWorks Distribution,1251.32,34,20,Madrid,2026-07-15,activo
+MAD-00091,Cable HDMI Neo-746,Accesorios,OmniTech,1494.97,86,39,Madrid,2025-07-06,activo
+MAD-00092,Micrófono Go-594,Audio,NextWare,627.71,99999,28,Madrid,2026-08-12,descatalogado
+MAD-00093,DAC USB Core-181,Audio,TechNova Iberia,1351.63,46,18,Madrid,2026-09-25,activo
+MAD-00094,Hub USB Max-298,Informática,SmartHub Europe,584.85,15,6,Madrid,2026-04-15,activo
+MAD-00095,Auricular TWS Pro-697,Telefonía,ByteWorks Distribution,214.17,51,32,Madrid,2025-11-28,activo
+MAD-00096,Termostato Core-372,Hogar inteligente,TechNova Iberia,62.72,0,7,Madrid,2026-05-21,activo
+MAD-00097,Headset Air-438,Gaming,ElectroPlus,310.94,38,18,Madrid,2026-01-22,activo
+MAD-00098,Cable USB-C Neo-383,Telefonía,ElectroPlus,1063.71,3,5,Madrid,2025-08-25,activo
+MAD-00099,Webcam Neo-707,Informática,DigitalCore,953.97,91,32,Madrid,2026-09-02,activo
+MAD-00100,Volante Max-219,Gaming,NextWare,1416.31,26,19,Madrid,2025-08-01,activo
+MAD-00101,Auricular TWS Neo-318,Telefonía,TechNova Iberia,704.78,99999,3,Madrid,2026-07-08,descatalogado
+MAD-00102,Base portátil Core-999,Accesorios,  DigitalCore  ,1465.3,137,39,Madrid,2026-04-23,activo
+MAD-00103,Smartphone Max-950,Telefonía,OmniTech,182.71,14,37,Madrid,2026-07-14,activo
+MAD-00104,SSD Neo-252,Informática,ElectroPlus,1414.72,10,6,Madrid,2025-09-03,activo
+MAD-00105,Smartphone NX-271,Telefonía,ElectroPlus,915.51,54,27,Madrid,2026-08-14,activo
+MAD-00106,Micrófono Core-688,Audio,ElectroPlus,721.63,26,10,Madrid,2026-08-25,activo
+MAD-00107,Protector pantalla Lite-946,Accesorios,TechNova Iberia,1295.52,35,21,Madrid,2025-10-22,activo
+MAD-00108,Termostato Lite-215,HOGAR INTELIGENTE,DigitalCore,51.8,131,39,Madrid,2025-11-25,activo
+MAD-00109,Docking Core-850,Informática,ByteWorks Distribution,214.27,97,38,Madrid,2026-06-04,activo
+MAD-00110,Teclado Core-122,Informática,OmniTech,1010.49,22,19,Madrid,2026-03-28,activo
+MAD-00111,Cámara IP Max-656,Hogar inteligente,NextWare,1254.81,86,28,Madrid,2026-04-28,activo
+MAD-00112,Headset Air-252,Gaming,NextWare,1001.39,14,10,Madrid,2025-10-19,activo
+MAD-00113,Lector tarjetas Core-313,Accesorios,ElectroPlus,1165.88,39,28,Madrid,2026-06-19,activo
+MAD-00114,Termostato Air-647,Hogar inteligente,NextWare,1414.88,veinte,18,Madrid,2026-09-20,activo
+MAD-00115,Headset NX-735,Gaming,ByteWorks Distribution,1130.1,6,3,Madrid,2026-04-27,activo
+MAD-00116,Smartphone Core-900,Telefonía,IberDevices,868.91,18,14,Madrid,2026-03-30,activo
+MAD-00117,Altavoz Core-195,Audio,GigaSupply,150.67,29,26,Madrid,2026-04-16,descatalogado
+MAD-00118,Funda Go-389,Telefonía,OmniTech,1479.49,22,8,Madrid,2026-06-23,activo
+MAD-00119,Docking Go-788,Informática,NextWare,1068.25,15,11,Madrid,2025-10-29,descatalogado
+MAD-00120,Auricular TWS NX-242,Telefonía,NextWare,937.16,14,16,Madrid,2025-08-25,activo
+MAD-00121,Powerbank Air-687,Telefonía,GigaSupply,224.90 €,26,29,Madrid,2026-07-22,activo
+MAD-00122,Monitor Lite-159,Informática,SmartHub Europe,1301.7,4,19,Madrid,2025-08-11,activo
+MAD-00123,Adaptador NX-864,Accesorios,NextWare,433.58,31,36,Madrid,2025-08-16,activo
+MAD-00124,Enchufe smart Max-700,Hogar inteligente,NextWare,124.81,0,15,Madrid,2025-07-28,activo
+MAD-00125,Smartphone Max-810,Telefonía,TechNova Iberia,1459.43,29,21,Madrid,2026-04-09,activo
+MAD-00126,Monitor Neo-726,Informática,DigitalCore,211.51,64,27,Madrid,2026-05-15,activo
+MAD-00127,Organizador cables Go-274,Accesorios,  DigitalCore  ,508.49,55,40,Madrid,2025-08-05,activo
+MAD-00128,Cable USB-C Lite-519,Telefonía,ByteWorks Distribution,1124.8,10,6,Madrid,2026-02-03,activo
+MAD-00129,Base portátil Go-264,Accesorios,ElectroPlus,690.32,53,20,Madrid,2025-10-14,activo
+MAD-00130,Funda Core-230,Telefonía,IberDevices,776.18,30,19,Madrid,2025-12-28,activo
+MAD-00131,Bombilla smart Max-705,Hogar inteligente,TechNova Iberia,46.48,46,33,Madrid,2026-04-02,activo
+MAD-00132,Teclado gaming Air-107,Gaming,NextWare,424.9,37,23,Madrid,2026-06-27,activo
+MAD-00133,Bombilla smart Max-888,Hogar inteligente,IberDevices,1229.76,25,22,Madrid,2025-11-04,activo
+MAD-00134,Protector pantalla Pro-735,Accesorios,ByteWorks Distribution,634.96,58,40,Madrid,2025-08-28,activo
+MAD-00135,Volante Lite-838,Gaming,ByteWorks Distribution,959.83,80,39,Madrid,2025-07-12,activo
+MAD-00136,Webcam Pro-762,Informática,TechNova Iberia,620.17,32,11,Madrid,2025-08-11,activo
+MAD-00137,Funda Pro-613,Telefonía,IberDevices,1407.7,66,18,Madrid,2026-05-15,activo
+MAD-00138,Ratón Go-685,Informática,IberDevices,183.57,37,25,Madrid,2026-02-24,activo
+MAD-00139,Powerbank Pro-789,Telefonía,ByteWorks Distribution,71.08,15,16,Madrid,2026-03-23,activo
+MAD-00140,Termostato Core-240,Hogar inteligente,NextWare,1264.38,92,34,Madrid,2026-01-21,activo
+MAD-00141,Hub domótico Neo-270,Hogar inteligente,OmniTech,508.9,40,29,Madrid,2025-07-13,activo
+MAD-00142,Headset Go-642,Gaming,SmartHub Europe,1371.51,31,20,Madrid,2026-04-10,activo
+MAD-00143,Sensor Core-600,Hogar inteligente,IberDevices,760.54,30,13,Madrid,2026-06-07,activo
+MAD-00144,Mando Pro-879,Gaming,NextWare,896.09,42,16,Madrid,2025-07-11,activo
+MAD-00145,Cable USB-C Max-319,Telefonía,SmartHub Europe,219.98,43,21,Madrid,2025-10-12,descatalogado
+MAD-00146,Ratón gaming Neo-158,Gaming,IberDevices,239.85,9,6,Madrid,2025-10-28,activo
+MAD-00147,Mando Go-280,Gaming,GigaSupply,440.9,49,-11,Madrid,2026-02-27,activo
+MAD-00148,Soporte móvil Neo-541,Telefonía,ByteWorks Distribution,499.99,83,26,Madrid,2025-07-01,activo
+MAD-00149,Mochila Pro-729,Accesorios,IberDevices,801.39,59,21,Madrid,2025-07-10,activo
+MAD-00150,Sensor Air-925,Hogar inteligente,ByteWorks Distribution,732.54,25,12,Madrid,2026-07-05,activo
+MAD-00151,Mando Air-205,Gaming,SmartHub Europe,130.0,37,14,Madrid,2025-12-05,activo
+MAD-00152,Volante Max-146,Gaming,OmniTech,179.25,28,36,Madrid,2025-11-07,activo
+MAD-00153,Smartphone Go-103,Telefonía,NextWare,552.53,21,6,Madrid,2026-01-27,activo
+MAD-00154,Cable HDMI Neo-684,Accesorios,OmniTech,1184.64,28,11,Madrid,2026-09-22,activo
+MAD-00155,Volante Air-398,Gaming,IberDevices,819.08,71,36,Madrid,2025-10-10,activo
+MAD-00156,Lector tarjetas Lite-673,Accesorios,DigitalCore,12.44,32,9,Madrid,2025-10-22,activo
+MAD-00157,DAC USB Pro-457,Audio,ElectroPlus,1456.16,42,35,Madrid,2026-04-10,activo
+MAD-00158,Silla gaming Go-681,Gaming,IberDevices,1159.34,7,8,Madrid,2026-09-23,activo
+MAD-00159,Cable HDMI Pro-588,Accesorios,ElectroPlus,983.82,57,37,Madrid,2026-02-18,activo
+MAD-00160,Funda Pro-771,Telefonía,GigaSupply,N/D,32,15,Madrid,2026-08-25,activo
+MAD-00161,Cámara IP Max-134,Hogar inteligente,DigitalCore,123.7,11,4,Madrid,2025-08-28,activo
+MAD-00162,DAC USB Core-990,Audio,ByteWorks Distribution,1203.19,49,27,Madrid,2026-04-23,ACTIVO
+MAD-00163,Base portátil Neo-288,Accesorios,DigitalCore,1253.12,1,20,Madrid,2026-03-31,activo
+MAD-00164,Cable USB-C Go-810,Telefonía,SmartHub Europe,609.19,36,19,Madrid,2025-12-30,activo
+MAD-00165,Hub domótico Neo-511,Hogar inteligente,GigaSupply,1232.61,32,12,Madrid,2026-01-07,activo
+MAD-00166,Volante Pro-964,Gaming,ByteWorks Distribution,299.66,2,36,Madrid,2026-03-24,X
+MAD-00167,Cargador Core-649,Telefonía,OmniTech,1039.96,12,13,Madrid,2026-01-25,activo
+MAD-00168,Cable HDMI Core-539,Accesorios,GigaSupply,754.86,13,9,Madrid,2026-04-22,activo
+MAD-00169,Monitor Core-949,Informática,NextWare,1341.1,49,21,Madrid,2026-03-13,activo
+MAD-00170,SSD Go-727,Informática,NextWare,320.74,36,17,Madrid,2025-09-01,activo
+MAD-00171,Cable HDMI Lite-672,Accesorios,OmniTech,460.88,110,25,Madrid,2026-02-02,activo
+MAD-00172,Protector pantalla Go-441,Accesorios,IberDevices,1028.44,48,21,Madrid,2026-09-06,activo
+MAD-00173,Ratón gaming Air-406,Gaming,GigaSupply,425.35,29,38,Madrid,2025-11-16,activo
+MAD-00174,Monitor Max-722,Informática,GigaSupply,1313.24,36,25,Madrid,2026-06-16,activo
+MAD-00175,SSD Max-147,Informática,SmartHub Europe,435.33,97,31,Madrid,2026-03-13,activo
+MAD-00176,Sensor NX-614,Hogar inteligente,NextWare,602.79,3,4,Madrid,2026-09-03,activo
+MAD-00177,Cable HDMI Max-773,Accesorios,NextWare,1079.18,64,31,Madrid,2026-08-29,activo
+MAD-00178,Adaptador Air-783,Accesorios,DigitalCore,1483.64,25,11,Madrid,2026-05-26,descatalogado
+MAD-00179,Funda Go-991,Telefonía,IberDevices,1361.24,62,34,Madrid,2025-08-11,activo
+MAD-00180,Bombilla smart Max-946,Hogar inteligente,NextWare,1286.41,19,11,Madrid,2025-09-22,activo
+MAD-00181,Ratón Go-433,Informática,TechNova Iberia,87.53,13,7,Madrid,2025-11-19,activo
+MAD-00182,Cable HDMI Pro-834,Accesorios,ElectroPlus,873.32,24,18,Madrid,2026-01-21,activo
+MAD-00183,Ratón NX-362,Informática,DigitalCore,1180.81,63,17,Madrid,2026-02-19,activo
+MAD-00184,Ratón gaming Core-882,Gaming,GigaSupply,1120.79,21,8,Madrid,2025-09-01,activo
+MAD-00185,Alfombrilla NX-576,Gaming,SmartHub Europe,1106.89,13,22,Madrid,2025-09-16,activo
+MAD-00186,SSD NX-391,Informática,DigitalCore,1428.83,105,39,Madrid,2026-05-14,activo
+MAD-00187,Mochila Neo-777,Accesorios,SmartHub Europe,87.37,36,33,Madrid,2025-11-22,activo
+MAD-00188,Bombilla smart Core-653,Hogar inteligente,DigitalCore,"69,66",95,34,Madrid,2026-04-14,activo
+MAD-00189,Organizador cables Go-683,Accesorios,TechNova Iberia,1080.11,45,15,Madrid,2026-07-18,activo
+MAD-00190,Smartphone NX-327,Telefonía,IberDevices,298.98,48,33,Madrid,2026-03-25,descatalogado
+MAD-00191,Hub domótico Lite-678,Hogar inteligente,DigitalCore,1265.11,124,30,Madrid,2025-10-02,activo
+MAD-00192,Interfaz audio Pro-622,Audio,SmartHub Europe,276.38,22,7,Madrid,2026-08-31,activo
+MAD-00193,Auricular TWS NX-257,Telefonía,DigitalCore,542.67,18,30,Madrid,2026-04-13,activo
+MAD-00194,Timbre smart Air-502,Hogar inteligente,SmartHub Europe,1150.9,95,32,Madrid,2025-10-21,activo
+MAD-00195,Protector pantalla Core-478,Accesorios,SmartHub Europe,1303.21,48,20,Madrid,2025-09-16,activo
+MAD-00196,Interfaz audio Pro-145,Otros??,OmniTech,1180.91,13,12,Madrid,2025-09-22,activo
+MAD-00197,Sensor Air-305,Hogar inteligente,GigaSupply,1369.12,65,31,Madrid,2026-02-03,activo
+MAD-00198,Mochila Neo-449,Accesorios,ElectroPlus,448.08,42,30,Madrid,2026-03-30,activo
+MAD-00199,DAC USB NX-474,Audio,OmniTech,445.34,93,34,Madrid,2026-08-09,activo
+MAD-00200,Funda NX-205,Telefonía,SmartHub Europe,744.09,50,27,Madrid,2025-09-05,activo
+MAD-00201,Cable USB-C Go-272,Telefonía,GigaSupply,58.23,veinte,35,Madrid,2026-05-14,activo
+MAD-00202,SSD NX-255,Informática,DigitalCore,302.23,44,37,Madrid,2025-07-22,activo
+MAD-00203,Cable HDMI Go-467,Accesorios,NextWare,1212.72,54,13,Madrid,2026-02-14,activo
+MAD-00204,Soporte móvil Pro-983,Telefonía,NextWare,589.56,24,9,Madrid,2026-08-25,activo
+MAD-00205,Protector pantalla Lite-906,Accesorios,ElectroPlus,746.23,64,27,Madrid,2026-03-21,activo
+MAD-00206,Monitor Air-708,Informática,GigaSupply,41.53,46,20,Madrid,2025-10-19,activo
+MAD-00207,Bombilla smart Neo-141,Hogar inteligente,DigitalCore,1119.32,60,32,Madrid,2026-09-14,activo
+MAD-00208,Enchufe smart Max-321,Hogar inteligente,ElectroPlus,1333.0,54,22,Madrid,2026-06-05,activo
+MAD-00209,Termostato Lite-863,Hogar inteligente,IberDevices,110.12,42,14,Madrid,2025-12-08,activo
+MAD-00210,Interfaz audio Air-671,Audio,SmartHub Europe,1236.01,17,-9,Madrid,2025-10-18,activo
+MAD-00211,Mini PC NX-550,Informática,IberDevices,1361.84,24,32,Madrid,2026-05-24,activo
+MAD-00212,Lector tarjetas NX-588,Accesorios,GigaSupply,1099.7,12,8,Madrid,2026-05-04,activo
+MAD-00213,Barra de sonido Neo-726,Audio,DigitalCore,1147.42,73,28,Madrid,2026-05-07,activo
+MAD-00214,Auriculares Pro-301,Audio,ByteWorks Distribution,678.1,20,6,Madrid,2026-04-30,activo
+MAD-00215,Cable HDMI Air-308,ACCESORIOS,IberDevices,1426.93,13,7,Madrid,2025-09-17,activo
+MAD-00216,Hub domótico Air-611,Hogar inteligente,DigitalCore,257.29,81,38,Madrid,2026-08-31,activo
+MAD-00217,Teclado gaming Air-126,Gaming,SmartHub Europe,-115.9,20,17,Madrid,2025-08-23,activo
+MAD-00218,Powerbank Core-360,Telefonía,ByteWorks Distribution,1386.57,22,27,Madrid,2025-10-10,activo
+MAD-00219,Adaptador NX-544,Accesorios,NextWare,682.44,48,27,Madrid,2025-07-21,activo
+MAD-00220,Altavoz Lite-713,Audio,SmartHub Europe,954.43,33,10,Madrid,2026-02-07,activo
+MAD-00221,Hub domótico Pro-854,Hogar inteligente,DigitalCore,817.31,65,32,Madrid,2026-04-27,activo
+MAD-00222,Barra de sonido NX-557,Audio,SmartHub Europe,1008.89,61,29,Madrid,2025-07-30,activo
+MAD-00223,SSD Air-188,Informática,OmniTech,472.31,89,22,Madrid,2025-09-11,activo
+MAD-00224,Portátil Max-281,Informática,NextWare,-200.6,100,32,Madrid,2026-07-05,activo
+MAD-00225,Powerbank Pro-837,Telefonía,OmniTech,1124.53,36,21,Madrid,2026-03-10,activo
+MAD-00226,Powerbank Pro-558,Telefonía,IberDevices,1405.79,44,21,Madrid,2026-07-04,activo
+MAD-00227,Teclado Air-533,Informática,TechNova Iberia,43.0,15,25,Madrid,2026-02-09,activo
+MAD-00228,Organizador cables Neo-995,Accesorios,SmartHub Europe,1052.13,7,3,Madrid,2026-04-17,activo
+MAD-00229,Lector tarjetas Go-131,Accesorios,SmartHub Europe,26.16,53,20,Madrid,2025-10-03,activo
+MAD-00230,Timbre smart Core-582,Hogar inteligente,GigaSupply,"111,58",3,38,Madrid,2026-07-08,activo
+MAD-00231,Webcam Neo-667,Informática,OmniTech,1006.31,8,4,Madrid,2025-10-30,activo
+MAD-00232,Cámara IP Neo-633,HOGAR INTELIGENTE,ElectroPlus,1269.78,46,29,Madrid,2025-07-09,activo
+MAD-00233,Silla gaming Max-137,Gaming,NextWare,1279.43,78,27,Madrid,2026-08-31,activo
+MAD-00234,Soporte móvil Neo-997,Telefonía,TechNova Iberia,416.95,16,10,Madrid,2026-08-09,activo
+MAD-00235,Cable HDMI Air-938,Accesorios,OmniTech,954.59,22,25,Madrid,2026-03-30,activo
+MAD-00236,Silla gaming Core-338,Gaming,ByteWorks Distribution,1338.13,8,22,Madrid,2026-09-10,activo
+MAD-00237,Termostato Lite-562,Hogar inteligente,DigitalCore,N/D,15,20,Madrid,2026-09-30,activo
+MAD-00238,Soporte móvil Lite-309,Telefonía,ElectroPlus,248.17,28,23,Madrid,2026-03-10,activo
+MAD-00239,Powerbank NX-940,Telefonía,OmniTech,1113.27,52,15,Madrid,2026-05-29,activo
+MAD-00240,Termostato Pro-969,Hogar inteligente,ElectroPlus,1091.22,19,15,Madrid,2025-08-27,activo
+MAD-00241,Mini PC Max-264,Informática,OmniTech,1217.41,46,24,Madrid,2026-05-18,activo
+MAD-00242,Cámara IP Air-778,Hogar inteligente,SmartHub Europe,942.3,109,27,Madrid,2026-07-16,activo
+MAD-00243,Auriculares Go-683,Audio,OmniTech,330.26,20,14,Madrid,2026-09-20,activo
+MAD-00244,Volante Neo-244,Gaming,DigitalCore,731.68,103,34,Madrid,2025-07-30,activo
+MAD-00245,Funda Pro-703,Telefonía,DigitalCore,270.51,86,27,Madrid,2026-01-02,activo
+MAD-00246,Cable USB-C NX-788,Telefonía,SmartHub Europe,210.23,17,7,Madrid,2026-06-12,activo
+MAD-00247,Ratón gaming Max-700,Gaming,TechNova Iberia,1016.02,99,27,Madrid,2026-01-12,activo
+MAD-00248,SSD Pro-698,Informática,GigaSupply,330.01,69,22,Madrid,2026-01-18,activo
+MAD-00249,Auricular TWS Pro-814,Telefonía,GigaSupply,38.81,101,40,Madrid,2026-07-11,activo
+MAD-00250,Cámara IP Neo-280,Hogar inteligente,GigaSupply,363.87,25,15,Madrid,2026-02-07,activo
+MAD-00251,Monitor Go-900,Informática,DigitalCore,188.25,27,30,Madrid,2026-01-01,activo
+MAD-00252,SSD Core-802,Informática,DigitalCore,1259.48,81,25,Madrid,2025-09-22,activo
+MAD-00253,Micrófono Air-528,Audio,OmniTech,503.82,16,18,Madrid,2025-11-25,activo
+MAD-00254,Teclado NX-193,Informática,NextWare,904.99,117,26,Madrid,2026-05-13,activo
+MAD-00255, Powerbank Pro-337,Telefonía,NextWare,90.78,51,20,Madrid,2025-12-03,descatalogado
+MAD-00256,Enchufe smart Core-217,Hogar inteligente,ByteWorks Distribution,1228.69,29,10,Madrid,2026-03-02,activo
+MAD-00257,Docking NX-169,Informática,SmartHub Europe,1247.54,11,11,Madrid,2025-10-22,activo
+MAD-00258,Teclado Lite-100,Informática,ElectroPlus,651.13,29,15,Madrid,2025-12-18,activo
+MAD-00259,Cámara IP Lite-355,Hogar inteligente,DigitalCore,979.36,15,7,Madrid,2025-08-16,activo
+MAD-00260,Cable HDMI NX-279,Accesorios,DigitalCore,1248.87,113,34,Madrid,2025-12-21,activo
+MAD-00261,Adaptador Max-154,Accesorios,ElectroPlus,977.34,55,22,Madrid,2026-03-16,activo
+MAD-00262,Auriculares Air-887,Audio,SmartHub Europe,1437.98,49,20,Madrid,2025-11-28,activo
+MAD-00263,Hub domótico Core-248,Hogar inteligente,ByteWorks Distribution,491.63,18,7,Madrid,2025-09-01,activo
+MAD-00264,Ratón gaming Pro-810,Gaming,OmniTech,401.17,104,21,Madrid,2025-10-01,activo
+MAD-00265,Lector tarjetas Pro-638,Accesorios,GigaSupply,850.17,81,35,Madrid,2026-01-09,activo
+MAD-00266,Teclado gaming Pro-238,Gaming,NextWare,917.09,85,34,Madrid,2025-10-22,activo
+MAD-00267,Cámara IP Air-682,Hogar inteligente,DigitalCore,1214.01,37,23,Madrid,2026-04-27,activo
+MAD-00268,Hub USB Air-589,Informática,DigitalCore,1293.96,3,3,Madrid,2025-09-14,activo
+MAD-00269,Alfombrilla Pro-701,Gaming,DigitalCore,645.0,71,24,Madrid,2025-10-06,activo
+MAD-00270,Webcam NX-828,Informática,OmniTech,803.57,6,5,Madrid,2026-09-13,activo
+MAD-00271,Ratón gaming Core-882,Gaming,OmniTech,965.09,85,21,Madrid,2025-11-20,activo
+MAD-00272,Soporte móvil Neo-469,Telefonía,SmartHub Europe,958.53,19,7,Madrid,2025-09-28,activo
+MAD-00273,Lector tarjetas Pro-223,Accesorios,NextWare,,28,17,Madrid,2026-05-01,activo
+MAD-00274,Cámara IP Air-423,Hogar inteligente,IberDevices,"86,54",6,4,Madrid,2026-04-13,activo
+MAD-00275,Cable HDMI Go-313,Accesorios,ByteWorks Distribution,202.29,86,40,Madrid,2025-09-17,activo
+MAD-00276,Protector pantalla Core-116,Accesorios,GigaSupply,51.89,37,13,Madrid,2026-06-18,activo
+MAD-00277,Auriculares Lite-501,Audio,DigitalCore,835.14,67,39,Madrid,2025-08-28,activo
+MAD-00278,Auricular TWS Air-483,Telefonía,SmartHub Europe,758.43,92,38,Madrid,2026-04-22,activo
+MAD-00279,Mini PC Max-235,Informática,DigitalCore,1004.25,55,39,Madrid,2026-03-04,activo
+MAD-00280,Protector pantalla Max-458,Accesorios,NextWare,232.58,48,20,Madrid,2026-07-27,activo
+MAD-00281,Hub domótico Core-168,Hogar inteligente,IberDevices,1081.1,28,23,Madrid,2026-05-23,activo
+MAD-00716,Soporte móvil Go-152,Telefonía,IberDevices,79.79,72,26,Madrid,2025-09-30,activo
+MAD-00283,Termostato Air-632,Hogar inteligente,ElectroPlus,85.6,80,26,Madrid,2025-10-16,activo
+MAD-00284,Barra de sonido Air-594,Audio,TechNova Iberia,757.41,-21,10,Madrid,2025-10-01,activo
+MAD-00285,Hub domótico NX-892,Hogar inteligente,OmniTech,524.52,35,22,Madrid,2026-06-30,activo
+MAD-00286,Cable HDMI Lite-767,Accesorios,OmniTech,156.61,0,20,Madrid,2026-04-02,activo
+MAD-00287,Hub USB NX-176,INFORMÁTICA,NextWare,1110.44,70,23,Madrid,2026-09-28,activo
+MAD-00288,Smartphone Pro-384,Telefonía,IberDevices,926.88,14,14,Madrid,2025-07-01,activo
+MAD-00289,Powerbank Air-435,Telefonía,ElectroPlus,643.18,0,16,Madrid,2026-01-25,activo
+MAD-00290,Teclado gaming Pro-850,Gaming,NextWare,1285.94,36,12,Madrid,2026-09-16,activo
+MAD-00291,Webcam Neo-348,Informática,OmniTech,1402.53,82,17,Madrid,2026-02-06,activo
+MAD-00292,Auricular TWS Lite-553,Telefonía,IberDevices,232.77,101,-5,Madrid,2026-04-21,descatalogado
+MAD-00293,Base portátil Core-511,Accesorios,ElectroPlus,1412.98,4,6,Madrid,2026-07-29,activo
+MAD-00294,DAC USB Go-490,Audio,NextWare,75.78,15,9,Madrid,2026-09-18,descatalogado
+MAD-00295,Powerbank Go-137,Telefonía,SmartHub Europe,544.64,8,6,Madrid,2026-01-07,activo
+MAD-00296,Hub USB Core-419,Informática,OmniTech,1321.22,86,30,Madrid,2025-09-30,activo
+MAD-00297,Mochila Lite-565,Accesorios,IberDevices,1352.88,47,22,Madrid,2025-12-21,activo
+MAD-00298,Interfaz audio Max-370,Audio,IberDevices,542.45,40,23,Madrid,2025-10-19,activo
+MAD-00299,Mochila Max-666,Accesorios,GigaSupply,989.16,0,23,Madrid,2025-07-11,activo
+MAD-00300,Alfombrilla Max-407,Gaming,DigitalCore,164.86,7,3,Madrid,2026-05-25,activo
+MAD-00301,Hub USB NX-432,Informática,GigaSupply,874.05,27,17,Madrid,2026-02-21,activo
+MAD-00302,Auriculares Core-100,Audio,DigitalCore,1119.94,22,16,Madrid,2026-06-21,activo
+MAD-00303,Docking Max-583,Informática,IberDevices,324.13,35,28,Madrid,2026-08-06,activo
+MAD-00304,Cámara IP Lite-403,Hogar inteligente,GigaSupply,1206.56,17,7,Madrid,2025-10-16,activo
+MAD-00305,Webcam Core-608,Informática,DigitalCore,1382.6,29,21,Madrid,2026-04-22,activo
+MAD-00306,Bombilla smart Pro-885,Hogar inteligente,GigaSupply,1345.42,120,37,Madrid,2025-09-11,activo
+MAD-00307,Cámara IP NX-598,Hogar inteligente,ElectroPlus,159.75,40,17,Madrid,2025-12-11,activo
+MAD-00308,Protector pantalla Air-830,Accesorios,DigitalCore,175.74,60,37,Madrid,2026-01-14,activo
+MAD-00309,Timbre smart Air-831,Hogar inteligente,NextWare,671.15,45,24,Madrid,15-99-2026,activo
+MAD-00310,SSD NX-600,Informática,IberDevices,765.14,51,16,Madrid,2026-01-22,activo
+MAD-00311,Adaptador Neo-550,Accesorios,OmniTech,286.11,26,23,Madrid,2025-09-24,activo
+MAD-00312,Funda Core-277,Telefonía,DigitalCore,1128.62,0,11,Madrid,2026-08-31,activo
+MAD-00313,Lector tarjetas NX-334,Accesorios,NextWare,24.51,41,20,Madrid,2026-05-03,activo
+MAD-00314,Bombilla smart Lite-278,Hogar inteligente,OmniTech,658.61,40,28,Madrid,2025-11-19,activo
+MAD-00315,Altavoz NX-271,Audio,ByteWorks Distribution,1436.38,94,27,Madrid,2026-08-22,activo
+MAD-00316,Ratón gaming NX-842,Gaming,IberDevices,718.86,9,3,Madrid,2026-03-25,activo
+MAD-00317,Volante Core-789,Gaming,DigitalCore,495.91,0,39,Madrid,2026-07-20,activo
+MAD-00318,Auricular TWS Go-978,Telefonía,ByteWorks Distribution,1164.27,5,4,Madrid,2025-12-07,activo
+MAD-00319,Smartphone NX-754,Telefonía,DigitalCore,293.18,52,22,Madrid,2025-10-16,activo
+MAD-00320,Headset Neo-482,Gaming,SmartHub Europe,1162.65,15,16,Madrid,2026-09-28,activo
+MAD-00321,Auriculares Max-925,Audio,ElectroPlus,1220.26,10,38,Madrid,2026-08-24,activo
+MAD-00322,Ratón gaming Air-863,Gaming,DigitalCore,195.76,67,27,Madrid,2025-08-12,activo
+MAD-00323,Ratón Air-860,Informática,ByteWorks Distribution,521.62,62,29,Madrid,2025-07-23,activo
+MAD-00324,Altavoz Air-253,Audio,ByteWorks Distribution,639.43,59,18,Madrid,2026-03-09,activo
+MAD-00325,Base portátil Lite-103,Accesorios,NextWare,1338.96,5,4,Madrid,2026-09-23,activo
+MAD-00326,Bombilla smart Air-410,Hogar inteligente,OmniTech,437.18,127,32,Madrid,2026-06-24,ACTIVO
+MAD-00327,Hub domótico Air-145,Hogar inteligente,ElectroPlus,471.43,55,26,Madrid,2026-04-15,activo
+MAD-00328,Mini PC NX-563,Informática,NextWare,681.73,62,34,Madrid,2025-12-02,activo
+MAD-00329,Ratón NX-113,Informática,SmartHub Europe,237.58,67,31,Madrid,2026-01-25,activo
+MAD-00330,Timbre smart Max-542,Hogar inteligente,DigitalCore,1261.83,5,23,Madrid,2026-07-05,activo
+MAD-00331,Volante Go-931,Gaming,NextWare,668.8,36,33,Madrid,2025-12-28,activo
+MAD-00332,Mini PC Neo-445,MISC,SmartHub Europe,1156.59,91,37,Madrid,2025-11-26,activo
+MAD-00333,Interfaz audio Neo-143,Audio,TechNova Iberia,641.39,12,9,Madrid,2026-02-28,activo
+MAD-00334,Headset Pro-168,Gaming,DigitalCore,930.63,54,22,Madrid,2025-12-17,activo
+MAD-00335,Adaptador Air-797,Accesorios,IberDevices,271.92,13,4,Madrid,2026-04-04,activo
+MAD-00336,Hub domótico NX-104,Hogar inteligente,IberDevices,1308.14,5,7,Madrid,2026-06-07,activo
+MAD-00337,Cable HDMI Max-906,Accesorios,DigitalCore,1230.08,29,22,Madrid,2026-04-14,activo
+MAD-00338,Volante Pro-218,Gaming,ByteWorks Distribution,1447.41,45,19,Madrid,2025-12-03,activo
+MAD-00339,Lector tarjetas Max-912,Accesorios,ByteWorks Distribution,1271.13,20,7,Madrid,2026-07-26,activo
+MAD-00340,Adaptador Air-161,Accesorios,DigitalCore,734.15,89,33,Madrid,2025-11-10,descatalogado
+MAD-00341,Mini PC Pro-372,Informática,OmniTech,353.0,62,22,Madrid,2025-12-26,activo
+MAD-00342,SSD Air-197,Informática,DigitalCore,967.56,-14,10,Madrid,2026-02-21,activo
+MAD-00343,Teclado Max-933,Informática,GigaSupply,513.17,70,20,Madrid,2026-06-30,ACTIVO
+MAD-00344,Lector tarjetas Pro-488,Accesorios,SmartHub Europe,1382.55,38,16,Madrid,2025-07-15,activo
+MAD-00345,Interfaz audio Max-243,Audio,TechNova Iberia,452.57,74,33,Madrid,2026-03-04,activo
+MAD-00346,Powerbank Go-625,Telefonía,  GigaSupply  ,263.93,5,26,Madrid,2026-07-18,descatalogado
+MAD-00347,Auriculares Go-973,Audio,DigitalCore,465.32,50,21,Madrid,2025-11-20,activo
+MAD-00348,Soporte móvil Neo-734,Telefonía,GigaSupply,1201.52,74,20,Madrid,2025-10-10,activo
+MAD-00349,Docking Core-529,Informática,ElectroPlus,201.33,66,36,Madrid,2025-08-09,activo
+MAD-00350,Barra de sonido NX-686,Audio,GigaSupply,301.84,5,5,Madrid,2026-07-06,activo
+MAD-00351,Ratón Lite-200,Informática,ByteWorks Distribution,683.01,23,8,Madrid,2026-05-05,activo
+MAD-00352,Funda Neo-114,Telefonía,TechNova Iberia,72.39,7,4,Madrid,2026-03-13,activo
+MAD-00353,Ratón gaming Max-649,Gaming,ElectroPlus,1051.75,65,31,Madrid,2025-10-03,activo
+MAD-00354,Organizador cables NX-499,Accesorios,ByteWorks Distribution,764.95,73,36,Madrid,2026-09-10,activo
+MAD-00355,Interfaz audio Go-589,Audio,SmartHub Europe,765.04,50,35,Madrid,2026-04-15,activo
+MAD-00356,Ratón gaming NX-897,Gaming,SmartHub Europe,1221.21,45,34,Madrid,2026-09-12,activo
+MAD-00357,Barra de sonido Air-740,Audio,DigitalCore,697.89,32,18,Madrid,2025-11-22,activo
+MAD-00358,Headset Go-722,Gaming,ByteWorks Distribution,549.58,8,-1,Madrid,2026-03-29,activo
+MAD-00359,Headset Lite-553,Gaming,TechNova Iberia,1150.86,11,5,Madrid,2025-08-31,activo
+MAD-00360,Ratón Core-485,Informática,OmniTech,839.81,9,8,Madrid,2026-07-03,activo
+MAD-00361,Silla gaming Neo-704,Gaming,OmniTech,251.16,77,38,Madrid,2026-07-04,activo
+MAD-00362,Soporte móvil Pro-836,Telefonía,GigaSupply,1078.58,76,28,Madrid,2026-03-04,activo
+MAD-00363,Protector pantalla Core-816,Accesorios,GigaSupply,310.19,55,33,Madrid,2026-04-30,activo
+MAD-00364,Ratón gaming Air-600,Gaming,ByteWorks Distribution,1491.65,19,8,Madrid,2026-08-05,activo
+MAD-00365,Termostato Pro-912,Hogar inteligente,ByteWorks Distribution,378.6,5,3,Madrid,2025-08-06,activo
+MAD-00366,Sensor Max-961,Hogar inteligente,OmniTech,112.5,124,35,Madrid,2025-07-20,activo
+MAD-00367,Base portátil Lite-449,Accesorios,IberDevices,96.04,60,19,Madrid,2025-09-19,activo
+MAD-00368,Monitor Core-774,Informática,DigitalCore,619.5,-3,16,Madrid,2025-07-09,activo
+MAD-00369,Base portátil Neo-956,Accesorios,NextWare,254.28,35,18,Madrid,2025-10-12,activo
+MAD-00370,Hub domótico Pro-151,Hogar inteligente,GigaSupply,865.72,18,9,Madrid,2025-10-03,activo
+MAD-00371,Termostato Core-605,Hogar inteligente,ByteWorks Distribution,466.2,41,23,Madrid,2026-03-18,activo
+MAD-00372,Lector tarjetas Neo-620,Accesorios,ByteWorks Distribution,894.66,40,15,Madrid,2025-09-06,activo
+MAD-00373,Ratón gaming Go-676,Gaming,ElectroPlus,1468.8,25,31,Madrid,2025-08-18,descatalogado
+MAD-00374,Soporte móvil Max-814,Telefonía,GigaSupply,432.66,87,39,Madrid,2026-04-03,descatalogado
+MAD-00375,Interfaz audio Pro-139,Audio,SmartHub Europe,965.93,41,31,Madrid,2026-05-24,activo
+MAD-00376,SSD Lite-524,Informática,DigitalCore,573.31,63,29,Madrid,2026-09-27,activo
+MAD-00377,Mochila NX-243,Accesorios,NextWare,70.45,26,10,Madrid,2025-09-05,activo
+MAD-00378,Teclado NX-207,Informática,SmartHub Europe,,33,20,Madrid,2025-11-05,activo
+MAD-00379,Organizador cables Neo-841,Accesorios,ByteWorks Distribution,494.14,21,10,Madrid,2025-08-21,activo
+MAD-00380,Alfombrilla Lite-219,Gaming,ElectroPlus,89.42,62,39,Madrid,2026-06-11,activo
+MAD-00381,Lector tarjetas Air-670,Accesorios,OmniTech,964.2,34,18,Madrid,2026-09-19,activo
+MAD-00382,Organizador cables Neo-990,Accesorios,OmniTech,907.68,92,30,Madrid,2025-07-06,activo
+MAD-00383,Monitor Air-458,Informática,TechNova Iberia,649.62,81,33,Madrid,2025-07-20,activo
+MAD-00384,Enchufe smart Air-861,Hogar inteligente,TechNova Iberia,1196.19,12,5,Madrid,2026-05-19,activo
+MAD-00385,Termostato Air-492,Hogar inteligente,IberDevices,718.35,28,14,Madrid,2026-03-21,activo
+MAD-00386,Cable USB-C Pro-451,Telefonía,DigitalCore,1006.16,63,23,Madrid,2026-01-19,activo
+MAD-00387,Cable USB-C Lite-442,Telefonía,ElectroPlus,971.99,72,24,Madrid,,activo
+MAD-00388,Ratón Pro-519,Informática,IberDevices,1104.15,150,39,Madrid,2026-07-16,activo
+MAD-00389,Mini PC Core-214,Informática,SmartHub Europe,138.65,61,25,Madrid,2026-05-23,activo
+MAD-00390,Auriculares Neo-531,Audio,GigaSupply,127.32,16,6,Madrid,2025-11-11,activo
+MAD-00391,Soporte móvil Air-953,Telefonía,ElectroPlus,936.54,82,28,Madrid,2025-11-12,descatalogado
+MAD-00392,Mini PC Core-261,Informática,IberDevices,878.81,23,7,Madrid,2026-02-21,activo
+MAD-00393,Alfombrilla Air-366,Gaming,OmniTech,796.18,28,18,Madrid,2025-08-02,activo
+MAD-00394,Mando Core-184,Gaming,IberDevices,484.76,112,36,Madrid,2025-12-22,activo
+MAD-00395,Termostato NX-964,Hogar inteligente,ElectroPlus,1140.08,62,31,Madrid,2026-07-07,activo
+MAD-00396,Teclado gaming Neo-396,Gaming,OmniTech,1489.61,30,29,Madrid,2026-01-13,activo
+MAD-00397,Hub domótico Air-655,Hogar inteligente,SmartHub Europe,13.2,111,35,Madrid,2025-09-25,descatalogado
+MAD-00398,Organizador cables Lite-963,Accesorios,NextWare,613.08,80,37,Madrid,2025-09-13,activo
+MAD-00399,Cable USB-C Lite-898,Telefonía,DigitalCore,643.65,23,32,Madrid,2026-06-20,activo
+MAD-00400,Soporte móvil Neo-871,Telefonía,TechNova Iberia,513.68,18,30,Madrid,2026-08-13,activo
+MAD-00401,Base portátil Lite-400,Accesorios,DigitalCore,770.54,35,16,Madrid,2026-06-03,descatalogado
+MAD-00402,Cargador NX-580,Telefonía,SmartHub Europe,374.57,23,15,Madrid,2026-02-07,activo
+MAD-00403,Cámara IP Neo-714,Hogar inteligente,ByteWorks Distribution,952.91,72,29,Madrid,2025-08-16,activo
+MAD-00404,Portátil Max-404,Informática,IberDevices,961.61,67,35,Madrid,2026-01-05,descatalogado
+MAD-00405,Smartphone Air-281,Telefonía,,37.84,87,32,Madrid,2025-09-15,activo
+MAD-00406,Teclado gaming Go-219,Gaming,NextWare,642.12,31,14,Madrid,2025-11-21,activo
+MAD-00407,Powerbank Pro-338,Telefonía,ElectroPlus,771.03,4,6,Madrid,2026-07-23,activo
+MAD-00408,Lector tarjetas Neo-231,Accesorios,NextWare,531.15,26,15,Madrid,2025-11-29,activo
+MAD-00409,Base portátil Lite-864,Accesorios,TechNova Iberia,147.15,74,39,Madrid,2026-09-09,activo
+MAD-00410, DAC USB NX-881,Audio,DigitalCore,1233.15,46,18,Madrid,2026-03-16,activo
+MAD-00411,DAC USB Pro-358,Audio,ByteWorks Distribution,186.41,22,32,Madrid,2026-04-29,activo
+MAD-00412,SSD Air-982,Informática,SmartHub Europe,1145.71,41,29,Madrid,2026-03-24,activo
+MAD-00413,Barra de sonido Core-226,Audio,DigitalCore,731.77,69,26,Madrid,2026-03-26,activo
+MAD-00414,Hub USB Go-224,Informática,DigitalCore,1191.57,29,15,Madrid,2026-03-07,activo
+MAD-00415,Timbre smart NX-227,Hogar inteligente,OmniTech,617.0,104,35,Madrid,2026-01-13,activo
+MAD-00416,Micrófono Max-876,Audio,ElectroPlus,1076.15,36,12,Madrid,2026-02-14,activo
+MAD-00417,Enchufe smart Max-849,Hogar inteligente,IberDevices,118.58,0,7,Madrid,2026-05-01,activo
+MAD-00418,Hub USB Air-262,Informática,IberDevices,1056.73,72,36,Madrid,2026-02-15,activo
+MAD-00419,Webcam NX-110,Informática,SmartHub Europe,62.88,150,40,Madrid,2026-03-19,activo
+MAD-00420,Ratón gaming Pro-106,Gaming,SmartHub Europe,64.8,30,19,Madrid,2026-07-30,activo
+MAD-00421,Cámara IP NX-342,Hogar inteligente,TechNova Iberia,1159.75,20,11,Madrid,2026-09-30,activo
+MAD-00422,Protector pantalla Go-932,Accesorios,ByteWorks Distribution,1456.93,11,9,Madrid,2026-09-07,activo
+MAD-00423,Ratón Lite-245,Informática,ByteWorks Distribution,639.5,62,36,Madrid,2025-08-22,activo
+MAD-00424,Teclado NX-158,Informática,GigaSupply,618.13,17,5,Madrid,2026-02-25,activo
+MAD-00425,,Gaming,SmartHub Europe,1243.01,24,10,Madrid,2025-12-30,activo
+MAD-00426,Silla gaming Pro-922,Gaming,TechNova Iberia,897.34,23,24,Madrid,2025-07-03,descatalogado
+MAD-00427,Adaptador Core-211,Accesorios,GigaSupply,234.98,29,18,Madrid,2026-05-29,activo
+MAD-00428,Ratón gaming Max-845,Gaming,ByteWorks Distribution,889.23,80,37,Madrid,2026-01-31,activo
+MAD-00429,DAC USB Max-540,Audio,GigaSupply,446.51,131,37,Madrid,2026-01-18,activo
+MAD-00430,Teclado Lite-656,Informática,DigitalCore,554.56,27,23,Madrid,2026-08-08,activo
+MAD-00431,Cable USB-C Neo-703,Telefonía,NextWare,1074.85,11,23,Madrid,2025-07-09,activo
+MAD-00432,Protector pantalla Core-309,Accesorios,DigitalCore,1497.85,41,18,Madrid,2026-06-04,activo
+MAD-00433,Hub domótico Lite-419,Hogar inteligente,GigaSupply,477.87,23,25,Madrid,2025-07-23,activo
+MAD-00434,Cable HDMI Max-867,Accesorios,OmniTech,1476.11,42,17,Madrid,2026-04-04,descatalogado
+MAD-00435,Volante Air-969,Gaming,,1163.46,70,29,Madrid,2025-08-13,activo
+MAD-00436,Auricular TWS Max-246,Telefonía,GigaSupply,1390.04,9,4,Madrid,2025-09-02,activo
+MAD-00437,Hub USB Air-112,Informática,DigitalCore,305.06,0,33,Madrid,2025-08-22,activo
+MAD-00438,Teclado Lite-888,Informática,DigitalCore,"110,72",4,3,Madrid,2025-08-27,activo
+MAD-00439,Interfaz audio Neo-999,Audio,ByteWorks Distribution,942.08,50,17,Madrid,2026-05-22,activo
+MAD-00440,Timbre smart Go-519,Hogar inteligente,ByteWorks Distribution,504.77,40,26,Madrid,2026-04-26,activo
+MAD-00441,Mando NX-291,Gaming,GigaSupply,1237.12,56,34,Madrid,2026-07-25,activo
+MAD-00442,Powerbank Pro-724,Telefonía,SmartHub Europe,6.78,67,22,Madrid,2026-01-11,activo
+MAD-00443,Enchufe smart Core-616,Hogar inteligente,TechNova Iberia,159.73,8,4,Madrid,2026-03-18,activo
+MAD-00444,Altavoz NX-337,Audio,OmniTech,38.54,10,5,Madrid,2026-06-12,activo
+MAD-00445,Lector tarjetas Max-307,Accesorios,TechNova Iberia,1155.46,132,34,Madrid,2026-01-15,descatalogado
+MAD-00446,Micrófono Max-511,Audio,TechNova Iberia,1139.85,46,33,Madrid,2025-08-07,activo
+MAD-00447,Cable HDMI Lite-955,Accesorios,IberDevices,589.78,54,23,Madrid,2025-07-29,activo
+MAD-00448,Barra de sonido Core-292,Audio,TechNova Iberia,1074.63,97,40,Madrid,2025-09-10,activo
+MAD-00449,Mochila Lite-252,Accesorios,  GigaSupply  ,683.1,0,6,Madrid,2025-10-31,activo
+MAD-00450,Webcam NX-682,Informática,IberDevices,340.63,3,4,Madrid,2025-09-22,activo
+MAD-00451,Smartphone Core-974,Telefonía,GigaSupply,808.64,8,28,Madrid,2026-01-13,activo
+MAD-00452,Silla gaming Air-984,Gaming,NextWare,543.31,33,10,Madrid,2026-03-16,activo
+MAD-00453,Alfombrilla Lite-762,Gaming,TechNova Iberia,797.25,54,15,Madrid,2025-12-06,activo
+MAD-00454,Bombilla smart Air-664,Hogar inteligente,IberDevices,1033.58,37,16,Madrid,2026-03-26,activo
+MAD-00455,Funda Max-992,Telefonía,IberDevices,1380.38,15,10,Madrid,2026-06-09,activo
+MAD-00456,Funda NX-513,Telefonía,TechNova Iberia,1180.99,45,26,Madrid,2026-05-09,activo
+MAD-00457,Ratón gaming NX-492,Gaming,ElectroPlus,1061.06,81,21,Madrid,2026-02-23,activo
+MAD-00458,DAC USB Go-440,Audio,ElectroPlus,579.73,38,24,Madrid,2026-05-25,activo
+MAD-00459,Silla gaming NX-953,Gaming,NextWare,337.21,4,10,Madrid,2026-08-03,activo
+MAD-00460,Smartphone Air-112,Telefonía,GigaSupply,1306.9,76,25,Madrid,2025-11-30,activo
+MAD-00461,Timbre smart Neo-204,Hogar inteligente,NextWare,1213.32,17,10,Madrid,2026-06-09,activo
+MAD-00462,Interfaz audio NX-917,Audio,OmniTech,1080.07,-37,6,Madrid,2025-11-23,activo
+MAD-00463,DAC USB NX-432,Audio,ElectroPlus,784.1,86,40,Madrid,2026-09-17,activo
+MAD-00464,Cable HDMI Air-116,Accesorios,GigaSupply,969.96,21,11,Madrid,2025-09-14,activo
+MAD-00465,Bombilla smart Core-175,Hogar inteligente,ElectroPlus,1104.86,5,27,Madrid,2025-07-06,activo
+MAD-00466,Powerbank Core-520,Telefonía,ByteWorks Distribution,1430.81,40,21,Madrid,2025-07-09,activo
+MAD-00467,Enchufe smart Core-296,Hogar inteligente,OmniTech,1162.5,45,22,Madrid,2026-08-15,activo
+MAD-00468,Alfombrilla Pro-521,Gaming,IberDevices,563.12,141,34,Madrid,2025-10-16,activo
+MAD-00469,Base portátil Air-124,Accesorios,OmniTech,949.63,78,40,Madrid,2026-08-19,ACTIVO
+MAD-00470,Cargador Max-476,Telefonía,DigitalCore,571.32,0,11,Madrid,2025-10-18,activo
+MAD-00471,Silla gaming Pro-407,Gaming,DigitalCore,1078.02,42,32,Madrid,2025-09-12,activo
+MAD-00472,Docking Neo-111,Informática,TechNova Iberia,1404.7,6,6,Madrid,2025-10-09,activo
+MAD-00473,Auricular TWS NX-893,Telefonía,  IberDevices  ,893.4,116,40,Madrid,2025-07-27,activo
+MAD-00474,Base portátil Pro-744,Accesorios,TechNova Iberia,314.0,28,12,Madrid,2026-05-27,activo
+MAD-00475,Cámara IP Go-167,Hogar inteligente,NextWare,199.52,42,20,Madrid,2025-09-02,activo
+MAD-00476,Mochila Air-254,Accesorios,SmartHub Europe,1238.62,22,33,Madrid,2026-04-26,descatalogado
+MAD-00477,Monitor NX-819,Informática,OmniTech,1472.89,68,36,Madrid,2026-07-08,activo
+MAD-00478,Bombilla smart Core-886,Hogar inteligente,OmniTech,N/D,35,12,Madrid,2026-06-21,activo
+MAD-00479,Altavoz Core-993,Audio,ElectroPlus,1391.59,19,11,Madrid,2026-03-13,activo
+MAD-00480,Auricular TWS Air-629,Telefonía,ElectroPlus,906.78,8,3,Madrid,2026-07-01,activo
+MAD-00481,Silla gaming Max-661,Gaming,GigaSupply,920.26,33,20,Madrid,2025-09-23,activo
+MAD-00482,Organizador cables Neo-650,Accesorios,DigitalCore,403.88,23,36,Madrid,2026-03-24,activo
+MAD-00483,Cámara IP Lite-916,Hogar inteligente,DigitalCore,111.13,78,38,Madrid,2026-05-26,activo
+MAD-00484,Termostato Pro-645,HOGAR INTELIGENTE,SmartHub Europe,1223.96,84,29,Madrid,2025-08-13,activo
+MAD-00485,Funda Core-872,Telefonía,DigitalCore,1285.75,31,10,Madrid,2026-07-11,activo
+MAD-00486,Soporte móvil Go-344,Telefonía,ByteWorks Distribution,1023.76,31,13,Madrid,2026-07-15,activo
+MAD-00487,Mini PC Pro-705,Informática,ElectroPlus,546.52,72,22,Madrid,2026-02-26,activo
+MAD-00488,Termostato Max-260,Hogar inteligente,DigitalCore,1444.4,21,11,Madrid,2026-09-09,activo
+MAD-00489,Micrófono Lite-469,Audio,NextWare,1077.04,8,11,Madrid,2025-09-25,activo
+MAD-00490,Altavoz Pro-717,Audio,DigitalCore,842.0,56,20,Madrid,2026-09-07,activo
+MAD-00491,Silla gaming NX-404,Gaming,TechNova Iberia,436.87,56,29,Madrid,2026-01-18,activo
+MAD-00492,Docking NX-595,Informática,IberDevices,438.65,68,27,Madrid,2026-07-24,activo
+MAD-00493,Powerbank Pro-453,Telefonía,ElectroPlus,583.2,113,31,Madrid,2025-12-22,activo
+MAD-00494,Protector pantalla NX-840,Accesorios,ElectroPlus,771.01,67,33,Madrid,2026-02-21,activo
+MAD-00495,Hub domótico Pro-785,Hogar inteligente,ElectroPlus,1109.21,5,3,Madrid,2026-04-26,activo
+MAD-00737,DAC USB Lite-880,Audio,NextWare,551.31,23,8,Madrid,2025-07-31,ACTIVO
+MAD-00497,Alfombrilla Air-313,Gaming,TechNova Iberia,641.0,6,3,Madrid,2025-07-04,activo
+MAD-00498,Enchufe smart Air-176,Hogar inteligente,OmniTech,74.77,8,39,Madrid,2025-12-11,activo
+MAD-00499,SSD Max-338,Informática,ByteWorks Distribution,487.08,49,18,Madrid,2026-04-21,activo
+MAD-00500,Mochila Max-587,Accesorios,IberDevices,1135.29,70,24,Madrid,2026-09-27,activo
+MAD-00501,Silla gaming Max-767,Gaming,TechNova Iberia,1467.09,97,26,Madrid,2026-08-19,activo
+MAD-00502,Powerbank Pro-793,Telefonía,IberDevices,871.83,20,11,Madrid,2026-07-01,activo
+MAD-00503,Powerbank Lite-830,Telefonía,IberDevices,408.19,90,38,Madrid,2025-08-18,activo
+MAD-00504,Cable USB-C Neo-868,Telefonía,OmniTech,75.38,48,21,Madrid,2025-12-14,activo
+MAD-00505,Termostato NX-837,Hogar inteligente,OmniTech,-215.6,11,3,Madrid,2026-03-07,activo
+MAD-00506,Mochila Air-976,Accesorios,ElectroPlus,1380.48,15,7,Madrid,2026-06-30,activo
+MAD-00507,Interfaz audio NX-427,Audio,SmartHub Europe,21.38,46,31,Madrid,2026-03-27,activo
+MAD-00508,Barra de sonido Pro-242,Audio,OmniTech,602.53,42,16,Madrid,2026-04-01,activo
+MAD-00509,Cámara IP Go-949,Hogar inteligente,ByteWorks Distribution,313.21,8,4,Madrid,2026-02-01,activo
+MAD-00510,Powerbank Neo-441,Telefonía,NextWare,523.85,90,40,Madrid,2026-07-05,activo
+MAD-00511,Hub domótico Max-447,Hogar inteligente,GigaSupply,825.05,20,16,Madrid,2026-03-24,activo
+MAD-00512,Cargador Pro-920,Telefonía,SmartHub Europe,676.94,54,29,Madrid,2025-09-25,activo
+MAD-00513,Silla gaming Air-524,Gaming,NextWare,1469.42,7,9,Madrid,2025-07-23,activo
+MAD-00514,Funda Max-289,Telefonía,IberDevices,1492.94,73,31,Madrid,2026-03-24,activo
+MAD-00515,Cargador Max-741,Telefonía,DigitalCore,801.96,11,31,Madrid,2025-07-07,activo
+MAD-00516,Sensor Lite-397,Hogar inteligente,ByteWorks Distribution,568.74,18,9,Madrid,2025-12-15,activo
+MAD-00517,,Gaming,GigaSupply,694.31,74,38,Madrid,2026-02-03,activo
+MAD-00518,Alfombrilla Neo-580,Gaming,NextWare,218.84,28,17,Madrid,2025-08-17,descatalogado
+MAD-00519,Barra de sonido Go-123,Audio,IberDevices,1474.18,7,14,Madrid,2026-01-21,activo
+MAD-00520,Protector pantalla Lite-907,Accesorios,SmartHub Europe,133.61,20,28,Madrid,2026-08-28,activo
+MAD-00521,Protector pantalla Neo-192,Accesorios,OmniTech,155.56,69,36,Madrid,2025-12-16,activo
+MAD-00522,Organizador cables Max-820,Accesorios,DigitalCore,1293.64,46,13,Madrid,2026-09-30,activo
+MAD-00523,Hub USB Pro-164,Informática,GigaSupply,1453.23,8,5,Madrid,2026-02-01,activo
+MAD-00524,Funda Air-248,Telefonía,ElectroPlus,605.95,117,33,Madrid,2025-09-27,activo
+MAD-00525,Lector tarjetas Lite-776,Accesorios,DigitalCore,906.8,46,25,Madrid,2025-07-13,activo
+MAD-00526,Smartphone Air-900,Telefonía,NextWare,239.52,12,9,Madrid,2025-10-20,activo
+MAD-00527,Teclado NX-800,Informática,NextWare,1170.55,41,40,Madrid,2026-07-08,activo
+MAD-00528,Sensor Neo-840,Hogar inteligente,ElectroPlus,821.08,58,27,Madrid,2026-02-25,activo
+MAD-00529,Adaptador Core-309,Accesorios,NextWare,1010.15,8,16,Madrid,2026-01-05,activo
+MAD-00530,Volante Max-693,Gaming,SmartHub Europe,215.35,18,9,Madrid,2026-02-01,activo
+MAD-00531,Sensor Neo-772,Hogar inteligente,SmartHub Europe,171.42,46,33,Madrid,2026-07-06,activo
+MAD-00532,Cargador NX-612,Telefonía,ElectroPlus,1047.08,2,7,Madrid,2026-02-13,activo
+MAD-00533,Hub domótico Lite-100,Hogar inteligente,ByteWorks Distribution,30.23,3,3,Madrid,2025-08-06,activo
+MAD-00534,Auricular TWS Go-944,Telefonía,OmniTech,626.16,47,40,Madrid,2026-09-24,activo
+MAD-00535,Silla gaming Neo-972,Gaming,ElectroPlus,1085.95,29,11,Madrid,2026-02-05,activo
+MAD-00536,Timbre smart NX-295,Hogar inteligente,,1415.43,37,30,Madrid,2025-10-28,activo
+MAD-00537,Bombilla smart Go-322,Hogar inteligente,ElectroPlus,868.1,35,24,Madrid,2026-01-15,activo
+MAD-00538,Smartphone Pro-386,Telefonía,NextWare,801.72,11,4,Madrid,2026-03-09,activo
+MAD-00539,Portátil Neo-680,INFORMÁTICA,TechNova Iberia,385.96,69,20,Madrid,2026-06-20,activo
+MAD-00540,Monitor Max-405,Informática,ElectroPlus,9.74,70,26,Madrid,2025-07-10,activo
+MAD-00541,Barra de sonido Max-857,Audio,OmniTech,318.24,0,30,Madrid,2026-06-13,activo
+MAD-00542,Alfombrilla Max-168,Gaming,OmniTech,720.02,20,8,Madrid,2026-05-14,activo
+MAD-00543,Cargador Max-525,Telefonía,GigaSupply,475.4,37,11,Madrid,2026-09-03,activo
+MAD-00544,Sensor Go-720,Hogar inteligente,TechNova Iberia,1318.04,41,25,Madrid,2026-01-02,activo
+MAD-00545,Teclado gaming Core-452,Gaming,SmartHub Europe,155.46,61,18,Madrid,2026-03-15,activo
+MAD-00546,Enchufe smart Neo-762,Hogar inteligente,TechNova Iberia,1110.31,80,34,Madrid,2025-10-08,activo
+MAD-00547,Adaptador Core-264,Accesorios,SmartHub Europe,804.08,25,24,Madrid,2025-12-12,activo
+MAD-00548, Volante Neo-564,Gaming,ElectroPlus,276.98,63,31,Madrid,2026-04-10,activo
+MAD-00549,Cable USB-C Pro-652,Telefonía,NextWare,723.27,32,11,Madrid,2026-02-02,activo
+MAD-00550,Mochila Core-832,Accesorios,ByteWorks Distribution,1376.27,50,29,Madrid,2026-01-13,activo
+MAD-00551,Webcam Max-809,Informática,ByteWorks Distribution,661.89,17,6,Madrid,2026-08-27,activo
+MAD-00552,Base portátil NX-441,Accesorios,NextWare,1206.92,6,7,Madrid,2025-09-25,activo
+MAD-00553,Webcam Pro-174,Informática,TechNova Iberia,254.16,10,3,Madrid,2025-12-11,activo
+MAD-00554,Volante Air-917,Gaming,OmniTech,701.77,12,4,Madrid,2025-08-15,activo
+MAD-00555,Ratón gaming Max-434,Gaming,NextWare,1161.5,107,39,Madrid,2025-08-31,activo
+MAD-00556,Base portátil Neo-153,Accesorios,ByteWorks Distribution,869.87,68,26,Madrid,2026-02-27,activo
+MAD-00557,Alfombrilla Air-601,Gaming,DigitalCore,85.18,20,8,Madrid,2026-07-08,activo
+MAD-00558,Micrófono Pro-422,Audio,GigaSupply,1076.96,97,30,Madrid,2026-09-17,activo
+MAD-00559,Base portátil Lite-417,Accesorios,ElectroPlus,1097.62,28,11,Madrid,2026-08-14,activo
+MAD-00560,Cargador Neo-146,Telefonía,IberDevices,250.51,6,3,Madrid,2026-07-01,activo
+MAD-00561,Sensor Air-101,Hogar inteligente,DigitalCore,1350.17,85,31,Madrid,2026-05-20,activo
+MAD-00562,Teclado Pro-565,Informática,DigitalCore,870.0,59,19,Madrid,2026-09-17,activo
+MAD-00563,Adaptador NX-152,Accesorios,OmniTech,171.87,3,9,Madrid,2025-09-20,activo
+,Smartphone NX-430,Telefonía,TechNova Iberia,491.53,27,11,Madrid,2025-12-09,activo
+MAD-00565,Hub domótico Pro-251,Hogar inteligente,ByteWorks Distribution,319.89,55,32,Madrid,2026-05-25,activo
+MAD-00566,Smartphone NX-918,Telefonía,NextWare,283.54,97,33,Madrid,2025-07-10,activo
+MAD-00567,Cable USB-C Pro-952,Telefonía,SmartHub Europe,1187.01,6,4,Madrid,2026-06-05,activo
+MAD-00568,Hub domótico Lite-699,Hogar inteligente,ElectroPlus,191.71,104,37,Madrid,2026-09-17,activo
+MAD-00569,Docking Core-780,Informática,ByteWorks Distribution,937.04,10,8,Madrid,2025-10-07,activo
+MAD-00570,Cable USB-C NX-468,Telefonía,GigaSupply,708.26,38,18,Madrid,2026-01-25,activo
+MAD-00571,Teclado Pro-323,Informática,SmartHub Europe,25.61,34,17,Madrid,2026-13-01,activo
+MAD-00572,Timbre smart Pro-109,Hogar inteligente,DigitalCore,201.52,58,34,Madrid,2026-07-23,activo
+MAD-00573,Silla gaming Air-788,Gaming,ByteWorks Distribution,1248.36,41,31,Madrid,2025-12-25,activo
+MAD-00574,Altavoz Pro-828,Audio,ElectroPlus,382.36,54,27,Madrid,2025-09-17,activo
+MAD-00575,Auriculares Max-390,Audio,TechNova Iberia,1288.93,62,27,Madrid,2026-06-15,activo
+MAD-00576,Webcam Air-847,Informática,ElectroPlus,332.17,37,16,Madrid,2025-07-07,descatalogado
+MAD-00577,Silla gaming Lite-600,Gaming,TechNova Iberia,1239.8,0,31,Madrid,2026-03-06,descatalogado
+MAD-00578,DAC USB NX-889,Audio,TechNova Iberia,1034.88,5,33,Madrid,2025-09-03,activo
+MAD-00579, Monitor Go-708,Informática,TechNova Iberia,1288.59,28,12,Madrid,2026-03-25,activo
+MAD-00580,DAC USB Pro-589,MISC,GigaSupply,552.28,96,39,Madrid,2026-03-28,activo
+MAD-00581,Teclado gaming Go-427,Gaming,GigaSupply,400.5,69,29,Madrid,2026-02-03,activo
+MAD-00582,Smartphone NX-532,Telefonía,NextWare,1295.42,94,27,Madrid,2025-09-13,activo
+MAD-00583,Soporte móvil NX-812,Telefonía,GigaSupply,216.55,37,18,Madrid,2025-08-16,activo
+MAD-00584,Powerbank Lite-894,Telefonía,NextWare,1408.1,10,6,Madrid,2026-01-20,activo
+MAD-00585,Cámara IP Go-689,Hogar inteligente,SmartHub Europe,494.17,82,33,Madrid,2025-10-09,activo
+MAD-00586,Teclado Core-957,Informática,DigitalCore,1044.82,30,23,Madrid,2025-09-26,activo
+MAD-00587,Cable USB-C Air-535,Telefonía,TechNova Iberia,1032.21,64,29,Madrid,2025-08-23,activo
+MAD-00588,Alfombrilla Core-241,Gaming,SmartHub Europe,76.48,35,9,Madrid,2026-08-13,activo
+MAD-00589,Termostato Pro-228,Hogar inteligente,ElectroPlus,1275.96,13,7,Madrid,2025-10-07,activo
+MAD-00590,DAC USB Air-189,Audio,OmniTech,1146.11,16,9,Madrid,2025-10-28,activo
+MAD-00591,Altavoz Neo-332,Audio,ElectroPlus,867.35,63,36,Madrid,2026-07-01,activo
+MAD-00592,Powerbank NX-479,Telefonía,OmniTech,76.03,11,7,Madrid,2026-07-08,activo
+MAD-00593,Teclado gaming Core-911,Gaming,DigitalCore,1347.22,65,17,Madrid,ayer,activo
+MAD-00594,,Hogar inteligente,ByteWorks Distribution,1169.22,25,9,Madrid,2025-07-08,activo
+MAD-00595,Cámara IP Max-956,Hogar inteligente,DigitalCore,128.45,18,22,Madrid,2026-06-06,activo
+MAD-00596,Sensor NX-761,Hogar inteligente,IberDevices,1267.57,82,39,Madrid,2026-05-11,activo
+MAD-00597,Ratón gaming Max-699,Gaming,NextWare,1167.0,22,19,Madrid,2025-09-05,activo
+MAD-00598,Docking Pro-376,Informática,DigitalCore,681.98,93,40,Madrid,2026-01-25,descatalogado
+MAD-00599,Portátil Core-285,Informática,SmartHub Europe,20.39,34,25,Madrid,2025-08-01,activo
+MAD-00600,Organizador cables Go-564,Accesorios,TechNova Iberia,883.19,69,35,Madrid,2026-09-10,pendiente
+MAD-00601,Headset Air-965,Gaming,ByteWorks Distribution,344.95,12,9,Madrid,2026-09-18,activo
+MAD-00602,Bombilla smart Max-775,Hogar inteligente,TechNova Iberia,1026.33,16,6,Madrid,2026-06-17,activo
+MAD-00603,Headset Lite-288,Gaming,SmartHub Europe,452.07,72,32,Madrid,2026-06-27,activo
+MAD-00604,Smartphone Air-758,Telefonía,SmartHub Europe,761.37,66,19,Madrid,2026-07-04,activo
+MAD-00605,DAC USB Air-107,Audio,OmniTech,,0,3,Madrid,2026-03-15,activo
+MAD-00606,Ratón Neo-829,Informática,SmartHub Europe,564.64,40,26,Madrid,2026-03-08,activo
+MAD-00607,Teclado gaming Go-957,Gaming,OmniTech,1185.0,23,12,Madrid,2025-11-13,activo
+MAD-00608,Sensor Air-272,Hogar inteligente,IberDevices,1352.44,33,17,Madrid,2025-09-29,descatalogado
+MAD-00609,Barra de sonido Max-220,Audio,SmartHub Europe,1337.06,8,10,Madrid,2026-07-12,activo
+MAD-00610,Adaptador Go-466,Accesorios,ByteWorks Distribution,733.36,35,24,Madrid,2025-08-09,activo
+MAD-00611,Adaptador Pro-868,Accesorios,GigaSupply,1042.13,60,38,Madrid,2026-03-14,activo
+MAD-00612,Cable USB-C NX-745,Telefonía,ByteWorks Distribution,478.04,95,38,Madrid,2026-08-23,activo
+MAD-00613,Base portátil Air-544,Accesorios,ByteWorks Distribution,1181.41,27,19,Madrid,2025-10-06,activo
+MAD-00614,Smartphone Pro-438,Telefonía,NextWare,1008.51,99,25,Madrid,2026-08-20,activo
+MAD-00003,Powerbank Lite-293,Telefonía,GigaSupply,886.39,60,29,Madrid,2025-10-24,activo
+MAD-00616,Termostato Go-258,Hogar inteligente,ByteWorks Distribution,670.64,65,38,Madrid,2026-08-19,activo
+MAD-00617,Protector pantalla NX-296,Accesorios,SmartHub Europe,750.24,15,14,Madrid,2026-09-20,activo
+MAD-00618,Alfombrilla Air-956,Gaming,GigaSupply,1041.32,136,28,Madrid,2026-08-14,activo
+MAD-00619,Ratón Core-330,Informática,IberDevices,920.36,101,34,Madrid,2026-04-18,activo
+MAD-00620,Mando Go-894,Gaming,TechNova Iberia,187.90 €,15,4,Madrid,2026-08-07,activo
+MAD-00621,SSD Go-229,Informática,IberDevices,249.51,19,23,Madrid,2026-08-11,activo
+MAD-00622,Cámara IP NX-115,Hogar inteligente,NextWare,1239.91,102,40,Madrid,2026-04-03,activo
+MAD-00623,Interfaz audio Pro-213,Audio,OmniTech,245.19,13,9,Madrid,2026-07-06,activo
+MAD-00624,Cargador Air-918,Telefonía,DigitalCore,76.33,82,30,Madrid,2025-11-30,activo
+MAD-00625,Webcam Max-232,Informática,DigitalCore,1490.54,83,29,Madrid,2026-07-07,activo
+MAD-00626,Auricular TWS Pro-472,Telefonía,DigitalCore,412.47,89,37,Madrid,2026-01-31,activo
+MAD-00627,Timbre smart Core-773,Hogar inteligente,DigitalCore,557.87,40,11,Madrid,2025-09-17,activo
+MAD-00628,Timbre smart NX-257,Hogar inteligente,TechNova Iberia,495.93,19,11,Madrid,2026-09-03,activo
+MAD-00629,Webcam NX-144,Informática,DigitalCore,613.41,2,18,Madrid,2026-02-14,activo
+MAD-00630,SSD Go-429,Informática,GigaSupply,606.52,41,26,Madrid,2025-09-06,activo
+MAD-00631,Lector tarjetas Pro-916,Accesorios,OmniTech,1068.07,28,16,Madrid,2025-11-09,activo
+MAD-00632,Monitor NX-907,Informática,ElectroPlus,967.86,2,6,Madrid,2025-10-19,activo
+MAD-00633,Teclado Pro-701,Informática,TechNova Iberia,264.14,8,19,Madrid,2026-03-15,activo
+MAD-00634,Organizador cables Core-689,Accesorios,ByteWorks Distribution,1324.07,40,14,Madrid,2025-07-10,activo
+MAD-00635,Silla gaming Max-204,Gaming,ElectroPlus,253.32,17,23,Madrid,2025-07-15,activo
+MAD-00636,Docking Max-745,Informática,TechNova Iberia,1182.92,11,6,Madrid,2026-05-19,activo
+MAD-00637,Barra de sonido Air-260,Audio,GigaSupply,814.28,veinte,15,Madrid,2026-03-01,activo
+MAD-00638,Timbre smart Pro-615,Hogar inteligente,OmniTech,1377.68,103,38,Madrid,2026-03-27,activo
+MAD-00639,Cable USB-C Max-707,Telefonía,GigaSupply,1095.81,20,12,Madrid,2026-09-26,activo
+MAD-00640,,Audio,IberDevices,972.5,68,18,Madrid,2026-03-09,activo
+MAD-00641,Headset Max-470,Gaming,IberDevices,700.52,31,9,Madrid,2026-04-12,activo
+MAD-00642,Monitor Air-934,Informática,TechNova Iberia,39.55,29,14,Madrid,2026-01-12,activo
+MAD-00643,Bombilla smart Max-555,Otros??,GigaSupply,151.88,13,5,Madrid,2026-06-03,activo
+MAD-00644,Cable HDMI NX-752,Accesorios,DigitalCore,804.64,22,28,Madrid,2026-07-21,activo
+MAD-00645,Cable USB-C NX-222,Telefonía,OmniTech,611.83,139,40,Madrid,2025-09-25,activo
+MAD-00646,Headset Air-760,Gaming,GigaSupply,1243.39,48,15,Madrid,2025-07-08,activo
+MAD-00647,Soporte móvil Neo-543,Telefonía,GigaSupply,758.58,48,17,Madrid,2025-11-27,activo
+MAD-00648,Ratón NX-916,Informática,DigitalCore,1471.35,52,30,Madrid,2025-10-07,activo
+MAD-00649,Headset Go-376,Gaming,ElectroPlus,698.45,17,11,Madrid,2025-07-30,activo
+MAD-00650,Soporte móvil NX-584,Telefonía,OmniTech,240.08,52,29,Madrid,2026-09-17,activo
+MAD-00651,Hub USB Max-804,Informática,DigitalCore,1225.97,63,40,Madrid,2026-01-07,activo
+MAD-00652,Powerbank Air-497,Telefonía,TechNova Iberia,338.72,30,13,Madrid,2025-08-03,activo
+MAD-00653,Lector tarjetas Max-673,Accesorios,OmniTech,360.38,42,18,Madrid,2025-09-27,activo
+MAD-00654,Hub domótico Lite-936,Hogar inteligente,SmartHub Europe,281.09,71,23,Madrid,2025-09-04,activo
+MAD-00655,Hub USB Neo-600,Informática,GigaSupply,664.06,17,6,Madrid,2026-05-19,activo
+MAD-00656,Cable USB-C Neo-360,Telefonía,TechNova Iberia,294.92,22,11,Madrid,2026-03-29,activo
+MAD-00657,Cámara IP Go-414,Hogar inteligente,SmartHub Europe,615.51,100,31,Madrid,2025-09-10,activo
+MAD-00658,Cámara IP Core-790,Hogar inteligente,ByteWorks Distribution,387.66,0,10,Madrid,2026-09-13,activo
+MAD-00659,Hub domótico NX-514,Hogar inteligente,NextWare,,27,12,Madrid,2026-05-21,activo
+MAD-00660,Mini PC Go-130,Informática,TechNova Iberia,605.53,118,39,Madrid,2025-07-15,activo
+,Headset Neo-538,Gaming,IberDevices,175.1,33,15,Madrid,2026-03-12,descatalogado
+MAD-00662,DAC USB Max-728,Audio,ByteWorks Distribution,1142.12,10,24,Madrid,2025-11-30,activo
+MAD-00663,Headset Pro-984,Gaming,OmniTech,1186.04,107,39,Madrid,2025-08-07,activo
+MAD-00664,Teclado gaming Pro-736,Gaming,OmniTech,289.33,16,6,Madrid,2026-01-11,activo
+MAD-00665,Hub domótico NX-978,Hogar inteligente,SmartHub Europe,98.0,11,8,Madrid,2026-05-22,activo
+MAD-00666,Teclado Max-982,Informática,IberDevices,839.24,93,25,Madrid,2025-11-10,activo
+MAD-00667,Mini PC Air-646,Informática,ElectroPlus,544.09,36,16,Madrid,2026-05-16,activo
+MAD-00668,Cámara IP Lite-416,Hogar inteligente,,488.04,18,10,Madrid,2025-11-06,activo
+MAD-00669,SSD Neo-882,Informática,DigitalCore,N/D,0,16,Madrid,2026-08-13,activo
+MAD-00670,Auriculares Lite-565,Audio,NextWare,1044.74,3,3,Madrid,2025-10-10,activo
+MAD-00671,Protector pantalla Go-948,Accesorios,DigitalCore,1285.75,143,37,Madrid,2026-03-27,activo
+MAD-00672,Mando Go-387,Gaming,OmniTech,502.28,52,21,Madrid,2025-11-10,activo
+MAD-00673,Teclado gaming Max-142,Gaming,IberDevices,71.02,0,13,Madrid,2026-06-26,activo
+,Hub USB Lite-190,Informática,NextWare,109.53,0,19,Madrid,2026-01-24,activo
+MAD-00675,Cargador NX-306,Telefonía,DigitalCore,62.26,4,3,Madrid,2026-07-23,activo
+MAD-00676,Base portátil Pro-254,Accesorios,GigaSupply,1220.71,59,28,Madrid,2025-11-07,activo
+MAD-00677,Soporte móvil Lite-431,Telefonía,NextWare,715.64,69,28,Madrid,2026-06-22,activo
+MAD-00678,Teclado gaming Air-931,Gaming,ByteWorks Distribution,1451.2,99999,29,Madrid,2026-02-04,activo
+MAD-00679,DAC USB Pro-717,Audio,TechNova Iberia,1174.66,67,25,Madrid,2026-02-26,activo
+MAD-00680,DAC USB NX-912,Audio,OmniTech,1059.23,37,17,Madrid,2026-09-29,descatalogado
+MAD-00681,Lector tarjetas Air-975,Accesorios,GigaSupply,700.01,19,14,Madrid,2026-03-07,activo
+MAD-00682,Soporte móvil Max-298,Telefonía,GigaSupply,427.99,103,28,Madrid,2025-12-07,activo
+MAD-00683,Altavoz Neo-131,Audio,SmartHub Europe,865.47,60,40,Madrid,2026-07-29,activo
+MAD-00684,Soporte móvil Pro-757,Telefonía,TechNova Iberia,431.46,46,16,Madrid,2026-04-06,activo
+MAD-00685,Portátil Pro-697,Informática,IberDevices,851.55,2,3,Madrid,2025-10-19,activo
+MAD-00686,Cámara IP Pro-100,Hogar inteligente,OmniTech,1463.56,20,16,Madrid,2026-06-28,activo
+MAD-00687,Hub domótico Air-938,Hogar inteligente,OmniTech,1191.46,83,29,Madrid,2026-05-22,retirado?
+MAD-00688,Enchufe smart Go-971,Hogar inteligente,DigitalCore,1496.95,14,38,Madrid,2026-09-06,activo
+MAD-00689,SSD Core-627,Informática,GigaSupply,494.55,70,26,Madrid,2025-08-20,activo
+MAD-00690,Termostato Core-315,Hogar inteligente,NextWare,1365.11,26,21,Madrid,2025-09-22,activo
+MAD-00691,Soporte móvil NX-201,Telefonía,TechNova Iberia,1375.77,47,21,Madrid,2026-07-29,activo
+MAD-00692,Base portátil Go-532,Accesorios,NextWare,551.88,52,24,Madrid,2025-09-11,activo
+MAD-00693,Cámara IP Neo-773,Hogar inteligente,ElectroPlus,1180.51,12,4,Madrid,2026-06-26,activo
+MAD-00694,Enchufe smart Neo-556,Hogar inteligente,GigaSupply,1067.03,84,35,Madrid,2026-06-16,activo
+MAD-00695,Docking Neo-727,Informática,GigaSupply,1362.32,40,13,Madrid,2026-02-18,activo
+MAD-00696,Micrófono Go-944,Audio,ByteWorks Distribution,1438.1,86,32,Madrid,2025-10-17,activo
+MAD-00697,Organizador cables Pro-944,Accesorios,OmniTech,1423.91,66,36,Madrid,2026-09-09,activo
+MAD-00698,Auriculares Core-521,Audio,GigaSupply,1283.14,30,12,Madrid,2025-10-16,activo
+MAD-00699,Cable USB-C Air-922,Telefonía,GigaSupply,487.49,24,11,Madrid,2025-08-22,activo
+MAD-00700,Alfombrilla Pro-231,MISC,NextWare,1079.33,69,30,Madrid,2025-09-06,activo
+MAD-00701,Enchufe smart Go-474,Hogar inteligente,GigaSupply,1134.76,85,30,Madrid,2026-05-06,activo
+MAD-00099,Cámara IP Pro-681,Hogar inteligente,GigaSupply,508.74,43,33,Madrid,2025-07-19,activo
+MAD-00703,Teclado gaming Lite-481,Gaming,ElectroPlus,816.47,34,19,Madrid,2025-07-11,activo
+MAD-00704,Micrófono Neo-826,Audio,ByteWorks Distribution,61.93,27,22,Madrid,2026-07-12,activo
+MAD-00705,Mando Pro-346,Gaming,TechNova Iberia,1163.1,60,15,Madrid,2026-03-26,activo
+MAD-00706,Soporte móvil Neo-371,Telefonía,GigaSupply,1043.59,20,17,Madrid,2025-09-30,activo
+MAD-00707,Silla gaming Air-562,Gaming,SmartHub Europe,1484.88,43,15,Madrid,2026-01-13,activo
+MAD-00708,Bombilla smart Neo-222,Hogar inteligente,ElectroPlus,1230.53,81,38,Madrid,2026-01-02,activo
+MAD-00709,Volante Max-188,Gaming,OmniTech,774.77,20,7,Madrid,2025-10-06,activo
+MAD-00710,Micrófono Neo-619,Audio,ByteWorks Distribution,1222.19,7,13,Madrid,2026-06-10,activo
+MAD-00711,Portátil Max-960,Informática,GigaSupply,536.03,50,21,Madrid,2026-07-11,activo
+MAD-00712,Enchufe smart Max-941,Hogar inteligente,ByteWorks Distribution,375.19,67,34,Madrid,2026-01-19,descatalogado
+MAD-00713,Protector pantalla Core-433,Accesorios,GigaSupply,824.32,56,31,Madrid,2026-07-09,activo
+MAD-00714,Barra de sonido Pro-702,Audio,TechNova Iberia,394.37,58,18,Madrid,2026-02-24,activo
+MAD-00715,Lector tarjetas Go-362,Accesorios,DigitalCore,1177.39,15,33,Madrid,2026-07-26,activo
+MAD-00716,Smartphone Air-942,Telefonía,IberDevices,19.4,13,16,Madrid,2025-11-19,activo
+MAD-00717,Teclado gaming Pro-673,Gaming,OmniTech,143.72,23,8,Madrid,2025-07-07,activo
+MAD-00718,Cámara IP Max-711,Hogar inteligente,GigaSupply,1418.65,63,29,Madrid,2025-12-02,activo
+MAD-00719,Enchufe smart Pro-404,Hogar inteligente,IberDevices,375.75,41,35,Madrid,2025-07-29,activo
+MAD-00720,Barra de sonido Go-683,Audio,ElectroPlus,774.14,21,18,Madrid,2025-08-14,activo
+MAD-00721,Ratón Go-290,Informática,TechNova Iberia,582.44,18,13,Madrid,2026-02-23,activo
+MAD-00722,Cable HDMI Core-599,Accesorios,NextWare,697.03,31,15,Madrid,2026-02-01,activo
+MAD-00723,Mochila Pro-626,Accesorios,ByteWorks Distribution,146.15,10,5,Madrid,2025-11-06,activo
+MAD-00724,Hub USB Core-113,Informática,TechNova Iberia,682.1,15,24,Madrid,31/02/2026,activo
+MAD-00725,Ratón Neo-165,Informática,ByteWorks Distribution,1298.43,48,33,Madrid,2026-01-13,activo
+MAD-00726,Protector pantalla Air-560,Accesorios,TechNova Iberia,541.24,48,26,Madrid,2026-05-21,activo
+MAD-00727,Organizador cables Go-329,Accesorios,ElectroPlus,735.77,68,17,Madrid,2025-09-28,activo
+MAD-00728,Base portátil Pro-113,Accesorios,OmniTech,1299.31,23,13,Madrid,2026-09-07,activo
+MAD-00729,Cargador Neo-343,Telefonía,NextWare,900.29,4,3,Madrid,2025-09-01,activo
+MAD-00730,Altavoz Neo-275,Audio,TechNova Iberia,1127.87,70,40,Madrid,2026-06-07,activo
+MAD-00731,Bombilla smart Lite-740,Hogar inteligente,ByteWorks Distribution,1084.33,72,28,Madrid,2025-12-24,activo
+MAD-00732,Altavoz Max-613,Audio,OmniTech,494.59,26,20,Madrid,2026-02-05,activo
+MAD-00733,Auricular TWS Neo-289,Telefonía,GigaSupply,575.68,17,10,Madrid,2026-05-30,activo
+MAD-00734,Adaptador Pro-985,Accesorios,ElectroPlus,95.72,13,8,Madrid,2026-05-28,activo
+MAD-00735,Protector pantalla Go-582,Accesorios,ByteWorks Distribution,1399.92,53,33,Madrid,2025-07-02,activo
+MAD-00736,SSD Neo-543,Informática,IberDevices,972.32,85,40,Madrid,2026-03-17,activo
+MAD-00737,Mini PC Max-346,Informática,TechNova Iberia,1004.9,0,3,Madrid,2026-07-22,activo
+MAD-00738,Cargador Go-440,Telefonía,ByteWorks Distribution,1198.66,19,23,Madrid,2025-11-26,activo
+MAD-00739,Barra de sonido Lite-918,Audio,OmniTech,299.47,31,18,Madrid,2025-07-27,activo
+MAD-00740,SSD Lite-182,Informática,DigitalCore,131.5,12,6,Madrid,2025-09-28,activo
+MAD-00741,,Gaming,OmniTech,1240.97,4,4,Madrid,2025-09-05,activo
+MAD-00742,Adaptador Pro-586,Accesorios,OmniTech,879.27,22,17,Madrid,2026-04-09,activo
+MAD-00743,Mando Lite-615,Gaming,ElectroPlus,383.23,34,14,Madrid,2025-09-15,activo
+MAD-00744,Funda Neo-341,Telefonía,NextWare,818.7,-2,30,Madrid,2026-01-28,activo
+MAD-00745,Volante Lite-979,Gaming,GigaSupply,782.21,63,40,Madrid,2025-08-28,activo
+MAD-00746,Hub USB Neo-142,Informática,TechNova Iberia,1161.76,12,7,Madrid,2025-07-23,activo
+MAD-00747,Soporte móvil Max-506,Telefonía,NextWare,409.07,65,37,Madrid,2025-09-01,activo
+MAD-00748,Hub domótico Go-831,Hogar inteligente,OmniTech,14.88,56,25,Madrid,2025-11-25,activo
+MAD-00749,Teclado Neo-158,Informática,OmniTech,1320.32,110,39,Madrid,2026-08-07,activo
+MAD-00750,Altavoz Go-852,Audio,OmniTech,127.13,21,12,Madrid,2025-08-22,activo

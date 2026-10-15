@@ -1,0 +1,102 @@
+producto_id,nombre,categoria,proveedor,precio_unitario,stock_actual,stock_minimo,almacen,fecha_ultima_entrada,estado,formato_origen,archivo_origen,motivo_cuarentena
+MAD-00003,Protector pantalla Air-563,Accesorios,DigitalCore,-230.55,42,18.0,Madrid,2026-08-21,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00003) | Precio negativo imposible (-230.55 €)
+MAD-00005,Silla gaming Air-275,Gaming,ByteWorks Distribution,,1,3.0,Madrid,2026-09-29,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00050,Lector tarjetas NX-945,Accesorios,ByteWorks Distribution,1241.22,veinte,36.0,Madrid,2025-09-04,activo,CSV,inventario_MAD.csv,Stock actual nulo o no numérico
+MAD-00174,Smartphone Max-338,Telefonía,IberDevices,1390.14,28,35.0,Madrid,2026-04-24,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00174)
+MAD-00084,Base portátil Lite-301,Accesorios,ElectroPlus,151.90 €,39,12.0,Madrid,2026-05-20,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00087,Base portátil Go-201,Accesorios,SmartHub Europe,68.90 €,81,29.0,Madrid,2026-01-23,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00092,Micrófono Go-594,Audio,NextWare,627.71,99999,28.0,Madrid,2026-08-12,descatalogado,CSV,inventario_MAD.csv,"Stock outlier sospechoso IQR (> 201.0 uds, valor=99999.0)"
+MAD-00099,Webcam Neo-707,Informática,DigitalCore,953.97,91,32.0,Madrid,2026-09-02,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00099)
+MAD-00101,Auricular TWS Neo-318,Telefonía,TechNova Iberia,704.78,99999,3.0,Madrid,2026-07-08,descatalogado,CSV,inventario_MAD.csv,"Stock outlier sospechoso IQR (> 201.0 uds, valor=99999.0)"
+MAD-00114,Termostato Air-647,Hogar inteligente,NextWare,1414.88,veinte,18.0,Madrid,2026-09-20,activo,CSV,inventario_MAD.csv,Stock actual nulo o no numérico
+MAD-00121,Powerbank Air-687,Telefonía,GigaSupply,224.90 €,26,29.0,Madrid,2026-07-22,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00147,Mando Go-280,Gaming,GigaSupply,440.9,49,-11.0,Madrid,2026-02-27,activo,CSV,inventario_MAD.csv,Stock mínimo inválido (-11.0)
+MAD-00160,Funda Pro-771,Telefonía,GigaSupply,N/D,32,15.0,Madrid,2026-08-25,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00174,Monitor Max-722,Informática,GigaSupply,1313.24,36,25.0,Madrid,2026-06-16,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00174)
+MAD-00188,Bombilla smart Core-653,Hogar inteligente,DigitalCore,"69,66",95,34.0,Madrid,2026-04-14,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00201,Cable USB-C Go-272,Telefonía,GigaSupply,58.23,veinte,35.0,Madrid,2026-05-14,activo,CSV,inventario_MAD.csv,Stock actual nulo o no numérico
+MAD-00210,Interfaz audio Air-671,Audio,SmartHub Europe,1236.01,17,-9.0,Madrid,2025-10-18,activo,CSV,inventario_MAD.csv,Stock mínimo inválido (-9.0)
+MAD-00217,Teclado gaming Air-126,Gaming,SmartHub Europe,-115.9,20,17.0,Madrid,2025-08-23,activo,CSV,inventario_MAD.csv,Precio negativo imposible (-115.9 €)
+MAD-00224,Portátil Max-281,Informática,NextWare,-200.6,100,32.0,Madrid,2026-07-05,activo,CSV,inventario_MAD.csv,Precio negativo imposible (-200.6 €)
+MAD-00230,Timbre smart Core-582,Hogar inteligente,GigaSupply,"111,58",3,38.0,Madrid,2026-07-08,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00237,Termostato Lite-562,Hogar inteligente,DigitalCore,N/D,15,20.0,Madrid,2026-09-30,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00273,Lector tarjetas Pro-223,Accesorios,NextWare,,28,17.0,Madrid,2026-05-01,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00274,Cámara IP Air-423,Hogar inteligente,IberDevices,"86,54",6,4.0,Madrid,2026-04-13,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00716,Soporte móvil Go-152,Telefonía,IberDevices,79.79,72,26.0,Madrid,2025-09-30,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00716)
+MAD-00284,Barra de sonido Air-594,Audio,TechNova Iberia,757.41,-21,10.0,Madrid,2025-10-01,activo,CSV,inventario_MAD.csv,Stock negativo imposible (-21.0 uds)
+MAD-00292,Auricular TWS Lite-553,Telefonía,IberDevices,232.77,101,-5.0,Madrid,2026-04-21,descatalogado,CSV,inventario_MAD.csv,Stock mínimo inválido (-5.0)
+MAD-00342,SSD Air-197,Informática,DigitalCore,967.56,-14,10.0,Madrid,2026-02-21,activo,CSV,inventario_MAD.csv,Stock negativo imposible (-14.0 uds)
+MAD-00358,Headset Go-722,Gaming,ByteWorks Distribution,549.58,8,-1.0,Madrid,2026-03-29,activo,CSV,inventario_MAD.csv,Stock mínimo inválido (-1.0)
+MAD-00368,Monitor Core-774,Informática,DigitalCore,619.5,-3,16.0,Madrid,2025-07-09,activo,CSV,inventario_MAD.csv,Stock negativo imposible (-3.0 uds)
+MAD-00378,Teclado NX-207,Informática,SmartHub Europe,,33,20.0,Madrid,2025-11-05,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00438,Teclado Lite-888,Informática,DigitalCore,"110,72",4,3.0,Madrid,2025-08-27,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00462,Interfaz audio NX-917,Audio,OmniTech,1080.07,-37,6.0,Madrid,2025-11-23,activo,CSV,inventario_MAD.csv,Stock negativo imposible (-37.0 uds)
+MAD-00478,Bombilla smart Core-886,Hogar inteligente,OmniTech,N/D,35,12.0,Madrid,2026-06-21,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00737,DAC USB Lite-880,Audio,NextWare,551.31,23,8.0,Madrid,2025-07-31,ACTIVO,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00737)
+MAD-00505,Termostato NX-837,Hogar inteligente,OmniTech,-215.6,11,3.0,Madrid,2026-03-07,activo,CSV,inventario_MAD.csv,Precio negativo imposible (-215.6 €)
+,Smartphone NX-430,Telefonía,TechNova Iberia,491.53,27,11.0,Madrid,2025-12-09,activo,CSV,inventario_MAD.csv,ID ausente o vacío
+MAD-00605,DAC USB Air-107,Audio,OmniTech,,0,3.0,Madrid,2026-03-15,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00003,Powerbank Lite-293,Telefonía,GigaSupply,886.39,60,29.0,Madrid,2025-10-24,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00003)
+MAD-00620,Mando Go-894,Gaming,TechNova Iberia,187.90 €,15,4.0,Madrid,2026-08-07,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+MAD-00637,Barra de sonido Air-260,Audio,GigaSupply,814.28,veinte,15.0,Madrid,2026-03-01,activo,CSV,inventario_MAD.csv,Stock actual nulo o no numérico
+MAD-00659,Hub domótico NX-514,Hogar inteligente,NextWare,,27,12.0,Madrid,2026-05-21,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+,Headset Neo-538,Gaming,IberDevices,175.1,33,15.0,Madrid,2026-03-12,descatalogado,CSV,inventario_MAD.csv,ID ausente o vacío
+MAD-00669,SSD Neo-882,Informática,DigitalCore,N/D,0,16.0,Madrid,2026-08-13,activo,CSV,inventario_MAD.csv,Precio nulo o no numérico
+,Hub USB Lite-190,Informática,NextWare,109.53,0,19.0,Madrid,2026-01-24,activo,CSV,inventario_MAD.csv,ID ausente o vacío
+MAD-00678,Teclado gaming Air-931,Gaming,ByteWorks Distribution,1451.2,99999,29.0,Madrid,2026-02-04,activo,CSV,inventario_MAD.csv,"Stock outlier sospechoso IQR (> 201.0 uds, valor=99999.0)"
+MAD-00099,Cámara IP Pro-681,Hogar inteligente,GigaSupply,508.74,43,33.0,Madrid,2025-07-19,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00099)
+MAD-00716,Smartphone Air-942,Telefonía,IberDevices,19.4,13,16.0,Madrid,2025-11-19,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00716)
+MAD-00737,Mini PC Max-346,Informática,TechNova Iberia,1004.9,0,3.0,Madrid,2026-07-22,activo,CSV,inventario_MAD.csv,ID duplicado en catálogo (MAD-00737)
+MAD-00744,Funda Neo-341,Telefonía,NextWare,818.7,-2,30.0,Madrid,2026-01-28,activo,CSV,inventario_MAD.csv,Stock negativo imposible (-2.0 uds)
+SEV-00025,Ratón Air-475,Informática,SmartHub Europe,N/D,32,17.0,Sevilla,2026-04-07,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00623,Headset Go-435,Gaming,GigaSupply,394.37,32,18.0,Sevilla,2026-05-31,descatalogado,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00623)
+SEV-00489,Adaptador Lite-670,Accesorios,ByteWorks Distribution,765.94,17,14.0,Sevilla,2026-05-17,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00489)
+SEV-00178,Auricular TWS Max-160,Telefonía,OmniTech,769.28,7,3.0,Sevilla,2026-04-21,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00178)
+SEV-00094,Smartphone Lite-724,Telefonía,IberDevices,608.75,99999,40.0,Sevilla,2026-07-05,activo,JSON,inventario_SEV.json,"Stock outlier sospechoso IQR (> 201.0 uds, valor=99999.0)"
+SEV-00132,Auriculares Go-182,Audio,TechNova Iberia,1473.54,-17,25.0,Sevilla,2026-02-23,descatalogado,JSON,inventario_SEV.json,Stock negativo imposible (-17.0 uds)
+SEV-00141,Volante Neo-180,Gaming,IberDevices,"181,51",14,6.0,Sevilla,2026-07-22,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00153,Alfombrilla Neo-605,Gaming,ByteWorks Distribution,,19,15.0,Sevilla,2025-11-26,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00178,Headset Lite-648,Gaming,ByteWorks Distribution,623.09,32,39.0,Sevilla,,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00178)
+SEV-00200,Smartphone NX-796,Telefonía,OmniTech,,21,28.0,Sevilla,2025-11-17,descatalogado,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00588,Headset Core-778,Gaming,GigaSupply,254.98,46,25.0,Sevilla,2025-11-15,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00588)
+,Smartphone Go-617,Telefonía,NextWare,1418.94,111,38.0,Sevilla,2025-12-13,activo,JSON,inventario_SEV.json,ID ausente o vacío
+SEV-00234,Smartphone Lite-718,Telefonía,IberDevices,"117,41",24,11.0,Sevilla,2026-04-21,descatalogado,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00270,Funda Max-722,Telefonía,DigitalCore,27.90 €,62,33.0,Sevilla,2026-09-03,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00282,Powerbank Go-780,Telefonía,ElectroPlus,N/D,28,25.0,Sevilla,2025-12-10,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00291,Powerbank Neo-120,Telefonía,GigaSupply,1155.08,-33,38.0,Sevilla,2026-05-28,activo,JSON,inventario_SEV.json,Stock negativo imposible (-33.0 uds)
+SEV-00297,Enchufe smart Lite-408,Hogar inteligente,GigaSupply,139.90 €,67,27.0,Sevilla,2026-08-21,descatalogado,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00371,Auriculares Air-826,Audio,DigitalCore,1008.53,44,31.0,Sevilla,2026-07-16,descatalogado,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00371)
+SEV-00386,Hub USB Go-259,Informática,OmniTech,804.76,veinte,39.0,Sevilla,2025-08-27,activo,JSON,inventario_SEV.json,Stock actual nulo o no numérico
+SEV-00389,Hub domótico Core-462,Hogar inteligente,DigitalCore,481.54,veinte,16.0,Sevilla,2026-09-17,activo,JSON,inventario_SEV.json,Stock actual nulo o no numérico
+SEV-00406,Altavoz Core-474,Audio,GigaSupply,1229.87,-28,14.0,Sevilla,2026-06-13,activo,JSON,inventario_SEV.json,Stock negativo imposible (-28.0 uds)
+SEV-00427,Lector tarjetas Pro-129,Accesorios,IberDevices,,6,4.0,Sevilla,2025-07-07,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00430,Base portátil Core-726,Accesorios,GigaSupply,1060.67,99999,7.0,Sevilla,2026-05-11,activo,JSON,inventario_SEV.json,"Stock outlier sospechoso IQR (> 201.0 uds, valor=99999.0)"
+SEV-00450,Interfaz audio Air-949,Audio,IberDevices,150.07,-29,22.0,Sevilla,2026-04-27,activo,JSON,inventario_SEV.json,Stock negativo imposible (-29.0 uds)
+,Timbre smart Go-738,Hogar inteligente,IberDevices,1214.22,15,5.0,Sevilla,2025-12-07,activo,JSON,inventario_SEV.json,ID ausente o vacío
+SEV-00470,Mando Lite-528,Gaming,DigitalCore,-43.21,6,17.0,Sevilla,2025-10-03,activo,JSON,inventario_SEV.json,Precio negativo imposible (-43.21 €)
+SEV-00475,Enchufe smart Pro-676,Hogar inteligente,TechNova Iberia,837.0,veinte,5.0,Sevilla,2026-04-18,ACTIVO,JSON,inventario_SEV.json,Stock actual nulo o no numérico
+SEV-00489,Alfombrilla Pro-814,Gaming,ByteWorks Distribution,725.68,2,3.0,Sevilla,2025-08-25,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00489)
+SEV-00493,Micrófono Lite-248,Audio,SmartHub Europe,N/D,97,30.0,Sevilla,2025-12-10,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00497,Portátil Neo-166,Informática,ElectroPlus,-205.79,10,8.0,Sevilla,2026-02-04,activo,JSON,inventario_SEV.json,Precio negativo imposible (-205.79 €)
+SEV-00510,Cargador Lite-688,Telefonía,DigitalCore,N/D,41,27.0,Sevilla,2026-09-18,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00512,Teclado gaming Lite-904,Gaming,ByteWorks Distribution,696.48,veinte,18.0,Sevilla,2026-05-26,activo,JSON,inventario_SEV.json,Stock actual nulo o no numérico
+SEV-00522,Base portátil Pro-462,Accesorios,NextWare,245.90 €,74,40.0,Sevilla,2025-09-24,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00535,Headset Lite-345,Gaming,DigitalCore,"182,25",113,40.0,Sevilla,2026-08-09,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00541,Mochila Go-581,Accesorios,TechNova Iberia,,53,33.0,Sevilla,2025-09-30,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00555,Cargador Lite-444,Telefonía,ByteWorks Distribution,-80.28,20,18.0,Sevilla,2026-05-31,activo,JSON,inventario_SEV.json,Precio negativo imposible (-80.28 €)
+SEV-00565,Auriculares Air-810,Audio,ByteWorks Distribution,790.36,54,,Sevilla,2025-11-17,activo,JSON,inventario_SEV.json,Stock mínimo inválido (nan)
+SEV-00566,Monitor Lite-827,Informática,DigitalCore,1129.87,64,-8.0,Sevilla,2026-08-22,activo,JSON,inventario_SEV.json,Stock mínimo inválido (-8.0)
+,Lector tarjetas Pro-446,Accesorios,SmartHub Europe,687.52,118,40.0,Sevilla,2026-02-20,activo,JSON,inventario_SEV.json,ID ausente o vacío
+SEV-00588,Alfombrilla Air-993,Gaming,SmartHub Europe,1038.68,93,34.0,Sevilla,2026-04-24,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00588)
+SEV-00591,Docking Core-734,Informática,ByteWorks Distribution,-62.73,9,5.0,Sevilla,2026-02-03,descatalogado,JSON,inventario_SEV.json,Precio negativo imposible (-62.73 €)
+SEV-00594,Micrófono Air-925,Audio,ElectroPlus,118.63,4,-10.0,Sevilla,2026-02-02,activo,JSON,inventario_SEV.json,Stock mínimo inválido (-10.0)
+SEV-00612,Headset NX-483,Gaming,IberDevices,1276.18,99999,18.0,Sevilla,2026-02-18,activo,JSON,inventario_SEV.json,"Stock outlier sospechoso IQR (> 201.0 uds, valor=99999.0)"
+SEV-00616,Barra de sonido Pro-767,Audio,ElectroPlus,,32,15.0,Sevilla,2025-08-25,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00623,Headset Max-495,Gaming,ElectroPlus,852.46,25,31.0,Sevilla,2025-10-05,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00623)
+SEV-00659,Lector tarjetas Go-773,Accesorios,GigaSupply,"97,43",32,35.0,Sevilla,2026-06-20,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00699,Interfaz audio Go-923,Audio,SmartHub Europe,1190.3,14,-5.0,Sevilla,2025-08-27,activo,JSON,inventario_SEV.json,Stock mínimo inválido (-5.0)
+SEV-00704,Mando Lite-630,Gaming,ElectroPlus,35.90 €,89,27.0,Sevilla,2025-11-04,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00731,Auriculares Max-802,AUDIO,SmartHub Europe,,6,10.0,Sevilla,2025-07-02,activo,JSON,inventario_SEV.json,Precio nulo o no numérico
+SEV-00371,Micrófono Max-525,Audio,ByteWorks Distribution,448.87,9,6.0,Sevilla,2026-01-06,activo,JSON,inventario_SEV.json,ID duplicado en catálogo (SEV-00371)
+SEV-00734,Smartphone Air-882,Telefonía,IberDevices,40.67,28,-12.0,Sevilla,2026-06-29,activo,JSON,inventario_SEV.json,Stock mínimo inválido (-12.0)
+SEV-00745,Ratón gaming Pro-472,Gaming,TechNova Iberia,1023.45,-41,31.0,Sevilla,2026-06-26,activo,JSON,inventario_SEV.json,Stock negativo imposible (-41.0 uds)

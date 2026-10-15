@@ -1,0 +1,751 @@
+﻿producto_id,nombre,categoria,proveedor,precio_unitario,stock_actual,stock_minimo,almacen,fecha_ultima_entrada,estado
+BCN-00001,Mando Max-395,Gaming,TechNova Iberia,767.14,83,38,Barcelona,2025-08-25,activo
+BCN-00002,Ratón Pro-182,Informática,GigaSupply,1111.89,107,32,Barcelona,2026-09-22,activo
+BCN-00003,Smartphone Pro-267,Telefonía,TechNova Iberia,750.46,58,16,Barcelona,2025-07-15,activo
+BCN-00004,Adaptador Core-164,Accesorios,OmniTech,278.63,74,20,Barcelona,2025-10-25,activo
+BCN-00005,Funda Go-139,Telefonía,IberDevices,767.67,118,34,Barcelona,2025-09-02,activo
+BCN-00006,Webcam Neo-939,Informática,GigaSupply,1170.72,26,13,Barcelona,2026-06-13,activo
+BCN-00007,Mini PC Lite-693,Informática,DigitalCore,62.6,17,21,Barcelona,2025-07-24,descatalogado
+BCN-00008,Smartphone Neo-134,Telefonía,OmniTech,794.02,74,34,Barcelona,2025-12-02,activo
+BCN-00009,Auricular TWS Pro-174,Telefonía,OmniTech,1359.28,91,31,Barcelona,2025-09-29,activo
+BCN-00010,Cable USB-C Max-207,Telefonía,IberDevices,933.52,40,35,Barcelona,2026-01-29,activo
+BCN-00011,Cable HDMI NX-906,Accesorios,NextWare,607.26,77,32,Barcelona,2025-09-25,activo
+BCN-00012,Barra de sonido Go-662,Audio,DigitalCore,1177.78,67,29,Barcelona,2026-04-02,activo
+BCN-00013,Alfombrilla Lite-155,Gaming,DigitalCore,1352.27,43,21,Barcelona,2026-03-17,activo
+BCN-00014,Bombilla smart Core-905,Hogar inteligente,OmniTech,1355.77,56,33,Barcelona,2025-09-08,activo
+BCN-00015,Mando Neo-106,Gaming,ByteWorks Distribution,685.52,46,38,Barcelona,2025-12-05,activo
+BCN-00016,Webcam NX-666,Informática,DigitalCore,649.63,47,20,Barcelona,2026-02-20,activo
+BCN-00017,Termostato Go-749,Hogar inteligente,IberDevices,1052.08,141,39,Barcelona,2026-09-10,activo
+BCN-00018,Soporte móvil Core-474,Telefonía,NextWare,43.73,67,20,Barcelona,2026-09-14,activo
+BCN-00019,Lector tarjetas Pro-671,Accesorios,NextWare,1460.45,78,25,Barcelona,2026-04-20,activo
+BCN-00020,Base portátil Air-333,Accesorios,DigitalCore,427.24,34,9,Barcelona,2026-09-30,activo
+BCN-00021,Ratón gaming Pro-527,Gaming,DigitalCore,397.33,0,4,Barcelona,2025-09-13,activo
+BCN-00022,Enchufe smart Go-690,Hogar inteligente,SmartHub Europe,1267.17,57,32,Barcelona,2026-02-27,activo
+BCN-00023,Cable USB-C Go-538,Telefonía,IberDevices,572.68,1,3,Barcelona,2025-12-09,activo
+BCN-00024,Base portátil NX-144,Accesorios,SmartHub Europe,313.94,40,17,Barcelona,2026-03-28,activo
+BCN-00025,Soporte móvil Lite-548,Telefonía,SmartHub Europe,1106.39,22,11,Barcelona,2025-07-19,activo
+BCN-00026,Webcam NX-725,Informática,OmniTech,637.21,35,17,Barcelona,2025-09-05,activo
+BCN-00027,DAC USB Core-474,Audio,ByteWorks Distribution,944.72,71,26,Barcelona,2026-03-29,activo
+BCN-00028,Organizador cables Go-919,Accesorios,SmartHub Europe,1104.81,92,24,Barcelona,2025-07-15,activo
+BCN-00029,Sensor NX-313,Hogar inteligente,NextWare,910.76,142,40,Barcelona,2026-07-12,activo
+BCN-00030,Funda Go-812,Telefonía,TechNova Iberia,1054.14,21,10,Barcelona,2025-12-18,activo
+BCN-00031,Bombilla smart Neo-742,Hogar inteligente,IberDevices,583.19,120,32,Barcelona,2026-08-31,activo
+BCN-00032,Volante Max-792,Gaming,GigaSupply,269.67,55,20,Barcelona,2026-04-20,activo
+BCN-00033,Teclado NX-559,Informática,ElectroPlus,1310.85,31,9,Barcelona,2026-05-09,activo
+BCN-00034,Cable USB-C Pro-604,Telefonía,  ElectroPlus  ,1035.26,53,40,Barcelona,2026-06-16,descatalogado
+BCN-00035,Powerbank Pro-452,Telefonía,ElectroPlus,1168.2,10,4,Barcelona,2025-12-22,activo
+BCN-00036,Altavoz Pro-391,Audio,GigaSupply,1100.56,105,37,Barcelona,2025-07-07,activo
+BCN-00037,Smartphone Go-182,Telefonía,IberDevices,1000.43,89,31,Barcelona,2025-11-03,DESCATALOGADO
+BCN-00038,Ratón gaming Lite-787,Gaming,ElectroPlus,333.65,62,28,Barcelona,2025-09-17,activo
+BCN-00039,Organizador cables NX-657,Accesorios,IberDevices,528.34,66,37,Barcelona,2025-07-12,descatalogado
+BCN-00040,Silla gaming Neo-271,Gaming,ByteWorks Distribution,944.41,59,40,Barcelona,2025-09-01,activo
+BCN-00041,Barra de sonido Max-967,Audio,IberDevices,212.28,64,35,Barcelona,2025-09-03,activo
+BCN-00042,Enchufe smart Max-774,Hogar inteligente,ElectroPlus,1166.75,3,6,Barcelona,2026-01-13,activo
+BCN-00043,Hub USB Air-133,Informática,SmartHub Europe,1250.06,9,3,Barcelona,2025-07-04,activo
+BCN-00044,Cable USB-C Go-358,Telefonía,NextWare,191.96,9,6,Barcelona,2025-09-05,activo
+BCN-00045,Smartphone Max-265,Telefonía,SmartHub Europe,179.92,25,16,Barcelona,2026-05-10,activo
+BCN-00046,Auricular TWS Go-150,Telefonía,DigitalCore,1143.71,3,3,Barcelona,2025-08-05,activo
+BCN-00047,SSD Lite-447,Informática,NextWare,1265.26,61,22,Barcelona,2026-02-11,activo
+BCN-00048,Ratón Air-611,Informática,SmartHub Europe,980.07,9,19,Barcelona,2025-08-20,activo
+BCN-00049,SSD Core-939,Informática,ByteWorks Distribution,729.67,80,40,Barcelona,2026-08-22,activo
+BCN-00050,Mando Max-172,Gaming,TechNova Iberia,501.84,101,34,Barcelona,2025-09-16,activo
+BCN-00051,Bombilla smart Air-745,Hogar inteligente,NextWare,341.07,127,35,Barcelona,2026-09-08,activo
+BCN-00052,Altavoz Core-502,Audio,GigaSupply,864.78,13,6,Barcelona,2026-02-09,activo
+BCN-00053,Funda Air-723,Telefonía,ByteWorks Distribution,602.82,19,20,Barcelona,2026-01-24,activo
+BCN-00054,Cámara IP Air-239,Hogar inteligente,GigaSupply,132.19,16,8,Barcelona,2025-09-15,activo
+BCN-00055,Interfaz audio Air-947,Audio,NextWare,1287.44,19,30,Barcelona,2026-06-28,activo
+BCN-00056,Volante Air-253,Gaming,OmniTech,147.3,54,15,Barcelona,2026-02-06,activo
+BCN-00057,Cable HDMI Max-172,Accesorios,ByteWorks Distribution,216.0,28,10,Barcelona,2026-08-21,activo
+BCN-00058,Hub USB Air-885,Informática,OmniTech,224.0,37,18,Barcelona,2026-03-26,activo
+BCN-00059,Teclado Air-924,Informática,ByteWorks Distribution,1259.04,21,11,Barcelona,2026-02-19,activo
+BCN-00060,Mando Core-579,Gaming,NextWare,645.37,31,15,Barcelona,2026-05-06,activo
+BCN-00061,Docking Pro-703,Informática,NextWare,299.6,38,15,Barcelona,2025-07-05,activo
+BCN-00062,Base portátil Pro-869,Accesorios,IberDevices,820.27,37,21,Barcelona,2026-03-23,ACTIVO
+BCN-00063,Mochila Pro-140,Accesorios,  ElectroPlus  ,1054.67,61,37,Barcelona,2026-09-25,activo
+BCN-00064,Cable HDMI Lite-197,Accesorios,DigitalCore,221.17,13,8,Barcelona,2025-08-29,activo
+BCN-00065,Protector pantalla Neo-245,Accesorios,NextWare,549.12,60,38,Barcelona,2025-08-15,activo
+BCN-00066,Monitor NX-239,Informática,GigaSupply,817.71,30,14,Barcelona,2025-08-31,activo
+BCN-00067,Sensor NX-982,Hogar inteligente,TechNova Iberia,21.15,11,33,Barcelona,2026-03-13,activo
+BCN-00068,Cámara IP Go-433,Hogar inteligente,ElectroPlus,1059.03,68,37,Barcelona,2026-07-25,descatalogado
+BCN-00069,Mini PC Go-292,Informática,OmniTech,1094.67,89,37,Barcelona,2025-09-16,activo
+BCN-00070,Auriculares Lite-959,Audio,DigitalCore,1345.66,48,22,Barcelona,2025-07-17,activo
+BCN-00071,Headset Lite-325,Gaming,DigitalCore,1367.57,28,31,Barcelona,2026-04-11,activo
+BCN-00072,Lector tarjetas Air-267,Accesorios,TechNova Iberia,931.64,57,35,Barcelona,2025-12-21,activo
+BCN-00073,Organizador cables Go-681,Accesorios,SmartHub Europe,876.99,23,26,Barcelona,2025-09-09,activo
+BCN-00074,DAC USB NX-995,Audio,NextWare,326.57,58,37,Barcelona,2026-04-26,descatalogado
+BCN-00075,Altavoz Go-308,Audio,GigaSupply,245.37,85,28,Barcelona,2026-07-02,activo
+BCN-00076,Cámara IP Lite-991,Hogar inteligente,NextWare,216.78,71,29,Barcelona,2025-10-27,activo
+BCN-00077,Webcam Pro-888,Informática,GigaSupply,46.94,88,40,Barcelona,2025-11-21,activo
+BCN-00078,Auriculares Go-355,Audio,ByteWorks Distribution,1139.71,52,21,Barcelona,2026-02-04,activo
+BCN-00079,Base portátil Neo-392,Accesorios,NextWare,197.87,18,14,Barcelona,2025-12-01,activo
+BCN-00080,Organizador cables Max-867,Accesorios,GigaSupply,46.52,32,10,Barcelona,2026-09-19,activo
+BCN-00081,Webcam Air-510,Informática,ElectroPlus,525.22,11,17,Barcelona,2025-12-16,activo
+BCN-00082,Soporte móvil Core-582,Telefonía,IberDevices,901.28,121,30,Barcelona,2026-03-03,activo
+BCN-00083,Auricular TWS Neo-725,Telefonía,GigaSupply,1430.7,78,24,Barcelona,2025-07-16,activo
+BCN-00084,Smartphone Core-808,Telefonía,OmniTech,654.39,62,20,Barcelona,2025-07-07,activo
+BCN-00085,Termostato NX-839,Hogar inteligente,IberDevices,539.92,50,29,Barcelona,2026-06-29,activo
+BCN-00086,Alfombrilla Pro-631,Gaming,ByteWorks Distribution,548.09,75,29,Barcelona,2025-09-19,activo
+BCN-00087,Altavoz NX-669,Audio,ElectroPlus,821.53,3,10,Barcelona,2026-04-22,activo
+BCN-00088,Headset Pro-208,Gaming,OmniTech,721.68,2,5,Barcelona,2025-10-19,activo
+BCN-00089,Termostato Go-312,Hogar inteligente,IberDevices,995.76,25,9,Barcelona,2025-07-14,activo
+BCN-00090,Monitor Max-384,Informática,DigitalCore,609.94,66,21,Barcelona,2026-05-14,activo
+BCN-00091,Cable HDMI Neo-993,Accesorios,NextWare,1230.77,31,16,Barcelona,2026-01-04,activo
+BCN-00092,Volante NX-898,Gaming,ElectroPlus,938.4,69,39,Barcelona,2025-09-18,activo
+BCN-00093,Ratón Pro-420,Informática,OmniTech,1390.47,21,29,Barcelona,2025-12-11,activo
+BCN-00094,Bombilla smart Max-195,Hogar inteligente,ElectroPlus,82.93,31,13,Barcelona,2026-04-05,activo
+BCN-00095,Smartphone Go-929,Telefonía,ElectroPlus,958.84,109,35,Barcelona,2026-01-31,activo
+BCN-00096,Sensor Neo-107,Hogar inteligente,IberDevices,204.8,74,23,Barcelona,2025-08-15,activo
+BCN-00097,Termostato Pro-720,Hogar inteligente,ElectroPlus,217.87,55,39,Barcelona,2026-03-18,activo
+BCN-00098,Auriculares Lite-350,Audio,SmartHub Europe,428.65,33,14,Barcelona,2026-09-21,activo
+BCN-00099,Auricular TWS Air-973,Telefonía,OmniTech,847.41,22,18,Barcelona,2025-07-26,activo
+BCN-00100,Cámara IP NX-407,Hogar inteligente,OmniTech,1480.44,25,21,Barcelona,2025-12-14,activo
+BCN-00101,Sensor Neo-477,Hogar inteligente,OmniTech,327.64,104,34,Barcelona,2025-10-20,activo
+BCN-00102,Cargador Neo-743,Telefonía,NextWare,374.31,47,25,Barcelona,2026-02-27,activo
+BCN-00103,Auriculares Core-357,Audio,OmniTech,584.68,15,7,Barcelona,2026-01-14,activo
+BCN-00104,Barra de sonido Max-443,Audio,TechNova Iberia,399.36,38,19,Barcelona,2026-09-11,activo
+BCN-00105,DAC USB Neo-768,Audio,ElectroPlus,1443.77,12,5,Barcelona,2026-06-10,activo
+BCN-00106,Protector pantalla Pro-596,Accesorios,ElectroPlus,289.3,76,25,Barcelona,2025-09-26,activo
+BCN-00107,Adaptador Go-685,Accesorios,ElectroPlus,1031.99,147,40,Barcelona,2026-08-28,activo
+BCN-00108,Protector pantalla NX-468,Accesorios,ByteWorks Distribution,1073.97,31,14,Barcelona,2025-08-07,activo
+BCN-00109,Timbre smart NX-292,Hogar inteligente,NextWare,1405.89,8,3,Barcelona,2026-03-06,activo
+BCN-00110,Bombilla smart Lite-616,Hogar inteligente,ByteWorks Distribution,378.17,32,19,Barcelona,2026-09-29,activo
+BCN-00111,Cargador Lite-647,Telefonía,ByteWorks Distribution,743.13,83,22,Barcelona,2026-03-25,activo
+BCN-00112,Ratón Pro-208,Informática,NextWare,744.54,11,6,Barcelona,2026-02-07,activo
+BCN-00113,Ratón Pro-213,Informática,DigitalCore,1418.01,90,30,Barcelona,2025-09-20,activo
+BCN-00114,Barra de sonido Neo-693,Audio,IberDevices,1045.93,51,37,Barcelona,2026-02-21,activo
+BCN-00115,Webcam NX-292,Informática,DigitalCore,1254.3,11,8,Barcelona,2025-07-16,activo
+BCN-00116,Micrófono Pro-899,Audio,IberDevices,995.57,58,32,Barcelona,2025-12-25,activo
+BCN-00117,DAC USB Air-814,Audio,ByteWorks Distribution,84.78,5,3,Barcelona,2025-10-07,activo
+BCN-00118,Sensor Lite-548,Hogar inteligente,IberDevices,788.99,55,34,Barcelona,2025-11-10,activo
+BCN-00119,Lector tarjetas Go-353,Accesorios,TechNova Iberia,813.83,35,16,Barcelona,2026-08-23,activo
+BCN-00120,Lector tarjetas Neo-769,Accesorios,TechNova Iberia,907.93,82,32,Barcelona,2026-04-11,activo
+BCN-00121,Cámara IP Max-589,Hogar inteligente,ByteWorks Distribution,1379.93,30,20,Barcelona,2026-05-24,activo
+BCN-00122,Mando NX-449,Gaming,GigaSupply,96.48,33,32,Barcelona,2026-01-05,activo
+BCN-00123,Sensor Lite-911,Hogar inteligente,ByteWorks Distribution,987.87,0,34,Barcelona,2025-12-14,activo
+BCN-00124,Base portátil Neo-864,Accesorios,SmartHub Europe,810.97,16,8,Barcelona,2026-07-05,activo
+BCN-00125,Mochila Air-886,Accesorios,TechNova Iberia,222.23,51,25,Barcelona,2026-05-12,activo
+BCN-00126,Cámara IP Go-494,Hogar inteligente,OmniTech,1352.88,45,36,Barcelona,2025-09-08,activo
+BCN-00127,Adaptador Lite-316,Accesorios,NextWare,192.55,130,30,Barcelona,2026-04-12,activo
+BCN-00128,Alfombrilla Max-146,Gaming,NextWare,1204.57,11,5,Barcelona,2026-05-20,activo
+BCN-00129,SSD Air-158,Informática,NextWare,1495.64,12,36,Barcelona,2026-08-26,activo
+BCN-00130,Micrófono Neo-636,Audio,NextWare,323.79,44,24,Barcelona,2025-07-05,activo
+BCN-00131,Barra de sonido Core-375,Audio,ByteWorks Distribution,531.51,0,27,Barcelona,2026-09-15,activo
+BCN-00132,Protector pantalla Go-990,Accesorios,GigaSupply,1351.57,21,11,Barcelona,2026-07-25,activo
+BCN-00133,Funda Core-216,Telefonía,ElectroPlus,1120.31,76,33,Barcelona,2025-11-02,activo
+BCN-00134,Teclado Go-628,Informática,ElectroPlus,1203.35,23,15,Barcelona,2025-08-30,activo
+BCN-00135,Teclado gaming Air-253,Gaming,NextWare,381.2,9,7,Barcelona,2026-03-19,activo
+BCN-00136,Protector pantalla Lite-909,Accesorios,ByteWorks Distribution,1088.47,34,32,Barcelona,2025-10-13,activo
+BCN-00137,Monitor Pro-120,Informática,GigaSupply,1446.11,68,29,Barcelona,2025-09-22,activo
+BCN-00138,Docking Max-457,Informática,TechNova Iberia,141.12,39,40,Barcelona,2026-02-26,activo
+BCN-00139,Powerbank Neo-326,Telefonía,ByteWorks Distribution,139.48,11,6,Barcelona,2026-04-26,activo
+BCN-00140,Auricular TWS Pro-932,Telefonía,SmartHub Europe,307.38,51,20,Barcelona,2026-03-06,activo
+BCN-00141, Ratón Pro-759,Informática,TechNova Iberia,328.63,65,17,Barcelona,2025-12-03,activo
+BCN-00142,Base portátil Core-399,Accesorios,NextWare,1051.69,24,11,Barcelona,2025-09-02,descatalogado
+BCN-00143,Hub USB Pro-509,Informática,NextWare,507.63,97,28,Barcelona,2025-08-02,activo
+BCN-00144,Cable USB-C Pro-129,Telefonía,TechNova Iberia,549.18,26,18,Barcelona,2025-10-15,activo
+BCN-00145,Adaptador Pro-860,Accesorios,ElectroPlus,942.17,16,7,Barcelona,2026-06-27,activo
+BCN-00146,Enchufe smart Core-721,Hogar inteligente,TechNova Iberia,685.53,17,11,Barcelona,2026-01-21,ACTIVO
+BCN-00147,Ratón gaming Go-762,Gaming,DigitalCore,975.55,19,19,Barcelona,2025-08-29,activo
+BCN-00148,DAC USB NX-396,Audio,DigitalCore,1419.89,35,37,Barcelona,2025-08-24,activo
+BCN-00149,Interfaz audio NX-646,Audio,GigaSupply,471.25,78,38,Barcelona,2026-05-18,activo
+BCN-00150,Cable HDMI Lite-527,Accesorios,DigitalCore,1458.78,4,3,Barcelona,2026-01-15,descatalogado
+BCN-00151,Organizador cables NX-997,Accesorios,DigitalCore,1059.54,0,35,Barcelona,2025-12-27,activo
+BCN-00152,Cable USB-C Pro-852,Telefonía,TechNova Iberia,1452.17,70,28,Barcelona,2025-12-17,activo
+BCN-00153,Adaptador Go-478,Accesorios,SmartHub Europe,1254.25,8,6,Barcelona,2026-07-13,activo
+BCN-00154,Lector tarjetas Air-914,Accesorios,ByteWorks Distribution,411.96,69,22,Barcelona,2026-01-16,activo
+BCN-00155,Webcam Lite-410,Informática,ElectroPlus,1447.06,25,33,Barcelona,2026-04-21,activo
+BCN-00156,Cable HDMI Core-229,Accesorios,IberDevices,431.48,50,20,Barcelona,2025-10-10,activo
+BCN-00157,Auriculares Air-838,Audio,ElectroPlus,1411.52,25,9,Barcelona,2026-08-19,activo
+BCN-00158,Hub USB Go-583,Informática,NextWare,1297.16,44,24,Barcelona,2026-03-29,activo
+BCN-00159,Cargador Air-179,Telefonía,IberDevices,273.93,42,17,Barcelona,2026-03-24,activo
+BCN-00160,Termostato Max-710,Hogar inteligente,IberDevices,1352.99,46,13,Barcelona,2025-10-28,activo
+BCN-00161,Soporte móvil Lite-577,Telefonía,GigaSupply,1022.43,38,27,Barcelona,2025-11-10,activo
+BCN-00162,Volante Neo-826,Gaming,OmniTech,255.76,7,7,Barcelona,2025-12-23,activo
+BCN-00163,Termostato Lite-899,Hogar inteligente,OmniTech,106.4,18,6,Barcelona,2026-04-30,activo
+BCN-00164, Micrófono Air-147,Audio,IberDevices,377.3,153,38,Barcelona,2026-08-25,activo
+BCN-00165,Cargador Neo-391,Telefonía,ElectroPlus,641.4,2,7,Barcelona,2026-04-30,activo
+BCN-00166,Protector pantalla Neo-534,Accesorios,NextWare,441.54,78,26,Barcelona,2025-09-15,activo
+BCN-00167,Enchufe smart Neo-665,Hogar inteligente,SmartHub Europe,78.46,40,19,Barcelona,2026-04-12,activo
+BCN-00168,Micrófono Pro-186,Audio,NextWare,1431.88,18,9,Barcelona,2025-08-14,activo
+BCN-00169,Alfombrilla Lite-155,Gaming,IberDevices,976.87,44,29,Barcelona,2026-07-02,activo
+BCN-00170, Monitor Pro-691,Informática,ElectroPlus,978.57,58,37,Barcelona,2026-01-02,activo
+BCN-00171,Mando Lite-993,GAMING,TechNova Iberia,175.87,58,21,Barcelona,2026-07-17,activo
+BCN-00172,Hub domótico Neo-469,Hogar inteligente,  NextWare  ,1063.84,66,39,Barcelona,2026-08-01,activo
+BCN-00173,Protector pantalla Max-971,Accesorios,GigaSupply,30.36,10,6,Barcelona,2025-10-01,activo
+BCN-00174,Silla gaming Core-907,Gaming,ByteWorks Distribution,1240.63,193,39,Barcelona,2025-12-07,activo
+BCN-00175,Auricular TWS Core-552,Telefonía,SmartHub Europe,1211.13,6,9,Barcelona,2026-07-02,activo
+BCN-00176,Micrófono Max-885,Audio,ByteWorks Distribution,222.0,47,20,Barcelona,2025-07-10,activo
+BCN-00177,Cámara IP NX-477,Hogar inteligente,TechNova Iberia,595.57,9,7,Barcelona,2026-07-08,activo
+BCN-00178,DAC USB Core-178,Audio,OmniTech,506.16,63,28,Barcelona,2026-01-03,activo
+BCN-00179,Funda Lite-549,Telefonía,ElectroPlus,1074.65,13,14,Barcelona,2026-02-22,descatalogado
+BCN-00180,Bombilla smart Neo-890,Hogar inteligente,ByteWorks Distribution,18.21,46,14,Barcelona,2026-09-22,activo
+BCN-00181,Teclado gaming Neo-478,Gaming,IberDevices,990.47,31,13,Barcelona,2026-07-26,activo
+BCN-00182,Hub USB Lite-450,Informática,ElectroPlus,880.49,48,21,Barcelona,2025-10-09,activo
+BCN-00183,Mochila Core-341,Accesorios,SmartHub Europe,7.75,100,37,Barcelona,2026-03-25,activo
+BCN-00184,Mochila Lite-949,Accesorios,SmartHub Europe,179.07,26,15,Barcelona,2026-08-14,activo
+BCN-00185,Cámara IP Go-808,Hogar inteligente,NextWare,823.95,64,37,Barcelona,2026-05-24,activo
+BCN-00186,Hub USB Go-401,Informática,ByteWorks Distribution,880.48,50,22,Barcelona,2025-10-09,activo
+BCN-00187,Protector pantalla Pro-570,Accesorios,ElectroPlus,1153.09,50,23,Barcelona,2026-07-06,activo
+BCN-00188,Silla gaming NX-267,Gaming,IberDevices,52.33,35,31,Barcelona,2026-03-25,activo
+BCN-00189,Barra de sonido Max-914,Audio,SmartHub Europe,915.23,4,4,Barcelona,2026-01-29,activo
+BCN-00190,Ratón NX-644,Informática,IberDevices,107.47,65,36,Barcelona,2026-07-27,descatalogado
+BCN-00191,Adaptador Go-515,Accesorios,ByteWorks Distribution,1252.46,25,8,Barcelona,2026-04-03,activo
+BCN-00192,Webcam Pro-592,Informática,ElectroPlus,398.63,33,11,Barcelona,2026-05-25,activo
+BCN-00193,Ratón Max-745,Informática,OmniTech,633.79,66,29,Barcelona,2025-11-24,activo
+BCN-00194,Auriculares Max-500,Audio,TechNova Iberia,610.28,0,11,Barcelona,2025-07-26,activo
+BCN-00195,Interfaz audio Air-509,Audio,OmniTech,910.87,66,28,Barcelona,2026-03-01,activo
+BCN-00196,Protector pantalla Core-755,Accesorios,SmartHub Europe,740.4,15,8,Barcelona,2026-02-20,activo
+BCN-00197,Enchufe smart Neo-797,Hogar inteligente,OmniTech,1048.56,79,21,Barcelona,2026-04-08,activo
+BCN-00198,Portátil Max-521,Informática,TechNova Iberia,1069.68,31,13,Barcelona,2026-01-21,activo
+BCN-00199,Micrófono Neo-399,Audio,TechNova Iberia,622.96,15,6,Barcelona,2026-03-18,descatalogado
+BCN-00200,Lector tarjetas Go-667,Accesorios,ElectroPlus,619.09,53,21,Barcelona,2026-08-30,activo
+BCN-00201,Headset Air-740,Gaming,SmartHub Europe,1109.4,8,4,Barcelona,2025-12-13,activo
+BCN-00202,Auriculares Pro-450,Audio,IberDevices,858.71,42,35,Barcelona,2025-08-01,activo
+BCN-00203,Hub USB Air-491,Informática,TechNova Iberia,475.02,39,16,Barcelona,2026-07-31,descatalogado
+BCN-00204,Micrófono NX-534,Audio,GigaSupply,195.82,56,13,Barcelona,2026-03-09,activo
+BCN-00205,Volante Go-107,Gaming,ElectroPlus,80.49,2,3,Barcelona,2026-06-05,descatalogado
+BCN-00206,Volante Core-610,Gaming,GigaSupply,300.1,48,21,Barcelona,2026-06-20,activo
+BCN-00207,SSD Core-240,Informática,DigitalCore,626.07,13,7,Barcelona,2026-08-30,descatalogado
+BCN-00208,Cargador NX-773,Telefonía,TechNova Iberia,1335.47,52,16,Barcelona,2025-07-06,activo
+BCN-00209,Lector tarjetas NX-354,Accesorios,ByteWorks Distribution,864.64,52,20,Barcelona,2025-09-02,activo
+BCN-00210,Ratón gaming Go-939,Gaming,ElectroPlus,855.43,52,22,Barcelona,2025-07-24,activo
+BCN-00211,DAC USB Max-966,Audio,SmartHub Europe,1184.22,9,21,Barcelona,2026-08-25,activo
+BCN-00212,Barra de sonido Pro-203,Audio,GigaSupply,1351.53,163,39,Barcelona,2025-09-19,activo
+BCN-00213,Cable USB-C Go-838,Telefonía,ElectroPlus,1337.51,61,39,Barcelona,2026-02-11,activo
+BCN-00214,Bombilla smart Neo-377,Hogar inteligente,ElectroPlus,1475.57,52,16,Barcelona,2026-08-28,activo
+BCN-00215,Alfombrilla Lite-424,Gaming,GigaSupply,254.94,34,16,Barcelona,2026-06-11,activo
+BCN-00216,Base portátil Max-342,Accesorios,SmartHub Europe,761.21,23,16,Barcelona,2025-11-09,activo
+BCN-00217,Docking Core-992,Informática,GigaSupply,1315.25,51,33,Barcelona,2026-08-09,activo
+BCN-00218,Enchufe smart Air-976,Hogar inteligente,ElectroPlus,1161.39,0,19,Barcelona,2025-10-28,activo
+BCN-00219,Smartphone Max-251,Telefonía,GigaSupply,486.38,48,25,Barcelona,2025-12-09,activo
+BCN-00220,Cable HDMI Max-940,Accesorios,SmartHub Europe,538.28,35,24,Barcelona,2026-01-12,activo
+BCN-00221,Powerbank Air-419,Telefonía,NextWare,134.79,0,22,Barcelona,2025-07-24,activo
+BCN-00222,Altavoz Go-458,Audio,ByteWorks Distribution,888.27,14,7,Barcelona,2026-06-02,activo
+BCN-00223,Interfaz audio Neo-639,Audio,OmniTech,237.88,0,29,Barcelona,2026-07-29,activo
+BCN-00224,Soporte móvil Pro-130,Telefonía,ElectroPlus,895.77,10,5,Barcelona,2026-03-10,activo
+BCN-00225,Hub domótico Neo-904,Hogar inteligente,ElectroPlus,370.01,82,33,Barcelona,2026-09-23,activo
+BCN-00226,Alfombrilla Pro-427,Gaming,ByteWorks Distribution,872.72,11,19,Barcelona,2025-09-18,activo
+BCN-00227,Headset Lite-170,Gaming,ElectroPlus,582.51,49,24,Barcelona,2026-07-06,activo
+BCN-00228,Mini PC Go-449,Informática,DigitalCore,472.87,34,36,Barcelona,2025-12-13,descatalogado
+BCN-00229,Silla gaming Neo-138,Gaming,GigaSupply,178.59,61,30,Barcelona,2026-08-18,activo
+BCN-00230,Micrófono Go-942,Audio,OmniTech,293.27,65,26,Barcelona,2025-08-07,activo
+BCN-00231,Termostato NX-972,Hogar inteligente,GigaSupply,637.12,45,25,Barcelona,2025-07-03,activo
+BCN-00232,Cámara IP Core-646,Hogar inteligente,DigitalCore,276.9,10,12,Barcelona,2026-06-27,activo
+BCN-00233,Micrófono Air-478,Audio,DigitalCore,483.89,0,27,Barcelona,2026-05-29,activo
+BCN-00234,Mochila Lite-312,Accesorios,DigitalCore,1245.39,87,33,Barcelona,2025-12-10,activo
+BCN-00235,Micrófono Core-795,Audio,OmniTech,250.69,81,36,Barcelona,2026-03-10,activo
+BCN-00236,Hub USB NX-161,Informática,OmniTech,460.93,7,5,Barcelona,2026-05-18,activo
+BCN-00237,Adaptador Pro-590,Accesorios,ByteWorks Distribution,26.07,48,30,Barcelona,2025-11-09,activo
+BCN-00238,Mochila Go-271,Accesorios,ElectroPlus,1129.01,90,38,Barcelona,2026-07-22,activo
+BCN-00239,SSD Pro-369,Informática,IberDevices,954.24,41,25,Barcelona,2025-11-26,activo
+BCN-00240, Silla gaming Air-820,Gaming,ByteWorks Distribution,1354.42,57,29,Barcelona,2026-09-10,activo
+BCN-00241,Auriculares Lite-688,Audio,GigaSupply,222.13,112,33,Barcelona,2026-06-18,activo
+BCN-00242,Auricular TWS Core-813,Telefonía,ByteWorks Distribution,1098.78,120,40,Barcelona,2025-10-02,activo
+BCN-00243,Base portátil Pro-377,Accesorios,NextWare,1458.24,15,8,Barcelona,2026-01-26,activo
+BCN-00244,Auriculares Air-767,Audio,TechNova Iberia,754.52,98,37,Barcelona,2026-03-11,activo
+BCN-00245,Ratón gaming Core-984,Gaming,GigaSupply,998.86,11,5,Barcelona,2026-08-29,descatalogado
+BCN-00246,Altavoz Neo-746,Audio,GigaSupply,1493.31,17,13,Barcelona,2025-12-19,activo
+BCN-00247,Sensor Go-905,Hogar inteligente,OmniTech,1432.66,91,29,Barcelona,2026-02-24,activo
+BCN-00248,Mini PC Air-754,Informática,TechNova Iberia,238.59,35,19,Barcelona,2026-08-14,activo
+BCN-00249,Headset NX-557,Gaming,TechNova Iberia,896.88,81,27,Barcelona,2025-07-23,activo
+BCN-00250,Auricular TWS Core-212,Telefonía,NextWare,1172.84,13,7,Barcelona,2026-08-15,activo
+BCN-00251,SSD Neo-918,Informática,SmartHub Europe,223.91,42,16,Barcelona,2026-02-05,activo
+BCN-00252,Ratón Neo-289,Informática,SmartHub Europe,560.79,77,37,Barcelona,2026-06-15,activo
+BCN-00253,DAC USB Max-649,Audio,OmniTech,857.06,14,28,Barcelona,2026-08-07,activo
+BCN-00254,Hub domótico Neo-241,Hogar inteligente,NextWare,1265.42,29,18,Barcelona,2026-08-12,activo
+BCN-00255,Volante Lite-986,Gaming,OmniTech,1284.24,42,33,Barcelona,2025-09-23,descatalogado
+BCN-00256,Ratón Max-624,Informática,SmartHub Europe,1162.13,29,28,Barcelona,2026-01-03,activo
+BCN-00257,Organizador cables Go-602,Accesorios,TechNova Iberia,511.74,45,27,Barcelona,2025-07-28,activo
+BCN-00258,Auricular TWS Go-980,Telefonía,GigaSupply,435.46,10,3,Barcelona,2026-06-25,activo
+BCN-00259,Organizador cables NX-964,Accesorios,ByteWorks Distribution,1123.89,38,10,Barcelona,2026-06-24,activo
+BCN-00260,Enchufe smart Pro-869,Hogar inteligente,ElectroPlus,230.9,47,36,Barcelona,2026-07-13,activo
+BCN-00261,Hub USB Air-182,Informática,ElectroPlus,136.3,39,29,Barcelona,2025-08-22,activo
+BCN-00262,Mini PC Air-948,Informática,IberDevices,127.01,34,17,Barcelona,2026-04-01,activo
+BCN-00263,Headset NX-913,Gaming,IberDevices,134.3,55,21,Barcelona,2026-04-09,activo
+BCN-00264,Volante Lite-627,Gaming,ByteWorks Distribution,288.34,76,25,Barcelona,2026-05-29,activo
+BCN-00265,Auricular TWS NX-872,Telefonía,GigaSupply,1379.67,7,5,Barcelona,2026-08-17,activo
+BCN-00266,Barra de sonido Lite-765,Audio,ElectroPlus,171.89,26,17,Barcelona,2026-09-22,activo
+BCN-00267,Barra de sonido Go-546,Audio,OmniTech,1051.97,47,24,Barcelona,2025-10-08,activo
+BCN-00268,Altavoz Air-254,Audio,NextWare,494.65,36,27,Barcelona,2026-05-22,activo
+BCN-00269,Cable HDMI Lite-780,Accesorios,IberDevices,565.77,64,23,Barcelona,2026-05-01,activo
+BCN-00270,Micrófono Lite-418,Audio,DigitalCore,946.79,48,37,Barcelona,2026-09-06,activo
+BCN-00271,Cargador Max-124,Telefonía,IberDevices,429.1,57,30,Barcelona,2026-01-26,activo
+BCN-00272,Mando NX-163,Gaming,SmartHub Europe,1127.55,5,18,Barcelona,2026-09-27,activo
+BCN-00273,Enchufe smart Air-765,Hogar inteligente,NextWare,1172.44,90,27,Barcelona,2026-02-04,activo
+BCN-00274,Silla gaming Air-900,Gaming,ByteWorks Distribution,238.68,29,32,Barcelona,2025-12-19,activo
+BCN-00275,Auriculares Lite-112,Audio,DigitalCore,1217.25,114,32,Barcelona,2026-08-06,activo
+BCN-00276,Auriculares Pro-730,Audio,NextWare,1051.17,5,5,Barcelona,2025-12-05,activo
+BCN-00277,Sensor Neo-637,Hogar inteligente,ElectroPlus,1456.57,6,7,Barcelona,2026-02-25,activo
+BCN-00278,Auricular TWS Lite-702,Telefonía,TechNova Iberia,511.62,9,8,Barcelona,2025-08-08,activo
+BCN-00279,Mando Core-586,Gaming,TechNova Iberia,1332.51,94,35,Barcelona,2026-02-21,descatalogado
+BCN-00280,Webcam Lite-434,Informática,ElectroPlus,1023.29,65,26,Barcelona,2025-11-05,activo
+BCN-00281,Base portátil NX-438,Accesorios,TechNova Iberia,704.65,38,16,Barcelona,2026-08-30,activo
+BCN-00282,Ratón Neo-325,Informática,DigitalCore,1238.7,14,5,Barcelona,2025-11-05,activo
+BCN-00283,Auriculares Neo-159,Audio,IberDevices,1462.83,34,23,Barcelona,2026-09-15,activo
+BCN-00284,Smartphone Go-240,Telefonía,OmniTech,1393.94,61,21,Barcelona,2025-08-31,activo
+BCN-00285,Micrófono Core-690,Audio,ByteWorks Distribution,1480.84,21,8,Barcelona,2025-12-09,activo
+BCN-00286,Organizador cables Air-840,Accesorios,SmartHub Europe,363.03,48,20,Barcelona,2026-05-22,ACTIVO
+BCN-00287,Volante Core-686,Gaming,ElectroPlus,119.08,20,19,Barcelona,2026-01-03,activo
+BCN-00288,Silla gaming Air-708,Gaming,GigaSupply,1385.43,53,36,Barcelona,2026-03-31,activo
+BCN-00289,Interfaz audio Lite-334,Audio,TechNova Iberia,1034.04,30,17,Barcelona,2026-01-14,activo
+BCN-00290,Cable USB-C Go-401,Telefonía,OmniTech,556.4,51,20,Barcelona,2025-12-09,activo
+BCN-00291,Cargador Air-386,Telefonía,NextWare,1258.27,36,33,Barcelona,2025-11-21,activo
+BCN-00292,Ratón gaming Core-202,Gaming,TechNova Iberia,893.19,59,24,Barcelona,2026-04-22,activo
+BCN-00293,Funda Air-946,Telefonía,SmartHub Europe,1424.41,36,30,Barcelona,2025-09-12,activo
+BCN-00294,Ratón Go-553,Informática,IberDevices,106.01,63,37,Barcelona,2025-09-09,activo
+BCN-00295,Organizador cables Lite-623,Accesorios,OmniTech,534.96,94,30,Barcelona,2026-08-02,activo
+BCN-00296,Powerbank NX-545,Telefonía,NextWare,1418.64,40,14,Barcelona,2026-08-16,activo
+BCN-00297,Mando Core-847,Gaming,SmartHub Europe,1099.62,40,31,Barcelona,2025-10-25,activo
+BCN-00298,Organizador cables Neo-846,Accesorios,ByteWorks Distribution,1319.86,83,30,Barcelona,2025-09-21,activo
+BCN-00299,Silla gaming Core-289,Gaming,DigitalCore,1178.51,132,39,Barcelona,2026-04-01,activo
+BCN-00300,Mando Max-567,Gaming,OmniTech,1251.38,36,27,Barcelona,2026-02-07,activo
+BCN-00301,Cable USB-C Neo-941,Telefonía,ElectroPlus,638.45,0,21,Barcelona,2026-09-08,activo
+BCN-00302,Headset Neo-710,Gaming,SmartHub Europe,56.18,47,23,Barcelona,2025-08-19,activo
+BCN-00303,Timbre smart Core-758,Hogar inteligente,SmartHub Europe,357.04,25,10,Barcelona,2025-07-20,activo
+BCN-00304,Soporte móvil NX-453,Telefonía,IberDevices,985.75,33,26,Barcelona,2025-08-23,activo
+BCN-00305,Enchufe smart Go-992,Hogar inteligente,ElectroPlus,948.06,54,27,Barcelona,2026-08-24,activo
+BCN-00306,Headset Air-484,Gaming,GigaSupply,396.6,5,6,Barcelona,2025-09-11,ACTIVO
+BCN-00307,Volante Max-193,Gaming,ElectroPlus,1169.35,5,25,Barcelona,2025-08-19,activo
+BCN-00308,Auriculares NX-685,Audio,TechNova Iberia,323.8,22,8,Barcelona,2026-01-17,activo
+BCN-00309,Auricular TWS Air-617,Telefonía,SmartHub Europe,1094.37,26,11,Barcelona,2026-02-27,activo
+BCN-00310,Cable USB-C NX-125,Telefonía,SmartHub Europe,482.43,1,3,Barcelona,2026-05-11,activo
+BCN-00311,Interfaz audio Air-511,Audio,SmartHub Europe,329.15,10,10,Barcelona,2026-09-07,activo
+BCN-00312,Mochila Pro-465,Accesorios,OmniTech,269.05,5,8,Barcelona,2025-09-30,activo
+BCN-00313,Mochila Neo-877,Accesorios,NextWare,563.88,55,15,Barcelona,2026-03-10,activo
+BCN-00314,Enchufe smart Go-645,Hogar inteligente,ByteWorks Distribution,959.94,43,32,Barcelona,2025-12-26,activo
+BCN-00315,Interfaz audio NX-188,Audio,DigitalCore,1439.87,92,31,Barcelona,2026-01-11,activo
+BCN-00316,Bombilla smart Neo-364,Hogar inteligente,NextWare,985.26,70,39,Barcelona,2026-06-06,activo
+BCN-00317,Auricular TWS Air-582,Telefonía,TechNova Iberia,277.09,11,6,Barcelona,2026-06-25,activo
+BCN-00318,Smartphone Core-971,Telefonía,ElectroPlus,1307.04,17,6,Barcelona,2026-04-14,activo
+BCN-00319,Headset Neo-799,Gaming,NextWare,1333.23,23,11,Barcelona,2025-08-25,activo
+BCN-00320,Cable HDMI Go-135,Accesorios,GigaSupply,1130.41,34,24,Barcelona,2026-06-20,activo
+BCN-00321,Barra de sonido Max-298,Audio,NextWare,35.35,29,35,Barcelona,2025-11-29,activo
+BCN-00322,Webcam Max-894,Informática,ByteWorks Distribution,394.49,63,33,Barcelona,2026-04-23,activo
+BCN-00323,Cable USB-C Neo-315,Telefonía,GigaSupply,1236.37,52,26,Barcelona,2025-11-24,activo
+BCN-00324,Mini PC Neo-751,Informática,OmniTech,233.78,100,38,Barcelona,2025-09-30,activo
+BCN-00325,Protector pantalla Core-232,Accesorios,NextWare,679.54,105,31,Barcelona,2026-06-22,activo
+BCN-00326,Sensor Pro-763,Hogar inteligente,OmniTech,1052.85,49,19,Barcelona,2026-09-06,activo
+BCN-00327,Cámara IP Air-872,Hogar inteligente,DigitalCore,1178.24,111,36,Barcelona,2026-09-16,activo
+BCN-00328,Auriculares Neo-596,Audio,TechNova Iberia,586.48,24,11,Barcelona,2025-08-28,activo
+BCN-00329,Enchufe smart Go-440,Hogar inteligente,NextWare,213.7,3,10,Barcelona,2026-01-26,activo
+BCN-00330,Cargador Lite-801,Telefonía,ByteWorks Distribution,741.2,40,18,Barcelona,2026-01-25,activo
+BCN-00331,Mochila Neo-903,Accesorios,ByteWorks Distribution,355.59,61,34,Barcelona,2026-05-11,activo
+BCN-00332,Teclado gaming Core-356,Gaming,DigitalCore,331.95,5,3,Barcelona,2026-08-09,activo
+BCN-00333,Cable USB-C NX-575,Telefonía,OmniTech,996.33,185,40,Barcelona,2026-06-29,activo
+BCN-00334,Cámara IP Core-896,Hogar inteligente,NextWare,1412.75,58,20,Barcelona,2026-04-10,activo
+BCN-00335,Silla gaming Core-124,Gaming,ElectroPlus,1479.02,26,11,Barcelona,2025-12-25,activo
+BCN-00336,Lector tarjetas Max-608,Accesorios,ElectroPlus,1186.72,108,31,Barcelona,2026-07-25,activo
+BCN-00337,Ratón gaming Max-107,Gaming,TechNova Iberia,699.78,49,32,Barcelona,2025-11-29,activo
+BCN-00338,Adaptador NX-364,Accesorios,NextWare,38.29,74,36,Barcelona,2026-04-20,activo
+BCN-00339,Webcam Lite-172,INFORMÁTICA,TechNova Iberia,1211.08,50,27,Barcelona,2026-09-21,activo
+BCN-00340,Enchufe smart Lite-311,Hogar inteligente,DigitalCore,498.17,118,35,Barcelona,2025-12-23,activo
+BCN-00341,Termostato Core-744,Hogar inteligente,IberDevices,739.24,88,26,Barcelona,2025-09-14,activo
+BCN-00342,Teclado gaming Max-611,Gaming,TechNova Iberia,699.18,53,35,Barcelona,2026-08-02,activo
+BCN-00343,Ratón Core-428,Informática,GigaSupply,1451.09,12,18,Barcelona,2026-05-18,activo
+BCN-00344,Powerbank Go-846,Telefonía,DigitalCore,528.49,119,37,Barcelona,2026-03-17,activo
+BCN-00345,Barra de sonido NX-543,Audio,GigaSupply,374.65,11,11,Barcelona,2026-06-15,activo
+BCN-00346,Smartphone Lite-235,Telefonía,DigitalCore,1052.76,36,13,Barcelona,2026-01-17,activo
+BCN-00347,Sensor Core-430,Hogar inteligente,SmartHub Europe,1274.13,30,16,Barcelona,2026-07-05,activo
+BCN-00348,Interfaz audio Pro-887,Audio,OmniTech,55.16,7,15,Barcelona,2025-12-05,activo
+BCN-00349,Bombilla smart Go-406,Hogar inteligente,DigitalCore,930.2,51,31,Barcelona,2026-03-30,activo
+BCN-00350,Teclado Pro-396,Informática,IberDevices,1471.21,6,3,Barcelona,2025-11-18,activo
+BCN-00351,Hub domótico Lite-137,Hogar inteligente,GigaSupply,752.65,12,9,Barcelona,2026-08-10,activo
+BCN-00352,Bombilla smart Core-727,Hogar inteligente,TechNova Iberia,1123.92,95,32,Barcelona,2025-07-26,activo
+BCN-00353,Bombilla smart NX-987,Hogar inteligente,ElectroPlus,202.03,58,33,Barcelona,2025-11-08,activo
+BCN-00354,Mando Air-537,Gaming,TechNova Iberia,1391.03,6,4,Barcelona,2026-02-06,activo
+BCN-00355,Ratón gaming Lite-408,Gaming,NextWare,1457.82,51,18,Barcelona,2026-01-16,activo
+BCN-00356,Hub domótico Core-795,Hogar inteligente,ElectroPlus,891.28,45,38,Barcelona,2025-12-15,activo
+BCN-00357,Portátil Max-891,Informática,DigitalCore,1065.0,20,19,Barcelona,2026-03-19,activo
+BCN-00358,Hub domótico NX-990,Hogar inteligente,OmniTech,771.92,19,25,Barcelona,2026-02-24,activo
+BCN-00359,Enchufe smart Go-815,Hogar inteligente,OmniTech,704.43,63,30,Barcelona,2025-12-03,activo
+BCN-00360,Micrófono Pro-573,Audio,IberDevices,552.36,64,35,Barcelona,2026-04-27,activo
+BCN-00361,Termostato Max-472,Hogar inteligente,TechNova Iberia,960.44,8,5,Barcelona,2026-02-24,activo
+BCN-00362,Mando Lite-319,Gaming,IberDevices,91.05,30,9,Barcelona,2026-08-08,activo
+BCN-00363,Mini PC Air-353,Informática,TechNova Iberia,1107.1,93,35,Barcelona,2025-07-30,activo
+BCN-00364,Headset NX-981,Gaming,IberDevices,1052.41,4,6,Barcelona,2025-12-15,activo
+BCN-00365,Silla gaming Neo-326,Gaming,TechNova Iberia,996.91,8,5,Barcelona,2025-10-01,activo
+BCN-00366,Silla gaming Neo-515,Gaming,OmniTech,1325.77,52,30,Barcelona,2026-02-13,activo
+BCN-00367,Mochila Pro-340,Accesorios,DigitalCore,1354.95,18,31,Barcelona,2026-01-03,activo
+BCN-00368,Headset Go-725,Gaming,SmartHub Europe,571.19,16,14,Barcelona,2026-03-16,activo
+BCN-00369,Adaptador Pro-968,Accesorios,SmartHub Europe,606.22,39,18,Barcelona,2026-05-31,activo
+BCN-00370,Powerbank Core-992,Telefonía,SmartHub Europe,231.32,40,25,Barcelona,2026-06-02,activo
+BCN-00371,Bombilla smart Go-982,Hogar inteligente,TechNova Iberia,484.18,29,11,Barcelona,2026-04-06,activo
+BCN-00372,Micrófono Pro-583,Audio,IberDevices,657.48,38,15,Barcelona,2026-04-13,activo
+BCN-00373,Cámara IP Go-214,Hogar inteligente,IberDevices,488.73,99,33,Barcelona,2025-07-20,activo
+BCN-00374,Cable HDMI Pro-854,Accesorios,ElectroPlus,554.57,9,6,Barcelona,2026-04-19,activo
+BCN-00375,Mini PC Pro-456,Informática,SmartHub Europe,38.88,9,22,Barcelona,2026-09-12,activo
+BCN-00376,Docking Neo-778,Informática,SmartHub Europe,1048.28,39,18,Barcelona,2026-04-15,activo
+BCN-00377,Headset Air-900,Gaming,DigitalCore,27.69,2,4,Barcelona,2025-12-28,activo
+BCN-00378,Hub USB Neo-522,Informática,IberDevices,507.65,57,19,Barcelona,2025-10-12,activo
+BCN-00379,SSD Pro-415,Informática,TechNova Iberia,489.63,82,36,Barcelona,2026-06-27,activo
+BCN-00380,Protector pantalla Neo-276,Accesorios,OmniTech,265.4,9,7,Barcelona,2025-10-16,activo
+BCN-00381,Portátil Max-740,Informática,TechNova Iberia,5.98,29,15,Barcelona,2025-10-11,activo
+BCN-00382,Headset Max-319,Gaming,DigitalCore,1269.37,54,29,Barcelona,2025-10-04,activo
+BCN-00383,Volante Air-369,Gaming,DigitalCore,23.58,37,34,Barcelona,2025-08-07,activo
+BCN-00384,Base portátil NX-529,Accesorios,GigaSupply,867.22,64,26,Barcelona,2025-12-09,activo
+BCN-00385,Organizador cables Neo-158,Accesorios,OmniTech,30.66,65,37,Barcelona,2025-07-25,activo
+BCN-00386,Auricular TWS Max-948,Telefonía,NextWare,577.73,46,15,Barcelona,2025-10-07,activo
+BCN-00387,Cable USB-C Core-157,Telefonía,OmniTech,125.24,9,4,Barcelona,2026-01-02,activo
+BCN-00388,Auriculares Neo-360,Audio,ElectroPlus,1249.28,29,15,Barcelona,2025-12-04,activo
+BCN-00389,Hub USB Max-199,Informática,TechNova Iberia,1125.75,50,22,Barcelona,2025-11-19,activo
+BCN-00390,Organizador cables Go-718,Accesorios,ByteWorks Distribution,76.84,7,8,Barcelona,2025-11-17,activo
+BCN-00391,Funda Pro-408,Telefonía,TechNova Iberia,714.01,142,40,Barcelona,2026-04-27,activo
+BCN-00392,Powerbank Pro-507,Telefonía,ByteWorks Distribution,1394.0,21,30,Barcelona,2026-04-16,activo
+BCN-00393,Funda Max-429,Telefonía,GigaSupply,958.37,24,12,Barcelona,2026-02-22,activo
+BCN-00394,Bombilla smart NX-738,Hogar inteligente,TechNova Iberia,457.89,84,24,Barcelona,2026-09-28,activo
+BCN-00395,Soporte móvil Pro-398,Telefonía,DigitalCore,253.45,36,13,Barcelona,2026-03-06,activo
+BCN-00396,Lector tarjetas Core-108,Accesorios,GigaSupply,977.18,132,36,Barcelona,2025-12-13,activo
+BCN-00397,Protector pantalla Max-372,Accesorios,SmartHub Europe,1466.19,17,10,Barcelona,2025-08-02,activo
+BCN-00398,Auriculares Go-211,Audio,GigaSupply,959.96,17,7,Barcelona,2025-11-25,activo
+BCN-00399,Cargador Go-650,Telefonía,OmniTech,29.94,5,3,Barcelona,2026-03-04,activo
+BCN-00400,Auriculares Pro-639,Audio,GigaSupply,47.29,15,11,Barcelona,2026-03-21,activo
+BCN-00401,Funda Neo-504,Telefonía,DigitalCore,82.66,8,19,Barcelona,2025-09-08,activo
+BCN-00402,Mochila Go-576,Accesorios,SmartHub Europe,62.68,5,4,Barcelona,2025-07-29,descatalogado
+BCN-00403,Barra de sonido Neo-702,Audio,GigaSupply,765.33,6,3,Barcelona,2026-02-14,activo
+BCN-00404,Ratón gaming Max-398,Gaming,ByteWorks Distribution,525.32,47,15,Barcelona,2025-12-22,activo
+BCN-00405,Smartphone Lite-695,Telefonía,DigitalCore,1184.29,49,24,Barcelona,2026-04-12,activo
+BCN-00406,Micrófono Pro-627,Audio,ByteWorks Distribution,1065.54,19,34,Barcelona,2026-04-20,activo
+BCN-00407,Ratón Air-538,Informática,SmartHub Europe,421.08,3,4,Barcelona,2026-09-17,activo
+BCN-00408,Portátil NX-527,Informática,ElectroPlus,315.79,19,22,Barcelona,2025-08-07,activo
+BCN-00409,Bombilla smart Air-857,Hogar inteligente,OmniTech,722.67,87,28,Barcelona,2025-07-06,activo
+BCN-00410,Teclado gaming Max-956,Gaming,GigaSupply,1368.4,125,37,Barcelona,2026-07-18,activo
+BCN-00411,Micrófono NX-687,Audio,GigaSupply,915.93,30,17,Barcelona,2025-11-19,activo
+BCN-00412,Mini PC Max-856,Informática,SmartHub Europe,1034.51,26,20,Barcelona,2025-12-25,activo
+BCN-00413,Cable HDMI NX-329,Accesorios,NextWare,97.81,46,21,Barcelona,2026-05-20,activo
+BCN-00414,Cargador Go-915,Telefonía,OmniTech,1053.52,55,21,Barcelona,2026-02-18,activo
+BCN-00415,Powerbank Max-485,Telefonía,SmartHub Europe,1046.12,37,25,Barcelona,2025-08-26,activo
+BCN-00416,Cable HDMI Go-781,Accesorios,OmniTech,1126.1,4,3,Barcelona,2026-08-21,activo
+BCN-00417,Barra de sonido Air-526,Audio,TechNova Iberia,886.61,48,23,Barcelona,2026-07-22,activo
+BCN-00418,Cable HDMI Max-490,Accesorios,GigaSupply,1010.32,70,36,Barcelona,2025-09-05,activo
+BCN-00419,Smartphone Lite-651,Telefonía,GigaSupply,40.69,23,12,Barcelona,2025-08-23,activo
+BCN-00420,Barra de sonido Pro-433,Audio,ByteWorks Distribution,1379.36,97,28,Barcelona,2025-10-13,activo
+BCN-00421,Ratón Lite-672,Informática,DigitalCore,485.94,10,7,Barcelona,2025-10-03,activo
+BCN-00422,Bombilla smart Pro-678,Hogar inteligente,IberDevices,98.8,8,3,Barcelona,2026-08-21,activo
+BCN-00423,Headset Go-687,Gaming,TechNova Iberia,903.1,11,5,Barcelona,2026-02-04,activo
+BCN-00424,Micrófono Pro-941,Audio,ByteWorks Distribution,877.61,41,18,Barcelona,2026-05-24,activo
+BCN-00425,Lector tarjetas Go-891,Accesorios,IberDevices,1473.09,47,39,Barcelona,2025-09-19,activo
+BCN-00426,Teclado gaming Lite-959,Gaming,ElectroPlus,570.3,99,29,Barcelona,2026-08-20,activo
+BCN-00427,Timbre smart Max-264,Hogar inteligente,ByteWorks Distribution,176.84,84,38,Barcelona,2026-03-28,descatalogado
+BCN-00428,Headset NX-888,Gaming,ElectroPlus,1320.8,10,8,Barcelona,2026-04-16,activo
+BCN-00429,Teclado NX-772,Informática,GigaSupply,177.75,159,34,Barcelona,2026-08-18,activo
+BCN-00430,Silla gaming Go-670,Gaming,GigaSupply,549.95,90,22,Barcelona,2025-07-21,activo
+BCN-00431,Cargador Go-646,Telefonía,OmniTech,1480.0,51,17,Barcelona,2025-08-08,activo
+BCN-00432,Bombilla smart Air-664,Hogar inteligente,ByteWorks Distribution,1376.0,4,8,Barcelona,2026-05-22,descatalogado
+BCN-00433,Base portátil Core-416,Accesorios,OmniTech,56.55,4,5,Barcelona,2026-04-22,activo
+BCN-00434,Sensor Core-606,Hogar inteligente,TechNova Iberia,750.19,49,15,Barcelona,2026-01-20,activo
+BCN-00435,Lector tarjetas NX-352,Accesorios,ByteWorks Distribution,921.3,11,11,Barcelona,2025-08-28,activo
+BCN-00436,Lector tarjetas Lite-765,Accesorios,GigaSupply,866.39,37,22,Barcelona,2026-03-25,activo
+BCN-00437,Enchufe smart Go-486,Hogar inteligente,  DigitalCore  ,1145.28,6,14,Barcelona,2026-07-18,activo
+BCN-00438,Timbre smart Neo-537,Hogar inteligente,SmartHub Europe,1004.7,80,38,Barcelona,2026-06-01,activo
+BCN-00439,SSD Core-809,Informática,GigaSupply,747.06,64,25,Barcelona,2026-06-24,activo
+BCN-00440,Adaptador Lite-925,Accesorios,IberDevices,301.42,11,6,Barcelona,2025-10-14,activo
+BCN-00441,Smartphone Max-575,Telefonía,GigaSupply,1306.87,0,25,Barcelona,2026-08-05,activo
+BCN-00442,Organizador cables NX-204,Accesorios,OmniTech,518.19,37,12,Barcelona,2026-07-16,activo
+BCN-00443,Mando Neo-756,Gaming,IberDevices,365.89,20,22,Barcelona,2026-07-11,activo
+BCN-00444,Auriculares Pro-652,Audio,ByteWorks Distribution,206.88,33,27,Barcelona,2025-07-21,activo
+BCN-00445,Hub domótico NX-519,Hogar inteligente,ElectroPlus,386.65,38,16,Barcelona,2026-03-31,activo
+BCN-00446,Mando Core-979,Gaming,TechNova Iberia,686.05,45,14,Barcelona,2025-10-16,activo
+BCN-00447,Monitor Lite-635,Informática,GigaSupply,725.42,46,30,Barcelona,2026-07-25,activo
+BCN-00448,Auriculares Max-223,Audio,GigaSupply,71.22,56,35,Barcelona,2026-04-07,activo
+BCN-00449,Adaptador Core-991,Accesorios,ByteWorks Distribution,1018.44,49,38,Barcelona,2025-11-24,activo
+BCN-00450,Headset Lite-114,Gaming,TechNova Iberia,24.71,39,10,Barcelona,2025-07-26,activo
+BCN-00451,Protector pantalla Lite-117,Accesorios,GigaSupply,839.27,70,30,Barcelona,2026-06-29,activo
+BCN-00452,Alfombrilla Max-748,Gaming,IberDevices,677.27,10,5,Barcelona,2025-08-22,activo
+BCN-00453,Silla gaming Go-856,Gaming,OmniTech,369.57,8,3,Barcelona,2026-07-24,activo
+BCN-00454,Micrófono Pro-714,Audio,TechNova Iberia,1046.23,38,18,Barcelona,2026-09-29,activo
+BCN-00455,Alfombrilla Air-353,Gaming,IberDevices,1437.8,25,15,Barcelona,2026-09-09,activo
+BCN-00456,DAC USB Lite-579,Audio,DigitalCore,200.34,25,28,Barcelona,2025-07-20,activo
+BCN-00457,Lector tarjetas Max-315,Accesorios,ElectroPlus,697.74,7,11,Barcelona,2026-01-28,activo
+BCN-00458,Alfombrilla Neo-355,Gaming,GigaSupply,1457.8,46,19,Barcelona,2026-04-11,activo
+BCN-00459,Powerbank Pro-645,Telefonía,TechNova Iberia,970.07,75,27,Barcelona,2026-04-21,activo
+BCN-00460,Ratón gaming Lite-101,Gaming,GigaSupply,521.43,17,7,Barcelona,2025-09-20,activo
+BCN-00461,DAC USB Core-297,Audio,GigaSupply,1166.25,75,32,Barcelona,2025-12-28,descatalogado
+BCN-00462,Ratón gaming Pro-198,Gaming,GigaSupply,1188.68,25,21,Barcelona,2026-04-28,activo
+BCN-00463,Teclado gaming Air-302,Gaming,GigaSupply,795.1,15,39,Barcelona,2026-02-23,activo
+BCN-00464,Cámara IP Air-110,Hogar inteligente,DigitalCore,230.84,119,36,Barcelona,2026-08-18,activo
+BCN-00465,Cable HDMI Pro-948,Accesorios,DigitalCore,1396.75,1,11,Barcelona,2026-01-21,activo
+BCN-00466,Mochila Core-288,Accesorios,GigaSupply,427.99,154,40,Barcelona,2025-10-23,activo
+BCN-00467,Hub USB Neo-345,Informática,DigitalCore,209.19,22,10,Barcelona,2025-11-09,activo
+BCN-00468,Interfaz audio Go-951,Audio,GigaSupply,1392.71,72,32,Barcelona,2026-09-30,activo
+BCN-00469,Mochila Lite-264,Accesorios,DigitalCore,1045.72,7,14,Barcelona,2025-12-30,descatalogado
+BCN-00470,Micrófono Neo-144,Audio,OmniTech,598.35,92,24,Barcelona,2026-02-03,activo
+BCN-00471,Sensor Pro-230,Hogar inteligente,ElectroPlus,1019.69,116,39,Barcelona,2025-11-06,activo
+BCN-00472,Teclado gaming Max-399,Gaming,OmniTech,613.73,41,18,Barcelona,2026-02-10,descatalogado
+BCN-00473,Ratón gaming Lite-229,Gaming,GigaSupply,130.12,12,14,Barcelona,2025-08-27,activo
+BCN-00474,Mochila Pro-212,Accesorios,ByteWorks Distribution,1403.63,92,34,Barcelona,2026-06-25,activo
+BCN-00475,Protector pantalla Pro-298,Accesorios,IberDevices,117.75,55,30,Barcelona,2026-07-07,activo
+BCN-00476,Barra de sonido Go-117,Audio,GigaSupply,1104.13,92,32,Barcelona,2026-05-28,activo
+BCN-00477,Cable USB-C Core-530,Telefonía,DigitalCore,206.85,30,24,Barcelona,2025-11-24,activo
+BCN-00478,Silla gaming Neo-135,Gaming,ByteWorks Distribution,529.01,80,37,Barcelona,2025-12-31,activo
+BCN-00479,Cargador Air-467,Telefonía,SmartHub Europe,1255.58,69,22,Barcelona,2026-03-16,descatalogado
+BCN-00480,Termostato Go-749,Hogar inteligente,OmniTech,1131.35,95,40,Barcelona,2025-07-29,descatalogado
+BCN-00481,Volante Air-441,Gaming,TechNova Iberia,1486.87,54,31,Barcelona,2026-06-30,activo
+BCN-00482,Adaptador Neo-587,Accesorios,TechNova Iberia,313.72,20,10,Barcelona,2025-12-04,activo
+BCN-00483,Alfombrilla Lite-989,Gaming,ByteWorks Distribution,959.96,13,7,Barcelona,2025-12-04,activo
+BCN-00484,Barra de sonido Air-175,Audio,GigaSupply,924.49,3,4,Barcelona,2026-08-19,activo
+BCN-00485,Portátil Go-569,Informática,OmniTech,469.05,95,33,Barcelona,2025-07-25,activo
+BCN-00486,Funda Neo-582,Telefonía,IberDevices,1169.26,32,11,Barcelona,2025-08-18,activo
+BCN-00487,Altavoz Lite-312,Audio,GigaSupply,1159.93,17,7,Barcelona,2026-06-03,activo
+BCN-00488,Base portátil Go-206,Accesorios,IberDevices,855.47,13,4,Barcelona,2026-04-26,activo
+BCN-00489,Silla gaming Neo-521,Gaming,TechNova Iberia,886.51,33,30,Barcelona,2026-05-27,activo
+BCN-00490,Docking Air-603,Informática,TechNova Iberia,645.79,100,34,Barcelona,2026-01-26,activo
+BCN-00491,Cámara IP Go-683,Hogar inteligente,DigitalCore,616.63,30,25,Barcelona,2026-01-16,activo
+BCN-00492,Bombilla smart Pro-315,Hogar inteligente,ElectroPlus,224.92,9,4,Barcelona,2025-12-30,activo
+BCN-00493,Hub USB Pro-144,Informática,SmartHub Europe,604.62,89,31,Barcelona,2026-06-16,activo
+BCN-00494,Lector tarjetas NX-947,Accesorios,NextWare,1183.24,39,38,Barcelona,2026-07-30,activo
+BCN-00495,Barra de sonido Neo-433,AUDIO,OmniTech,928.58,41,22,Barcelona,2025-10-31,activo
+BCN-00496,Alfombrilla Neo-135,Gaming,GigaSupply,965.68,80,31,Barcelona,2026-06-15,activo
+BCN-00497,Alfombrilla NX-634,Gaming,SmartHub Europe,1030.83,93,35,Barcelona,2026-09-30,activo
+BCN-00498,Portátil Neo-612,Informática,ElectroPlus,95.72,63,24,Barcelona,2026-07-13,activo
+BCN-00499,Bombilla smart Pro-327,Hogar inteligente,TechNova Iberia,501.56,53,19,Barcelona,2025-07-13,activo
+BCN-00500,Monitor Neo-836,Informática,OmniTech,163.22,144,39,Barcelona,2025-11-01,activo
+BCN-00501,Organizador cables Air-763,Accesorios,DigitalCore,64.13,50,20,Barcelona,2025-10-22,ACTIVO
+BCN-00502,Auriculares Pro-680,Audio,OmniTech,1263.1,13,11,Barcelona,2025-10-20,activo
+BCN-00503,Adaptador Air-899,Accesorios,DigitalCore,623.29,70,34,Barcelona,2026-01-06,activo
+BCN-00504,DAC USB Air-765,Audio,SmartHub Europe,1247.63,27,13,Barcelona,2025-10-24,descatalogado
+BCN-00505,Ratón gaming Core-995,Gaming,ByteWorks Distribution,1248.47,81,27,Barcelona,2025-12-09,activo
+BCN-00506,Protector pantalla Air-900,Accesorios,ElectroPlus,1249.53,85,31,Barcelona,2026-02-16,activo
+BCN-00507,Bombilla smart Go-513,Hogar inteligente,OmniTech,368.38,57,37,Barcelona,2025-07-14,activo
+BCN-00508,Lector tarjetas NX-844,Accesorios,GigaSupply,188.75,19,6,Barcelona,2025-11-27,descatalogado
+BCN-00509,Barra de sonido Neo-867,Audio,ElectroPlus,1265.92,42,19,Barcelona,2026-06-13,activo
+BCN-00510,Webcam Lite-381,Informática,ElectroPlus,1436.6,116,36,Barcelona,2025-07-08,activo
+BCN-00511,Bombilla smart Neo-813,Hogar inteligente,GigaSupply,50.5,48,16,Barcelona,2026-09-11,activo
+BCN-00512,Mochila Core-175,Accesorios,IberDevices,597.81,6,3,Barcelona,2026-05-24,activo
+BCN-00513,Altavoz Core-953,Audio,IberDevices,517.02,20,14,Barcelona,2025-08-27,activo
+BCN-00514,Funda Neo-102,Telefonía,ElectroPlus,444.07,8,3,Barcelona,2025-12-18,activo
+BCN-00515,Interfaz audio Max-287,Audio,SmartHub Europe,792.57,34,24,Barcelona,2025-10-08,activo
+BCN-00516,Auricular TWS Core-885,Telefonía,GigaSupply,333.34,8,3,Barcelona,2026-02-21,activo
+BCN-00517,Teclado Core-196,Informática,TechNova Iberia,485.93,146,38,Barcelona,2026-09-08,activo
+BCN-00518,Docking Go-639,Informática,TechNova Iberia,78.87,45,19,Barcelona,2026-02-11,activo
+BCN-00519,Mando Air-445,Gaming,GigaSupply,1308.8,12,27,Barcelona,2026-01-12,descatalogado
+BCN-00520,Cable HDMI Air-936,Accesorios,ByteWorks Distribution,496.85,52,15,Barcelona,2026-07-08,activo
+BCN-00521,Cable USB-C Neo-667,Telefonía,ByteWorks Distribution,324.25,29,9,Barcelona,2026-01-30,activo
+BCN-00522,Webcam Max-394,Informática,IberDevices,1021.05,13,7,Barcelona,2025-10-31,activo
+BCN-00523,Cable USB-C Go-606,Telefonía,DigitalCore,93.29,82,30,Barcelona,2026-03-26,activo
+BCN-00524,Barra de sonido Pro-507,Audio,DigitalCore,173.94,26,15,Barcelona,2026-08-01,descatalogado
+BCN-00525,Organizador cables NX-502,Accesorios,SmartHub Europe,595.12,4,3,Barcelona,2026-09-25,activo
+BCN-00526,Teclado gaming Air-534,Gaming,IberDevices,97.42,34,12,Barcelona,2025-08-31,activo
+BCN-00527,Termostato Pro-535,Hogar inteligente,GigaSupply,573.27,9,10,Barcelona,2025-09-06,activo
+BCN-00528,Silla gaming Air-193,Gaming,GigaSupply,1096.83,36,19,Barcelona,2026-07-23,activo
+BCN-00529,Soporte móvil NX-125,Telefonía,OmniTech,1104.01,66,29,Barcelona,2025-09-19,activo
+BCN-00530,Ratón gaming Go-746,Gaming,DigitalCore,617.08,31,19,Barcelona,2026-07-19,activo
+BCN-00531,Interfaz audio Go-916,Audio,OmniTech,822.42,59,35,Barcelona,2025-08-15,activo
+BCN-00532,Powerbank Core-563,Telefonía,SmartHub Europe,327.8,62,19,Barcelona,2026-05-17,activo
+BCN-00533,Adaptador Neo-302,Accesorios,TechNova Iberia,306.36,116,30,Barcelona,2025-09-29,activo
+BCN-00534,Mochila Max-293,Accesorios,ElectroPlus,33.07,46,32,Barcelona,2026-07-18,activo
+BCN-00535,Base portátil Neo-221,Accesorios,SmartHub Europe,169.61,89,25,Barcelona,2026-08-13,activo
+BCN-00536,Docking Neo-191,Informática,OmniTech,208.87,73,31,Barcelona,2026-04-02,descatalogado
+BCN-00537,Micrófono Air-458,Audio,NextWare,1488.38,33,36,Barcelona,2026-05-23,activo
+BCN-00538,Cable HDMI NX-222,Accesorios,IberDevices,208.22,97,37,Barcelona,2025-12-07,activo
+BCN-00539,Protector pantalla Air-919,Accesorios,ElectroPlus,1408.1,6,3,Barcelona,2025-08-19,activo
+BCN-00540,Webcam Air-668,Informática,DigitalCore,866.89,10,7,Barcelona,2026-03-22,activo
+BCN-00541,Ratón gaming Air-433,Gaming,TechNova Iberia,879.53,49,31,Barcelona,2026-09-12,activo
+BCN-00542,Webcam Go-168,Informática,ByteWorks Distribution,876.94,46,24,Barcelona,2025-12-31,activo
+BCN-00543,Docking Pro-233,Informática,ByteWorks Distribution,423.27,39,31,Barcelona,2026-05-20,activo
+BCN-00544,Ratón Lite-290,Informática,IberDevices,678.05,97,35,Barcelona,2025-10-13,activo
+BCN-00545,Soporte móvil NX-609,Telefonía,ByteWorks Distribution,313.05,96,35,Barcelona,2025-07-03,activo
+BCN-00546,Base portátil Air-784,Accesorios,DigitalCore,754.56,132,33,Barcelona,2025-12-22,activo
+BCN-00547,Enchufe smart Pro-777,Hogar inteligente,OmniTech,554.1,17,11,Barcelona,2025-09-07,activo
+BCN-00548,Cable USB-C Max-207,Telefonía,GigaSupply,1128.07,25,35,Barcelona,2025-07-27,activo
+BCN-00549,Mini PC Lite-912,Informática,TechNova Iberia,1096.64,63,22,Barcelona,2026-01-09,activo
+BCN-00550,Sensor Max-942,Hogar inteligente,NextWare,692.22,6,3,Barcelona,2026-03-09,activo
+BCN-00551,Adaptador Max-246,Accesorios,TechNova Iberia,1442.39,12,4,Barcelona,2025-10-02,activo
+BCN-00552,Protector pantalla Pro-682,Accesorios,TechNova Iberia,33.39,28,32,Barcelona,2025-07-12,activo
+BCN-00553,Timbre smart Neo-212,Hogar inteligente,NextWare,555.32,22,15,Barcelona,2026-02-16,activo
+BCN-00554,Cámara IP Core-400,Hogar inteligente,SmartHub Europe,1347.41,51,25,Barcelona,2025-11-10,activo
+BCN-00555, Termostato Lite-753,Hogar inteligente,ByteWorks Distribution,987.65,30,22,Barcelona,2026-02-10,activo
+BCN-00556,Mochila NX-356,Accesorios,TechNova Iberia,117.93,11,17,Barcelona,2026-07-27,activo
+BCN-00557,Mini PC Lite-830,Informática,IberDevices,180.36,51,31,Barcelona,2026-08-09,activo
+BCN-00558,Powerbank Go-635,Telefonía,TechNova Iberia,1046.45,16,15,Barcelona,2026-06-30,activo
+BCN-00559,Bombilla smart Pro-849,Hogar inteligente,SmartHub Europe,539.05,29,22,Barcelona,2025-12-23,activo
+BCN-00560,Interfaz audio Neo-872,Audio,OmniTech,57.97,24,8,Barcelona,2025-07-29,activo
+BCN-00561,Mini PC Max-976,Informática,GigaSupply,1389.37,9,5,Barcelona,2026-03-27,activo
+BCN-00562,Lector tarjetas Max-837,Accesorios,IberDevices,865.42,1,9,Barcelona,2025-10-18,activo
+BCN-00563,Alfombrilla Air-839,Gaming,DigitalCore,1413.28,84,37,Barcelona,2026-08-12,activo
+BCN-00564,Micrófono Neo-644,Audio,TechNova Iberia,1222.03,70,30,Barcelona,2026-01-25,activo
+BCN-00565,Funda Max-864,Telefonía,NextWare,545.88,8,27,Barcelona,2025-07-20,activo
+BCN-00566,SSD Lite-892,Informática,GigaSupply,266.1,5,19,Barcelona,2025-11-30,activo
+BCN-00567,Base portátil NX-628,Accesorios,SmartHub Europe,1206.77,38,15,Barcelona,2025-07-26,activo
+BCN-00568,Organizador cables Lite-276,Accesorios,GigaSupply,824.25,60,31,Barcelona,2026-09-25,activo
+BCN-00569,Hub USB Lite-279,Informática,ByteWorks Distribution,1251.35,50,25,Barcelona,2026-01-03,activo
+BCN-00570,Protector pantalla NX-660,Accesorios,DigitalCore,990.82,36,19,Barcelona,2025-12-31,activo
+BCN-00571,Adaptador Max-141,Accesorios,GigaSupply,287.78,22,9,Barcelona,2026-02-03,activo
+BCN-00572,Mochila Go-153,Accesorios,TechNova Iberia,335.23,9,8,Barcelona,2026-08-25,activo
+BCN-00573,Portátil Neo-698,Informática,TechNova Iberia,1150.04,38,26,Barcelona,2025-11-24,activo
+BCN-00574,Lector tarjetas NX-197,Accesorios,ByteWorks Distribution,993.08,54,16,Barcelona,2025-09-09,activo
+BCN-00575,Ratón Go-991,Informática,ElectroPlus,454.27,87,36,Barcelona,2026-04-12,activo
+BCN-00576,Powerbank Neo-683,Telefonía,OmniTech,529.97,25,8,Barcelona,2026-03-17,activo
+BCN-00577,Cable HDMI Go-807,Accesorios,DigitalCore,404.46,9,4,Barcelona,2026-08-14,activo
+BCN-00578,Timbre smart Go-305,Hogar inteligente,TechNova Iberia,532.84,84,32,Barcelona,2026-05-19,activo
+BCN-00579,Lector tarjetas Lite-923,Accesorios,TechNova Iberia,54.97,16,5,Barcelona,2025-07-05,activo
+BCN-00580,Termostato Max-786,Hogar inteligente,DigitalCore,629.05,20,5,Barcelona,2026-04-06,activo
+BCN-00581,Bombilla smart NX-804,Hogar inteligente,ByteWorks Distribution,755.1,5,4,Barcelona,2026-06-15,activo
+BCN-00582,SSD Lite-761,Informática,GigaSupply,37.45,66,22,Barcelona,2026-06-06,activo
+BCN-00583,Powerbank Neo-956,Telefonía,OmniTech,959.18,40,35,Barcelona,2026-04-08,activo
+BCN-00584,Ratón NX-477,Informática,ElectroPlus,941.91,71,26,Barcelona,2026-09-21,activo
+BCN-00585,Smartphone Neo-177,Telefonía,OmniTech,1289.39,25,7,Barcelona,2026-08-01,activo
+BCN-00586,Bombilla smart Go-817,Hogar inteligente,TechNova Iberia,624.53,13,5,Barcelona,2025-08-29,activo
+BCN-00587,Mini PC Go-236,Informática,GigaSupply,965.91,7,13,Barcelona,2025-12-02,activo
+BCN-00588,Smartphone Pro-757,Telefonía,GigaSupply,932.95,14,9,Barcelona,2026-04-23,activo
+BCN-00589,Webcam Air-916,Informática,NextWare,230.05,33,18,Barcelona,2026-07-07,activo
+BCN-00590,Mini PC Neo-714,Informática,DigitalCore,300.75,41,36,Barcelona,2025-08-15,activo
+BCN-00591,Auricular TWS Pro-619,Telefonía,DigitalCore,900.64,57,24,Barcelona,2026-07-15,activo
+BCN-00592,Mando Core-690,Gaming,DigitalCore,312.17,113,40,Barcelona,2025-08-23,activo
+BCN-00593,Smartphone Air-372,Telefonía,TechNova Iberia,258.81,43,16,Barcelona,2026-02-15,activo
+BCN-00594,Funda Max-646,Telefonía,NextWare,1198.02,8,8,Barcelona,2026-06-03,activo
+BCN-00595,Micrófono Lite-938,Audio,OmniTech,695.17,28,17,Barcelona,2026-08-20,activo
+BCN-00596,DAC USB Neo-243,Audio,DigitalCore,738.28,10,8,Barcelona,2026-02-22,activo
+BCN-00597,Cable HDMI Air-786,Accesorios,ByteWorks Distribution,1006.61,45,16,Barcelona,2025-07-23,activo
+BCN-00598,Enchufe smart Neo-581,Hogar inteligente,NextWare,1178.91,25,8,Barcelona,2026-09-23,activo
+BCN-00599,Teclado gaming Air-409,Gaming,ByteWorks Distribution,1382.93,37,21,Barcelona,2026-01-16,activo
+BCN-00600,Lector tarjetas Lite-711,Accesorios,NextWare,322.85,61,32,Barcelona,2025-10-02,activo
+BCN-00601,Timbre smart Max-910,Hogar inteligente,OmniTech,1303.57,36,32,Barcelona,2026-09-03,activo
+BCN-00602,Hub USB Max-997,Informática,ElectroPlus,530.48,16,16,Barcelona,2026-06-06,activo
+BCN-00603,Micrófono NX-824,Audio,ElectroPlus,682.77,10,8,Barcelona,2025-10-18,activo
+BCN-00604,Cargador Pro-679,Telefonía,ByteWorks Distribution,271.18,72,23,Barcelona,2026-08-19,activo
+BCN-00605,Teclado gaming Air-338,Gaming,SmartHub Europe,935.18,8,5,Barcelona,2026-04-19,activo
+BCN-00606,Ratón Neo-627,Informática,IberDevices,1266.97,17,7,Barcelona,2026-06-10,activo
+BCN-00607,Teclado Go-430,Informática,SmartHub Europe,537.09,17,12,Barcelona,2026-08-29,activo
+BCN-00608,Powerbank Lite-186,Telefonía,ByteWorks Distribution,61.78,14,12,Barcelona,2026-05-12,activo
+BCN-00609,Docking Pro-674,Informática,TechNova Iberia,1134.55,46,21,Barcelona,2025-09-23,activo
+BCN-00610,Enchufe smart Max-883,Hogar inteligente,SmartHub Europe,256.11,22,11,Barcelona,2026-05-28,descatalogado
+BCN-00611,Volante Pro-655,Gaming,ByteWorks Distribution,1445.07,48,17,Barcelona,2025-08-15,activo
+BCN-00612,Portátil NX-655,Informática,IberDevices,1417.07,0,23,Barcelona,2026-08-26,activo
+BCN-00613,Hub domótico Pro-345,Hogar inteligente,ByteWorks Distribution,233.63,66,40,Barcelona,2025-10-26,activo
+BCN-00614,Powerbank Max-836,Telefonía,DigitalCore,53.93,27,29,Barcelona,2026-01-15,activo
+BCN-00615,Cable HDMI Neo-161,Accesorios,SmartHub Europe,1220.4,128,38,Barcelona,2025-11-23,activo
+BCN-00616,Cámara IP NX-305,Hogar inteligente,ByteWorks Distribution,1174.34,40,28,Barcelona,2026-04-01,activo
+BCN-00617,Interfaz audio Air-189,Audio,NextWare,741.94,56,40,Barcelona,2025-11-15,activo
+BCN-00618,Mini PC Go-881,Informática,OmniTech,952.92,6,39,Barcelona,2026-03-16,activo
+BCN-00619,Hub domótico Neo-764,Hogar inteligente,ByteWorks Distribution,1372.88,3,4,Barcelona,2026-02-18,activo
+BCN-00620,Micrófono Max-491,Audio,NextWare,132.18,9,5,Barcelona,2026-07-30,activo
+BCN-00621,Soporte móvil Neo-553,Telefonía,ByteWorks Distribution,295.55,65,38,Barcelona,2025-11-09,activo
+BCN-00622,Adaptador Neo-841,Accesorios,DigitalCore,89.02,63,28,Barcelona,2026-07-01,activo
+BCN-00623,Auriculares Neo-136,Audio,TechNova Iberia,247.29,24,13,Barcelona,2026-09-16,activo
+BCN-00624,Docking Max-272,Informática,OmniTech,781.94,72,38,Barcelona,2026-04-23,descatalogado
+BCN-00625,Micrófono Air-855,Audio,GigaSupply,1208.1,53,39,Barcelona,2025-11-22,activo
+BCN-00626,Bombilla smart Core-774,Hogar inteligente,OmniTech,1147.56,33,15,Barcelona,2026-02-26,descatalogado
+BCN-00627,Volante NX-213,GAMING,DigitalCore,1452.97,7,5,Barcelona,2025-09-27,activo
+BCN-00628,Timbre smart Lite-805,Hogar inteligente,  IberDevices  ,111.05,58,24,Barcelona,2025-09-29,activo
+BCN-00629,Protector pantalla Air-908,Accesorios,ByteWorks Distribution,606.05,13,6,Barcelona,2025-11-29,descatalogado
+BCN-00630,Mini PC Max-586,Informática,IberDevices,1295.03,60,37,Barcelona,2026-01-11,activo
+BCN-00631,Headset Air-750,Gaming,TechNova Iberia,1426.03,14,7,Barcelona,2025-09-30,activo
+BCN-00632,Webcam NX-229,Informática,OmniTech,1223.26,33,22,Barcelona,2026-01-05,activo
+BCN-00633,Smartphone Lite-761,Telefonía,TechNova Iberia,54.79,61,31,Barcelona,2026-09-26,activo
+BCN-00634,DAC USB Air-794,Audio,NextWare,315.54,36,34,Barcelona,2026-08-15,activo
+BCN-00635,Funda Core-286,Telefonía,ByteWorks Distribution,318.89,75,31,Barcelona,2026-01-14,activo
+BCN-00636,Enchufe smart Max-790,Hogar inteligente,OmniTech,1091.99,84,34,Barcelona,2026-09-24,activo
+BCN-00637,Interfaz audio Max-432,Audio,TechNova Iberia,725.9,91,40,Barcelona,2026-03-18,activo
+BCN-00638,Termostato Lite-796,Hogar inteligente,GigaSupply,308.72,9,4,Barcelona,2025-09-05,activo
+BCN-00639,Webcam Max-281,Informática,IberDevices,1355.14,100,20,Barcelona,2025-12-23,descatalogado
+BCN-00640,Webcam Go-875,Informática,NextWare,976.05,41,22,Barcelona,2026-06-04,activo
+BCN-00641,Sensor Air-649,Hogar inteligente,ElectroPlus,891.85,15,25,Barcelona,2025-12-19,activo
+BCN-00642,DAC USB Pro-310,Audio,SmartHub Europe,1468.09,107,40,Barcelona,2025-08-28,activo
+BCN-00643,Sensor Pro-656,Hogar inteligente,OmniTech,63.5,43,24,Barcelona,2025-09-24,activo
+BCN-00644,Volante Neo-735,Gaming,NextWare,1319.42,37,17,Barcelona,2026-02-15,activo
+BCN-00645,Soporte móvil Go-400,Telefonía,GigaSupply,594.92,58,15,Barcelona,2026-03-27,activo
+BCN-00646,Silla gaming Go-442,Gaming,IberDevices,717.93,41,30,Barcelona,2025-09-28,activo
+BCN-00647,Docking Core-858,Informática,ElectroPlus,1261.8,108,37,Barcelona,2026-08-09,activo
+BCN-00648,Powerbank Pro-685,Telefonía,ByteWorks Distribution,487.95,109,35,Barcelona,2025-09-11,activo
+BCN-00649,SSD NX-980,Informática,NextWare,537.82,60,21,Barcelona,2025-10-04,activo
+BCN-00650,Mochila Max-891,Accesorios,SmartHub Europe,887.79,63,28,Barcelona,2026-01-30,activo
+BCN-00651,Hub domótico Lite-660,Hogar inteligente,GigaSupply,1008.68,82,25,Barcelona,2026-03-27,activo
+BCN-00652,Barra de sonido Go-905,Audio,DigitalCore,1238.92,28,13,Barcelona,2025-10-13,activo
+BCN-00653,Funda Pro-939,Telefonía,IberDevices,222.38,21,8,Barcelona,2026-09-18,activo
+BCN-00654,Cargador Max-246,Telefonía,SmartHub Europe,256.92,0,38,Barcelona,2025-12-02,activo
+BCN-00655,Cable USB-C NX-615,Telefonía,TechNova Iberia,1095.76,24,13,Barcelona,2025-09-08,activo
+BCN-00656,Monitor Lite-489,Informática,ByteWorks Distribution,1171.97,96,39,Barcelona,2026-05-10,descatalogado
+BCN-00657,Timbre smart NX-697,Hogar inteligente,  ByteWorks Distribution  ,125.08,20,14,Barcelona,2026-09-27,activo
+BCN-00658,Enchufe smart Go-917,Hogar inteligente,DigitalCore,1355.1,81,37,Barcelona,2025-07-10,activo
+BCN-00659,Cable HDMI Air-347,Accesorios,ByteWorks Distribution,347.09,51,30,Barcelona,2026-05-28,activo
+BCN-00660,Hub domótico Core-528,Hogar inteligente,OmniTech,794.73,15,18,Barcelona,2025-12-08,activo
+BCN-00661,Lector tarjetas Air-626,Accesorios,ByteWorks Distribution,950.99,80,37,Barcelona,2026-06-05,activo
+BCN-00662,Mando NX-817,Gaming,DigitalCore,179.42,20,8,Barcelona,2026-01-23,activo
+BCN-00663,Cable USB-C Max-508,Telefonía,ElectroPlus,418.94,16,7,Barcelona,2026-08-28,activo
+BCN-00664,Ratón Core-238,Informática,TechNova Iberia,819.34,62,25,Barcelona,2026-02-16,activo
+BCN-00665,Adaptador Go-371,Accesorios,ElectroPlus,644.61,74,29,Barcelona,2026-01-11,activo
+BCN-00666,DAC USB Pro-792,Audio,ByteWorks Distribution,1306.2,44,32,Barcelona,2025-11-09,activo
+BCN-00667,Cargador Air-169,Telefonía,NextWare,1054.52,87,35,Barcelona,2026-06-21,activo
+BCN-00668,Micrófono Core-617,Audio,TechNova Iberia,665.73,67,33,Barcelona,2026-03-13,activo
+BCN-00669,Teclado gaming Pro-556,Gaming,DigitalCore,222.58,54,12,Barcelona,2025-07-08,activo
+BCN-00670,Soporte móvil Max-293,Telefonía,IberDevices,1041.52,52,26,Barcelona,2026-07-23,activo
+BCN-00671,Bombilla smart NX-958,Hogar inteligente,IberDevices,844.65,58,20,Barcelona,2026-09-03,activo
+BCN-00672,Cable HDMI Lite-695,Accesorios,TechNova Iberia,948.63,99,24,Barcelona,2025-10-22,activo
+BCN-00673,Enchufe smart Lite-654,Hogar inteligente,NextWare,485.97,166,36,Barcelona,2025-11-06,activo
+BCN-00674,Cargador Go-108,Telefonía,OmniTech,329.66,1,4,Barcelona,2025-10-31,activo
+BCN-00675,Powerbank Lite-419,Telefonía,DigitalCore,1228.84,16,11,Barcelona,2025-09-04,activo
+BCN-00676,Teclado Pro-610,Informática,DigitalCore,1391.81,23,14,Barcelona,2025-08-05,activo
+BCN-00677,Termostato Core-859,Hogar inteligente,GigaSupply,409.14,36,19,Barcelona,2026-09-23,activo
+BCN-00678,Lector tarjetas Neo-858,Accesorios,IberDevices,1489.29,23,27,Barcelona,2026-03-13,activo
+BCN-00679,SSD Go-221,Informática,ElectroPlus,1433.49,50,35,Barcelona,2026-09-25,activo
+BCN-00680,Cargador Core-972,Telefonía,IberDevices,1445.85,75,33,Barcelona,2026-09-27,activo
+BCN-00681,Enchufe smart Max-704,Hogar inteligente,ElectroPlus,799.24,23,22,Barcelona,2025-10-28,activo
+BCN-00682,Lector tarjetas Air-294,Accesorios,ElectroPlus,986.27,6,4,Barcelona,2025-11-08,activo
+BCN-00683,Mando Max-485,Gaming,TechNova Iberia,476.87,16,18,Barcelona,2026-06-19,activo
+BCN-00684,Alfombrilla Neo-453,Gaming,NextWare,319.44,49,15,Barcelona,2026-07-20,activo
+BCN-00685,Hub domótico NX-169,Hogar inteligente,GigaSupply,179.39,92,35,Barcelona,2025-10-25,activo
+BCN-00686,Ratón Air-327,INFORMÁTICA,OmniTech,690.43,58,30,Barcelona,2026-08-13,activo
+BCN-00687,Soporte móvil Pro-181,Telefonía,OmniTech,579.46,38,14,Barcelona,2025-07-31,activo
+BCN-00688,Bombilla smart NX-605,Hogar inteligente,ByteWorks Distribution,1463.62,29,33,Barcelona,2025-07-11,activo
+BCN-00689,Interfaz audio Air-173,Audio,ElectroPlus,438.78,12,5,Barcelona,2026-01-23,activo
+BCN-00690,Mando Pro-159,Gaming,SmartHub Europe,137.22,36,22,Barcelona,2025-10-31,activo
+BCN-00691,Sensor Core-575,Hogar inteligente,DigitalCore,394.97,101,31,Barcelona,2025-07-17,descatalogado
+BCN-00692,Webcam Core-452,Informática,TechNova Iberia,45.81,64,35,Barcelona,2026-05-29,activo
+BCN-00693,Adaptador Pro-219,Accesorios,OmniTech,1498.02,41,40,Barcelona,2025-10-14,activo
+BCN-00694,Sensor Pro-312,Hogar inteligente,IberDevices,1497.43,85,26,Barcelona,2025-08-04,activo
+BCN-00695,Headset Lite-732,Gaming,TechNova Iberia,434.86,1,3,Barcelona,2025-09-22,activo
+BCN-00696,Barra de sonido Core-348,Audio,IberDevices,329.32,35,12,Barcelona,2025-12-06,activo
+BCN-00697,Volante NX-742,Gaming,DigitalCore,898.33,62,18,Barcelona,2026-08-25,activo
+BCN-00698,Hub USB NX-903,Informática,DigitalCore,1166.94,21,7,Barcelona,2026-05-25,activo
+BCN-00699,Base portátil Pro-549,Accesorios,GigaSupply,189.21,37,12,Barcelona,2026-02-28,activo
+BCN-00700,Termostato Core-245,Hogar inteligente,GigaSupply,575.47,68,32,Barcelona,2026-04-21,activo
+BCN-00701,SSD Go-902,Informática,SmartHub Europe,447.51,42,21,Barcelona,2026-07-28,activo
+BCN-00702,Soporte móvil Neo-361,TELEFONÍA,DigitalCore,1219.36,15,8,Barcelona,2025-11-05,activo
+BCN-00703,Termostato Lite-270,Hogar inteligente,NextWare,1341.05,56,40,Barcelona,2025-12-22,activo
+BCN-00704,Cargador Go-312,Telefonía,SmartHub Europe,599.94,21,13,Barcelona,2025-07-22,activo
+BCN-00705,Base portátil Max-308,Accesorios,DigitalCore,1270.77,14,16,Barcelona,2026-04-07,activo
+BCN-00706,Teclado Lite-313,Informática,TechNova Iberia,394.0,53,27,Barcelona,2025-10-13,activo
+BCN-00707,Enchufe smart Go-976,Hogar inteligente,DigitalCore,1059.19,51,15,Barcelona,2026-08-28,activo
+BCN-00708,Hub USB Go-494,Informática,OmniTech,1492.68,16,17,Barcelona,2025-12-24,activo
+BCN-00709,Webcam Max-492,Informática,GigaSupply,1237.28,8,8,Barcelona,2025-08-06,activo
+BCN-00710,Alfombrilla Neo-911,Gaming,DigitalCore,746.66,29,12,Barcelona,2026-03-15,descatalogado
+BCN-00711,Cable USB-C NX-961,Telefonía,GigaSupply,946.59,5,3,Barcelona,2026-08-06,activo
+BCN-00712,Mando NX-966,Gaming,IberDevices,333.51,127,37,Barcelona,2026-08-21,activo
+BCN-00713,Mochila Max-505,Accesorios,NextWare,816.96,32,14,Barcelona,2025-07-22,activo
+BCN-00714,Auricular TWS Pro-283,Telefonía,NextWare,676.17,74,39,Barcelona,2025-08-28,activo
+BCN-00715,Mochila Lite-968,Accesorios,ElectroPlus,1261.9,56,17,Barcelona,2025-09-27,activo
+BCN-00716,Lector tarjetas Go-735,Accesorios,DigitalCore,421.32,101,38,Barcelona,2025-10-19,activo
+BCN-00717, Soporte móvil Core-872,Telefonía,ByteWorks Distribution,1121.08,23,24,Barcelona,2026-05-15,descatalogado
+BCN-00718,Cable USB-C NX-894,Telefonía,OmniTech,964.92,24,20,Barcelona,2026-04-02,activo
+BCN-00719,Webcam Pro-222,Informática,TechNova Iberia,1217.37,30,15,Barcelona,2025-09-03,activo
+BCN-00720,Organizador cables Max-829,Accesorios,TechNova Iberia,907.01,11,6,Barcelona,2026-03-06,activo
+BCN-00721,DAC USB Lite-806,Audio,ElectroPlus,253.68,33,9,Barcelona,2026-01-01,activo
+BCN-00722,Webcam Air-414,Informática,OmniTech,92.16,30,9,Barcelona,2026-07-28,activo
+BCN-00723,Timbre smart Go-384,Hogar inteligente,ByteWorks Distribution,339.6,12,9,Barcelona,2026-03-05,activo
+BCN-00724,Ratón Air-115,Informática,IberDevices,708.16,7,6,Barcelona,2026-08-01,activo
+BCN-00725,Hub USB NX-345,Informática,SmartHub Europe,338.33,9,5,Barcelona,2025-07-04,activo
+BCN-00726,Termostato Lite-231,Hogar inteligente,GigaSupply,212.84,6,3,Barcelona,2026-05-26,activo
+BCN-00727,Portátil Neo-389,Informática,OmniTech,734.93,113,35,Barcelona,2026-09-02,activo
+BCN-00728,Hub domótico Pro-373,Hogar inteligente,OmniTech,1180.58,97,29,Barcelona,2025-09-12,activo
+BCN-00729,Interfaz audio Air-325,Audio,OmniTech,652.59,38,26,Barcelona,2025-11-04,activo
+BCN-00730,Webcam Pro-690,Informática,IberDevices,1310.11,59,40,Barcelona,2026-04-09,activo
+BCN-00731,Lector tarjetas Lite-225,Accesorios,OmniTech,276.77,13,5,Barcelona,2026-05-07,activo
+BCN-00732,Interfaz audio Air-494,Audio,OmniTech,1206.33,68,28,Barcelona,2025-09-13,activo
+BCN-00733,Auricular TWS NX-586,Telefonía,TechNova Iberia,1238.04,57,24,Barcelona,2025-10-27,activo
+BCN-00734,Smartphone Core-450,Telefonía,SmartHub Europe,880.92,4,27,Barcelona,2026-03-21,activo
+BCN-00735,Interfaz audio Pro-596,Audio,IberDevices,319.63,29,33,Barcelona,2025-07-16,activo
+BCN-00736,Interfaz audio Lite-219,Audio,DigitalCore,62.24,73,22,Barcelona,2026-08-27,activo
+BCN-00737,SSD Max-218,Informática,GigaSupply,803.99,33,9,Barcelona,2026-05-08,descatalogado
+BCN-00738,Termostato Air-170,Hogar inteligente,NextWare,1169.89,40,22,Barcelona,2026-08-31,activo
+BCN-00739,Adaptador NX-935,Accesorios,GigaSupply,1305.04,39,18,Barcelona,2026-09-08,activo
+BCN-00740,Interfaz audio Go-889,Audio,NextWare,1017.2,66,24,Barcelona,2026-02-16,activo
+BCN-00741,Adaptador Go-670,Accesorios,NextWare,1246.09,37,15,Barcelona,2026-05-04,activo
+BCN-00742,Enchufe smart Pro-160,Hogar inteligente,ByteWorks Distribution,338.13,69,28,Barcelona,2026-06-01,activo
+BCN-00743,Smartphone Core-878,Telefonía,GigaSupply,1349.24,64,19,Barcelona,2026-06-29,activo
+BCN-00744,Powerbank Neo-694,Telefonía,ElectroPlus,282.4,10,3,Barcelona,2025-10-31,activo
+BCN-00745,Alfombrilla Core-943,Gaming,TechNova Iberia,901.72,39,34,Barcelona,2026-03-02,activo
+BCN-00746,Barra de sonido NX-199,Audio,IberDevices,1393.18,18,8,Barcelona,2026-06-26,activo
+BCN-00747,Micrófono Neo-871,Audio,GigaSupply,803.95,65,21,Barcelona,2026-06-29,activo
+BCN-00748,Bombilla smart Air-217,Hogar inteligente,GigaSupply,351.05,93,34,Barcelona,2026-08-07,activo
+BCN-00749,Mando Max-997,Gaming,ElectroPlus,1222.41,81,31,Barcelona,2025-12-02,activo
+BCN-00750,Termostato Max-752,Hogar inteligente,OmniTech,542.64,41,19,Barcelona,2025-09-11,activo
