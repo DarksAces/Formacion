@@ -1,4 +1,4 @@
-import { GAME_PHASES, CHARACTER_ROLES, evaluateRoundWithAI } from './ai_engine.js';
+import { GAME_PHASES, CHARACTER_ROLES, evaluateRoundWithAI, generateSoftSkillsReport, SOFT_SKILLS_TAXONOMY } from './ai_engine.js';
 import { sound } from './audio.js';
 
 // DICCIONARI DE TRADUCCIÓ (CA / ES)
@@ -89,6 +89,17 @@ const I18N = {
         secretActionDesc: "La teva jugada individual encoberta en aquest sector (cooperació lleial, autoservei o sabotatge):",
         cinematicVoteHeader: "🗳️ ESCRUTINI DE LA DECISIÓ D'EQUIP (VOTACIÓ PER MAJORIA)",
         transitionVoteHeader: "🗳️ RECOMPTE DE LA VOTACIÓ D'EQUIP (DECISIÓ PER MAJORIA):",
+        tabFinalDestiny: "👁️ Destí Canònic",
+        tabFinalSkills: "📊 Informe de Soft Skills & Stats",
+        skillsReportTitle: "📊 Informe de Soft Skills & Rendiment d'Equip",
+        skillsReportSubtitle: "Avaluació competencial de les 7 rondes segons el marc docent Everest V3 (Harvard Business Publishing).",
+        kpiTotalSkills: "Total Competències Registrades",
+        kpiCohesion: "Índex de Cohesió Grupal",
+        kpiStrategic: "Índex d'Estratègia Tècnica",
+        rankingHeader: "🏆 Rànquing de les Soft Skills Més Utilitzades en la Partida:",
+        playerProfilesHeader: "👥 Perfil Competencial Individual dels 4 Jugadors Reals:",
+        btnExportSkills: "📋 Copiar Informe de Soft Skills",
+        copiedAlert: "✅ Informe complet de Soft Skills copiat al porta-retalls!",
         loreBodyHtml: `
             <p>
                 <strong>1. Cada persona tria un personatge (4 Rols Fixos):</strong><br>
@@ -198,6 +209,17 @@ const I18N = {
         secretActionDesc: "Tu jugada individual encubierta en este sector (cooperación leal, autoservicio o sabotaje):",
         cinematicVoteHeader: "🗳️ ESCRUTINIO DE LA DECISIÓN DE EQUIPO (VOTACIÓN POR MAYORÍA)",
         transitionVoteHeader: "🗳️ RECUENTO DE LA VOTACIÓN DE EQUIPO (DECISIÓN POR MAYORÍA):",
+        tabFinalDestiny: "👁️ Destino Canónico",
+        tabFinalSkills: "📊 Informe de Soft Skills & Stats",
+        skillsReportTitle: "📊 Informe de Soft Skills & Desempeño de Equipo",
+        skillsReportSubtitle: "Evaluación competencial de las 7 rondas según el marco docente Everest V3 (Harvard Business Publishing).",
+        kpiTotalSkills: "Total Competencias Registradas",
+        kpiCohesion: "Índice de Cohesión Grupal",
+        kpiStrategic: "Índice de Estrategia Técnica",
+        rankingHeader: "🏆 Ránking de las Soft Skills Más Utilizadas en la Partida:",
+        playerProfilesHeader: "👥 Perfil Competencial Individual de los 4 Jugadores Reales:",
+        btnExportSkills: "📋 Copiar Informe de Soft Skills",
+        copiedAlert: "✅ ¡Informe completo de Soft Skills copiado al portapapeles!",
         loreBodyHtml: `
             <p>
                 <strong>1. Cada persona elige un personaje (4 Roles Fijos):</strong><br>
@@ -520,6 +542,8 @@ class GameApp {
         };
 
         this.historyLogs = [];
+        this.softSkillsSessionLog = [];
+        this.lastSoftSkillsReport = null;
 
         this.initDOMElements();
         this.bindEvents();
@@ -719,7 +743,27 @@ class GameApp {
             lblFinalReportTitle: document.getElementById('lblFinalReportTitle'),
             finalVerdictNarrative: document.getElementById('finalVerdictNarrative'),
             finalPlayersGrid: document.getElementById('finalPlayersGrid'),
-            btnRestartGame: document.getElementById('btnRestartGame')
+            btnRestartGame: document.getElementById('btnRestartGame'),
+
+            // Modal Tabs & Soft skills
+            btnTabFinalDestiny: document.getElementById('btnTabFinalDestiny'),
+            btnTabFinalSkills: document.getElementById('btnTabFinalSkills'),
+            tabContentFinalDestiny: document.getElementById('tabContentFinalDestiny'),
+            tabContentFinalSkills: document.getElementById('tabContentFinalSkills'),
+            lblSkillsReportTitle: document.getElementById('lblSkillsReportTitle'),
+            lblSkillsReportSubtitle: document.getElementById('lblSkillsReportSubtitle'),
+            lblSkillsRankingHeader: document.getElementById('lblSkillsRankingHeader'),
+            lblSkillsPlayerProfilesHeader: document.getElementById('lblSkillsPlayerProfilesHeader'),
+            skillsRankingList: document.getElementById('skillsRankingList'),
+            skillsPlayerGrid: document.getElementById('skillsPlayerGrid'),
+            skillsDebriefBox: document.getElementById('skillsDebriefBox'),
+            valKpiTotalSkills: document.getElementById('valKpiTotalSkills'),
+            valKpiCohesion: document.getElementById('valKpiCohesion'),
+            valKpiStrategic: document.getElementById('valKpiStrategic'),
+            lblKpiTotalSkills: document.getElementById('lblKpiTotalSkills'),
+            lblKpiCohesion: document.getElementById('lblKpiCohesion'),
+            lblKpiStrategic: document.getElementById('lblKpiStrategic'),
+            btnExportSkillsMarkdown: document.getElementById('btnExportSkillsMarkdown')
         };
     }
 
@@ -862,6 +906,35 @@ class GameApp {
             sound.playClick();
             this.restartGame();
         });
+
+        // Modal Tab Switching
+        if (this.dom.btnTabFinalDestiny) {
+            this.dom.btnTabFinalDestiny.addEventListener('click', () => {
+                sound.playClick();
+                this.dom.btnTabFinalDestiny.classList.add('active');
+                if (this.dom.btnTabFinalSkills) this.dom.btnTabFinalSkills.classList.remove('active');
+                if (this.dom.tabContentFinalDestiny) this.dom.tabContentFinalDestiny.style.display = 'block';
+                if (this.dom.tabContentFinalSkills) this.dom.tabContentFinalSkills.style.display = 'none';
+            });
+        }
+
+        if (this.dom.btnTabFinalSkills) {
+            this.dom.btnTabFinalSkills.addEventListener('click', () => {
+                sound.playClick();
+                this.dom.btnTabFinalSkills.classList.add('active');
+                if (this.dom.btnTabFinalDestiny) this.dom.btnTabFinalDestiny.classList.remove('active');
+                if (this.dom.tabContentFinalSkills) this.dom.tabContentFinalSkills.style.display = 'block';
+                if (this.dom.tabContentFinalDestiny) this.dom.tabContentFinalDestiny.style.display = 'none';
+            });
+        }
+
+        // Export Skills Report button
+        if (this.dom.btnExportSkillsMarkdown) {
+            this.dom.btnExportSkillsMarkdown.addEventListener('click', () => {
+                sound.playClick();
+                this.exportSkillsReport();
+            });
+        }
     }
 
     setCameraMode(mode) {
@@ -1208,6 +1281,16 @@ class GameApp {
         // Final modal header
         if (this.dom.lblFinalStateHeader) this.dom.lblFinalStateHeader.textContent = t.finalStateHeader;
         if (this.dom.lblFinalReportTitle) this.dom.lblFinalReportTitle.textContent = t.finalTitle;
+        if (this.dom.btnTabFinalDestiny) this.dom.btnTabFinalDestiny.textContent = t.tabFinalDestiny;
+        if (this.dom.btnTabFinalSkills) this.dom.btnTabFinalSkills.textContent = t.tabFinalSkills;
+        if (this.dom.lblSkillsReportTitle) this.dom.lblSkillsReportTitle.textContent = t.skillsReportTitle;
+        if (this.dom.lblSkillsReportSubtitle) this.dom.lblSkillsReportSubtitle.textContent = t.skillsReportSubtitle;
+        if (this.dom.lblKpiTotalSkills) this.dom.lblKpiTotalSkills.textContent = t.kpiTotalSkills;
+        if (this.dom.lblKpiCohesion) this.dom.lblKpiCohesion.textContent = t.kpiCohesion;
+        if (this.dom.lblKpiStrategic) this.dom.lblKpiStrategic.textContent = t.kpiStrategic;
+        if (this.dom.lblSkillsRankingHeader) this.dom.lblSkillsRankingHeader.textContent = t.rankingHeader;
+        if (this.dom.lblSkillsPlayerProfilesHeader) this.dom.lblSkillsPlayerProfilesHeader.textContent = t.playerProfilesHeader;
+        if (this.dom.btnExportSkillsMarkdown) this.dom.btnExportSkillsMarkdown.textContent = t.btnExportSkills;
 
         // Intro modal translation
         if (this.dom.lblIntroTitle) this.dom.lblIntroTitle.textContent = t.introTitle;
@@ -1735,6 +1818,12 @@ class GameApp {
                     dilemmaVotes: { ...this.dilemmaVotes }
                 });
 
+                this.softSkillsSessionLog.push({
+                    round: this.currentPhaseIndex + 1,
+                    winningDilemmaId: result.voteTally && result.voteTally.winner ? result.voteTally.winner.id : null,
+                    playerActions: { ...this.roleSelections }
+                });
+
                 // Reset role selections and dilemma votes for next phase
                 this.roleSelections = { ted: null, gorrister: null, ellen: null, nimdok: null };
                 this.dilemmaVotes = { ted: null, gorrister: null, ellen: null, nimdok: null };
@@ -1968,6 +2057,112 @@ class GameApp {
         });
 
         this.dom.finalPlayersGrid.innerHTML = playersHTML;
+        this.renderSoftSkillsTab(finalResult);
+    }
+
+    renderSoftSkillsTab(finalResult) {
+        const report = generateSoftSkillsReport(this.softSkillsSessionLog, this.lang, this.stats);
+        this.lastSoftSkillsReport = report;
+
+        // KPI cards
+        if (this.dom.valKpiTotalSkills) this.dom.valKpiTotalSkills.textContent = report.totalActivations;
+        if (this.dom.valKpiCohesion) this.dom.valKpiCohesion.textContent = `${report.teamCohesion}%`;
+        if (this.dom.valKpiStrategic) this.dom.valKpiStrategic.textContent = `${report.strategicIndex}%`;
+
+        // Ranking list de les soft skills més utilitzades
+        let rankingHtml = '';
+        report.rankedSkills.forEach((item, index) => {
+            const rankNum = index + 1;
+            const rankBadgeClass = rankNum === 1 ? 'top-1' : (rankNum === 2 ? 'top-2' : (rankNum === 3 ? 'top-3' : ''));
+            const rankIcon = rankNum === 1 ? '🥇' : (rankNum === 2 ? '🥈' : (rankNum === 3 ? '🥉' : `#${rankNum}`));
+
+            rankingHtml += `
+                <div class="skills-ranking-item">
+                    <span class="skills-rank-badge ${rankBadgeClass}">${rankIcon}</span>
+                    <div class="skills-info-col">
+                        <div class="skills-name-row">
+                            <span>${item.icon}</span>
+                            <span>${item.name}</span>
+                        </div>
+                        <div class="skills-desc-snippet">${item.desc}</div>
+                    </div>
+                    <div class="skills-bar-track">
+                        <div class="skills-bar-fill" style="width: ${item.percentage}%; background-color: ${item.color}; color: ${item.color};"></div>
+                    </div>
+                    <div class="skills-stats-badge" style="color: ${item.color};">
+                        ${item.percentage}% <span style="font-size: 0.72rem; color: #94a3b8;">(${item.count})</span>
+                    </div>
+                </div>
+            `;
+        });
+        if (this.dom.skillsRankingList) this.dom.skillsRankingList.innerHTML = rankingHtml;
+
+        // Perfils individuals dels 4 jugadors
+        let playerProfilesHtml = '';
+        const portraitMap = {
+            ted: CHARACTER_PORTRAITS.ted || 'assets/ted.jpg',
+            gorrister: CHARACTER_PORTRAITS.gorrister || 'assets/gorrister.jpg',
+            ellen: CHARACTER_PORTRAITS.ellen || 'assets/ellen.jpg',
+            nimdok: CHARACTER_PORTRAITS.nimdok || 'assets/nimdok.jpg'
+        };
+
+        ['ted', 'gorrister', 'ellen', 'nimdok'].forEach(pKey => {
+            const prof = report.playerProfiles[pKey];
+            const pSrc = portraitMap[pKey];
+            const badges = prof.topSkills.map(s => `<span class="skills-badge-pill">${s.icon} ${s.name} (${s.count})</span>`).join('');
+
+            playerProfilesHtml += `
+                <div class="skills-player-card">
+                    <img src="${pSrc}" class="skills-player-avatar" alt="${prof.name}" onerror="this.onerror=null; this.src='${pKey}.jpg';" />
+                    <div class="skills-player-details">
+                        <span class="skills-player-name">${prof.name}</span>
+                        <span class="skills-player-style">🎯 ${prof.dominantStyle}</span>
+                        <div class="skills-player-badges">${badges}</div>
+                    </div>
+                </div>
+            `;
+        });
+        if (this.dom.skillsPlayerGrid) this.dom.skillsPlayerGrid.innerHTML = playerProfilesHtml;
+
+        // Caixa de debriefing de la partida
+        const top1Name = report.mostUsedSkill ? report.mostUsedSkill.name : '';
+        const top2Name = report.runnerUpSkill ? report.runnerUpSkill.name : '';
+        const debriefText = this.lang === 'es'
+            ? `<strong>💡 DEBRIEFING DOCENTE (EVEREST V3):</strong> A lo largo de las ${report.roundsPlayed} rondas, el equipo ha concentrado sus esfuerzos en <strong>${top1Name}</strong> y <strong>${top2Name}</strong>. La tensión entre objetivos ocultos fijos y la amenaza de AM exigió un balance continuo entre altruismo y supervivencia. La cohesión del grupo alcanzó el <strong>${report.teamCohesion}%</strong> con una solvencia estratégica del <strong>${report.strategicIndex}%</strong>.`
+            : `<strong>💡 DEBRIEFING DOCENT (EVEREST V3):</strong> Al llarg de les ${report.roundsPlayed} rondes, l'equip ha concentrat els seus esforços en <strong>${top1Name}</strong> i <strong>${top2Name}</strong>. La tensió entre objectius ocults fixes i l'amenaça d'AM ha exigit un equilibri continu entre altruisme i supervivència. La cohesió del grup ha assolit el <strong>${report.teamCohesion}%</strong> amb una solvència estratègica del <strong>${report.strategicIndex}%</strong>.`;
+
+        if (this.dom.skillsDebriefBox) this.dom.skillsDebriefBox.innerHTML = debriefText;
+    }
+
+    exportSkillsReport() {
+        const report = this.lastSoftSkillsReport || generateSoftSkillsReport(this.softSkillsSessionLog, this.lang, this.stats);
+        let md = `# INFORME DE SOFT SKILLS // AM: PROJECT PROTOCOL\n`;
+        md += `## Evaluació basada en Harvard Everest V3\n\n`;
+        md += `- **Rondes Completades:** ${report.roundsPlayed} de 7\n`;
+        md += `- **Total Activacions de Soft Skills:** ${report.totalActivations}\n`;
+        md += `- **Índex de Cohesió Grupal:** ${report.teamCohesion}%\n`;
+        md += `- **Índex d'Estratègia Tècnica:** ${report.strategicIndex}%\n\n`;
+        md += `### 🏆 Rànquing de Soft Skills Més Utilitzades:\n`;
+        report.rankedSkills.forEach((s, idx) => {
+            md += `${idx + 1}. **${s.name}** (${s.percentage}%, ${s.count} activacions)\n   _${s.desc}_\n`;
+        });
+        md += `\n### 👥 Perfils Individuals dels 4 Jugadors:\n`;
+        Object.keys(report.playerProfiles).forEach(k => {
+            const prof = report.playerProfiles[k];
+            const badges = prof.topSkills.map(s => `${s.name} (${s.count})`).join(', ');
+            md += `- **${prof.name}:** ${prof.dominantStyle} | Top competències: ${badges}\n`;
+        });
+        md += `\n### 💡 Debriefing Docent:\n${this.lang === 'es' ? 'Simulación completada bajo el modelo Everest V3 de Harvard con información asimétrica y tensión moral.' : 'Simulació completada sota el model Everest V3 de Harvard amb informació asimètrica i tensió moral.'}\n`;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(md).then(() => {
+                alert(I18N[this.lang].copiedAlert);
+            }).catch(() => {
+                prompt("Copia el texto del informe:", md);
+            });
+        } else {
+            prompt("Copia el texto del informe:", md);
+        }
     }
 
     restartGame() {
@@ -1996,9 +2191,17 @@ class GameApp {
         };
 
         this.historyLogs = [];
+        this.softSkillsSessionLog = [];
+        this.lastSoftSkillsReport = null;
 
         this.dom.finalReportModal.style.display = 'none';
         this.dom.roundLogDrawer.style.display = 'none';
+
+        // Reset tab view to Destiny tab
+        if (this.dom.btnTabFinalDestiny) this.dom.btnTabFinalDestiny.classList.add('active');
+        if (this.dom.btnTabFinalSkills) this.dom.btnTabFinalSkills.classList.remove('active');
+        if (this.dom.tabContentFinalDestiny) this.dom.tabContentFinalDestiny.style.display = 'block';
+        if (this.dom.tabContentFinalSkills) this.dom.tabContentFinalSkills.style.display = 'none';
 
         // Reset role tabs visual
         this.dom.roleTabs.forEach(t => t.classList.remove('active'));

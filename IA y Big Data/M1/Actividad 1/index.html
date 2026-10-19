@@ -571,31 +571,88 @@
         </div>
     </div>
 
-    <!-- MODAL: FINAL DE PARTIDA Y RESULTADOS DE LOS 4 JUGADORES -->
+    <!-- MODAL: FINAL DE PARTIDA I RESULTATS DELS 4 JUGADORS -->
     <div class="modal-backdrop" id="finalReportModal" style="display: none;">
-        <div class="modal-content" style="max-width: 820px;">
-            <h2 id="lblFinalReportTitle">Desenlace de la Partida</h2>
-            
-            <!-- FOTO DEL DESTINO FINAL -->
-            <div class="amorphous-photo-wrapper" id="amorphousPhotoWrapper">
-                <img src="assets/masa.jpg" class="amorphous-photo" id="amorphousImg" alt="Registro Visual de AM" onerror="this.onerror=null; this.src='masa.jpg';" />
-                <div style="background: rgba(0,0,0,0.85); padding: 10px 14px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--am-red); text-align: center; border-top: 1px solid var(--am-red);" id="amorphousPhotoCaption">
-                    ⚠️ REGISTRO VISUAL DE AM // EL DESTINO FINAL DEL ÚLTIMO SUPERVIVIENTE: «NO TENGO BOCA Y DEBO GRITAR»
+        <div class="modal-content" style="max-width: 860px;">
+            <div class="modal-tab-header">
+                <button class="modal-tab-btn active" id="btnTabFinalDestiny">👁️ Destino Canónico</button>
+                <button class="modal-tab-btn" id="btnTabFinalSkills">📊 Informe de Soft Skills & Stats</button>
+            </div>
+
+            <!-- PESTANYA 1: DESTÍ CANÒNIC I BIOMÈTRICA -->
+            <div id="tabContentFinalDestiny" class="modal-tab-content active">
+                <h2 id="lblFinalReportTitle" style="margin-top: 6px;">Desenlace de la Partida</h2>
+                
+                <!-- FOTO DEL DESTINO FINAL -->
+                <div class="amorphous-photo-wrapper" id="amorphousPhotoWrapper">
+                    <img src="assets/masa.jpg" class="amorphous-photo" id="amorphousImg" alt="Registro Visual de AM" onerror="this.onerror=null; this.src='masa.jpg';" />
+                    <div style="background: rgba(0,0,0,0.85); padding: 10px 14px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--am-red); text-align: center; border-top: 1px solid var(--am-red);" id="amorphousPhotoCaption">
+                        ⚠️ REGISTRO VISUAL DE AM // EL DESTINO FINAL DEL ÚLTIMO SUPERVIVIENTE: «NO TENGO BOCA Y DEBO GRITAR»
+                    </div>
+                </div>
+
+                <p id="finalVerdictNarrative" style="line-height: 1.6; font-size: 1rem; color: #cbd5e1; margin-top: 12px;">...</p>
+
+                <h3 id="lblFinalStateHeader" style="font-family: var(--font-heading); color: var(--cyan-subroutine); font-size: 1.1rem; margin-top: 14px;">
+                    Estado Final de los 4 Jugadores:
+                </h3>
+
+                <div class="final-report-grid" id="finalPlayersGrid">
+                    <!-- Se inyecta dinámicamente con la salud y estado de cada jugador -->
                 </div>
             </div>
 
-            <p id="finalVerdictNarrative" style="line-height: 1.6; font-size: 1rem; color: #cbd5e1;">...</p>
+            <!-- PESTANYA 2: INFORME DE SOFT SKILLS I STATS QUANTITATIUS -->
+            <div id="tabContentFinalSkills" class="modal-tab-content" style="display: none;">
+                <div class="skills-modal-header">
+                    <h2 id="lblSkillsReportTitle" style="color: var(--cyan-subroutine); margin-top: 6px;">📊 Informe de Soft Skills & Desempeño de Equipo</h2>
+                    <p id="lblSkillsReportSubtitle" style="font-family: var(--font-mono); font-size: 0.86rem; color: var(--text-muted); margin-top: 4px;">
+                        Evaluación competencial de las 7 rondas según el marco docent Everest V3 (Harvard Business Publishing).
+                    </p>
+                </div>
 
-            <h3 id="lblFinalStateHeader" style="font-family: var(--font-heading); color: var(--cyan-subroutine); font-size: 1.1rem; margin-top: 10px;">
-                Estado Final de los 4 Jugadores:
-            </h3>
+                <!-- BÀNER DE RESUM D'EQUIP -->
+                <div class="skills-summary-banner" id="skillsSummaryBanner">
+                    <div class="skills-kpi-card">
+                        <span class="skills-kpi-label" id="lblKpiTotalSkills">Total Competencias Registradas</span>
+                        <span class="skills-kpi-value" id="valKpiTotalSkills">0</span>
+                    </div>
+                    <div class="skills-kpi-card">
+                        <span class="skills-kpi-label" id="lblKpiCohesion">Índice de Cohesión Grupal</span>
+                        <span class="skills-kpi-value" id="valKpiCohesion" style="color: var(--green-phosphor);">0%</span>
+                    </div>
+                    <div class="skills-kpi-card">
+                        <span class="skills-kpi-label" id="lblKpiStrategic">Índice de Estrategia Técnica</span>
+                        <span class="skills-kpi-value" id="valKpiStrategic" style="color: var(--amber-hazard);">0%</span>
+                    </div>
+                </div>
 
-            <div class="final-report-grid" id="finalPlayersGrid">
-                <!-- Se inyecta dinámicamente con la salud y estado de cada jugador -->
+                <!-- SECCIÓ 1: RÀNQUING DE LES SOFT SKILLS MÉS UTILITZADES -->
+                <h3 id="lblSkillsRankingHeader" style="font-family: var(--font-heading); color: var(--text-highlight); font-size: 1.05rem; margin-top: 16px;">
+                    🏆 Rànquing de les Soft Skills Més Utilitzades en la Partida:
+                </h3>
+                <div class="skills-ranking-list" id="skillsRankingList">
+                    <!-- S'injecta dinàmicament amb barres percentuals i rànquing -->
+                </div>
+
+                <!-- SECCIÓ 2: PERFIL INDIVIDUAL DELS 4 JUGADORS -->
+                <h3 id="lblSkillsPlayerProfilesHeader" style="font-family: var(--font-heading); color: var(--text-highlight); font-size: 1.05rem; margin-top: 18px;">
+                    👥 Perfil Competencial Individual dels 4 Jugadors Reals:
+                </h3>
+                <div class="skills-player-grid" id="skillsPlayerGrid">
+                    <!-- S'injecta dinàmicament amb 4 targetes de Ted, Gorrister, Ellen i Nimdok -->
+                </div>
+
+                <!-- CAIXA DE DEBRIEFING I CONCLUSIONS -->
+                <div class="skills-debrief-box" id="skillsDebriefBox" style="margin-top: 16px;">
+                    <!-- Conclusió del debriefing docent de la partida -->
+                </div>
             </div>
 
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 16px;">
+            <!-- BOTONERA DE PEU DEL MODAL -->
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 18px; flex-wrap: wrap;">
                 <button class="btn-cyber" id="btnToggleAmorphousPhoto">📷 Ver / Ocultar Registro Visual</button>
+                <button class="btn-cyber" id="btnExportSkillsMarkdown">📋 Copiar Informe de Soft Skills</button>
                 <button class="btn-cyber active" id="btnRestartGame">🔄 Jugar una Nueva Partida</button>
             </div>
         </div>

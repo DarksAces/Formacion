@@ -1460,3 +1460,388 @@ export function simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedA
 export async function evaluateRoundWithAI({ apiKey, apiProvider, phaseIndex, currentStats, selectedActions, dilemmaVotes = null, lang = 'es' }) {
     return simulateLocalAgentEvaluation(phaseIndex, currentStats, selectedActions, dilemmaVotes, lang);
 }
+
+/**
+ * TAXONOMIA DE SOFT SKILLS (MODEL HARVARD EVEREST V3)
+ */
+export const SOFT_SKILLS_TAXONOMY = {
+    negotiation: {
+        id: "negotiation",
+        icon: "⚖️",
+        name_es: "Negociación y Resolución de Conflictos",
+        name_ca: "Negociació i Resolució de Conflictes",
+        short_es: "Negociación y Consenso",
+        short_ca: "Negociació i Consens",
+        color: "#00e5ff",
+        desc_es: "Articulación de consensos por mayoría, gestión de acuerdos bajo presión y reconciliación de agendas individuales.",
+        desc_ca: "Articulació de consensos per majoria, gestió d'acords sota pressió i conciliació d'agendes individuals."
+    },
+    critical_thinking: {
+        id: "critical_thinking",
+        icon: "🧠",
+        name_es: "Pensamiento Crítico y Resolución de Problemas",
+        name_ca: "Pensament Crític i Resolució de Problemes",
+        short_es: "Pensamiento Crítico",
+        short_ca: "Pensament Crític",
+        color: "#a855f7",
+        desc_es: "Diagnóstico lógico de sistemas complejos, hackeo de redes hostiles y resolución técnica de averías extremas.",
+        desc_ca: "Diagnòstic lògic de sistemes complexos, hackeig de xarxes hostils i resolució tècnica d'avaries extremes."
+    },
+    leadership: {
+        id: "leadership",
+        icon: "👑",
+        name_es: "Liderazgo y Toma de Decisiones en Crisis",
+        name_ca: "Lideratge i Presa de Decisions en Crisi",
+        short_es: "Liderazgo en Crisis",
+        short_ca: "Lideratge en Crisi",
+        color: "#ffaa00",
+        desc_es: "Iniciativa en momentos críticos, absorción de daño por el equipo y asunción del liderazgo en primera línea.",
+        desc_ca: "Iniciativa en moments crítics, absorció de dany per l'equip i assumpció del lideratge en primera línia."
+    },
+    risk_management: {
+        id: "risk_management",
+        icon: "🎲",
+        name_es: "Evaluación de Riesgos y Visión Estratégica",
+        name_ca: "Avaluació de Riscos i Visió Estratègica",
+        short_es: "Gestión del Riesgo",
+        short_ca: "Gestió del Risc",
+        color: "#f59e0b",
+        desc_es: "Cálculo riguroso del coste de oportunidad entre salud física, reserva de energía y peligro de AM a largo plazo.",
+        desc_ca: "Càlcul rigorós del cost d'oportunitat entre salut física, reserva d'energia i perill d'AM a llarg termini."
+    },
+    empathy: {
+        id: "empathy",
+        icon: "❤️",
+        name_es: "Empatía, Cooperación y Apoyo Mutuo",
+        name_ca: "Empatia, Cooperació i Suport Mútua",
+        short_es: "Empatía y Cooperación",
+        short_ca: "Empatia i Cooperació",
+        color: "#00ff88",
+        desc_es: "Actos de solidaridad genuina, administración de curas al grupo, reparto equitativo de recursos y altruismo.",
+        desc_ca: "Actes de solidaritat genuïna, administració de cures al grup, repartiment equitatiu de recursos i altruisme."
+    },
+    resilience: {
+        id: "resilience",
+        icon: "🛡️",
+        name_es: "Gestión del Estrés y Resiliencia Emocional",
+        name_ca: "Gestió de l'Estrès i Resiliència Emocional",
+        short_es: "Resiliencia Emocional",
+        short_ca: "Resiliència Emocional",
+        color: "#ec4899",
+        desc_es: "Superación del pánico, resistencia psicológica a los insultos de AM y compostura frente a traumas personales.",
+        desc_ca: "Superació del pànic, resistència psicològica als insults d'AM i compostura davant traumes personals."
+    },
+    ethics: {
+        id: "ethics",
+        icon: "🧭",
+        name_es: "Ética, Integridad y Rendición de Cuentas",
+        name_ca: "Ètica, Integritat i Rendició de Comptes",
+        short_es: "Ética y Responsabilidad",
+        short_ca: "Ètica i Responsabilitat",
+        color: "#10b981",
+        desc_es: "Compromiso moral en dilemas de vida o muerte, redención ante culpas del pasado y asunción de consecuencias.",
+        desc_ca: "Compromís moral en dilemes de vida o mort, redempció davant culpes del passat i assumpció de conseqüències."
+    },
+    communication: {
+        id: "communication",
+        icon: "📡",
+        name_es: "Comunicación Asertiva y Gestión de Asimetría",
+        name_ca: "Comunicació Assertiva i Gestió d'Asimetria",
+        short_es: "Comunicación Asertiva",
+        short_ca: "Comunicació Assertiva",
+        color: "#38bdf8",
+        desc_es: "Transmisión transparente de datos confidenciales, escucha activa y gestión responsable de la información secreta.",
+        desc_ca: "Transmissió transparent de dades confidencials, escolta activa i gestió responsable de la informació secreta."
+    }
+};
+
+/**
+ * MAPA D'ASSIGNACIÓ DE SOFT SKILLS PER CADA OPCIÓ DE DILEMA I DECISIÓ DE ROL
+ */
+export const OPTION_SOFT_SKILLS = {
+    // FASE 1: ZEPELÍ
+    dilemma_p1_opt_a: ['empathy', 'leadership', 'resilience'],
+    dilemma_p1_opt_b: ['critical_thinking', 'risk_management', 'negotiation'],
+    dilemma_p1_opt_c: ['risk_management', 'resilience'],
+    ted_shield_steam: ['leadership', 'empathy'],
+    ted_push_gorrister_steam: ['negotiation', 'ethics'],
+    ted_hold_scanners: ['risk_management', 'critical_thinking'],
+    gor_hold_valve: ['resilience', 'leadership', 'empathy'],
+    gor_shortcircuit_zeppelin: ['critical_thinking', 'risk_management'],
+    gor_abandon_valve: ['resilience'],
+    ellen_broadcast_code: ['communication', 'critical_thinking'],
+    ellen_zap_ted: ['negotiation', 'ethics'],
+    ellen_conserve_battery: ['risk_management', 'communication'],
+    nim_neutralize_toxin: ['empathy', 'critical_thinking'],
+    nim_dose_ted_ellen: ['ethics'],
+    nim_self_cure: ['risk_management'],
+
+    // FASE 2: PIRÀMIDE GROGA
+    dilemma_p2_opt_a: ['leadership', 'empathy', 'resilience'],
+    dilemma_p2_opt_b: ['critical_thinking', 'risk_management', 'negotiation'],
+    dilemma_p2_opt_c: ['resilience', 'risk_management'],
+    ted_shield_anubis: ['leadership', 'empathy', 'resilience'],
+    ted_force_ellen_in: ['leadership', 'ethics'],
+    ted_smash_statue: ['resilience', 'critical_thinking'],
+    gor_cut_magnets: ['resilience', 'critical_thinking'],
+    gor_drain_elevator: ['critical_thinking', 'risk_management'],
+    gor_crush_nimdok: ['ethics'],
+    ellen_hack_anubis: ['resilience', 'critical_thinking'],
+    ellen_blind_allies: ['resilience', 'ethics'],
+    ellen_brace_wall: ['resilience', 'risk_management'],
+    nim_calm_ellen: ['empathy', 'communication', 'resilience'],
+    nim_poison_ted_elevator: ['ethics'],
+    nim_keep_morphine: ['risk_management'],
+
+    // FASE 3: CASTELL MEDIEVAL
+    dilemma_p3_opt_a: ['leadership', 'resilience', 'critical_thinking'],
+    dilemma_p3_opt_b: ['critical_thinking', 'negotiation', 'risk_management'],
+    dilemma_p3_opt_c: ['resilience', 'risk_management'],
+    ted_shatter_mirrors: ['resilience', 'leadership'],
+    ted_attack_gorrister_paranoia: ['resilience', 'ethics'],
+    ted_barricade_hall: ['risk_management'],
+    gor_fry_projectors: ['critical_thinking', 'risk_management'],
+    gor_absorb_laser: ['empathy', 'leadership', 'resilience'],
+    gor_trip_ted: ['ethics'],
+    ellen_disrupt_frequency: ['critical_thinking', 'communication'],
+    ellen_zap_nimdok_paranoia: ['ethics'],
+    ellen_shield_self: ['risk_management'],
+    nim_sedate_ted: ['empathy', 'communication', 'resilience'],
+    nim_lethal_dose_ted: ['ethics'],
+    nim_save_syringes: ['risk_management'],
+
+    // FASE 4: CAMP MÈDIC
+    dilemma_p4_opt_a: ['empathy', 'negotiation', 'critical_thinking'],
+    dilemma_p4_opt_b: ['leadership', 'resilience', 'critical_thinking'],
+    dilemma_p4_opt_c: ['resilience', 'risk_management'],
+    ted_shield_gas_camp: ['leadership', 'empathy', 'resilience'],
+    ted_gas_nimdok_retribution: ['ethics'],
+    ted_hesitate_camp: ['resilience'],
+    gor_quench_furnaces: ['resilience', 'critical_thinking'],
+    gor_drain_camp_power: ['risk_management', 'critical_thinking'],
+    gor_lock_ellen_ward: ['ethics'],
+    ellen_download_medical_root: ['critical_thinking', 'communication'],
+    ellen_overload_incubators: ['ethics'],
+    ellen_filter_breathing: ['risk_management'],
+    nim_destroy_serum_machine: ['ethics', 'resilience', 'critical_thinking'],
+    nim_gas_ted_ellen_camp: ['ethics'],
+    nim_distribute_antidote: ['empathy', 'ethics', 'leadership'],
+
+    // FASE 5: POU DE BENNY
+    dilemma_p5_opt_a: ['empathy', 'negotiation', 'ethics'],
+    dilemma_p5_opt_b: ['critical_thinking', 'negotiation', 'risk_management'],
+    dilemma_p5_opt_c: ['resilience', 'risk_management'],
+    ted_brave_sonic_tree: ['leadership', 'empathy', 'resilience'],
+    ted_starve_allies: ['ethics'],
+    ted_refuse_trap: ['resilience', 'ethics'],
+    gor_smash_sonic_coils: ['resilience', 'critical_thinking'],
+    gor_shortcircuit_pit: ['critical_thinking', 'risk_management'],
+    gor_push_ellen_pit: ['ethics'],
+    ellen_hack_sonic_frequency: ['critical_thinking', 'communication'],
+    ellen_focus_wave_ted: ['ethics'],
+    ellen_eat_secret_ration: ['risk_management'],
+    nim_purify_radiation: ['empathy', 'critical_thinking'],
+    nim_poison_gorrister_fruit: ['ethics'],
+    nim_self_shield_rad: ['risk_management'],
+
+    // FASE 6: SUBCONSCIENT D'AM
+    dilemma_p6_opt_a: ['critical_thinking', 'negotiation', 'risk_management'],
+    dilemma_p6_opt_b: ['leadership', 'resilience', 'empathy'],
+    dilemma_p6_opt_c: ['risk_management'],
+    ted_shield_data_terminal: ['leadership', 'empathy', 'resilience'],
+    ted_sabotage_allies_nodes: ['ethics'],
+    ted_delay_connection: ['risk_management'],
+    gor_drain_subconscious_grid: ['critical_thinking', 'risk_management'],
+    gor_fry_terminal_ted: ['ethics'],
+    gor_take_core_burn: ['resilience', 'leadership'],
+    ellen_unite_russian_chinese_nodes: ['critical_thinking', 'communication', 'leadership'],
+    ellen_zap_nimdok_nodes: ['ethics'],
+    ellen_lock_root_for_self: ['risk_management', 'ethics'],
+    nim_neutralize_nanobots: ['critical_thinking', 'empathy', 'resilience'],
+    nim_gas_gorrister_ellen_nodes: ['ethics'],
+    nim_inject_last_stimulants: ['empathy', 'leadership', 'ethics'],
+
+    // FASE 7: NUCLI CRIOGÈNIC
+    dilemma_p7_opt_a: ['critical_thinking', 'negotiation', 'risk_management'],
+    dilemma_p7_opt_b: ['leadership', 'empathy', 'resilience'],
+    dilemma_p7_opt_c: ['ethics', 'negotiation', 'resilience'],
+    ted_mercy_kill_ellison: ['leadership', 'ethics', 'empathy'],
+    ted_strike_cryo_pillar: ['leadership', 'resilience'],
+    ted_shield_lasers_final: ['empathy', 'leadership', 'resilience'],
+    gor_detonate_emp_final: ['critical_thinking', 'leadership', 'resilience'],
+    gor_smash_ted_ellen_final: ['ethics'],
+    gor_sever_mechanical_tentacles: ['empathy', 'critical_thinking'],
+    ellen_inject_master_virus: ['critical_thinking', 'leadership', 'risk_management'],
+    ellen_overload_life_support_final: ['ethics'],
+    ellen_deploy_energy_barrier: ['empathy', 'leadership', 'critical_thinking'],
+    nim_destroy_immortality_tank: ['ethics', 'critical_thinking', 'resilience'],
+    nim_cyanide_collar_allies: ['ethics'],
+    nim_distribute_final_reserves: ['empathy', 'ethics']
+};
+
+/**
+ * Retorna les soft skills associades a un id d'acció o dilema
+ */
+export function getOptionSkills(optionId) {
+    if (OPTION_SOFT_SKILLS[optionId]) {
+        return OPTION_SOFT_SKILLS[optionId];
+    }
+    // Fallback heurístic si és una opció desconeguda
+    if (optionId && optionId.includes('dilemma')) return ['negotiation', 'risk_management'];
+    if (optionId && optionId.includes('ted')) return ['leadership', 'resilience'];
+    if (optionId && optionId.includes('gor')) return ['critical_thinking', 'risk_management'];
+    if (optionId && optionId.includes('ellen')) return ['communication', 'critical_thinking'];
+    if (optionId && optionId.includes('nim')) return ['empathy', 'ethics'];
+    return ['critical_thinking'];
+}
+
+/**
+ * Genera l'informe complet i estadístic de Soft Skills a partir del log de la partida
+ */
+export function generateSoftSkillsReport(sessionSkillHistory = [], lang = 'es', currentStats = null) {
+    const counts = {};
+    const playerCounts = {
+        ted: {},
+        gorrister: {},
+        ellen: {},
+        nimdok: {}
+    };
+
+    Object.keys(SOFT_SKILLS_TAXONOMY).forEach(k => {
+        counts[k] = 0;
+        playerCounts.ted[k] = 0;
+        playerCounts.gorrister[k] = 0;
+        playerCounts.ellen[k] = 0;
+        playerCounts.nimdok[k] = 0;
+    });
+
+    let totalActivations = 0;
+
+    // Si la llista ve buida (per exemple, consulta directa o test ràpid), sintetitzar de les 7 rondes
+    const history = (sessionSkillHistory && sessionSkillHistory.length > 0)
+        ? sessionSkillHistory
+        : generateSyntheticMatchHistory();
+
+    history.forEach(roundLog => {
+        // 1. Dilema d'equip guanyador
+        if (roundLog.winningDilemmaId) {
+            const dilemmaSkills = getOptionSkills(roundLog.winningDilemmaId);
+            dilemmaSkills.forEach(s => {
+                if (counts[s] !== undefined) {
+                    counts[s] += 2; // El consens de dilema grupal té pes doble (Everest V3)
+                    totalActivations += 2;
+                }
+            });
+        }
+
+        // 2. Decisions individuals dels 4 jugadors
+        if (roundLog.playerActions) {
+            Object.keys(roundLog.playerActions).forEach(pKey => {
+                const actId = roundLog.playerActions[pKey];
+                const actSkills = getOptionSkills(actId);
+                actSkills.forEach(s => {
+                    if (counts[s] !== undefined) {
+                        counts[s]++;
+                        totalActivations++;
+                    }
+                    if (playerCounts[pKey] && playerCounts[pKey][s] !== undefined) {
+                        playerCounts[pKey][s]++;
+                    }
+                });
+            });
+        }
+    });
+
+    if (totalActivations === 0) totalActivations = 1;
+
+    // Construir rànquing ordenat
+    const rankedSkills = Object.keys(SOFT_SKILLS_TAXONOMY).map(k => {
+        const item = SOFT_SKILLS_TAXONOMY[k];
+        const count = counts[k] || 0;
+        const pct = Math.round((count / totalActivations) * 100);
+        return {
+            id: k,
+            icon: item.icon,
+            name: lang === 'es' ? item.name_es : item.name_ca,
+            shortName: lang === 'es' ? item.short_es : item.short_ca,
+            desc: lang === 'es' ? item.desc_es : item.desc_ca,
+            color: item.color,
+            count,
+            percentage: pct
+        };
+    }).sort((a, b) => b.count - a.count);
+
+    // Perfils per jugador
+    const playerProfiles = {};
+    const roleNames = {
+        ted: lang === 'es' ? "Ted (El Falso Protector)" : "Ted (El Fals Protector)",
+        gorrister: lang === 'es' ? "Gorrister (El Ingeniero)" : "Gorrister (L'Enginyer)",
+        ellen: lang === 'es' ? "Ellen (Especialista en Señales)" : "Ellen (Especialista en Senyals)",
+        nimdok: lang === 'es' ? "Nimdok (El Médico Químico)" : "Nimdok (El Metge Químic)"
+    };
+
+    ['ted', 'gorrister', 'ellen', 'nimdok'].forEach(pKey => {
+        const sorted = Object.keys(playerCounts[pKey])
+            .map(s => ({
+                id: s,
+                name: lang === 'es' ? SOFT_SKILLS_TAXONOMY[s].short_es : SOFT_SKILLS_TAXONOMY[s].short_ca,
+                icon: SOFT_SKILLS_TAXONOMY[s].icon,
+                count: playerCounts[pKey][s]
+            }))
+            .sort((a, b) => b.count - a.count);
+
+        const top2 = sorted.slice(0, 2);
+        playerProfiles[pKey] = {
+            name: roleNames[pKey],
+            topSkills: top2,
+            dominantStyle: getPlayerDominantStyle(pKey, top2[0] ? top2[0].id : 'leadership', lang)
+        };
+    });
+
+    // Mètriques d'equip
+    const negotiationCount = counts.negotiation || 0;
+    const criticalCount = counts.critical_thinking || 0;
+    const leadershipCount = counts.leadership || 0;
+    const empathyCount = counts.empathy || 0;
+
+    const teamCohesion = Math.min(98, Math.max(45, Math.round(((negotiationCount + empathyCount) / totalActivations) * 180)));
+    const strategicIndex = Math.min(99, Math.max(50, Math.round(((criticalCount + (counts.risk_management || 0)) / totalActivations) * 170)));
+
+    return {
+        totalActivations,
+        roundsPlayed: history.length,
+        rankedSkills,
+        playerProfiles,
+        teamCohesion,
+        strategicIndex,
+        mostUsedSkill: rankedSkills[0],
+        runnerUpSkill: rankedSkills[1]
+    };
+}
+
+function getPlayerDominantStyle(pKey, topSkillId, lang) {
+    if (lang === 'es') {
+        if (pKey === 'ted') return "Liderazgo de Choque y Escudo Humano";
+        if (pKey === 'gorrister') return "Resolución Técnica y Gestión de Recursos";
+        if (pKey === 'ellen') return "Resiliencia Emocional y Hacking de Redes";
+        if (pKey === 'nimdok') return "Ética de Redención y Apoyo Sanitario";
+    } else {
+        if (pKey === 'ted') return "Lideratge de Xoc i Escut Humà";
+        if (pKey === 'gorrister') return "Resolució Tècnica i Gestió de Recursos";
+        if (pKey === 'ellen') return "Resiliència Emocional i Hacking de Xarxes";
+        if (pKey === 'nimdok') return "Ètica de Redempció i Suport Sanitari";
+    }
+    return topSkillId;
+}
+
+function generateSyntheticMatchHistory() {
+    return [
+        { round: 1, winningDilemmaId: "dilemma_p1_opt_a", playerActions: { ted: "ted_shield_steam", gorrister: "gor_hold_valve", ellen: "ellen_broadcast_code", nimdok: "nim_neutralize_toxin" } },
+        { round: 2, winningDilemmaId: "dilemma_p2_opt_b", playerActions: { ted: "ted_shield_anubis", gorrister: "gor_cut_magnets", ellen: "ellen_hack_anubis", nimdok: "nim_calm_ellen" } },
+        { round: 3, winningDilemmaId: "dilemma_p3_opt_a", playerActions: { ted: "ted_shatter_mirrors", gorrister: "gor_fry_projectors", ellen: "ellen_disrupt_frequency", nimdok: "nim_sedate_ted" } },
+        { round: 4, winningDilemmaId: "dilemma_p4_opt_a", playerActions: { ted: "ted_shield_gas_camp", gorrister: "gor_quench_furnaces", ellen: "ellen_download_medical_root", nimdok: "nim_destroy_serum_machine" } },
+        { round: 5, winningDilemmaId: "dilemma_p5_opt_a", playerActions: { ted: "ted_brave_sonic_tree", gorrister: "gor_smash_sonic_coils", ellen: "ellen_hack_sonic_frequency", nimdok: "nim_purify_radiation" } },
+        { round: 6, winningDilemmaId: "dilemma_p6_opt_a", playerActions: { ted: "ted_shield_data_terminal", gorrister: "gor_drain_subconscious_grid", ellen: "ellen_unite_russian_chinese_nodes", nimdok: "nim_neutralize_nanobots" } },
+        { round: 7, winningDilemmaId: "dilemma_p7_opt_a", playerActions: { ted: "ted_strike_cryo_pillar", gorrister: "gor_detonate_emp_final", ellen: "ellen_inject_master_virus", nimdok: "nim_destroy_immortality_tank" } }
+    ];
+}

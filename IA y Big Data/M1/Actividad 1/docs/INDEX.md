@@ -20,3 +20,9 @@ Aquesta carpeta conté tots els documents acadèmics, d'arquitectura i comercial
 6. **[enunciat/Activitat_1_Simulacio_Gamificada_IA_Agentica_Monlau.docx](file:///c:/Users/DanielGarciaBrun/Documents/GitHub/Formacion/IA%20y%20Big%20Data/M1/Actividad%201/docs/enunciat/Activitat_1_Simulacio_Gamificada_IA_Agentica_Monlau.docx)**  
    Document Word original de l'enunciat lliurat pel professorat del mòdul M1.
 
+7. **[Informe_Avaluacio_Soft_Skills_Partida.md](file:///c:/Users/DanielGarciaBrun/Documents/GitHub/Formacion/IA%20y%20Big%20Data/M1/Actividad%201/docs/Informe_Avaluacio_Soft_Skills_Partida.md)**  
+   Informe d'avaluació de Soft Skills demostrades durant la partida, estadístiques de les competències més utilitzades, rànquing quantitatiu i perfils dels 4 jugadors (Everest V3).
+
+8. **[Fuentes_Papers_Psicologia_Toma_Decisiones_Claude.md](file:///c:/Users/DanielGarciaBrun/Documents/GitHub/Formacion/IA%20y%20Big%20Data/M1/Actividad%201/docs/Fuentes_Papers_Psicologia_Toma_Decisiones_Claude.md)**  
+   Compendi de 10 papers científics de psicologia (Kahneman, Klein, Stasser, Roberto, Edmondson, Thomas-Kilmann, etc.) i framework operatiu per auditar com es prenen les decisions en LLMs (Claude).
+

@@ -99,6 +99,8 @@ Actividad 1/
     ├── Dossier_Disseny_Simulacio_AM.md  # Dossier acadèmic de disseny (M1 Monlau)
     ├── Fitxa_Comercial_OnePager_AM.md   # One-pager comercial i model de negoci
     ├── Guio_Video_Demostracio_Pitch.md  # Guió del vídeo de demostració i defensa oral
+    ├── Informe_Avaluacio_Soft_Skills_Partida.md # Informe oficial de Soft Skills i stats
+    ├── Fuentes_Papers_Psicologia_Toma_Decisiones_Claude.md # 10 Papers científics i framework per a Claude
     └── enunciat/
         └── ENUNCIAT.md                  # Enunciat original de l'activitat
 ```
