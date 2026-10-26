@@ -7,7 +7,26 @@
 
 ---
 
-## 1. Visió General de la Simulació
+## 1. Execució Ràpida
+
+### Pas 1: Executar el Servidor Local
+```powershell
+python server.py
+```
+O amb el mòdul estàndard de Python:
+```powershell
+python -m http.server 8000
+```
+
+### Pas 2: Obrir al Navegador
+Accediu a:
+```
+http://localhost:8000/index.html
+```
+
+---
+
+## 2. Visió General de la Simulació
 
 **AM: Project Protocol** és una aplicació interactiva governada per IA agèntica pensada per ser jugada per **4 persones reals davant d'una pantalla** (o en torns pass-and-play). Cada participant assumeix el rol d'un dels supervivents:
 
@@ -32,7 +51,7 @@
 
 ---
 
-## 2. Objectius Ocults Fixes (Metodologia Harvard Everest V3)
+## 3. Objectius Ocults Fixes (Metodologia Harvard Everest V3)
 
 Segons l'enunciat docent, cada personatge compta amb una **responsabilitat concreta** i un **objectiu ocult permanent** que no canvia durant cap de les 7 rondes:
 
@@ -43,7 +62,7 @@ Segons l'enunciat docent, cada personatge compta amb una **responsabilitat concr
 
 ---
 
-## 3. Les 7 Rondes Canòniques (Basades en el Videojoc de 1995)
+## 4. Les 7 Rondes Canòniques (Basades en el Videojoc de 1995)
 
 1. **Ronda 1: Sector 01 - El Zepelí de Carn i la Culpa d'Edna (Gorrister)**  
    El dirigible suspès en l'aire, el cor en un ganxo i fuites de vapor roent.
@@ -62,7 +81,7 @@ Segons l'enunciat docent, cada personatge compta amb una **responsabilitat concr
 
 ---
 
-## 4. El Destí Canònic Sorpresa: La Venjança Final d'AM
+## 5. El Destí Canònic Sorpresa: La Venjança Final d'AM
 
 A la pantalla final, AM presenta el registre fotogràfic de la seva venjança definitiva:
 - **1 Únic Supervivent:** AM li fon els ossos, li esborra els ulls i la boca, i el condemna al turment etern: *«No tinc boca i he de cridar»*.
@@ -71,7 +90,7 @@ A la pantalla final, AM presenta el registre fotogràfic de la seva venjança de
 
 ---
 
-## 5. Estructura de Carpetes i Documentació
+## 6. Estructura de Carpetes i Documentació
 
 ```
 Actividad 1/
@@ -103,23 +122,4 @@ Actividad 1/
     ├── Fuentes_Papers_Psicologia_Toma_Decisiones_Claude.md # 10 Papers científics i framework per a Claude
     └── enunciat/
         └── ENUNCIAT.md                  # Enunciat original de l'activitat
-```
-
----
-
-## 6. Execució Ràpida
-
-### Pas 1: Executar el Servidor Local
-```powershell
-python server.py
-```
-O amb el mòdul estàndard de Python:
-```powershell
-python -m http.server 8000
-```
-
-### Pas 2: Obrir al Navegador
-Accediu a:
-```
-http://localhost:8000/index.html
 ```
