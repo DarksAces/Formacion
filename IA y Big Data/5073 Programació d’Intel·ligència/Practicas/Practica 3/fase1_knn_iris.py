@@ -471,7 +471,7 @@ if __name__ == "__main__":
     # =========================================================================
     # Cambia K_MANUAL al valor que desees (ej: 3, 5, 7, 9).
     # Si prefieres que el código escoja automáticamente el óptimo de CV, pon K_MANUAL = None.
-    K_MANUAL = 5  # <--- MODIFICA ESTE VALOR A MANO SEGÚN TUS PREFERENCIAS
+    K_MANUAL = 9  # <--- MODIFICA ESTE VALOR A MANO SEGÚN TUS PREFERENCIAS
 
     # 4. Entrenar y evaluar KNN
     knn, best_k, k_range, cv_scores, cv_stds, y_pred, acc, cm = entrenar_y_evaluar_knn(
