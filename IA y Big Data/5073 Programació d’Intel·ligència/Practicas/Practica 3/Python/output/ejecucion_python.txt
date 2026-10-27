@@ -1,0 +1,79 @@
+======================================================================
+PRÁCTICA 1 · RA1: CLASIFICACIÓN KNN EN PYTHON - REGISTRO DE EJECUCIÓN
+======================================================================
+
+[1] Cargando dataset desde: iris_extended.csv
+Dimensiones del dataset cargado: 1200 filas x 5 columnas
+
+Primeras 5 filas:
+   sepal_length  sepal_width  petal_length  petal_width species
+0          5.16         3.41          1.64         0.26  setosa
+1          5.48         4.05          1.53         0.37  setosa
+2          5.10         2.80          1.47         0.38  setosa
+3          4.64         3.44          1.53         0.17  setosa
+4          4.85         2.87          1.23         0.26  setosa
+
+Tipos de datos detectados:
+sepal_length    float64
+sepal_width     float64
+petal_length    float64
+petal_width     float64
+species             str
+dtype: object
+
+Distribución de las clases (especies):
+species
+setosa        400
+versicolor    400
+virginica     400
+Name: count, dtype: int64
+
+[2] Realizando partición estratificada (80% Train / 20% Test, seed=42)...
+ - Conjunto de entrenamiento (Train): 960 muestras (320 setosa, 320 versicolor, 320 virginica)
+ - Conjunto de prueba (Test):         240 muestras (80 setosa, 80 versicolor, 80 virginica)
+
+[3] Estandarizando variables con StandardScaler...
+ - Medias aprendidas en Train:        [5.904, 3.053, 3.815, 1.187]
+ - Desviaciones aprendidas en Train:  [0.855, 0.534, 1.766, 0.724]
+
+[4] Entrenando K-Nearest Neighbors (k=5, métrica euclídea)...
+Modelo entrenado correctamente.
+
+[5] Evaluando sobre el conjunto de test...
+
+-> Accuracy obtenida: 95.42% (0.9542)
+
+Matriz de Confusión:
+Etiquetas: ['setosa', 'versicolor', 'virginica']
+[[80  0  0]
+ [ 0 78  2]
+ [ 0  9 71]]
+
+Informe de Clasificación detallado:
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        80
+  versicolor       0.90      0.97      0.93        80
+   virginica       0.97      0.89      0.93        80
+
+    accuracy                           0.95       240
+   macro avg       0.96      0.95      0.95       240
+weighted avg       0.96      0.95      0.95       240
+
+[6] Generando gráficos de resultados...
+ -> Guardado con éxito en: Python\output\matriz_confusion_python.png
+ -> Guardado con éxito en: Python\output\dispersion_iris_python.png
+
+======================================================================
+EVIDENCIAS TÉCNICAS Y REPRODUCIBILIDAD
+======================================================================
+Sistema Operativo:    Windows 11 (AMD64)
+Versión de Python:    3.12.10
+Versión de pandas:    3.0.6
+Versión de numpy:     2.5.3
+Versión de sklearn:   1.9.1
+Versión de matplotlib:3.11.2
+Versión de seaborn:   0.13.2
+Tiempo de ejecución:  2762.03 ms (2.7620 s)
+======================================================================
+Ejecución completada con éxito.

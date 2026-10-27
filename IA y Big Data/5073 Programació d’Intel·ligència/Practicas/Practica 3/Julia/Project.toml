@@ -1,0 +1,7 @@
+[deps]
+CSV = "336ed68f-0bac-5da0-8794-74db8212e6d3"
+DataFrames = "a93c0a06-30c8-5388-ba73-355c4d15226b"
+MLJ = "add582a8-e3ab-11e8-2d5e-e98b27df1bc7"
+NearestNeighborModels = "9f268b8d-294d-45db-b27b-e9b46571fa4f"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+StatsBase = "2913bbd2-aeba-53af-b46e-167b8ef79883"
