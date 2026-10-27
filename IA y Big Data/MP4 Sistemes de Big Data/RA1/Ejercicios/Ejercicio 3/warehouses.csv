@@ -1,0 +1,9 @@
+warehouse_id,name,region,operation,max_temperature_c,cold_chain,active_from
+WH-01,Barcelona Norte,Noreste,Mixto,35,0,2025-07-01
+WH-02,Madrid Central,Centro,Mixto,30,0,2025-07-01
+WH-03,Barcelona Frio,Noreste,Cadena de frio,8,1,2025-07-01
+WH-04,Valencia Puerto,Este,Mixto,35,0,2025-07-01
+WH-05,Zaragoza Hub,Noreste,Mixto,35,0,2025-07-01
+WH-06,Sevilla Logistica,Sur,Mixto,35,0,2025-07-01
+WH-07,Bilbao Distribucion,Norte,Mixto,35,0,2025-07-01
+WH-08,Malaga Operaciones,Sur,Mixto,35,0,2025-07-01

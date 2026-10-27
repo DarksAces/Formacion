@@ -1,0 +1,42 @@
+{
+  "role": "student",
+  "package": "M4_RA1_P3_ShopData_material_alumnado",
+  "statement_included": false,
+  "files": [
+    {
+      "name": "alerts.csv",
+      "bytes": 278663,
+      "sha256": "047efe092a8e29acc1995018a9789a3dc77cc363d4829597fee2b005288676f9"
+    },
+    {
+      "name": "devices.csv",
+      "bytes": 39497,
+      "sha256": "88845770de009118f0600c675fe576bc08b126cbf375535ec8bfdfc0b6486874"
+    },
+    {
+      "name": "DICCIONARIO_DATOS.md",
+      "bytes": 5067,
+      "sha256": "586f015499151245a8456ea88b0cb7cfa3cb9257ead0df083d50d578eeb6f92b"
+    },
+    {
+      "name": "events.csv",
+      "bytes": 34360034,
+      "sha256": "3b6e4cd4d0748d187dd650c10a715546f863848d97f7e68dec0d0d3aa943903f"
+    },
+    {
+      "name": "incidents.csv",
+      "bytes": 1658,
+      "sha256": "08c56af21d6f4d3122588001b3036546c97a9d2903969a5602b3e64ec7318c78"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1593,
+      "sha256": "a12ed7d08bccfc1f6bb83ea1041d644f68f389d4428af9e4933854e3bc9a55ef"
+    },
+    {
+      "name": "warehouses.csv",
+      "bytes": 499,
+      "sha256": "6f39ab85513962bb3279363a7618c6e6d3edab64ec6916b110fc981e28fdfca8"
+    }
+  ]
+}
