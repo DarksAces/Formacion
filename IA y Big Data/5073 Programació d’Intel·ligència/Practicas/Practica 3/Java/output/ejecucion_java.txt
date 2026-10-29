@@ -1,0 +1,75 @@
+======================================================================
+PRÁCTICA 1 · RA1: CLASIFICACIÓN KNN EN JAVA CON WEKA (IBk)
+======================================================================
+
+[1] Cargando dataset en formato nativo ARFF desde: data/iris_extended.arff
+Relación ARFF cargada: @iris_extended
+Dimensiones del dataset: 1200 instancias x 5 atributos
+
+Esquema de atributos detectados en Weka (Instances):
+ - Atributo [0] sepal_length   : Tipo numeric  [PREDICTOR]
+ - Atributo [1] sepal_width    : Tipo numeric  [PREDICTOR]
+ - Atributo [2] petal_length   : Tipo numeric  [PREDICTOR]
+ - Atributo [3] petal_width    : Tipo numeric  [PREDICTOR]
+ - Atributo [4] species        : Tipo nominal  [ATRIBUTO DE CLASE]
+
+Distribución de la clase nominal 'species':
+ - setosa       : 400 muestras
+ - versicolor   : 400 muestras
+ - virginica    : 400 muestras
+
+[2] Realizando partición estratificada (80% Train / 20% Test, seed=42)...
+ - Conjunto de entrenamiento (Train): 960 muestras
+ - Conjunto de prueba (Test):         240 muestras
+
+[3] Estandarizando variables con weka.filters.unsupervised.attribute.Standardize...
+ - Medias aprendidas en Train:        [5.904, 3.053, 3.815, 1.187]
+ - Desviaciones aprendidas en Train:  [0.855, 0.534, 1.766, 0.724]
+
+[4] Configurando y entrenando clasificador weka.classifiers.lazy.IBk (k=5)...
+Clasificador IBk construido correctamente.
+
+[5] Evaluando modelo sobre el conjunto de prueba (Test)...
+
+-> Accuracy obtenida: 95.42% (0.9542)
+
+Resumen global de evaluación (Weka Evaluation):
+Correctly Classified Instances         229               95.4167 %
+Incorrectly Classified Instances        11                4.5833 %
+Kappa statistic                          0.9313
+Mean absolute error                      0.0365
+Root mean squared error                  0.1481
+Relative absolute error                  8.2155 %
+Root relative squared error             31.4116 %
+Total Number of Instances              240     
+
+=== Matriz de Confusión ===
+
+  a  b  c   <-- classified as
+ 80  0  0 |  a = setosa
+  0 78  2 |  b = versicolor
+  0  9 71 |  c = virginica
+
+=== Métricas Detalladas por Especie ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     setosa
+                 0.975    0.056    0.897      0.975    0.934      0.903    0.985     0.968     versicolor
+                 0.888    0.013    0.973      0.888    0.928      0.896    0.984     0.974     virginica
+Weighted Avg.    0.954    0.023    0.956      0.954    0.954      0.933    0.990     0.981     
+
+[6] Generando visualizaciones gráficas con Java2D...
+ -> Guardada matriz de confusión: Java/output/matriz_confusion_java.png
+ -> Guardada dispersión:          Java/output/dispersion_iris_java.png
+
+======================================================================
+EVIDENCIAS TÉCNICAS Y REPRODUCIBILIDAD (JAVA / JVM)
+======================================================================
+Sistema Operativo:    Windows 11 10.0 (amd64)
+Versión de Java:      21.0.4 (Eclipse Adoptium)
+Máquina Virtual (JVM):OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+Versión de Weka API:  3.8.6
+Tiempo algoritmo IBk: 18.45 ms (0.0185 s)
+Tiempo total script:  1420.60 ms (1.4206 s)
+======================================================================
+Ejecución completada con éxito.

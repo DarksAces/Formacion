@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.monlau.ia</groupId>
+    <artifactId>knn-iris-weka</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>Práctica 1 · RA1: KNN en Iris con Java y Weka</name>
+    <description>Implementación reproducible del clasificador K-Nearest Neighbors (IBk) utilizando la API oficial de Weka en la JVM.</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <weka.version>3.8.6</weka.version>
+    </properties>
+
+    <dependencies>
+        <!-- API Oficial de Weka (Waikato Environment for Knowledge Analysis) -->
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-stable</artifactId>
+            <version>${weka.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Compilador Java -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>17</release>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin para ejecutar directamente con: mvn compile exec:java -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.monlau.ia.KnnIrisWeka</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,54 @@
+======================================================================
+PRÁCTICA 1 · RA1: CLASIFICACIÓN KNN EN JULIA
+======================================================================
+
+[1] Cargando dataset desde: data/iris_extended.csv
+Dimensiones del dataset: 1200 filas x 5 columnas
+
+Tipos de datos en Julia (schema):
+ - sepal_length: Float64
+ - sepal_width: Float64
+ - petal_length: Float64
+ - petal_width: Float64
+ - species: String15
+
+Distribución de las clases (combine/groupby):
+3×2 DataFrame
+ Row │ species     count 
+     │ String15    Int64 
+─────┼───────────────────
+   1 │ setosa        400
+   2 │ versicolor    400
+   3 │ virginica     400
+
+[2] Realizando partición estratificada (80% Train / 20% Test, seed=42)...
+ - Conjunto de entrenamiento (Train): 960 muestras
+ - Conjunto de prueba (Test):         240 muestras
+
+[3] Estandarizando variables con estadísticas aprendidas en Train...
+ - Medias aprendidas en Train:        [5.904 3.053 3.815 1.187]
+ - Desviaciones aprendidas en Train:  [0.855 0.534 1.766 0.724]
+
+[4] Ejecutando K-Nearest Neighbors (k=5, distancia euclídea)...
+
+[5] Evaluando resultados en el conjunto de Test...
+-> Accuracy obtenida: 95.42% (0.9542)
+
+Matriz de Confusión (Filas: Real, Columnas: Predicción):
+Clases: ["setosa", "versicolor", "virginica"]
+[80 0 0; 0 78 2; 0 9 71]
+
+[6] Generando gráficos con Plots.jl...
+ -> Guardada dispersión en: Julia/output/dispersion_iris_julia.png
+ -> Guardada matriz de confusión en: Julia/output/matriz_confusion_julia.png
+
+======================================================================
+EVIDENCIAS TÉCNICAS Y REPRODUCIBILIDAD (JULIA)
+======================================================================
+Versión de Julia:      1.10.4
+Plataforma / CPU:      x86_64-w64-mingw32
+Hilos de ejecución:    8
+Tiempo algoritmo KNN:  1.24 ms (0.0012 s)
+Tiempo total (TTFX):   3948.15 ms (3.9482 s)
+======================================================================
+Ejecución completada con éxito.
