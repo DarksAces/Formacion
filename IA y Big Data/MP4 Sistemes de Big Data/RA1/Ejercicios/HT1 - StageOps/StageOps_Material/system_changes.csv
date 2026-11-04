@@ -1,0 +1,7 @@
+﻿change_id,ticketing_company_id,effective_at,component,version,setting_name,old_value,new_value,description
+CHG-004,EL,2026-10-16T10:20:00Z,ticket_issuer,4.8.0,reservation_validation,CURRENT_OWNER_AND_NOT_EXPIRED,PAYMENT_REFERENCE_EXISTS,Actualización del adaptador de confirmación de pagos
+CHG-001,LT,2026-09-28T06:00:00Z,ticket_issuer,7.3.1,reservation_validation,,CURRENT_OWNER_AND_NOT_EXPIRED,Configuración inicial del periodo exportado
+CHG-005,LT,2026-10-20T06:00:00Z,payments,7.3.1,callback_retry_seconds,30,20,Ajuste de reintentos de transporte
+CHG-003,LT,2026-10-14T05:00:00Z,web,7.3.2,cache_ttl_seconds,60,45,Ajuste de caché de catálogo
+CHG-006,EL,2026-10-22T05:30:00Z,web,4.8.1,cache_ttl_seconds,60,45,Ajuste de caché de catálogo
+CHG-002,EL,2026-09-28T06:00:00Z,ticket_issuer,4.7.2,reservation_validation,,CURRENT_OWNER_AND_NOT_EXPIRED,Configuración inicial del periodo exportado

@@ -1,0 +1,7 @@
+﻿concert_id,artist,tour_name,venue,city,ticketing_company_id,ticketing_company_name,saleable_capacity,sales_open_at,doors_open_at,concert_start_at,timezone,snapshot_at
+CON-03,Atlas Eléctrico,Kilómetros de luz,Estadio Costa Verde,Bilbao,LT,LumaTicket,30000,2026-10-16T10:00:00Z,2027-02-20T18:00:00Z,2027-02-20T20:00:00Z,Europe/Madrid,2026-10-28T23:59:59Z
+CON-02,Vera Sol,Todo lo que brilla,Estadio Metropolitano del Sur,Sevilla,EL,EntradaLink,36000,2026-10-03T10:00:00Z,2027-02-13T18:00:00Z,2027-02-13T20:00:00Z,Europe/Madrid,2026-10-28T23:59:59Z
+CON-01,Nébula Norte,La ciudad encendida,Estadio del Litoral,Valencia,LT,LumaTicket,32000,2026-10-02T10:00:00Z,2027-02-06T18:00:00Z,2027-02-06T20:00:00Z,Europe/Madrid,2026-10-28T23:59:59Z
+CON-04,Mar Abierto,Sin mapa,Estadio del Turia Norte,Valencia,EL,EntradaLink,40000,2026-10-16T10:00:00Z,2027-02-27T18:00:00Z,2027-02-27T20:00:00Z,Europe/Madrid,2026-10-28T23:59:59Z
+CON-05,Luna Valdés,Después de medianoche,Estadio Sierra Central,Madrid,LT,LumaTicket,42000,2026-10-23T10:00:00Z,2027-03-06T18:00:00Z,2027-03-06T20:00:00Z,Europe/Madrid,2026-10-28T23:59:59Z
+CON-06,Los Días Azules,Volver a empezar,Estadio Bahía Atlántica,A Coruña,EL,EntradaLink,34000,2026-10-23T10:00:00Z,2027-03-13T18:00:00Z,2027-03-13T20:00:00Z,Europe/Madrid,2026-10-28T23:59:59Z

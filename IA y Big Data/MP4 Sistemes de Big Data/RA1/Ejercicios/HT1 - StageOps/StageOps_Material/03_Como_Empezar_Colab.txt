@@ -1,0 +1,6 @@
+1. Crea un notebook en Google Colab.
+2. Descomprime el ZIP del alumnado en tu ordenador.
+3. Sube los seis CSV desde el panel Archivos de Colab.
+4. Carga cada archivo con pandas.read_csv.
+5. Consulta el encargo y el diccionario antes de combinar datos.
+No es necesario instalar una base de datos. No se incluyen datos personales reales.

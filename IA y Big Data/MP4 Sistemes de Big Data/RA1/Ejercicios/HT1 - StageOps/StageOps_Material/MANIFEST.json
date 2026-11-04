@@ -1,0 +1,46 @@
+{
+  "00_Encargo_StageOps.pdf": {
+    "bytes": 83271,
+    "sha256": "e945db297dacaf0928ef09d12adc28041282ff58ea35b47db797d41f55b141c0"
+  },
+  "01_Encargo_StageOps.md": {
+    "bytes": 4512,
+    "sha256": "4c3ec8f0725813abef869915c08d973f31751e17563648d171b24c3b7c3ebfca"
+  },
+  "02_Diccionario_Datos.md": {
+    "bytes": 3951,
+    "sha256": "b5a29768f11f058fa006659a08b104a844357f43b85d1d418e06a681d71213e5"
+  },
+  "03_Como_Empezar_Colab.txt": {
+    "bytes": 342,
+    "sha256": "eb548a2780c1ba5c7ae7840d26fb4422fa609695d03cf0f3c0fc7d45d62c4784"
+  },
+  "04_Arquitectura_y_Datasets_StageOps.pdf": {
+    "bytes": 89815,
+    "sha256": "d3b2e2e97609fe3acfb94a2bb51b34eb511abdd3b95cc488efa65579d5052d7e"
+  },
+  "concerts.csv": {
+    "bytes": 1312,
+    "sha256": "86bafda1f8df08e53b142a358dd580ac1e6e1a2d81261f39ab1c94696b425e2f"
+  },
+  "customers.csv": {
+    "bytes": 3513037,
+    "sha256": "9bd6a753611bce7f2a89d8400bb9c942ceec8f4dac2fa9ce9a3a91dfddd5c591"
+  },
+  "payment_events.csv": {
+    "bytes": 21055631,
+    "sha256": "162f01d8293f507e5fa2663211ca610d79356c11fa55aec7af538031f4f2147c"
+  },
+  "reservations.csv": {
+    "bytes": 19495316,
+    "sha256": "b84aada39366fd82fe68f8e8a68892c2260aa768d6a6da35b0181b8a24f7d148"
+  },
+  "system_changes.csv": {
+    "bytes": 907,
+    "sha256": "7cd33eed64bc371edf656f139353fc4b00799e8529e7ec567996f731a33001c3"
+  },
+  "tickets.csv": {
+    "bytes": 14902602,
+    "sha256": "a076f7d7073c6b8d3e8bf881034a9d0db64ca958b988487ab509d3ede151878a"
+  }
+}
