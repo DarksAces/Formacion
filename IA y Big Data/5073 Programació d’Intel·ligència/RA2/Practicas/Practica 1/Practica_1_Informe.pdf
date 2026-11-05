@@ -1,0 +1,987 @@
+%PDF-1.4
+%%%%% ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/PageMode /UseNone /Pages 12 0 R /Type /Catalog
+>>
+endobj
+11 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261105182052+01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261105182052+01'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+12 0 obj
+<<
+/Count 3 /Kids [ 7 0 R 8 0 R 9 0 R ] /Type /Pages
+>>
+endobj
+13 0 obj
+<<
+/Length 10618
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 740.8661 cm
+q
+.101961 .211765 .364706 rg
+BT 1 0 0 1 0 26 Tm /F2 18 Tf 22 TL (Pr\341ctica 1: Segmentaci\363n de Clientes mediante RFM y) Tj T* (K-Means) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 721.8661 cm
+q
+.290196 .333333 .407843 rg
+BT 1 0 0 1 0 3 Tm /F1 10 Tf 13 TL (Dataset: Online Retail \(UCI Machine Learning Repository \227 DOI: 10.24432/C5BW33 | CC BY 4.0\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 708.6661 cm
+q
+1.2 w
+1 J
+.168627 .423529 .690196 RG
+n 0 0 m 481.2283 0 l S
+Q
+Q
+q
+1 0 0 1 57.02362 678.6661 cm
+q
+.168627 .423529 .690196 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (1. Contexto y Carga del Dataset) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 632.1661 cm
+q
+BT 1 0 0 1 0 31 Tm 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (En esta pr\341ctica se trabaja con el dataset p\372blico ) Tj /F2 9.5 Tf (Online Retail) Tj /F1 9.5 Tf ( del ) Tj /F3 9.5 Tf (UCI Machine Learning Repository) Tj /F1 9.5 Tf (. Contiene) Tj T* /F2 9.5 Tf (541.909 l\355neas de transacci\363n) Tj /F1 9.5 Tf ( registradas entre el 1 de diciembre de 2010 y el 9 de diciembre de 2011 por una) Tj T* (empresa brit\341nica de comercio electr\363nico dedicada a la venta de art\355culos de regalo y decoraci\363n.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 599.1661 cm
+q
+BT 1 0 0 1 0 17.5 Tm 13.5 TL /F2 9.5 Tf .101961 .12549 .172549 rg (Objetivo:) Tj /F1 9.5 Tf ( Transformar las transacciones en un dataset a nivel de cliente mediante variables ) Tj /F2 9.5 Tf (RFM) Tj /F1 9.5 Tf ( \() Tj /F3 9.5 Tf (Recency,) Tj T* (Frequency, Monetary) Tj /F1 9.5 Tf (\) y aplicar ) Tj /F2 9.5 Tf (K-Means) Tj /F1 9.5 Tf ( para identificar segmentos comercialmente interpretables.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 574.1661 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 3.5 Tm /F4 11.5 Tf 15 TL (1.1. Descripci\363n detallada de las columnas del dataset) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 543.1661 cm
+q
+BT 1 0 0 1 0 17.5 Tm -0.127008 Tw 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (A partir de la salida de ) Tj /F5 9.5 Tf (df.info\(\)) Tj /F1 9.5 Tf ( \(541.909 filas y 8 columnas\), se detalla el significado, tipo de dato, recuento de) Tj T* 0 Tw (valores v\341lidos y relevancia de cada variable:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.02362 247.1661 cm
+q
+.168627 .423529 .690196 rg
+n 0 290 493.2283 -21 re f*
+1 1 1 rg
+n 0 269 493.2283 -41.5 re f*
+.968627 .980392 .988235 rg
+n 0 227.5 493.2283 -31 re f*
+1 1 1 rg
+n 0 196.5 493.2283 -31 re f*
+.968627 .980392 .988235 rg
+n 0 165.5 493.2283 -41.5 re f*
+1 1 1 rg
+n 0 124 493.2283 -31 re f*
+.968627 .980392 .988235 rg
+n 0 93 493.2283 -31 re f*
+1 1 1 rg
+n 0 62 493.2283 -31 re f*
+.968627 .980392 .988235 rg
+n 0 31 493.2283 -31 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 274 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Columna) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 274 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Tipo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 274 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (No Nulos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 274 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Descripci\363n y relevancia para el an\341lisis RFM) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 253.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (InvoiceNo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 253.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (object \(str\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 253.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (541.909) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 232.5 cm
+q
+BT 1 0 0 1 0 23.3 Tm 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (N\372mero de factura) Tj /F1 8.2 Tf ( \(6 d\355gitos\). Si empieza por ) Tj /F2 8.2 Tf ('C') Tj /F1 8.2 Tf ( \(ej. C536379\), indica una) Tj T* (cancelaci\363n/devoluci\363n. Clave para filtrar anulaciones y calcular la ) Tj /F3 8.2 Tf (Frequency) Tj /F1 8.2 Tf  T* (\(facturas \372nicas por cliente\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 212 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (StockCode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 212 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (object \(str\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 212 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (541.909) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 201.5 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (C\363digo de producto) Tj /F1 8.2 Tf ( \(5 d\355gitos\). Identifica cada art\355culo distinto del cat\341logo) Tj T* (\(incluye c\363digos especiales como POST o M\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 181 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (Description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 181 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (object \(str\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 170.5 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F1 8.2 Tf .101961 .12549 .172549 rg (540.455) Tj  T* (\(1.454 nulos\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 170.5 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (Nombre comercial del art\355culo.) Tj /F1 8.2 Tf ( Presenta 1.454 valores nulos en ajustes de) Tj T* (stock, pero no interviene en el c\341lculo de las m\351tricas RFM.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 150 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (Quantity) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 150 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (int64) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 150 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (541.909) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 129 cm
+q
+BT 1 0 0 1 0 23.3 Tm 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (Unidades adquiridas) Tj /F1 8.2 Tf ( en cada l\355nea. Toma valores negativos en) Tj T* (devoluciones o mermas de inventario; deben conservarse solo compras) Tj T* (reales \(Quantity > 0\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 108.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (InvoiceDate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 108.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (datetime64) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 108.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (541.909) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 98 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (Fecha y hora de la transacci\363n) Tj /F1 8.2 Tf ( \(01/12/2010 a 09/12/2011\). Imprescindible) Tj T* (para calcular la ) Tj /F3 8.2 Tf (Recency) Tj /F1 8.2 Tf ( \(d\355as desde la \372ltima compra del cliente\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 77.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (UnitPrice) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 77.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (float64) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 77.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (541.909) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 67 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (Precio unitario) Tj /F1 8.2 Tf ( en libras esterlinas \(\243\). Multiplicado por Quantity permite) Tj T* (calcular el importe de l\355nea para obtener ) Tj /F3 8.2 Tf (Monetary) Tj /F1 8.2 Tf (. Filtrar UnitPrice <) Tj (= 0.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 46.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (CustomerID) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 46.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (float64) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 36 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F1 8.2 Tf .101961 .12549 .172549 rg (406.829) Tj  T* (\(135.080 nulos\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 36 cm
+q
+BT 1 0 0 1 0 12.8 Tm 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (Identificador \372nico del cliente) Tj /F1 8.2 Tf ( \(5 d\355gitos\). El ) Tj /F2 8.2 Tf (24,93 %) Tj /F1 8.2 Tf ( de las filas carecen de) Tj T* (CustomerID. Es obligatorio eliminarlas para agregar por cliente.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (Country) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 15.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (object \(str\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 133.5591 15.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (541.909) Tj T* ET
+Q
+Q
+q
+1 0 0 1 204.4252 5 cm
+q
+BT 1 0 0 1 0 12.8 Tm -0.018804 Tw 10.5 TL /F2 8.2 Tf .101961 .12549 .172549 rg (Pa\355s del cliente) Tj /F1 8.2 Tf ( \(38 pa\355ses distintos; el 91,43 % de las l\355neas corresponden a) Tj T* 0 Tw (United Kingdom\).) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .878431 RG
+.5 w
+n 0 290 m 493.2283 290 l S
+n 0 0 m 493.2283 0 l S
+n 0 0 m 0 290 l S
+n 493.2283 0 m 493.2283 290 l S
+n 0 269 m 493.2283 269 l S
+n 0 227.5 m 493.2283 227.5 l S
+n 0 196.5 m 493.2283 196.5 l S
+n 0 165.5 m 493.2283 165.5 l S
+n 0 124 m 493.2283 124 l S
+n 0 93 m 493.2283 93 l S
+n 0 62 m 493.2283 62 l S
+n 0 31 m 493.2283 31 l S
+n 65.19685 0 m 65.19685 290 l S
+n 127.5591 0 m 127.5591 290 l S
+n 198.4252 0 m 198.4252 290 l S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 237.1661 cm
+Q
+q
+1 0 0 1 57.02362 207.1661 cm
+q
+.168627 .423529 .690196 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (2. Exploraci\363n Inicial del Dataset Transaccional) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 174.1661 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 17.5 Tm /F1 9.5 Tf 13.5 TL (Antes de agregar la informaci\363n por cliente, analizamos en detalle la estructura y calidad de los datos) Tj T* (transaccionales:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 149.1661 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 3.5 Tm /F4 11.5 Tf 15 TL (2.1. N\372mero de filas, columnas y periodo temporal cubierto) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 131.6661 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Dimensiones:) Tj /F1 9.5 Tf ( 541.909 filas y 8 columnas.) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 115.1661 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Primera transacci\363n registrada:) Tj /F1 9.5 Tf ( 2010-12-01 08:26:00.) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 98.66614 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (\332ltima transacci\363n registrada:) Tj /F1 9.5 Tf ( 2011-12-09 12:50:00.) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 82.16614 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Periodo temporal cubierto:) Tj /F1 9.5 Tf ( 373 d\355as \(~12,3 meses, pr\341cticamente un a\361o completo\).) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 57.16614 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 3.5 Tm /F4 11.5 Tf 15 TL (2.2. Tipos de datos y conversi\363n de InvoiceDate) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+14 0 obj
+<<
+/Length 12344
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 730.8661 cm
+q
+BT 1 0 0 1 0 44.5 Tm 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (Se asegura la conversi\363n expl\355cita de ) Tj /F5 9.5 Tf (InvoiceDate) Tj /F1 9.5 Tf ( a formato ) Tj /F5 9.5 Tf (datetime64[ns]) Tj /F1 9.5 Tf ( mediante) Tj T* /F5 9.5 Tf (pd.to_datetime\(df['InvoiceDate']\)) Tj /F1 9.5 Tf ( para operar con diferencias de fechas, y se normalizan ) Tj /F5 9.5 Tf (InvoiceNo) Tj /F1 9.5 Tf  T* (y ) Tj /F5 9.5 Tf (StockCode) Tj /F1 9.5 Tf ( como cadenas de texto \() Tj /F5 9.5 Tf (str) Tj /F1 9.5 Tf (\) para evaluar de forma segura el prefijo ) Tj /F5 9.5 Tf ('C') Tj /F1 9.5 Tf ( de las facturas) Tj T* (canceladas.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 705.8661 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 3.5 Tm /F4 11.5 Tf 15 TL (2.3. Valores nulos, especialmente en CustomerID) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 688.3661 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 4 Tm /F1 9.5 Tf 13.5 TL (Solo existen valores nulos en dos columnas del dataset:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 641.8661 cm
+q
+BT 1 0 0 1 14 31 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (CustomerID:) Tj /F1 9.5 Tf ( 135.080 filas nulas \() Tj /F2 9.5 Tf (24,93 %) Tj /F1 9.5 Tf ( del total\) frente a 406.829 filas con cliente identificado \(75,07 %\).) Tj T* 8 0 Td (Corresponden a compras realizadas sin iniciar sesi\363n o ventas sin ficha de cliente; deber\341n descartarse) Tj T* (porque no es posible asignarlas a ning\372n cliente individual en el modelo RFM.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 611.8661 cm
+q
+BT 1 0 0 1 14 17.5 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Description:) Tj /F1 9.5 Tf ( 1.454 filas nulas \() Tj /F2 9.5 Tf (0,27 %) Tj /F1 9.5 Tf ( del total\), asociadas principalmente a ajustes internos de stock sin) Tj T* 8 0 Td (cliente ni precio.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 595.3661 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 El resto de variables \() Tj /F2 9.5 Tf (InvoiceNo, StockCode, Quantity, InvoiceDate, UnitPrice, Country) Tj /F1 9.5 Tf (\) tienen ) Tj /F2 9.5 Tf (0 nulos) Tj /F1 9.5 Tf (.) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 570.3661 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 3.5 Tm /F4 11.5 Tf 15 TL (2.4. Facturas canceladas y cantidades o precios no positivos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 539.3661 cm
+q
+BT 1 0 0 1 14 17.5 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Facturas canceladas \(InvoiceNo empieza por 'C'\):) Tj /F1 9.5 Tf ( 9.288 l\355neas de transacci\363n \(1,71 % del dataset\),) Tj T* 8 0 Td (repartidas en ) Tj /F2 9.5 Tf (3.836 facturas canceladas \372nicas) Tj /F1 9.5 Tf (. Todas ellas presentan cantidades negativas.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 495.8661 cm
+q
+BT 1 0 0 1 14 31 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Cantidades no positivas \(Quantity <) Tj (= 0\):) Tj /F1 9.5 Tf ( 10.624 l\355neas \(1,96 % del total\). De ellas, 9.288 pertenecen a) Tj T* 8 0 Td (facturas canceladas con prefijo 'C' y las ) Tj /F2 9.5 Tf (1.336 restantes) Tj /F1 9.5 Tf ( son ajustes manuales o bajas de inventario sin prefijo) Tj T* ('C' \(y sin CustomerID\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 452.3661 cm
+q
+BT 1 0 0 1 14 31 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Precios unitarios no positivos \(UnitPrice <) Tj (= 0\):) Tj /F1 9.5 Tf ( 2.517 l\355neas \(0,46 % del total\), desglosadas en ) Tj /F2 9.5 Tf (2.515 l\355neas) Tj T* 8 0 Td (con UnitPrice == 0) Tj /F1 9.5 Tf ( \(art\355culos promocionales/regalos o ajustes de almac\351n\) y ) Tj /F2 9.5 Tf (2 l\355neas con UnitPrice < 0) Tj /F1 9.5 Tf  T* (\(-11.062,06 \243 cada una, bajo el concepto contable ) Tj /F3 9.5 Tf (Adjust bad debt) Tj /F1 9.5 Tf (\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 427.3661 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 3.5 Tm /F4 11.5 Tf 15 TL (2.5. N\372mero de clientes, facturas, productos y pa\355ses distintos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 396.3661 cm
+q
+BT 1 0 0 1 14 17.5 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Clientes distintos \(CustomerID v\341lidos\):) Tj /F1 9.5 Tf ( 4.372 clientes \372nicos \(4.338 clientes con compras v\341lidas no) Tj T* 8 0 Td (canceladas\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 379.8661 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Facturas distintas \(InvoiceNo\):) Tj /F1 9.5 Tf ( 25.900 facturas totales \(22.064 facturas de venta y 3.836 cancelaciones\).) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 363.3661 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Productos distintos:) Tj /F1 9.5 Tf ( 4.070 c\363digos \372nicos \() Tj /F5 9.5 Tf (StockCode) Tj /F1 9.5 Tf (\) y 4.223 descripciones distintas \() Tj /F5 9.5 Tf (Description) Tj /F1 9.5 Tf (\).) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 333.3661 cm
+q
+BT 1 0 0 1 14 17.5 Tm -8 0 Td -0.119404 Tw 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Pa\355ses distintos \(Country\):) Tj /F1 9.5 Tf ( 38 pa\355ses. Predomina claramente ) Tj /F2 9.5 Tf (United Kingdom) Tj /F1 9.5 Tf ( con 495.478 l\355neas \() Tj /F2 9.5 Tf (91,43 %) Tj /F1 9.5 Tf (\),) Tj T* 0 Tw 8 0 Td (seguido a gran distancia por Germany \(9.495; 1,75 %\), France \(8.557; 1,58 %\) y EIRE/Irlanda \(8.196; 1,51 %\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 308.3661 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 3.5 Tm /F4 11.5 Tf 15 TL (2.6. Distribuci\363n del importe de las transacciones y posibles valores extremos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 263.8661 cm
+q
+BT 1 0 0 1 0 31 Tm 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (Calculando el importe de cada l\355nea como ) Tj /F5 9.5 Tf (TotalPrice = Quantity * UnitPrice) Tj /F1 9.5 Tf (, observamos una) Tj T* (distribuci\363n fuertemente asim\351trica hacia la derecha con presencia de valores extremos \() Tj /F3 9.5 Tf (outliers) Tj /F1 9.5 Tf (\) tanto positivos) Tj T* (como negativos:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.02362 172.3661 cm
+q
+.168627 .423529 .690196 rg
+n 0 85.5 493.2283 -30 re f*
+1 1 1 rg
+n 0 55.5 493.2283 -18.5 re f*
+.968627 .980392 .988235 rg
+n 0 37 493.2283 -18.5 re f*
+1 1 1 rg
+n 0 18.5 493.2283 -18.5 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 65 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Variable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 65 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Media) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116.5512 59.5 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Desv.) Tj T* (T\355pica) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.4094 65 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (M\355nimo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.937 65 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (P25) Tj T* ET
+Q
+Q
+q
+1 0 0 1 272.4567 59.5 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Mediana) Tj T* (\(P50\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 334.8189 65 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (P75) Tj T* ET
+Q
+Q
+q
+1 0 0 1 377.3386 65 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (P99) Tj T* ET
+Q
+Q
+q
+1 0 0 1 422.6929 65 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (M\341ximo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (Quantity) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (9,55) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116.5512 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (218,08) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.4094 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (-80.995) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.937 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (1,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 272.4567 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (3,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 334.8189 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (10,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 377.3386 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (100,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 422.6929 41 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (80.995) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (UnitPrice \(\243\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (4,61) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116.5512 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (96,76) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.4094 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (-11.062,06) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.937 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (1,25) Tj T* ET
+Q
+Q
+q
+1 0 0 1 272.4567 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (2,08) Tj T* ET
+Q
+Q
+q
+1 0 0 1 334.8189 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (4,13) Tj T* ET
+Q
+Q
+q
+1 0 0 1 377.3386 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (18,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 422.6929 22.5 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (38.970,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.2 Tf 10.5 TL (TotalPrice \(\243\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 71.19685 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (17,99) Tj T* ET
+Q
+Q
+q
+1 0 0 1 116.5512 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (378,81) Tj T* ET
+Q
+Q
+q
+1 0 0 1 170.4094 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (-168.469,60) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.937 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (3,40) Tj T* ET
+Q
+Q
+q
+1 0 0 1 272.4567 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (9,75) Tj T* ET
+Q
+Q
+q
+1 0 0 1 334.8189 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (17,40) Tj T* ET
+Q
+Q
+q
+1 0 0 1 377.3386 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (180,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 422.6929 4 cm
+q
+.101961 .12549 .172549 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.2 Tf 10.5 TL (168.469,60) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .878431 RG
+.5 w
+n 0 85.5 m 493.2283 85.5 l S
+n 0 0 m 493.2283 0 l S
+n 0 0 m 0 85.5 l S
+n 493.2283 0 m 493.2283 85.5 l S
+n 0 55.5 m 493.2283 55.5 l S
+n 0 37 m 493.2283 37 l S
+n 0 18.5 m 493.2283 18.5 l S
+n 65.19685 0 m 65.19685 85.5 l S
+n 110.5512 0 m 110.5512 85.5 l S
+n 164.4094 0 m 164.4094 85.5 l S
+n 223.937 0 m 223.937 85.5 l S
+n 266.4567 0 m 266.4567 85.5 l S
+n 328.8189 0 m 328.8189 85.5 l S
+n 371.3386 0 m 371.3386 85.5 l S
+n 416.6929 0 m 416.6929 85.5 l S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 166.3661 cm
+Q
+q
+1 0 0 1 57.02362 139.3661 cm
+q
+BT 1 0 0 1 14 17.5 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Comportamiento habitual:) Tj /F1 9.5 Tf ( El 50 % central de las l\355neas de compra tiene un importe entre ) Tj /F2 9.5 Tf (3,40 \243 \(P25\) y) Tj T* 8 0 Td (17,40 \243 \(P75\)) Tj /F1 9.5 Tf (, con una mediana de ) Tj /F2 9.5 Tf (9,75 \243) Tj /F1 9.5 Tf (, y el 99 % de las l\355neas no supera los 180,00 \243.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 68.86614 cm
+q
+BT 1 0 0 1 14 58 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (\177 ) Tj /F2 9.5 Tf (Valores extremos detectados:) Tj /F1 9.5 Tf ( Destacan dos pedidos mayoristas extraordinarios que distorsionan la media y) Tj T* 8 0 Td (la desviaci\363n est\341ndar: \(1\) la factura ) Tj /F2 9.5 Tf (581483) Tj /F1 9.5 Tf ( \(cliente 16446\) por ) Tj /F2 9.5 Tf (80.995 unidades) Tj /F1 9.5 Tf ( de ) Tj /F3 9.5 Tf (PAPER CRAFT, LITTLE) Tj T* (BIRDIE) Tj /F1 9.5 Tf ( \(+168.469,60 \243\), anulada minutos despu\351s en la factura ) Tj /F2 9.5 Tf (C581484) Tj /F1 9.5 Tf ( \(-168.469,60 \243\); y \(2\) la factura) Tj T* /F2 9.5 Tf (541431) Tj /F1 9.5 Tf ( \(cliente 12346\) por ) Tj /F2 9.5 Tf (74.215 unidades) Tj /F1 9.5 Tf ( de ) Tj /F3 9.5 Tf (MEDIUM CERAMIC TOP STORAGE JAR) Tj /F1 9.5 Tf ( \(+77.183,60 \243\),) Tj T* (tambi\351n cancelada en ) Tj /F2 9.5 Tf (C541433) Tj /F1 9.5 Tf ( \(-77.183,60 \243\), adem\341s de cargos manuales \() Tj /F5 9.5 Tf (StockCode == 'M') Tj /F1 9.5 Tf ( o) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+15 0 obj
+<<
+/Length 3154
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 771.3661 cm
+q
+BT 1 0 0 1 14 4 Tm 13.5 TL /F5 9.5 Tf .101961 .12549 .172549 rg ('AMAZONFEE') Tj /F1 9.5 Tf (\) de hasta 38.970 \243.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 731.3661 cm
+q
+.172549 .321569 .509804 rg
+BT 1 0 0 1 0 18.5 Tm /F4 11.5 Tf 15 TL (2.7. Pregunta de an\341lisis: \277Por qu\351 cada fila del archivo representa una l\355nea de factura) Tj T* (y no un cliente completo?) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 686.8661 cm
+q
+BT 1 0 0 1 0 31 Tm 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (Cada fila del archivo original tiene una ) Tj /F2 9.5 Tf (granularidad de l\355nea de factura \() Tj /F4 9.5 Tf (order line-item) Tj /F2 9.5 Tf (\)) Tj /F1 9.5 Tf ( porque registra la) Tj T* (adquisici\363n de ) Tj /F2 9.5 Tf (un art\355culo espec\355fico \() Tj /F5 9.5 Tf (StockCode) Tj /F2 9.5 Tf (\) dentro de un pedido concreto \() Tj /F5 9.5 Tf (InvoiceNo) Tj /F2 9.5 Tf (\)) Tj /F1 9.5 Tf ( realizado por) Tj T* (un cliente \() Tj /F5 9.5 Tf (CustomerID) Tj /F1 9.5 Tf (\) en una fecha determinada \() Tj /F5 9.5 Tf (InvoiceDate) Tj /F1 9.5 Tf (\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 653.8661 cm
+q
+BT 1 0 0 1 0 17.5 Tm 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (En una base de datos transaccional de comercio electr\363nico \(OLTP\) existe una doble relaci\363n jer\341rquica ) Tj /F2 9.5 Tf (1 a) Tj T* (muchos \(1:N\)) Tj /F1 9.5 Tf (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 634.3661 cm
+q
+BT 1 0 0 1 14 4 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (1. ) Tj /F2 9.5 Tf (Un cliente \() Tj /F5 9.5 Tf (CustomerID) Tj /F2 9.5 Tf (\) realiza m\372ltiples pedidos \() Tj /F5 9.5 Tf (InvoiceNo) Tj /F2 9.5 Tf (\)) Tj /F1 9.5 Tf ( en distintas fechas a lo largo del a\361o.) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 577.3661 cm
+q
+BT 1 0 0 1 14 44.5 Tm -8 0 Td 13.5 TL /F1 9.5 Tf .101961 .12549 .172549 rg (2. ) Tj /F2 9.5 Tf (Cada pedido o factura \() Tj /F5 9.5 Tf (InvoiceNo) Tj /F2 9.5 Tf (\) contiene varios productos distintos \() Tj /F5 9.5 Tf (StockCode) Tj /F2 9.5 Tf (\)) Tj /F1 9.5 Tf ( en el carrito,) Tj T* 8 0 Td -0.040577 Tw (generando una fila independiente por cada referencia comprada en esa factura \(por ejemplo, la primera factura) Tj T* 0 Tw /F5 9.5 Tf (536365) Tj /F1 9.5 Tf ( del cliente ) Tj /F5 9.5 Tf (17850) Tj /F1 9.5 Tf ( ocupa 7 filas, una por cada art\355culo del pedido, y ese mismo cliente aparece en 312) Tj T* (filas repartidas en 35 facturas\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 520.3661 cm
+q
+BT 1 0 0 1 0 44.5 Tm 13.5 TL /F2 9.5 Tf .101961 .12549 .172549 rg (Conclusi\363n para el modelado:) Tj /F1 9.5 Tf ( Si aplic\341ramos K-Means directamente sobre las filas del dataset bruto,) Tj T* (estar\355amos agrupando ) Tj /F3 9.5 Tf (l\355neas de productos sueltos) Tj /F1 9.5 Tf ( y no clientes. Por ello es obligatorio transformar y agregar) Tj T* -0.020012 Tw (primero la tabla por ) Tj /F5 9.5 Tf (CustomerID) Tj /F1 9.5 Tf ( mediante las variables ) Tj /F2 9.5 Tf (RFM) Tj /F1 9.5 Tf ( \() Tj /F3 9.5 Tf (Recency, Frequency, Monetary) Tj /F1 9.5 Tf (\), garantizando que) Tj T* 0 Tw (cada fila represente exactamente a un \372nico cliente.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000061 00000 n 
+0000000132 00000 n 
+0000000239 00000 n 
+0000000351 00000 n 
+0000000466 00000 n 
+0000000585 00000 n 
+0000000690 00000 n 
+0000000895 00000 n 
+0000001100 00000 n 
+0000001305 00000 n 
+0000001375 00000 n 
+0000001656 00000 n 
+0000001728 00000 n 
+0000012399 00000 n 
+0000024796 00000 n 
+trailer
+<<
+/ID 
+[<31e3649e636c1de4b755f0534b2ec031><31e3649e636c1de4b755f0534b2ec031>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 11 0 R
+/Root 10 0 R
+/Size 16
+>>
+startxref
+28002
+%%EOF
