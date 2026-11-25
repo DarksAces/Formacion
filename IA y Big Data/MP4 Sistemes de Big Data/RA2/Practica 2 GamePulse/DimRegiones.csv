@@ -1,0 +1,5 @@
+﻿region_id,region,zona_servidor,latencia_objetivo_ms
+R01,Europa,EU-West,65
+R02,Norteamérica,NA-East,75
+R03,LATAM,SA-East,95
+R04,Asia-Pacífico,AP-Southeast,90

@@ -1,0 +1,6 @@
+﻿modo_id,modo,tipo,duracion_partida_objetivo_min
+M01,Casual,PvP,12
+M02,Ranked,PvP competitivo,18
+M03,Battle Royale,PvP,22
+M04,Co-op,PvE cooperativo,20
+M05,Arena,PvP rápido,8

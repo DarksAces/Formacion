@@ -1,0 +1,10 @@
+﻿kpi_id,kpi,objetivo,unidad,criterio,area
+KPI01,Jugadores activos mensuales,14841,jugadores,>=,Producto
+KPI02,Ingresos mensuales,47000,EUR,>=,Negocio
+KPI03,Conversión a pago,13.1,% de jugadores activos,>=,Monetización
+KPI04,Tasa de crashes,3.0,% de sesiones,<=,Tecnología
+KPI05,Tasa de desconexión,2.5,% de sesiones,<=,Tecnología
+KPI06,Latencia media,85,ms,<=,Infraestructura
+KPI07,Matchmaking medio,50,segundos,<=,Live Ops
+KPI08,Tasa de reembolso,4.0,% de compras,<=,Monetización
+KPI09,Tickets por 1.000 sesiones,60,tickets,<=,Soporte

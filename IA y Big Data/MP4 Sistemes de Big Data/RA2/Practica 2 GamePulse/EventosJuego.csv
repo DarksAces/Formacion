@@ -1,0 +1,10 @@
+﻿evento_id,fecha,tipo,evento,descripcion
+E01,2025-09-01,Temporada,Inicio Temporada 3,"Nuevo contenido, Battle Pass y reinicio de progresión estacional."
+E02,2025-11-21,Campaña,Black Friday,Promoción temporal de cosméticos y moneda del juego.
+E03,2025-12-10,Versión,Despliegue 3.9,Actualización de invierno y ajustes de matchmaking.
+E04,2026-03-01,Temporada,Inicio Temporada 4,"Nueva temporada, campaña global de adquisición y nuevo Battle Pass."
+E05,2026-03-05,Contenido,Legendary Founder Pack,Lanzamiento de un pack premium limitado.
+E06,2026-03-18,Versión,Despliegue 4.1,"Actualización de rendimiento, contenido y sistemas internos."
+E07,2026-04-12,Versión,Despliegue 4.1.2,Hotfix acumulativo posterior a 4.1.
+E08,2026-05-05,Infraestructura,Ampliación LATAM + versión 4.2,Aumento de capacidad regional y actualización de cliente.
+E09,2026-06-12,Campaña,Free Weekend,Fin de semana gratuito y promoción Summer Bundle.
